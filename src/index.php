@@ -7,7 +7,7 @@
         <meta name="author" content="Steve Cochrane">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//cloud.typography.com/6084432/761002/css/fonts.css">
-        <link rel="stylesheet" href="/css/main.000075.css">
+        <link rel="stylesheet" href="/css/main.000077.css">
     </head>
     <body id="home">
         <div class="l-vert-center">
@@ -53,7 +53,7 @@
                 </footer>
             </div>
         </div>
-        <script src="/js/main.000075.js"></script>
+        <script src="/js/main.000077.js"></script>
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-11487507-1']);
