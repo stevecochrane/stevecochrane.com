@@ -27,7 +27,7 @@ gulp.task("css", function() {
         .pipe(pixrem())
         .pipe(autoprefixer())
         .pipe(combineMediaQueries())
-
+        .pipe(minifyCss())
         .pipe(gulp.dest("./dist/css"));
 });
 
