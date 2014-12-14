@@ -7,10 +7,10 @@
         <meta name="author" content="Steve Cochrane">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="//cloud.typography.com/6084432/761002/css/fonts.css">
-        <link rel="stylesheet" href="/css/main.000077.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body id="home">
-        <div class="l-vert-center">
+        <div class="l-container l-center-xy">
             <div class="l-page">
                 <header class="l-header">
                     <h1>Hey! I'm Steve Cochrane, a front-end developer and designer from Austin, Texas. I like to make <a href="/portfolio/">websites</a>, <a href="/videogames/">videogames</a>, <a href="/music/">music</a>, and <a href="/fonts/">fonts</a>, and then <a href="http://blog.stevecochrane.com">write</a> about it.</h1>

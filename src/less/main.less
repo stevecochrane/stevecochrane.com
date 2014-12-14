@@ -24,7 +24,6 @@ body {
     background: #ff6c6a linear-gradient(to top right, #ff6c6a, #ffbb72) fixed;
     background-size: cover;
     color: @text-color-base;
-    display: table;
     font-family: @font-stack-base;
     font-size: 100%;
     font-weight: 400;
@@ -32,7 +31,6 @@ body {
     height: 100%;
     line-height: 24/@rem;
     text-rendering: optimizeLegibility;
-    width: 100%;
 }
 
 h1 {
@@ -101,25 +99,26 @@ small {
     -------------------------------------------------- */
 
 
-/*  Requires two divs above with display: table and table-row to work */
-.l-vert-center {
-    display: table-cell;
-    padding: 24/@rem;
-    vertical-align: middle;
+.l-container {
+    display: flex;
+}
 
-    @media @mq-small {
-        padding: 18/@rem 12/@rem;
-    }
+.l-center-xy {
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
 }
 
 .l-page {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px @shadow-color-base;
-    margin: 0 auto;
+    margin: 24/@rem;
     max-width: @page-width/@rem;
-    text-align: left;
-    .pie-clearfix();
+
+    @media @mq-small {
+        margin: 18/@rem 12/@rem;
+    }
 }
 
 .l-header {
