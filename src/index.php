@@ -27,26 +27,36 @@
                         <p><a class="button" href="/portfolio/">See my recent work &rarr;</a></p>
                     </div>
                     <div class="l-container">
-                        <div class="l-col-golden-main">
-                            <div id="blog" class="feed">
-                                <h2>Recent Writing</h2>
-                                <ul>
-                                    <li><a href="http://blog.stevecochrane.com/post/95678798088/map-screen-animations">Map Screen Animations <time>August 24, 2014</time></a></li>
-                                    <li><a href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time>October 18, 2013</time></a></li>
-                                    <li><a href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time>August 27, 2013</time></a></li>
-                                </ul>
-                            </div>
+                        <div id="blog" class="l-col-golden-main l-col-padding-left">
+                            <h2>Recent Writing</h2>
+                            <ul class="feed">
+                                <li class="feed-item">
+                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/95678798088/map-screen-animations">Map Screen Animations <time class="feed-item-date">August 24, 2014</time></a>
+                                </li>
+                                <li class="feed-item">
+                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time class="feed-item-date">October 18, 2013</time></a>
+                                </li>
+                                <li class="feed-item">
+                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time class="feed-item-date">August 27, 2013</time></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="l-col-golden-sub">
-                            <div id="elsewhere" class="icon-list">
-                                <h2>Elsewhere</h2>
-                                <ul>
-                                    <li id="twitter"><a href="http://twitter.com/stevecochrane/"><span class="icon icon-28 icon-twitter"></span>Twitter</a></li>
-                                    <li id="github"><a href="https://github.com/stevecochrane"><span class="icon icon-28 icon-github"></span>GitHub</a></li>
-                                    <li id="resume"><a href="/resume/"><span class="icon icon-28 icon-resume"></span></span>Resume</a></li>
-                                    <li id="email"><a href="mailto:steve@stevecochrane.com"><span class="icon icon-28 icon-email"></span></span>Email</a></li>
-                                </ul>
-                            </div>
+                        <div id="elsewhere" class="l-col-golden-sub l-col-padding-right">
+                            <h2>Elsewhere</h2>
+                            <ul class="icon-list l-container">
+                                <li id="twitter" class="icon-list-item">
+                                    <a class="icon-list-link" href="http://twitter.com/stevecochrane/"><span class="icon icon-28 icon-twitter"></span>Twitter</a>
+                                </li>
+                                <li id="github" class="icon-list-item">
+                                    <a class="icon-list-link" href="https://github.com/stevecochrane"><span class="icon icon-28 icon-github"></span>GitHub</a>
+                                </li>
+                                <li id="resume" class="icon-list-item">
+                                    <a class="icon-list-link" href="/resume/"><span class="icon icon-28 icon-resume"></span>Resume</a>
+                                </li>
+                                <li id="email" class="icon-list-item">
+                                    <a class="icon-list-link" href="mailto:steve@stevecochrane.com"><span class="icon icon-28 icon-email"></span>Email</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
