@@ -358,12 +358,12 @@ small {
     padding: 8/@rem 18/@rem;
     text-align: center;
     text-shadow: 0 -1px 0 @shadow-color-base;
-}
 
-.button:hover,
-.carousel:hover .button {
-    background: @link-color-hover;
-    color: #fff;
+    &:hover,
+    .carousel:hover & {
+        background: @link-color-hover;
+        color: #fff;
+    }
 }
 
 .button span {
