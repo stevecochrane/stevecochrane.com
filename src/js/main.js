@@ -1,7 +1,7 @@
-//  The Recent Work rotation script, made into a jQuery plugin just for funsies.
+//  The Recent Work carousel script, made into a jQuery plugin just for funsies.
 //  Applicable to any list of things that need to be rotated one by one.
 (function($) {
-    $.fn.listRotator = function(intervalDuration) {
+    $.fn.carousel = function(intervalDuration) {
 
         var currentListElement = 0,
             listElements = this.find('li'),
@@ -14,19 +14,19 @@
                 //  If not, increment the counter and show the next list element.
                 currentListElement += 1;
                 listElements.eq(currentListElement)
-                    .removeClass('is-list-rotator-item-hidden-immediately')
-                    .addClass('is-list-rotator-item-showing');
+                    .removeClass('is-hidden-immediately')
+                    .addClass('is-showing');
 
             } else {
                 //  If so, hide the middle list elements (all but first and last) immediately.
                 //  Keep the first showing since we'll fade back to it next.
                 for (var i = 1; i < lastListElement; i += 1) {
                     listElements.eq(i)
-                        .removeClass('is-list-rotator-item-showing')
-                        .addClass('is-list-rotator-item-hidden-immediately');
+                        .removeClass('is-showing')
+                        .addClass('is-hidden-immediately');
                 }
                 //  Then fade out the last (current) list element to reveal the first.
-                listElements.eq(currentListElement).removeClass('is-list-rotator-item-showing');
+                listElements.eq(currentListElement).removeClass('is-showing');
                 //  Reset the counter to start the loop over from the beginning.
                 currentListElement = 0;
             }
@@ -40,9 +40,9 @@
     };
 })(jQuery);
 
-//  Initialize listRotator on #work (index page) when the page has finished loading
+//  Initialize carousel on #work (index page) when the page has finished loading
 $(function() {
-    $('#work').listRotator(5000);
+    $('#work').carousel(5000);
 });
 
 /*  

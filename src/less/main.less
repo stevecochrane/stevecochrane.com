@@ -290,12 +290,12 @@ small {
     width: 100%;
 }
 
-.list-rotator {
+.carousel {
     margin: 36/@rem 0 24/@rem;
     position: relative;
 }
 
-.list-rotator ul {
+.carousel-list {
     height: 204/@rem;
     list-style: none;
     margin: 0;
@@ -304,44 +304,45 @@ small {
     position: relative;
 }
 
-.list-rotator li {
+.carousel-list-item {
     float: left;
     height: 204/@rem;
     opacity: 0;
     position: absolute;
     transition: all 0.6s;
+
+    &:first-child {
+        opacity: 1;
+    }
+
+    &.is-showing {
+        opacity: 1;
+    }
+
+    &.is-hidden-immediately {
+        opacity: 0;
+        transition: none;
+    }
 }
 
-.list-rotator li:first-child {
-    opacity: 1;
-}
-
-.list-rotator ul,
-.list-rotator li,
-.list-rotator a,
-.list-rotator img {
+.carousel-list,
+.carousel-list-item,
+.carousel-link,
+.carousel-image {
     border-radius: 5px;
 }
 
-.list-rotator img {
+.carousel-image {
     display: block;
 }
 
-.list-rotator p {
+.carousel-button {
     bottom: 12/@rem;
     -webkit-font-smoothing: subpixel-antialiased; /* Prevents subpixel antialiasing being lost during opacity changes */
     margin: 0;
     padding: 0;
     position: absolute;
     right: 12/@rem;
-}
-
-.list-rotator .is-list-rotator-item-showing {
-    opacity: 1;
-}
-.list-rotator .is-list-rotator-item-hidden-immediately {
-    opacity: 0;
-    transition: none;
 }
 
 .button {
@@ -360,7 +361,7 @@ small {
 }
 
 .button:hover,
-.list-rotator:hover .button {
+.carousel:hover .button {
     background: @link-color-hover;
     color: #fff;
 }

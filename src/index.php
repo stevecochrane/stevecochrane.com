@@ -16,15 +16,23 @@
                     <h1>Hey! I'm Steve Cochrane, a front-end developer and designer from Austin, Texas. I like to make <a href="/portfolio/">websites</a>, <a href="/videogames/">videogames</a>, <a href="/music/">music</a>, and <a href="/fonts/">fonts</a>, and then <a href="http://blog.stevecochrane.com">write</a> about it.</h1>
                 </header>
                 <div class="l-content">
-                    <div id="work" class="list-rotator">
+                    <div id="work" class="carousel">
                         <h2>Recent Work</h2>
-                        <ul>
-                            <li><a href="/portfolio/"><img src="/img/v4/recent-work-1.jpg" alt="Vidcaster" width="816" height="204"></a></li>
-                            <li><a href="/portfolio/"><img src="/img/v4/recent-work-2.jpg" alt="VidSF" width="816" height="204"></a></li>
-                            <li><a href="/portfolio/"><img src="/img/v4/recent-work-3.jpg" alt="Gruntled" width="816" height="204"></a></li>
-                            <li><a href="/portfolio/"><img src="/img/v4/recent-work-4.png" alt="VIDEOGAME" width="816" height="204"></a></li>
+                        <ul class="carousel-list">
+                            <li class="carousel-list-item">
+                                <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-1.jpg" alt="Vidcaster" width="816" height="204"></a>
+                            </li>
+                            <li class="carousel-list-item">
+                                <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-2.jpg" alt="VidSF" width="816" height="204"></a>
+                            </li>
+                            <li class="carousel-list-item">
+                                <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-3.jpg" alt="Gruntled" width="816" height="204"></a>
+                            </li>
+                            <li class="carousel-list-item">
+                                <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-4.png" alt="VIDEOGAME" width="816" height="204"></a>
+                            </li>
                         </ul>
-                        <p><a class="button" href="/portfolio/">See my recent work &rarr;</a></p>
+                        <a class="button carousel-button" href="/portfolio/">See my recent work &rarr;</a>
                     </div>
                     <div class="l-container">
                         <div id="blog" class="l-col-golden-main l-col-padding-left">
@@ -65,7 +73,7 @@
                 </footer>
             </div>
         </div>
-        <script src="/js/main.000077.js"></script>
+        <script src="js/main.js"></script>
         <script>
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-11487507-1']);
