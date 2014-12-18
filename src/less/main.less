@@ -78,11 +78,11 @@ a {
     color: @link-color-base;
     text-decoration: none;
     transition: all 0.2s;
-}
 
-a:hover,
-a:focus {
-    color: @link-color-hover;
+    &:hover,
+    &:focus {
+        color: @link-color-hover;
+    }
 }
 
 strong {
@@ -123,7 +123,7 @@ small {
 }
 
 .l-header {
-    margin-bottom: 12/@rem;
+    margin-bottom: 24/@rem;
     padding: 48/@rem percentage(36 / @page-width) 0;
 
     @media @mq-small {
@@ -131,22 +131,8 @@ small {
     }
 }
 
-/*  Header with just the breadcrumb, negative margin adjusts for .l-section underneath */
 .l-mini-header {
-    margin-bottom: -36/@rem;
-
-    @media @mq-small {
-        margin-bottom: -24/@rem;
-    }
-}
-
-.l-header-one-line > h1 {
-    line-height: 48/@rem;
-}
-
-.l-header-two-line > h1 {
-    padding-top: 2/@rem;
-    padding-bottom: 2/@rem
+    margin-bottom: 0;
 }
 
 .l-content {
@@ -214,12 +200,10 @@ small {
 
 .l-section {
     border-top: 1px solid @border-color-base;
-    margin: 48/@rem 0;
-    padding-top: 47/@rem;
+    padding: 47/@rem 0 48/@rem;
 
     @media @mq-small {
-        margin: 36/@rem 0;
-        padding-top: 36/@rem;
+        padding: 35/@rem 0 36/@rem;
     }
 }
 
@@ -258,16 +242,21 @@ small {
     padding: 9/@rem 12/@rem 8/@rem;
 }
 
-.l-section + .l-footer {
-    padding-top: 12/@rem;
-}
-
 
 
 /*  --------------------------------------------------
     MODULE STYLES
     -------------------------------------------------- */
 
+
+.header-one-line {
+    line-height: 48/@rem;
+}
+
+.header-two-line {
+    padding-top: 2/@rem;
+    padding-bottom: 2/@rem;
+}
 
 .link-subtle {
     border-bottom: 1px dotted @text-color-light;
@@ -343,6 +332,10 @@ small {
     padding: 0;
     position: absolute;
     right: 12/@rem;
+
+    .carousel:hover & {
+        &:extend(.button:hover);
+    }
 }
 
 .button {
@@ -359,37 +352,32 @@ small {
     text-align: center;
     text-shadow: 0 -1px 0 @shadow-color-base;
 
-    &:hover,
-    .carousel:hover & {
+    &:hover {
         background: @link-color-hover;
         color: #fff;
     }
 }
 
-.button span {
+.button-no-wrap {
     white-space: nowrap;
 }
 
-.soundcloud {
+.embed {
     margin: 12/@rem 12/@rem 0;
 }
 
-.soundcloud > iframe {
+.embed > iframe {
     display: block;
 }
 
-.youtube {
-    margin: 12/@rem 12/@rem 6/@rem;
-}
-
-.youtube > div {
+.video-4by3 {
     height: 0;
     padding: 0 12/@rem 75%;
     position: relative;
     max-width: 100%;
 }
 
-.youtube > div > iframe {
+.video-4by3 > iframe {
     display: block;
     height: 100%;
     left: 0;
@@ -400,24 +388,20 @@ small {
 
 .breadcrumb {
     color: fade(@border-color-base, 20%);
-    padding: 0 12/@rem;
+    padding: 0 12/@rem 12/@rem;
 }
 
-.breadcrumb a {
+.breadcrumb > a {
     padding: 0 4/@rem;
+
+    &:first-child {
+        padding-left: 0;
+    }
 }
 
-.breadcrumb a:first-child {
-    padding-left: 0;
-}
-
-.breadcrumb span {
+.breadcrumb > span {
     color: @text-color-base;
     padding-left: 4/@rem;
-}
-
-.breadcrumb + h1 {
-    margin-top: 12/@rem;
 }
 
 .feed {
@@ -466,10 +450,10 @@ small {
     font-weight: 600;
     line-height: 24px; /* px to preserve icon size */
     padding: 6px 12/@rem 6px 42px; /* px to preserve icon size */
-}
 
-.icon-list-link:hover {
-    color: @text-color-base;
+    &:hover {
+        color: @text-color-base;
+    }
 }
 
 .icon-list .icon {
@@ -543,15 +527,7 @@ small {
     }
 }
 
-.font-specimen img {
-    border-radius: 5px;
-
-    @media @mq-high-dpi {
-        display: none;
-    }
-}
-
-.font-specimen div {
+.font-specimen-marietta-five {
     height: 168px;
     left: 36/@rem;
     position: absolute;
@@ -569,5 +545,13 @@ small {
         height: 168px;
         width: 410px;
         .nearest-neighbor();
+    }
+}
+
+.font-specimen-marietta-five > img {
+    border-radius: 5px;
+
+    @media @mq-high-dpi {
+        display: none;
     }
 }
