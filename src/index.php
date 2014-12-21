@@ -18,17 +18,17 @@
                 <div class="l-content">
                     <div id="work" class="carousel">
                         <h2>Recent Work</h2>
-                        <ul class="carousel-list">
-                            <li class="carousel-list-item">
+                        <ul class="carousel-items">
+                            <li class="carousel-item">
                                 <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-1.jpg" alt="Vidcaster" width="816" height="204"></a>
                             </li>
-                            <li class="carousel-list-item">
+                            <li class="carousel-item">
                                 <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-2.jpg" alt="VidSF" width="816" height="204"></a>
                             </li>
-                            <li class="carousel-list-item">
+                            <li class="carousel-item">
                                 <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-3.jpg" alt="Gruntled" width="816" height="204"></a>
                             </li>
-                            <li class="carousel-list-item">
+                            <li class="carousel-item">
                                 <a class="carousel-link" href="/portfolio/"><img class="carousel-image" src="/img/v4/recent-work-4.png" alt="VIDEOGAME" width="816" height="204"></a>
                             </li>
                         </ul>
