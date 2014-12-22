@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/main.css">
     </head>
     <body id="fonts">
-        <div class="l-container l-center-xy">
+        <div class="l-vert-center">
             <div class="l-page">
                 <header class="l-header">
                     <nav class="breadcrumb">
@@ -24,12 +24,10 @@
                             <img src="/img/v6/marietta-five-specimen.png" alt="Marietta Five font specimen, displayed at 8px and 16px size." width="410" height="168">
                         </div>
                     </div>
-                    <div class="l-container">
-                        <div class="l-col-two-thirds">
-                            <p>A wide, serifed, tiny (5px tall) pixel font, made for retro-styled videogames. Intended for font sizes divisible by 8. Works well on an 8x8 pixel grid if monospacing is needed. This will be followed up by a larger Marietta Seven when I get around to it.</p>
-                            <p>Marietta Five is public domain so do with it what you want! This was made with the amazing <a href="http://fontstruct.com/">FontStruct</a>.</p>
-                            <p><a class="button" href="http://stevecochrane.com/fonts/marietta/marietta-five-v1.1.zip">Download Marietta Five <span class="button-no-wrap">(TrueType font, 4KB ZIP)</span></a></p>
-                        </div>
+                    <div class="l-col-two-thirds">
+                        <p>A wide, serifed, tiny (5px tall) pixel font, made for retro-styled videogames. Intended for font sizes divisible by 8. Works well on an 8x8 pixel grid if monospacing is needed. This will be followed up by a larger Marietta Seven when I get around to it.</p>
+                        <p>Marietta Five is public domain so do with it what you want! This was made with the amazing <a href="http://fontstruct.com/">FontStruct</a>.</p>
+                        <p><a class="button" href="http://stevecochrane.com/fonts/marietta/marietta-five-v1.1.zip">Download Marietta Five <span class="button-no-wrap">(TrueType font, 4KB ZIP)</span></a></p>
                     </div>
                 </div>
                 <footer class="l-footer l-footer-extra-space">

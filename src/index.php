@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body id="home">
-        <div class="l-container l-center-xy">
+        <div class="l-vert-center">
             <div class="l-page">
                 <header class="l-header">
                     <h1>Hey! I'm Steve Cochrane, a front-end developer and designer from Austin, Texas. I like to make <a href="/portfolio/">websites</a>, <a href="/videogames/">videogames</a>, <a href="/music/">music</a>, and <a href="/fonts/">fonts</a>, and then <a href="http://blog.stevecochrane.com">write</a> about it.</h1>
@@ -34,38 +34,36 @@
                         </ul>
                         <a class="button carousel-button" href="/portfolio/">See my recent work &rarr;</a>
                     </div>
-                    <div class="l-container">
-                        <div id="blog" class="l-col-golden-main l-col-padding-left">
-                            <h2>Recent Writing</h2>
-                            <ul class="feed">
-                                <li class="feed-item">
-                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/95678798088/map-screen-animations">Map Screen Animations <time class="feed-item-date">August 24, 2014</time></a>
-                                </li>
-                                <li class="feed-item">
-                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time class="feed-item-date">October 18, 2013</time></a>
-                                </li>
-                                <li class="feed-item">
-                                    <a class="feed-link" href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time class="feed-item-date">August 27, 2013</time></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="elsewhere" class="l-col-golden-sub l-col-padding-right">
-                            <h2>Elsewhere</h2>
-                            <ul class="icon-list l-container">
-                                <li id="twitter" class="icon-list-item">
-                                    <a class="icon-list-link" href="http://twitter.com/stevecochrane/"><span class="icon icon-28 icon-twitter"></span>Twitter</a>
-                                </li>
-                                <li id="github" class="icon-list-item">
-                                    <a class="icon-list-link" href="https://github.com/stevecochrane"><span class="icon icon-28 icon-github"></span>GitHub</a>
-                                </li>
-                                <li id="resume" class="icon-list-item">
-                                    <a class="icon-list-link" href="/resume/"><span class="icon icon-28 icon-resume"></span>Resume</a>
-                                </li>
-                                <li id="email" class="icon-list-item">
-                                    <a class="icon-list-link" href="mailto:steve@stevecochrane.com"><span class="icon icon-28 icon-email"></span>Email</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div id="blog" class="l-col-golden-main l-col-padding-left">
+                        <h2>Recent Writing</h2>
+                        <ul class="feed">
+                            <li class="feed-item">
+                                <a class="feed-link" href="http://blog.stevecochrane.com/post/95678798088/map-screen-animations">Map Screen Animations <time class="feed-item-date">August 24, 2014</time></a>
+                            </li>
+                            <li class="feed-item">
+                                <a class="feed-link" href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time class="feed-item-date">October 18, 2013</time></a>
+                            </li>
+                            <li class="feed-item">
+                                <a class="feed-link" href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time class="feed-item-date">August 27, 2013</time></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="elsewhere" class="l-col-golden-sub l-col-padding-right">
+                        <h2>Elsewhere</h2>
+                        <ul class="icon-list">
+                            <li id="twitter" class="icon-list-item">
+                                <a class="icon-list-link" href="http://twitter.com/stevecochrane/"><span class="icon icon-28 icon-twitter"></span>Twitter</a>
+                            </li>
+                            <li id="github" class="icon-list-item">
+                                <a class="icon-list-link" href="https://github.com/stevecochrane"><span class="icon icon-28 icon-github"></span>GitHub</a>
+                            </li>
+                            <li id="resume" class="icon-list-item">
+                                <a class="icon-list-link" href="/resume/"><span class="icon icon-28 icon-resume"></span>Resume</a>
+                            </li>
+                            <li id="email" class="icon-list-item">
+                                <a class="icon-list-link" href="mailto:steve@stevecochrane.com"><span class="icon icon-28 icon-email"></span>Email</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <footer class="l-footer">

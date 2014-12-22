@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/main.css">
     </head>
     <body id="music">
-        <div class="l-container l-center-xy">
+        <div class="l-vert-center">
             <div class="l-page">
                 <header class="l-header">
                     <nav class="breadcrumb">
