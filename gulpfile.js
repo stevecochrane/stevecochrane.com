@@ -12,13 +12,14 @@ var autoprefixer = require("gulp-autoprefixer"),
     uglify = require("gulp-uglify");
 
 gulp.task("copy-assets", function() {
-    gulp.src("./node_modules/normalize.css/normalize.css").pipe(gulp.dest("./src/css"));
+    gulp.src("./node_modules/normalize.css/normalize.css")
+        .pipe(gulp.dest("./src/css"));
 });
 
-gulp.task("imagemin", function() {
-    gulp.src("./src/img/*")
+gulp.task("images", function() {
+    gulp.src("./src/img/**/*.{gif,jpg,png,svg}")
         .pipe(imagemin())
-        .pipe(gulp.dest("./dist/img/"));
+        .pipe(gulp.dest("./dist/img"));
 });
 
 gulp.task("css", function() {
@@ -49,4 +50,4 @@ gulp.task("minifyHtml", function() {
         .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("default", ["css", "js", "minifyHtml"]);
+gulp.task("default", ["images", "css", "js", "minifyHtml"]);
