@@ -38,13 +38,13 @@
                         <h2>Recent Writing</h2>
                         <ul class="feed">
                             <li class="feed-item">
-                                <a class="feed-link" href="http://blog.stevecochrane.com/post/95678798088/map-screen-animations">Map Screen Animations <time class="feed-item-date">August 24, 2014</time></a>
-                            </li>
-                            <li class="feed-item">
                                 <a class="feed-link" href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time class="feed-item-date">October 18, 2013</time></a>
                             </li>
                             <li class="feed-item">
                                 <a class="feed-link" href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time class="feed-item-date">August 27, 2013</time></a>
+                            </li>
+                            <li class="feed-item">
+                                <a class="feed-link" href="http://blog.stevecochrane.com/post/58219956850/whats-in-the-box">What&apos;s in the Box? <time class="feed-item-date">August 14, 2013</time></a>
                             </li>
                         </ul>
                     </div>
