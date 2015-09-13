@@ -524,7 +524,8 @@ small {
     }
 }
 
-.font-specimen {
+.font-specimen-marietta-five,
+.font-specimen-marietta-seven {
     background: #000;
     border-radius: 5px;
     height: 168px;
@@ -538,7 +539,12 @@ small {
     }
 }
 
-.font-specimen-marietta-five {
+.font-specimen-marietta-seven {
+    height: 216px;
+}
+
+.font-specimen-marietta-five-inner,
+.font-specimen-marietta-seven-inner {
     height: 168px;
     left: 36/@rem;
     position: absolute;
@@ -559,7 +565,20 @@ small {
     }
 }
 
-.font-specimen-marietta-five > img {
+.font-specimen-marietta-seven-inner {
+    height: 216px;
+    width: 576px;
+
+    @media @mq-high-dpi {
+        background: data-uri('@{img-dir}/marietta-seven-specimen-2x.png') 0 0 no-repeat;
+        background-size: cover;
+        height: 216px;
+        width: 576px;
+    }
+}
+
+.font-specimen-marietta-five-inner > img,
+.font-specimen-marietta-seven-inner > img {
     border-radius: 5px;
 
     @media @mq-high-dpi {
