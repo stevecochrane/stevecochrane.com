@@ -22,7 +22,7 @@
                         <h1>Marietta Seven</h1>
                         <div class="font-specimen-marietta-seven">
                             <div class="font-specimen-marietta-seven-inner">
-                                <img src="/img/v6/marietta-seven-specimen.png" alt="Marietta Seven font specimen, displayed at 8px and 16px size." width="576" height="256">
+                                <img src="/img/v6/marietta-seven-specimen.png" alt="Marietta Seven font specimen, displayed at 8px and 16px size." width="576" height="216">
                             </div>
                         </div>
                         <div class="l-col-two-thirds">
