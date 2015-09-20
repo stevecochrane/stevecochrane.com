@@ -38,13 +38,13 @@
                         <h2>Recent Writing</h2>
                         <ul class="feed">
                             <li class="feed-item">
+                                <a class="feed-link" href="http://blog.stevecochrane.com/post/129525257808/new-pixel-font-marietta-seven">New Pixel Font: Marietta Seven <time class="feed-item-date">September 20, 2015</time></a>
+                            </li>
+                            <li class="feed-item">
                                 <a class="feed-link" href="http://blog.stevecochrane.com/post/64453034923/berserker">Berserker <time class="feed-item-date">October 18, 2013</time></a>
                             </li>
                             <li class="feed-item">
                                 <a class="feed-link" href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem">INSTIGATION Postmortem <time class="feed-item-date">August 27, 2013</time></a>
-                            </li>
-                            <li class="feed-item">
-                                <a class="feed-link" href="http://blog.stevecochrane.com/post/58219956850/whats-in-the-box">What&apos;s in the Box? <time class="feed-item-date">August 14, 2013</time></a>
                             </li>
                         </ul>
                     </div>
