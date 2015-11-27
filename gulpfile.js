@@ -1,16 +1,15 @@
-var autoprefixer        = require("gulp-autoprefixer");
-var combineMediaQueries = require("gulp-combine-media-queries");
-var concat              = require("gulp-concat");
-var gulp                = require("gulp");
-var imagemin            = require("gulp-imagemin");
-var jshint              = require("gulp-jshint");
-var less                = require("gulp-less");
-var minifyCss           = require("gulp-minify-css");
-var minifyHtml          = require("gulp-minify-html");
-var pixrem              = require("gulp-pixrem");
-var rev                 = require("gulp-rev");
-var revReplace          = require("gulp-rev-replace");
-var uglify              = require("gulp-uglify");
+var autoprefixer = require("gulp-autoprefixer");
+var concat       = require("gulp-concat");
+var gulp         = require("gulp");
+var imagemin     = require("gulp-imagemin");
+var jshint       = require("gulp-jshint");
+var less         = require("gulp-less");
+var minifyCss    = require("gulp-minify-css");
+var minifyHtml   = require("gulp-minify-html");
+var pixrem       = require("gulp-pixrem");
+var rev          = require("gulp-rev");
+var revReplace   = require("gulp-rev-replace");
+var uglify       = require("gulp-uglify");
 
 gulp.task("copy-assets", function() {
     return gulp.src("./node_modules/normalize.css/normalize.css")
@@ -28,7 +27,6 @@ gulp.task("css", function() {
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
-//        .pipe(combineMediaQueries())
         .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallback styles don't get removed
         .pipe(gulp.dest("./dist/css"));
 });
