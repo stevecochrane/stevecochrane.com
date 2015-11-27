@@ -14,65 +14,65 @@ var uglify       = require("gulp-uglify");
 
 gulp.task("clean", function() {
     return del([
-        "./dist/css/*.css",
-        "./dist/js/*.js"
+        "dist/css/*.css",
+        "dist/js/*.js"
     ]);
 });
 
 gulp.task("copy-assets", function() {
-    return gulp.src("./node_modules/normalize.css/normalize.css")
-        .pipe(gulp.dest("./src/css/lib"));
+    return gulp.src("node_modules/normalize.css/normalize.css")
+        .pipe(gulp.dest("src/css/lib"));
 });
 
 gulp.task("images", function() {
-    return gulp.src("./src/img/**/*.{gif,jpg,png,svg}")
+    return gulp.src("src/img/**/*.{gif,jpg,png,svg}")
         .pipe(imagemin())
-        .pipe(gulp.dest("./dist/img"));
+        .pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("css", ["clean", "copy-assets"], function() {
-    return gulp.src("./src/less/main.less")
+    return gulp.src("src/less/main.less")
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
         .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallback styles don't get removed
-        .pipe(gulp.dest("./dist/css"));
+        .pipe(gulp.dest("dist/css"));
 });
 
 gulp.task("js-lint", function() {
-    return gulp.src("./src/js/*.js")
+    return gulp.src("src/js/*.js")
         .pipe(jshint())
         .pipe(jshint.reporter("default"))
         .pipe(jshint.reporter("fail"));
 });
 
 gulp.task("js-build", ["clean", "js-lint"], function() {
-    return gulp.src(["./src/js/lib/jquery-1.7.2.min.js", "./src/js/main.js"])
+    return gulp.src(["src/js/lib/jquery-1.7.2.min.js", "src/js/main.js"])
         .pipe(concat("main.js"))
         .pipe(uglify())
-        .pipe(gulp.dest("./dist/js/"));
+        .pipe(gulp.dest("dist/js/"));
 });
 
 gulp.task("html", function() {
-    return gulp.src("./src/**/*.html")
+    return gulp.src("src/**/*.html")
         .pipe(minifyHtml())
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest("dist/"));
 });
 
 gulp.task("revision", ["css", "js-build"], function() {
-    return gulp.src(["./dist/**/*.css", "./dist/**/*.js"])
+    return gulp.src(["dist/**/*.css", "dist/**/*.js"])
         .pipe(rev())
-        .pipe(gulp.dest("./dist"))
+        .pipe(gulp.dest("dist"))
         .pipe(rev.manifest())
-        .pipe(gulp.dest("./dist"));
+        .pipe(gulp.dest("dist"));
 });
 
 gulp.task("revisionReplace", ["revision"], function() {
-    var manifest = gulp.src("./dist/rev-manifest.json");
+    var manifest = gulp.src("dist/rev-manifest.json");
 
-    return gulp.src("./dist/**/*.html")
+    return gulp.src("dist/**/*.html")
         .pipe(revReplace({"manifest": manifest}))
-        .pipe(gulp.dest("./dist"));
+        .pipe(gulp.dest("dist"));
 });
 
 gulp.task("default", [
