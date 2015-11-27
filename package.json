@@ -3,7 +3,7 @@
   "version": "6.1.1",
   "description": "stevecochrane.com",
   "main": "gulpfile.js",
-  "devDependencies": {
+  "dependencies": {
     "del": "^2.1.0",
     "gulp": "~3.8.10",
     "gulp-autoprefixer": "~2.0.0",
@@ -20,6 +20,5 @@
     "normalize.css": "~3.0.2"
   },
   "author": "Steve Cochrane <steve@stevecochrane.com>",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
