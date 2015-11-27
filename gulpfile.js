@@ -1,5 +1,6 @@
 var autoprefixer = require("gulp-autoprefixer");
 var concat       = require("gulp-concat");
+var del          = require("del");
 var gulp         = require("gulp");
 var imagemin     = require("gulp-imagemin");
 var jshint       = require("gulp-jshint");
@@ -10,6 +11,13 @@ var pixrem       = require("gulp-pixrem");
 var rev          = require("gulp-rev");
 var revReplace   = require("gulp-rev-replace");
 var uglify       = require("gulp-uglify");
+
+gulp.task("clean", function() {
+    return del([
+        "./dist/css/*.css",
+        "./dist/js/*.js"
+    ]);
+});
 
 gulp.task("copy-assets", function() {
     return gulp.src("./node_modules/normalize.css/normalize.css")
@@ -22,7 +30,7 @@ gulp.task("images", function() {
         .pipe(gulp.dest("./dist/img"));
 });
 
-gulp.task("css", function() {
+gulp.task("css", ["clean", "copy-assets"], function() {
     return gulp.src("./src/less/main.less")
         .pipe(less())
         .pipe(pixrem())
@@ -38,7 +46,7 @@ gulp.task("js-lint", function() {
         .pipe(jshint.reporter("fail"));
 });
 
-gulp.task("js-build", ["js-lint"], function() {
+gulp.task("js-build", ["clean", "js-lint"], function() {
     return gulp.src(["./src/js/lib/jquery-1.7.2.min.js", "./src/js/main.js"])
         .pipe(concat("main.js"))
         .pipe(uglify())
@@ -68,6 +76,7 @@ gulp.task("revisionReplace", ["revision"], function() {
 });
 
 gulp.task("default", [
+    "clean",
     "copy-assets",
     "images",
     "css",
