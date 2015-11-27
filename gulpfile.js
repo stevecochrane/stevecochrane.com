@@ -14,7 +14,7 @@ var uglify              = require("gulp-uglify");
 
 gulp.task("copy-assets", function() {
     return gulp.src("./node_modules/normalize.css/normalize.css")
-        .pipe(gulp.dest("./src/css"));
+        .pipe(gulp.dest("./src/lib/css"));
 });
 
 gulp.task("images", function() {
@@ -41,7 +41,7 @@ gulp.task("js-lint", function() {
 });
 
 gulp.task("js-build", ["js-lint"], function() {
-    return gulp.src(["./src/js/libs/jquery-1.7.2.min.js", "./src/js/main.js"])
+    return gulp.src(["./src/js/lib/jquery-1.7.2.min.js", "./src/js/main.js"])
         .pipe(concat("main.js"))
         .pipe(uglify())
         .pipe(gulp.dest("./dist/js/"));
