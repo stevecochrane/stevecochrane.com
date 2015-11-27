@@ -14,7 +14,7 @@ var uglify              = require("gulp-uglify");
 
 gulp.task("copy-assets", function() {
     return gulp.src("./node_modules/normalize.css/normalize.css")
-        .pipe(gulp.dest("./src/lib/css"));
+        .pipe(gulp.dest("./src/css/lib"));
 });
 
 gulp.task("images", function() {
