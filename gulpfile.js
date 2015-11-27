@@ -1,53 +1,81 @@
-var gulp = require("gulp");
-
-var autoprefixer = require("gulp-autoprefixer"),
-    combineMediaQueries = require("gulp-combine-media-queries"),
-    concat = require("gulp-concat"),
-    imagemin = require("gulp-imagemin"),
-    jshint = require("gulp-jshint"),
-    less = require("gulp-less"),
-    minifyCss = require("gulp-minify-css"),
-    minifyHtml = require("gulp-minify-html"),
-    pixrem = require("gulp-pixrem"),
-    uglify = require("gulp-uglify");
+var autoprefixer        = require("gulp-autoprefixer");
+var combineMediaQueries = require("gulp-combine-media-queries");
+var concat              = require("gulp-concat");
+var gulp                = require("gulp");
+var imagemin            = require("gulp-imagemin");
+var jshint              = require("gulp-jshint");
+var less                = require("gulp-less");
+var minifyCss           = require("gulp-minify-css");
+var minifyHtml          = require("gulp-minify-html");
+var pixrem              = require("gulp-pixrem");
+var rev                 = require("gulp-rev");
+var revReplace          = require("gulp-rev-replace");
+var uglify              = require("gulp-uglify");
 
 gulp.task("copy-assets", function() {
-    gulp.src("./node_modules/normalize.css/normalize.css")
+    return gulp.src("./node_modules/normalize.css/normalize.css")
         .pipe(gulp.dest("./src/css"));
 });
 
 gulp.task("images", function() {
-    gulp.src("./src/img/**/*.{gif,jpg,png,svg}")
+    return gulp.src("./src/img/**/*.{gif,jpg,png,svg}")
         .pipe(imagemin())
         .pipe(gulp.dest("./dist/img"));
 });
 
 gulp.task("css", function() {
-    gulp.src("./src/less/main.less")
+    return gulp.src("./src/less/main.less")
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
-        .pipe(combineMediaQueries())
+//        .pipe(combineMediaQueries())
         .pipe(minifyCss())
         .pipe(gulp.dest("./dist/css"));
 });
 
-gulp.task("js", function() {
-    gulp.src("./src/js/*.js")
+gulp.task("js-lint", function() {
+    return gulp.src("./src/js/*.js")
         .pipe(jshint())
         .pipe(jshint.reporter("default"))
         .pipe(jshint.reporter("fail"));
+});
 
-    gulp.src(["./src/js/libs/jquery-1.7.2.min.js", "./src/js/main.js"])
+gulp.task("js-build", ["js-lint"], function() {
+    return gulp.src(["./src/js/libs/jquery-1.7.2.min.js", "./src/js/main.js"])
         .pipe(concat("main.js"))
         .pipe(uglify())
         .pipe(gulp.dest("./dist/js/"));
 });
 
-gulp.task("minifyHtml", function() {
-    gulp.src("./src/**/*.{html,php}")
+gulp.task("html", function() {
+    return gulp.src("./src/**/*.html")
         .pipe(minifyHtml())
         .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("default", ["images", "css", "js", "minifyHtml"]);
+gulp.task("revision", ["css", "js-build"], function() {
+    return gulp.src(["./dist/**/*.css", "./dist/**/*.js"])
+        .pipe(rev())
+        .pipe(gulp.dest("./dist"))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("revisionReplace", ["revision"], function() {
+    var manifest = gulp.src("./dist/rev-manifest.json");
+
+    return gulp.src("./dist/**/*.html")
+        .pipe(revReplace({"manifest": manifest}))
+        .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("default", [
+    "copy-assets",
+    "images",
+    "css",
+    "js-lint",
+    "js-build",
+    "html",
+    "revision",
+    "revisionReplace"
+]);
