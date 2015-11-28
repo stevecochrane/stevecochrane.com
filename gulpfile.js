@@ -3,10 +3,10 @@ var concat       = require("gulp-concat");
 var del          = require("del");
 var gulp         = require("gulp");
 var imagemin     = require("gulp-imagemin");
+var jade         = require("gulp-jade");
 var jshint       = require("gulp-jshint");
 var less         = require("gulp-less");
 var minifyCss    = require("gulp-minify-css");
-var minifyHtml   = require("gulp-minify-html");
 var pixrem       = require("gulp-pixrem");
 var rev          = require("gulp-rev");
 var revReplace   = require("gulp-rev-replace");
@@ -35,7 +35,7 @@ gulp.task("css", ["clean", "copy-assets"], function() {
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
-        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallback styles don't get removed
+        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallbacks aren't marked as duplicates and removed.
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -54,8 +54,16 @@ gulp.task("js-build", ["clean", "js-lint"], function() {
 });
 
 gulp.task("html", function() {
-    return gulp.src("src/**/*.html")
-        .pipe(minifyHtml())
+    //  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
+    var dateObj = new Date();
+    var currentYear = dateObj.getFullYear();
+
+    return gulp.src("src/views/pages/**/*.jade")
+        .pipe(jade({
+            "locals": {
+                "currentYear": currentYear
+            }
+        }))
         .pipe(gulp.dest("dist/"));
 });
 

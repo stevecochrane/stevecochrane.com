@@ -1,0 +1,47 @@
+extends ../templates/layouts/base
+
+block title
+    title Steve Cochrane
+
+block description
+    meta(name="description", content="A front-end developer and designer from Austin, Texas.")
+
+block page
+    header.l-header
+        h1 Hey! I'm Steve Cochrane, a front-end developer and designer from Austin, Texas. I like to make #[a(href="/portfolio/") websites], #[a(href="/videogames/") videogames], #[a(href="/music/") music], and #[a(href="/fonts/") fonts], and then #[a(href="http://blog.stevecochrane.com") write] about it.</h1>
+    .l-content
+        #work.carousel
+            h2 Recent Work
+            ul.carousel-items
+                li.carousel-item
+                    a.carousel-link(href="/portfolio/"): img.carousel-image(src="/img/v4/recent-work-1.jpg", alt="Vidcaster", width="816", height="204")
+                li.carousel-item
+                    a.carousel-link(href="/portfolio/"): img.carousel-image(src="/img/v4/recent-work-2.jpg", alt="VidSF", width="816", height="204")
+                li.carousel-item
+                    a.carousel-link(href="/portfolio/"): img.carousel-image(src="/img/v4/recent-work-3.jpg", alt="Gruntled", width="816", height="204")
+                li.carousel-item
+                    a.carousel-link(href="/portfolio/"): img.carousel-image(src="/img/v4/recent-work-4.png", alt="VIDEOGAME", width="816", height="204")
+            a.button.carousel-button(href="/portfolio/") See my recent work &rarr;
+        #blog.l-col-golden-main.l-col-padding-left
+            h2 Recent Writing
+            ul.feed
+                li.feed-item
+                    a.feed-link(href="http://blog.stevecochrane.com/post/129525257808/new-pixel-font-marietta-seven") New Pixel Font: Marietta Seven #[time.feed-item-date September 20, 2015]
+                li.feed-item
+                    a.feed-link(href="http://blog.stevecochrane.com/post/64453034923/berserker") Berserker #[time.feed-item-date October 18, 2013]
+                li.feed-item
+                    a.feed-link(href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem") INSTIGATION Postmortem #[time.feed-item-date August 27, 2013]
+        #elsewhere.l-col-golden-sub.l-col-padding-right
+            h2 Elsewhere
+            ul.icon-list
+                li#twitter.icon-list-item
+                    a.icon-list-link(href="http://twitter.com/stevecochrane/") #[span.icon.icon-28.icon-twitter]Twitter
+                li#github.icon-list-item
+                    a.icon-list-link(href="https://github.com/stevecochrane") #[span.icon.icon-28.icon-github]GitHub
+                li#resume.icon-list-item
+                    a.icon-list-link(href="/resume/") #[span.icon.icon-28.icon-resume]Resume
+                li#email.icon-list-item
+                    a.icon-list-link(href="mailto:steve@stevecochrane.com") #[span.icon.icon-28.icon-email]Email
+
+block script
+    script(src="/js/main.js")
