@@ -1,9 +1,17 @@
 # stevecochrane.com
-
 [stevecochrane.com](http://stevecochrane.com) has been my personal space on the internet since I was a college student 
 back in 2005, and the site is now in its sixth design iteration.
 
-Notes:
+### Setup
+Assuming you already have [NPM](https://www.npmjs.com/) installed, navigate to the base directory with a command line 
+interface and do this:
+
+```bash
+npm install
+gulp
+```
+
+### Notes
 * My [portfolio](http://stevecochrane.com/portfolio/) and [blog](http://blog.stevecochrane.com/) aren't in here yet as 
   they have entirely separate code, but I would like to merge them in at some point.
 * The CSS is written in the [SMACSS](https://smacss.com/) style but if I were writing it today, it would be like 
