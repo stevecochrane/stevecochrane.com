@@ -54,7 +54,7 @@ gulp.task("js-build", ["clean", "js-lint"], function() {
 });
 
 gulp.task("html", function() {
-    return gulp.src("src/**/*.jade")
+    return gulp.src("src/views/pages/**/*.jade")
         .pipe(jade())
         .pipe(gulp.dest("dist/"));
 });
