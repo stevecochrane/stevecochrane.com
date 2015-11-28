@@ -35,7 +35,7 @@ gulp.task("css", ["clean", "copy-assets"], function() {
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
-        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallback styles don't get removed
+        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallbacks aren't marked as duplicates and removed.
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -54,8 +54,16 @@ gulp.task("js-build", ["clean", "js-lint"], function() {
 });
 
 gulp.task("html", function() {
+    //  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
+    var dateObj = new Date();
+    var currentYear = dateObj.getFullYear();
+
     return gulp.src("src/views/pages/**/*.jade")
-        .pipe(jade())
+        .pipe(jade({
+            "locals": {
+                "currentYear": currentYear
+            }
+        }))
         .pipe(gulp.dest("dist/"));
 });
 
