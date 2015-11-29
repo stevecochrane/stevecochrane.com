@@ -31,7 +31,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("css", ["clean", "copy-assets"], function() {
-    return gulp.src("src/less/main.less")
+    return gulp.src(["src/less/main.less", "src/less/portfolio-main.less"])
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
