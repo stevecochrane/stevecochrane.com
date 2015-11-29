@@ -31,7 +31,10 @@ gulp.task("images", function() {
 });
 
 gulp.task("css", ["clean", "copy-assets"], function() {
-    return gulp.src("src/less/main.less")
+    return gulp.src([
+            "src/less/main.less",
+            "src/less/portfolio-main.less"
+        ])
         .pipe(less())
         .pipe(pixrem())
         .pipe(autoprefixer())
@@ -46,9 +49,23 @@ gulp.task("js-lint", function() {
         .pipe(jshint.reporter("fail"));
 });
 
-gulp.task("js-build", ["clean", "js-lint"], function() {
-    return gulp.src(["src/js/lib/jquery-1.7.2.min.js", "src/js/main.js"])
+gulp.task("js-build-home", ["clean", "js-lint"], function() {
+    return gulp.src([
+            "src/js/lib/jquery-1.7.2.min.js",
+            "src/js/main.js"
+        ])
         .pipe(concat("main.js"))
+        .pipe(uglify())
+        .pipe(gulp.dest("dist/js/"));
+});
+
+gulp.task("js-build-portfolio", ["clean", "js-lint"], function() {
+    return gulp.src([
+            "src/js/lib/jquery-2.0.3.min.js",
+            "src/js/lib/jquery.lazyload.min.js",
+            "src/js/portfolio-main.js"
+        ])
+        .pipe(concat("portfolio-main.js"))
         .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
 });
@@ -67,8 +84,11 @@ gulp.task("html", function() {
         .pipe(gulp.dest("dist/"));
 });
 
-gulp.task("revision", ["css", "js-build"], function() {
-    return gulp.src(["dist/**/*.css", "dist/**/*.js"])
+gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], function() {
+    return gulp.src([
+            "dist/**/*.css",
+            "dist/**/*.js"
+        ])
         .pipe(rev())
         .pipe(gulp.dest("dist"))
         .pipe(rev.manifest())
@@ -89,7 +109,8 @@ gulp.task("default", [
     "images",
     "css",
     "js-lint",
-    "js-build",
+    "js-build-home",
+    "js-build-portfolio",
     "html",
     "revision",
     "revisionReplace"
