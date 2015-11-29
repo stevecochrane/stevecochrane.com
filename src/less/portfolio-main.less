@@ -2,7 +2,7 @@
 @import (inline) "../css/lib/normalize.css";
 
 html {
-    font-size: percentage(@base-font-size / 16)
+    font-size: percentage(@base-font-size / 16);
 
     @media @mq-medium {
         font-size: percentage(13 / @base-font-size);
@@ -40,8 +40,8 @@ a {
     text-decoration: none;
     transition: all 0.2s;
 
-    a:hover,
-    a:focus {
+    &:hover,
+    &:focus {
         color: #075c77;
     }
 }
