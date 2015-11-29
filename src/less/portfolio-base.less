@@ -1,0 +1,16 @@
+@base-font-size: 15;
+@small-font-size: 11;
+@base-unit: 24;
+@page-width: 1080;
+@page-background-color: #eff3f5;
+@base-text-color: #537681;
+@border-color: fade(@base-text-color, 25%);
+@rem: unit(@base-font-size, rem);
+
+.pie-clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
