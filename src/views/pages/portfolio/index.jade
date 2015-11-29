@@ -1,0 +1,273 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title Portfolio - Steve Cochrane
+        meta(name="description", content="The digital portfolio of Steve Cochrane, a front-end developer and designer from Austin, Texas.")
+        meta(name="author", content="Steve Cochrane")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="//cloud.typography.com/6084432/656442/css/fonts.css")
+        link(rel="stylesheet", href="css/screen.css")
+    body
+        header
+            div
+                h1: a(href="/") Steve Cochrane
+                h2 Front-End Developer &amp; Designer
+                ul
+                    li: a(href="http://www.linkedin.com/in/stevecochrane") LinkedIn
+                    li: a(href="/resume/") Resume
+                    li: a(href="https://github.com/stevecochrane/") GitHub
+                    li: a(href="mailto:steve@stevecochrane.com") Email
+        #main(role="main")
+
+            section#vidcaster-navigation-redesign
+                div
+                    h1 Vidcaster Navigation Redesign
+                    img(src="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
+                    img(src="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd Summer 2013
+                    .body-copy
+                        p Vidcaster&apos;s navigation structure had remained essentially unchanged since its inception a few years ago and it was long overdue for an update. We started with an audit of all of the pages in the application, then we mapped out on paper a revised structure and where each page might go, and with that I iterated on visual design variations while collecting feedback.
+                        p The most common complaint about the previous design was that it took too many steps to move around the app, so with this design the sections can be expanded and collapsed for instant access to any page in one step. We also use a sidebar to optimize screen space for widescreen displays, and when there isn&apos;t enough space available we have an alternate layout with navigation across the top.
+
+            section#vidcaster-theme-editor
+                div
+                    h1 Vidcaster Theme Editor
+                    img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-1.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Themes View")
+                    img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-2.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Basic Editor View")
+                    img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-3.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Advanced Editor View")
+                    noscript
+                        img(src="img/vidcaster-theme-editor-1.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Themes View")
+                        img(src="img/vidcaster-theme-editor-2.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Basic Editor View")
+                        img(src="img/vidcaster-theme-editor-3.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Advanced Editor View")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd Spring 2013
+                    .body-copy
+                        p The Vidcaster Theme Editor is where you can choose from one of Vidcaster&apos;s public themes, customize colors and images, and make changes to any of the templates. All changes are immediately reflected in a full-size preview of the site.
+
+            section#vidcaster-website
+                div
+                    h1 Vidcaster Website
+                    img.lazy(src="img/placeholder.png", data-original="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+                    noscript
+                        img(src="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd Spring 2012
+                    .body-copy
+                        p The message we wanted to convey with this homepage redesign was not so much &ldquo;look how great our product is,&rdquo; but &ldquo;look how great your video site could be.&rdquo; So I chose to highlight some of our most impressive customer sites to build excitement and then demonstrate that visitors can build a similar website in minutes, for free, right now. There was a pretty strong uptick in new signups once this went live.
+                        p: a.button(href="vidcaster-website/archive/", target="_blank") View the archived site
+
+            section#pixel-art-scrapbook
+                div
+                    h1 Pixel Art Scrapbook Application
+                    img.lazy(src="img/placeholder.png", data-original="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
+                    noscript
+                        img(src="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
+                    .summary
+                        dl
+                            dt Role
+                            dd Front-End &amp; Back-End Development, Design
+                            dt Client
+                            dd Myself
+                            dt Date
+                            dd Fall 2013
+                    .body-copy
+                        p A prototype of a web application for cataloguing pixel art that inspires you, for reference when you make your own. It uses #[a(href="http://emberjs.com/") Ember] for MVC, #[a(href="http://nodejs.org/") Node] + #[a(href="http://expressjs.com/") Express] for a simple RESTful API and #[a(href="http://www.mongodb.org/") MongoDB] for the database. The demo here is just of the interface and the back-end functionality has been disabled. You can make changes but nothing is stored. The full version is #[a(href="https://github.com/stevecochrane/pixel-art-scrapbook") available on GitHub] but you&apos;ll need to run a local Node server to use it.
+                        p: a.button(href="pixel-art-scrapbook/", target="_blank") View a demo
+
+            section#vidcaster-video-player
+                div
+                    h1 Vidcaster Video Player
+                    img.lazy.half-size(src="img/placeholder.png", data-original="img/vidcaster-video-player-1.jpg", width="528", height="297", alt="Sharing functionality in the Vidcaster video player")
+                    img.lazy.half-size.half-size-right(src="img/placeholder.png", data-original="img/vidcaster-video-player-2.jpg", width="528", height="297", alt="Vidcaster Default player theme with Resolutions menu open")
+                    img.lazy(src="img/placeholder.png", data-original="img/vidcaster-video-player-3.jpg", width="1080", height="492", alt="Interactive transcript and captioning functionality")
+                    noscript
+                        img.half-size(src="img/vidcaster-video-player-1.jpg", width="528", height="297", alt="Sharing functionality in the Vidcaster video player")
+                        img.half-size.half-size-right(src="img/vidcaster-video-player-2.jpg", width="528", height="297", alt="Vidcaster Default player theme with Resolutions menu open")
+                        img(src="img/vidcaster-video-player-3.jpg", width="1080", height="492", alt="Interactive transcript and captioning functionality")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd January 2010 &ndash; Present
+                    .body-copy
+                        p Being a video service provider, Vidcaster needs a world-class video player. To that end we worked with the Brightcove team, started with their excellent open source #[a(href="http://www.videojs.com/", target="_blank") VideoJS] video player as a base, and then extended it with the following new features:
+                        ul
+                            li Analytics integrations with Google Analytics and Mixpanel
+                            li Interactivity integrations with HapYak
+                            li Advertising integrations with LiveRail and Brainient
+                            li Social media sharing from within the player
+                            li An interactive transcript
+                        p I also designed and developed two custom themes, &ldquo;Vidcaster Default&rdquo; and &ldquo;One Button,&rdquo; and I&apos;ve made multiple contributions to the VideoJS core which are in the process of being integrated into the next release. Some of the above customizations are also available as open source on #[a(href="https://github.com/vidcaster/", target="_blank") Vidcaster&apos;s GitHub page].
+
+            section#launch-theme-for-vidcaster
+                div
+                    h1 Launch Theme for Vidcaster
+                    img.lazy(src="img/placeholder.png", data-original="img/launch-theme-for-vidcaster-1.jpg", width="1080", height="852", alt="Launch theme home page")
+                    noscript
+                        img(src="img/launch-theme-for-vidcaster-1.jpg", width="1080", height="852", alt="Launch theme home page")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd Summer 2011
+                    .body-copy
+                        p This is one of the flashier Vidcaster themes and it was made with the introduction of a new site in mind. It greatly emphasizes one video in particular (perfect for an introduction or product launch) and all other videos are playable on a single page.
+                        p: a.button(href="launch-theme-for-vidcaster/archive/", target="_blank") View a demo
+
+            section#obsidian-theme-for-vidcaster
+                div
+                    h1 Obsidian Theme for Vidcaster
+                    img.lazy(src="img/placeholder.png", data-original="img/obsidian-theme-for-vidcaster-2.jpg", width="1080", height="558", alt="Obsidian theme video page")
+                    img.lazy(src="img/placeholder.png", data-original="img/obsidian-theme-for-vidcaster-1.jpg", width="1080", height="564", alt="Obsidian theme home page")
+                    noscript
+                        img(src="img/obsidian-theme-for-vidcaster-2.jpg", width="1080", height="558", alt="Obsidian theme video page")
+                        img(src="img/obsidian-theme-for-vidcaster-1.jpg", width="1080", height="564", alt="Obsidian theme home page")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Vidcaster
+                            dt Date
+                            dd Summer 2011
+                    .body-copy
+                        p Here&apos;s another public theme I did for Vidcaster. The idea for this one was to make something with dark colors by default, and for whatever reason I thought of the central idea &ldquo;volcanic rock&rdquo; and went from&nbsp;there.
+                        p: a.button(href="obsidian-theme-for-vidcaster/archive/", target="_blank") View a demo
+
+            section#vidsf-website
+                div
+                    h1 VidSF Website
+                    img.lazy(src="img/placeholder.png", data-original="img/vidsf-website-1.jpg", width="1080", height="544", alt="VidSF home page")
+                    img.lazy(src="img/placeholder.png", data-original="img/vidsf-website-2.jpg", width="1080", height="684", alt="VidSF video page")
+                    noscript
+                        img(src="img/vidsf-website-1.jpg", width="1080", height="544", alt="VidSF home page")
+                        img(src="img/vidsf-website-2.jpg", width="1080", height="684", alt="VidSF video page")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd VidSF
+                            dt Date
+                            dd January 2008 &ndash; Fall 2010
+                    .body-copy
+                        p VidSF was an attempt to make local news interesting and relevant again. I was the sole designer and front-end developer, and I co-founded the project with Kieran Farr. We eventually decided to change focus and release the CMS we had built for VidSF as a software-as-a-service product, and that was how Vidcaster began.
+
+            section#the-little-school-website
+                div
+                    h1 The Little School Website
+                    img.lazy(src="img/placeholder.png", data-original="img/the-little-school-website-1.jpg", width="1080", height="710", alt="The Little School home page")
+                    img.lazy(src="img/placeholder.png", data-original="img/the-little-school-website-2.jpg", width="1080", height="687", alt="The Little School's About Us page")
+                    noscript
+                        img(src="img/the-little-school-website-1.jpg", width="1080", height="710", alt="The Little School home page")
+                        img(src="img/the-little-school-website-2.jpg", width="1080", height="687", alt="The Little School's About Us page")
+                    .summary
+                        dl
+                            dt Role
+                            dd Front-End Development
+                            dt Client
+                            dd The Little School
+                            dt Date
+                            dd Fall 2011
+                    .body-copy
+                        p The Little School is a local preschool in San Francisco. They had a nice design ready and submitted from a member of their board, and I worked with the Drupal developers at AF83 to write the front-end code for a custom Drupal theme based on that design.
+                        p: a.button(href="http://littleschool.org", target="_blank") Visit the live site
+
+            //-
+                section#econtact-pro-website
+                    div
+                        h1 Econtact Pro Website
+                        img.lazy(src="img/placeholder.png", data-original="img/econtact-pro-1.jpg", width="1080", height="612", alt="Econtact Pro homepage")
+                        noscript
+                            img(src="img/econtact-pro-1.jpg", width="1080", height="612", alt="Econtact Pro homepage")
+                        .summary
+                            dl
+                                dt Role
+                                dd Front-End Development
+                                dt Client
+                                dd FaberNovel
+                                dt Date
+                                dd April 2010
+                        .body-copy
+                            p Econtact Pro is an iPhone application that instantly transcribes contact information, and it was the #1 business application in France&#8217;s App Store when it launched. I was provided a Photoshop file with the design and I did a little transcribing of my own in translating it from pixels to HTML and CSS. It even looks great with IE6, and of course, the iPhone.
+                            p: a.button(href="http://econtact-pro.com", target="_blank") Visit the live site
+
+            section#videogame
+                div
+                    h1 VIDEOGAME
+                    img.lazy(src="img/placeholder.png", data-original="img/videogame-1.png", width="1080", height="419", alt="VIDEOGAME title screen and gameplay screenshots")
+                    img.lazy(src="img/placeholder.png", data-original="img/videogame-2.jpg", width="1080", height="410", alt="VIDEOGAME mini-site")
+                    noscript
+                        img(src="img/videogame-1.png", width="1080", height="419", alt="VIDEOGAME title screen and gameplay screenshots")
+                        img(src="img/videogame-2.jpg", width="1080", height="410", alt="VIDEOGAME mini-site")
+                    .summary
+                        dl
+                            dt Role
+                            dd Front-End Development, Design
+                            dt Client
+                            dd Myself
+                            dt Date
+                            dd April 2011
+                    .body-copy
+                        p Videogames have always been a passion of mine, and once I found out about HTML5&apos;s canvas element I finally set out to make one of my own. This being my first game I decided to apply as many constraints as possible in order to ship something, so it&apos;s a Space Invaders clone.
+                        p While it&apos;s nothing special from a game design or visual perspective, it was made from scratch with JavaScript and it utilizes every HTML5 feature I could throw in there, including canvas (of course), audio, cache manifest support for offline play, local storage support for high score storage, and touch controls for mobile devices. It not only continues to work over two years later, it works better thanks to improvements in JavaScript performance.
+                        p: a.button(href="/videogame/", target="_blank") Visit the live site
+
+            section#arena-plm-new-release-page
+                div
+                    h1 Arena PLM New Release Page
+                    img.lazy(src="img/placeholder.png", data-original="img/arena-plm-new-release-page-1.jpg", width="1080", height="727", alt="Side-by-side view of the before and after versions of the Arena PLM new release page.")
+                    noscript
+                        img(src="img/arena-plm-new-release-page-1.jpg", width="1080", height="727", alt="Side-by-side view of the before and after versions of the Arena PLM new release page.")
+                    .summary
+                        dl
+                            dt Role
+                            dd Design, Front-End Development
+                            dt Client
+                            dd Arena Solutions
+                            dt Date
+                            dd May 2008
+                    .body-copy
+                        p I was the lead HTML and CSS developer for Arena PLM from 2006 to 2009, and this was one of the cases where I got to design too. This page promotes all the new features when a quarterly release goes live and it&apos;s made to get people excited with lots of enticing screenshots.
+                        p: a.button(href="arena-plm-new-release-page/archive/", target="_blank") View the archived page
+
+        footer
+            div
+                p Copyright &copy; 2005&ndash;2015 Steve Cochrane. All rights reserved.
+
+        script(src="js/combined.js")
+        script.
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-11487507-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
