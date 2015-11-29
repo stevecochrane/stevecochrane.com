@@ -1,11 +1,19 @@
 @import "./portfolio-base.less";
 @import (inline) "../css/lib/normalize.css";
 
+html {
+    font-size: percentage(@base-font-size / 16)
+
+    @media @mq-medium {
+        font-size: percentage(13 / @base-font-size);
+    }
+}
+
 body {
     background: @page-background-color;
     color: @base-text-color;
     font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
-    font-size: percentage(@base-font-size / 16);
+    font-size: 100%;
     font-style: normal;
     font-weight: 400;
     line-height: @base-unit/@rem;
@@ -49,6 +57,10 @@ header > div {
     max-width: @page-width/@rem;
     margin: 0 auto;
     padding: (@base-unit * 1.75)/@rem 0 (@base-unit * 0.75)/@rem;
+
+    @media @mq-small {
+        padding-top: @base-unit/@rem;
+    }
 }
 
 header h1 {
@@ -61,6 +73,13 @@ header h1 {
     margin: 0 (@base-unit * 0.5)/@rem 0 percentage(40 / @page-width);
     position: relative;
     top: -2/@rem;
+
+    @media @mq-small {
+        float: none;
+        margin: 0;
+        text-align: center;
+        top: 0;
+    }
 }
 
 header h2 {
@@ -76,12 +95,28 @@ header h2 {
     padding-left: (@base-unit * 0.5)/@rem;
     position: relative;
     top: -1.25/@rem; // Normally this would be 1 but the extra 0.25 is to ensure it's still -1px when the font-size is reduced
+
+    @media @mq-small {
+        border-left: 0;
+        float: none;
+        line-height: (@base-unit * 0.5)/@rem;
+        margin-bottom: @base-unit/@rem;
+        padding: 0;
+        text-align: center;
+        top: 0;
+    }
 }
 
 header ul {
     float: right;
     list-style: none;
     margin-right: percentage((40 - (@base-unit * 0.5)) / @page-width); // Subtracts the amount of right padding on header li a
+
+    @media @mq-small {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 header li {
@@ -89,11 +124,21 @@ header li {
     font-size: 13/@rem;
     line-height: @base-unit/@rem;
     margin: 0;
+
+    @media @mq-small {
+        display: inline-block;
+        float: none;
+    }
 }
 
 header li a {
     float: left;
     padding: 0 (@base-unit * 0.5)/@rem;
+
+    @media @mq-small {
+        display: inline-block;
+        float: none;
+    }
 }
 
 header a {
@@ -115,6 +160,10 @@ header a {
     max-width: @page-width/@rem;
     margin: 0 auto;
     padding: (@base-unit * 3)/@rem 0 (@base-unit * 4.5)/@rem;
+
+    @media @mq-small {
+        padding: (@base-unit * 2)/@rem 0 (@base-unit * 3)/@rem;
+    }
 }
 
 #main h1 {
@@ -126,6 +175,10 @@ header a {
     line-height: (@base-unit * 1.5)/@rem;
     margin: 0 percentage((@base-unit * 2) / @page-width) (@base-unit * 1.5)/@rem percentage((@base-unit * 2) / @page-width);
     text-align: center;
+
+    @media @mq-small {
+        margin-bottom: (@base-unit * 1.25)/@rem;
+    }
 }
 
 #main img {
@@ -165,11 +218,22 @@ header a {
     float: left;
     padding: (@base-unit * 1.5)/@rem percentage((@base-unit * 4) / @page-width) 0 percentage((@base-unit * 4.25) / @page-width);
     width: percentage((@base-unit * 21) / @page-width);
+
+    @media @mq-small {
+        float: none;
+        padding-left: percentage((@base-unit * 3.5) / @page-width);
+        padding-right: percentage((@base-unit * 3.5) / @page-width);
+        width: auto;
+    }
 }
 
 .body-copy ul {
     list-style: circle outside;
     padding-left: 17/@rem;
+
+    @media @mq-medium {
+        padding-left: 19/@rem;
+    }
 }
 
 .body-copy li {
@@ -181,6 +245,12 @@ header a {
     float: right;
     padding: (@base-unit * 1.5)/@rem percentage((@base-unit * 4.25) / @page-width) 0 0;
     width: percentage((@base-unit * 11.5) / @page-width);
+
+    @media @mq-small {
+        float: none;
+        padding-right: 0;
+        width: auto;
+    }
 }
 
 .summary dl {
@@ -199,6 +269,10 @@ header a {
     font-weight: 600;
     padding: 4/@rem 0 2/@rem 12/@rem;
     width: 48/@rem;
+
+    @media @mq-small {
+        padding-left: percentage((@base-unit * 3.5) / @page-width);
+    }
 }
 
 .summary dd {
@@ -238,74 +312,4 @@ footer p {
     line-height: @base-unit/@rem;
     margin: 0 percentage(40 / @page-width);
     text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-
-    html {
-        font-size: percentage(13 / @base-font-size);
-    }
-
-    .body-copy ul {
-        padding-left: 19/@rem;
-    }
-
-}
-
-@media screen and (max-width: 600px)  {
-
-    header > div {
-        padding-top: @base-unit/@rem;
-    }
-
-    header h1,
-    header h2,
-    header ul {
-        float: none;
-        margin: 0;
-        text-align: center;
-        top: 0;
-    }
-
-    header h2 {
-        border-left: 0;
-        line-height: (@base-unit * 0.5)/@rem;
-        margin-bottom: @base-unit/@rem;
-        padding: 0;
-    }
-
-    header li,
-    header li a {
-        display: inline-block;
-        float: none;
-    }
-
-    #main section > div {
-        padding: (@base-unit * 2)/@rem 0 (@base-unit * 3)/@rem;
-    }
-
-    #main h1 {
-        margin-bottom: (@base-unit * 1.25)/@rem;
-    }
-
-    .summary,
-    .body-copy {
-        float: none;
-        width: auto;
-    }
-
-    .summary {
-        margin-bottom: (-@base-unit * 0.5)/@rem;
-        padding-right: 0;
-    }
-
-    .body-copy {
-        padding-right: percentage((@base-unit * 3.5) / @page-width);
-    }
-
-    .body-copy,
-    .summary dt {
-        padding-left: percentage((@base-unit * 3.5) / @page-width);
-    }
-
 }
