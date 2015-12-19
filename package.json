@@ -1,6 +1,6 @@
 {
   "name": "stevecochrane.com",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "description": "My personal space on the internet since 2005.",
   "main": "gulpfile.js",
   "dependencies": {
