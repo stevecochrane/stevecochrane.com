@@ -16,6 +16,7 @@ html(lang="en")
         link(rel="stylesheet", href="//cloud.typography.com/6084432/656442/css/fonts.css")
         link(rel="stylesheet", href="css/portfolio-main.css")
     body
+        include ../../templates/partials/google-tag-manager
         header
             div
                 h1: a(href="/") Steve Cochrane
@@ -269,12 +270,3 @@ html(lang="en")
                 p Copyright &copy; 2005&ndash;#{currentYear} Steve Cochrane. All rights reserved.
 
         script(src="js/portfolio-main.js")
-        script.
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-11487507-1']);
-            _gaq.push(['_trackPageview']);
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
