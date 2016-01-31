@@ -41,7 +41,10 @@ gulp.task("css", ["clean", "copy-assets"], function() {
 });
 
 gulp.task("css-new", function() {
-    return gulp.src("src/css/main.css")
+    return gulp.src([
+            "src/css/main.css"
+            "src/css/portfolio.css"
+        ])
         .pipe(postcss([
             require("postcss-import"),
             require("postcss-mixins"),
