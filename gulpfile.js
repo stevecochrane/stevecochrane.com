@@ -1,14 +1,23 @@
-var concat       = require("gulp-concat");
-var del          = require("del");
-var gulp         = require("gulp");
-var imagemin     = require("gulp-imagemin");
-var jade         = require("gulp-jade");
-var jshint       = require("gulp-jshint");
-var minifyCss    = require("gulp-minify-css");
-var postcss      = require("gulp-postcss");
-var rev          = require("gulp-rev");
-var revReplace   = require("gulp-rev-replace");
-var uglify       = require("gulp-uglify");
+var autoprefixer  = require("autoprefixer");
+var base64        = require("postcss-base64");
+var calc          = require("postcss-calc");
+var concat        = require("gulp-concat");
+var del           = require("del");
+var gulp          = require("gulp");
+var imagemin      = require("gulp-imagemin");
+var jade          = require("gulp-jade");
+var jshint        = require("gulp-jshint");
+var minifyCss     = require("gulp-minify-css");
+var mixins        = require("postcss-mixins");
+var nested        = require("postcss-nested");
+var pxtorem       = require("postcss-pxtorem");
+var postcss       = require("gulp-postcss");
+var postcssImport = require("postcss-import"); // Can't just name this "import" because that's a JavaScript keyword.
+var postcssUrl    = require("postcss-url");
+var rev           = require("gulp-rev");
+var revReplace    = require("gulp-rev-replace");
+var simpleVars    = require("postcss-simple-vars");
+var uglify        = require("gulp-uglify");
 
 gulp.task("clean", function() {
     return del([
@@ -46,13 +55,19 @@ gulp.task("css-new", function() {
             "src/css/portfolio.css"
         ])
         .pipe(postcss([
-            require("postcss-import"),
-            require("postcss-mixins"),
-            require("postcss-simple-vars"),
-            require("postcss-calc"),
-            require("postcss-nested"),
-            require("postcss-pxtorem"),
-            require("autoprefixer")
+            postcssImport,
+            mixins,
+            simpleVars,
+            calc,
+            nested,
+            pxtorem({
+                //  Apply pxtorem to all style properties.
+                propWhiteList: []
+            }),
+            postcssUrl({
+                url: "inline"
+            }),
+            autoprefixer
         ]))
         // .pipe(minifyCss())
         .pipe(gulp.dest("dist/css"));

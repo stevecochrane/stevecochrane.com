@@ -9,7 +9,7 @@ $border-color-base: rgba(0,0,0,0.1);
 $font-stack-base: "Ideal Sans SSm A", "Ideal Sans SSm B";
 $font-stack-header: "Ideal Sans A", "Ideal Sans B";
 $golden-ratio: 1.61803398875;
-$img-dir: "../img/v6";
+$img-dir: ../img/v6;
 $link-color-base: #ff5b59;  /* http://0to255.com/ff6c6a, -1 */
 $link-color-hover: #ff8e8c; /* http://0to255.com/ff6c6a, +2 */
 $page-width: 888;
@@ -508,40 +508,40 @@ small {
 }
 
 .icon-twitter {
-    background: data-uri('${img-dir}/elsewhere-twitter-1x.png') no-repeat;
+    background: url("$(img-dir)/elsewhere-twitter-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: data-uri('${img-dir}/elsewhere-twitter-2x.png') no-repeat;
+        background: url("$(img-dir)/elsewhere-twitter-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-github {
-    background: data-uri('${img-dir}/elsewhere-github-1x.png') no-repeat;
+    background: url("$(img-dir)/elsewhere-github-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: data-uri('${img-dir}/elsewhere-github-2x.png') no-repeat;
+        background: url("$(img-dir)/elsewhere-github-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-resume {
-    background: data-uri('${img-dir}/elsewhere-resume-1x.png') no-repeat;
+    background: url("$(img-dir)/elsewhere-resume-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: data-uri('${img-dir}/elsewhere-resume-2x.png') no-repeat;
+        background: url("$(img-dir)/elsewhere-resume-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-email {
-    background: data-uri('${img-dir}/elsewhere-email-1x.png') no-repeat; /* /img/v6/elsewhere-email-1x.png */
+    background: url("$(img-dir)/elsewhere-email-1x.png") no-repeat; /* /img/v6/elsewhere-email-1x.png */
 
     @media $(mq-high-dpi) {
-        background: data-uri('${img-dir}/elsewhere-email-2x.png') no-repeat; /* /img/v6/elsewhere-email-2x.png */
+        background: url("$(img-dir)/elsewhere-email-2x.png") no-repeat; /* /img/v6/elsewhere-email-2x.png */
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
@@ -581,7 +581,7 @@ small {
 
     @media $(mq-high-dpi) {
         @mixin nearest-neighbor;
-        background: data-uri('${img-dir}/marietta-five-specimen-2x.png') 0 0 no-repeat;
+        background: url("$(img-dir)/marietta-five-specimen-2x.png") 0 0 no-repeat;
         background-size: cover;
         height: 168px;
         width: 410px;
@@ -593,7 +593,7 @@ small {
     width: 576px;
 
     @media $(mq-high-dpi) {
-        background: data-uri('${img-dir}/marietta-seven-specimen-2x.png') 0 0 no-repeat;
+        background: url("$(img-dir)/marietta-seven-specimen-2x.png") 0 0 no-repeat;
         background-size: cover;
         height: 216px;
         width: 576px;
