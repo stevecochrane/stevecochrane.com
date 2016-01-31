@@ -26,12 +26,6 @@ $mq-high-dpi: (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
     MIXINS
     -------------------------------------------------- */
 
-@define-mixin nearest-neighbor {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;
-}
-
 @define-mixin pie-clearfix {
     &:after {
         content: "";
@@ -580,10 +574,10 @@ small {
     }
 
     @media $(mq-high-dpi) {
-        @mixin nearest-neighbor;
         background: url("$(img-dir)/marietta-five-specimen-2x.png") 0 0 no-repeat;
         background-size: cover;
         height: 168px;
+        image-rendering: pixelated;
         width: 410px;
     }
 }
