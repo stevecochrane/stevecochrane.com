@@ -1,13 +1,11 @@
-var autoprefixer = require("gulp-autoprefixer");
 var concat       = require("gulp-concat");
 var del          = require("del");
 var gulp         = require("gulp");
 var imagemin     = require("gulp-imagemin");
 var jade         = require("gulp-jade");
 var jshint       = require("gulp-jshint");
-var less         = require("gulp-less");
 var minifyCss    = require("gulp-minify-css");
-var pixrem       = require("gulp-pixrem");
+var postcss      = require("gulp-postcss");
 var rev          = require("gulp-rev");
 var revReplace   = require("gulp-rev-replace");
 var uglify       = require("gulp-uglify");
@@ -39,6 +37,20 @@ gulp.task("css", ["clean", "copy-assets"], function() {
         .pipe(pixrem())
         .pipe(autoprefixer())
         .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallbacks aren't marked as duplicates and removed.
+        .pipe(gulp.dest("dist/css"));
+});
+
+gulp.task("css-new", function() {
+    return gulp.src("src/css/main.css")
+        .pipe(postcss([
+            require("postcss-import"),
+            require("postcss-mixins"),
+            require("postcss-simple-vars"),
+            require("postcss-calc"),
+            require("postcss-nested"),
+            require("autoprefixer")
+        ]))
+        // .pipe(minifyCss())
         .pipe(gulp.dest("dist/css"));
 });
 
