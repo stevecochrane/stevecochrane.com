@@ -155,7 +155,7 @@ small {
     border-radius: 8px;
     box-shadow: 0 4px 8px $shadow-color-base;
     margin: 0 auto;
-    max-width: $page-widthrem;
+    max-width: $(page-width)rem;
     text-align: left;
 }
 
