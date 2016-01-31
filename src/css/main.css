@@ -54,33 +54,20 @@ html {
 }
 
 body {
-    /*
-        I would love to use the one-line "font:" shorthand here, but I couldn't find a way
-        to get the "fontSize/lineHeight" part to work with the Less parser.
-    */
     background: #ff6c6a;
     background: #ff6c6a linear-gradient(to top right, #ff6c6a, #ffbb72) fixed;
     background-size: cover;
     color: $text-color-base;
     display: table;
-    font-family: $font-stack-base;
-    font-size: 100%;
-    font-weight: 400;
+    font: 400 100%/24px $font-stack-base;
     -webkit-font-smoothing: subpixel-antialiased;
     height: 100%;
-    line-height: 24px;
     text-rendering: optimizeLegibility;
     width: 100%;
 }
 
 h1 {
-    /*
-        Same deal here, the one-line "font:" shorthand would be nicer here too.
-    */
-    font-family: $font-stack-header;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40px;
+    font: 400 32px/40px $font-stack-header;
     margin: 0;
     padding: 0 12px;
 
