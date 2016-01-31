@@ -1,4 +1,4 @@
-@import (inline) "../css/lib/normalize.css";
+@import "./lib/normalize.css";
 
 
 /*  --------------------------------------------------
@@ -17,9 +17,9 @@ $shadow-color-base: rgba(0,0,0,0.25);
 $text-color-base: #484848;
 $text-color-light: #9f9f9f;
 
-$mq-medium: "screen and (max-width: 800px)";
-$mq-small: "screen and (max-width: 600px)";
-$mq-high-dpi: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)";
+$mq-medium: screen and (max-width: 800px);
+$mq-small: screen and (max-width: 600px);
+$mq-high-dpi: (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
 
 
 /*  --------------------------------------------------
@@ -161,7 +161,7 @@ small {
 
 .l-header {
     margin-bottom: 24rem;
-    padding: 48rem calc(36 / $page-width) 0;
+    padding: 48rem calc((36 / $page-width) * 1%) 0;
 
     @media $(mq-small) {
         padding-top: 36rem;
@@ -174,12 +174,12 @@ small {
 
 .l-content {
     @mixin pie-clearfix;
-    padding: 0 calc(36 / $page-width);
+    padding: 0 calc((36 / $page-width) * 1%);
 }
 
 .l-col-two-thirds {
     float: left;
-    width: calc(2 / 3);
+    width: calc((2 / 3) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -190,7 +190,7 @@ small {
 
 .l-col-one-third {
     float: left;
-    width: calc(1 / 3);
+    width: calc((1 / 3) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -201,7 +201,7 @@ small {
 
 .l-col-golden-main {
     float: left;
-    width: calc(1 / $golden-ratio);
+    width: calc((1 / $golden-ratio) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -212,7 +212,7 @@ small {
 
 .l-col-golden-sub {
     float: left;
-    width: calc(1 - (1 / $golden-ratio));
+    width: calc((1 - (1 / $golden-ratio)) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -261,7 +261,7 @@ small {
 
 .l-footer {
     border-top: 1px solid $border-color-base;
-    margin: 36rem calc(36 / $page-width) 12rem;
+    margin: 36rem calc((36 / $page-width) * 1%) 12rem;
 
     @media $(mq-small) {
         margin-top: 24rem;
@@ -484,7 +484,7 @@ small {
     font-size: 14rem;
     padding-bottom: 12rem;
     position: relative;
-    width: calc(135 / 270);
+    width: calc((135 / 270) * 1%);
 
     @media screen and (max-width: 800px) {
         min-width: 140rem;
