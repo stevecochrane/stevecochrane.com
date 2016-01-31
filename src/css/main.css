@@ -26,13 +26,13 @@ $mq-high-dpi: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)";
     MIXINS
     -------------------------------------------------- */
 
-.nearest-neighbor() {
+@define-mixin nearest-neighbor {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     -ms-interpolation-mode: nearest-neighbor;
 }
 
-.pie-clearfix() {
+@define-mixin pie-clearfix {
     &:after {
         content: "";
         display: table;
@@ -150,7 +150,7 @@ small {
 }
 
 .l-page {
-    .pie-clearfix();
+    @mixin pie-clearfix;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px $shadow-color-base;
@@ -173,7 +173,7 @@ small {
 }
 
 .l-content {
-    .pie-clearfix();
+    @mixin pie-clearfix;
     padding: 0 percentage(36 / $page-width);
 }
 
@@ -241,7 +241,7 @@ small {
 }
 
 .l-section {
-    .pie-clearfix();
+    @mixin pie-clearfix;
     border-top: 1px solid $border-color-base;
     padding: 47rem 0 48rem;
 
@@ -593,11 +593,11 @@ small {
     }
 
     @media $(mq-high-dpi) {
+        @mixin nearest-neighbor;
         background: data-uri('${img-dir}/marietta-five-specimen-2x.png') 0 0 no-repeat;
         background-size: cover;
         height: 168px;
         width: 410px;
-        .nearest-neighbor();
     }
 }
 
