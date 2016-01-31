@@ -127,7 +127,7 @@ header h2 {
     margin: 0;
     padding-left: calc($(base-unit)px * 0.5);
     position: relative;
-    top: -1.25px; // Normally this would be 1 but the extra 0.25 is to ensure it is still -1px when the font-size is reduced
+    top: -1.25px; /* Normally this would be 1 but the extra 0.25 is to ensure it's still -1px when the font-size is reduced */
 
     @media $mq-small {
         border-left: 0;
@@ -143,7 +143,7 @@ header h2 {
 header ul {
     float: right;
     list-style: none;
-    margin-right: calc((40 - ($base-unit * 0.5)) / $page-width); // Subtracts the amount of right padding on header li a
+    margin-right: calc((40 - ($base-unit * 0.5)) / $page-width); /* Subtracts the amount of right padding on header li a */
 
     @media $mq-small {
         float: none;
@@ -189,7 +189,7 @@ header a {
 }
 
 #main section > div {
-    .pie-clearfix();
+    @mixin pie-clearfix;
     max-width: $(page-width)px;
     margin: 0 auto;
     padding: calc($(base-unit)px * 3) 0 calc($(base-unit) * 4.5);
@@ -223,7 +223,7 @@ header a {
 }
 
 #main .lazy {
-    display: none; // These will be shown again with .show() once the lazy load plugin is initialized in combined.js
+    display: none; /* These will be shown again with .show() once the lazy load plugin is initialized in combined.js */
 }
 
 #main .half-size {
