@@ -42,7 +42,7 @@ gulp.task("css", ["clean", "copy-assets"], function() {
 
 gulp.task("css-new", function() {
     return gulp.src([
-            "src/css/main.css"
+            "src/css/main.css",
             "src/css/portfolio.css"
         ])
         .pipe(postcss([
@@ -51,6 +51,7 @@ gulp.task("css-new", function() {
             require("postcss-simple-vars"),
             require("postcss-calc"),
             require("postcss-nested"),
+            require("postcss-pxtorem"),
             require("autoprefixer")
         ]))
         // .pipe(minifyCss())

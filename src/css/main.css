@@ -68,7 +68,7 @@ body {
     font-weight: 400;
     -webkit-font-smoothing: subpixel-antialiased;
     height: 100%;
-    line-height: 24rem;
+    line-height: 24px;
     text-rendering: optimizeLegibility;
     width: 100%;
 }
@@ -78,40 +78,40 @@ h1 {
         Same deal here, the one-line "font:" shorthand would be nicer here too.
     */
     font-family: $font-stack-header;
-    font-size: 32rem;
+    font-size: 32px;
     font-weight: 400;
-    line-height: 40rem;
+    line-height: 40px;
     margin: 0;
-    padding: 0 12rem;
+    padding: 0 12px;
 
     @media $(mq-small) {
-        font-size: 24rem;
-        line-height: 30rem;
-        padding: 0 12rem;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 12px;
     }
 }
 
 h2 {
     color: $text-color-light;
-    font-size: 11rem;
+    font-size: 11px;
     font-weight: 400;
     letter-spacing: 1px;
     margin: 0;
-    padding: 0 12rem;
+    padding: 0 12px;
     text-transform: uppercase;
 }
 
 p {
     margin: 0;
-    padding: 0 36rem 0 12rem;
+    padding: 0 36px 0 12px;
 
     @media $(mq-small) {
-        padding-right: 12rem;
+        padding-right: 12px;
     }
 }
 
 p + p {
-    margin-top: 24rem;
+    margin-top: 24px;
 }
 
 a {
@@ -141,11 +141,11 @@ small {
 /*  Requires two divs above with display: table and table-row to work */
 .l-vert-center {
     display: table-cell;
-    padding: 24rem;
+    padding: 24px;
     vertical-align: middle;
 
     @media $(mq-small) {
-        padding: 18rem 12rem;
+        padding: 18px 12px;
     }
 }
 
@@ -155,16 +155,16 @@ small {
     border-radius: 8px;
     box-shadow: 0 4px 8px $shadow-color-base;
     margin: 0 auto;
-    max-width: $(page-width)rem;
+    max-width: $(page-width)px;
     text-align: left;
 }
 
 .l-header {
-    margin-bottom: 24rem;
-    padding: 48rem calc((36 / $page-width) * 1%) 0;
+    margin-bottom: 24px;
+    padding: 48px calc((36 / $page-width) * 1%) 0;
 
     @media $(mq-small) {
-        padding-top: 36rem;
+        padding-top: 36px;
     }
 }
 
@@ -224,7 +224,7 @@ small {
 .l-col-padding-left,
 .l-col-padding-right {
     box-sizing: border-box;
-    padding: 12rem;
+    padding: 12px;
 
     @media $(mq-small) {
         padding-right: 0;
@@ -243,46 +243,46 @@ small {
 .l-section {
     @mixin pie-clearfix;
     border-top: 1px solid $border-color-base;
-    padding: 47rem 0 48rem;
+    padding: 47px 0 48px;
 
     @media $(mq-small) {
-        padding: 35rem 0 36rem;
+        padding: 35px 0 36px;
     }
 }
 
 .l-section > h1 {
-    line-height: 36rem;
-    padding-left: 12rem;
+    line-height: 36px;
+    padding-left: 12px;
 
     @media $(mq-small) {
-        padding-left: 12rem;
+        padding-left: 12px;
     }
 }
 
 .l-footer {
     border-top: 1px solid $border-color-base;
-    margin: 36rem calc((36 / $page-width) * 1%) 12rem;
+    margin: 36px calc((36 / $page-width) * 1%) 12px;
 
     @media $(mq-small) {
-        margin-top: 24rem;
+        margin-top: 24px;
     }
 }
 
 .l-footer-extra-space {
-    margin-top: 48rem;
+    margin-top: 48px;
 
     @media $(mq-small) {
-        margin-top: 36rem;
+        margin-top: 36px;
     }
 }
 
 .l-footer > p {
     /*  border + padding + line-height here adds up to 36 or 1.5x standard line height */
     color: $text-color-light;
-    font-size: 11rem;
-    line-height: 18rem;
+    font-size: 11px;
+    line-height: 18px;
     margin: 0;
-    padding: 9rem 12rem 8rem;
+    padding: 9px 12px 8px;
 }
 
 
@@ -291,12 +291,12 @@ small {
     -------------------------------------------------- */
 
 .header-one-line {
-    line-height: 48rem;
+    line-height: 48px;
 }
 
 .header-two-line {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .link-subtle {
@@ -315,18 +315,18 @@ small {
     border-radius: 5px;
     display: block;
     height: auto;
-    margin: 24rem 0;
+    margin: 24px 0;
     max-width: 100%;
     width: 100%;
 }
 
 .carousel {
-    margin: 36rem 0 24rem;
+    margin: 36px 0 24px;
     position: relative;
 }
 
 .carousel-items {
-    height: 204rem;
+    height: 204px;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -336,7 +336,7 @@ small {
 
 .carousel-item {
     float: left;
-    height: 204rem;
+    height: 204px;
     opacity: 0;
     position: absolute;
     transition: all 0.6s;
@@ -367,12 +367,12 @@ small {
 }
 
 .carousel-button {
-    bottom: 12rem;
+    bottom: 12px;
     -webkit-font-smoothing: subpixel-antialiased; /* Prevents subpixel antialiasing being lost during opacity changes */
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 12rem;
+    right: 12px;
 
     .carousel:hover & {
         &:extend(.button:hover);
@@ -386,10 +386,10 @@ small {
     box-shadow: inset 0 -1px 0 $shadow-color-base;
     color: #fff;
     display: inline-block;
-    font-size: 14rem;
+    font-size: 14px;
     font-weight: 600;
-    line-height: 20rem;
-    padding: 8rem 18rem;
+    line-height: 20px;
+    padding: 8px 18px;
     text-align: center;
     text-shadow: 0 -1px 0 $shadow-color-base;
 
@@ -404,7 +404,7 @@ small {
 }
 
 .embed {
-    margin: 12rem 12rem 0;
+    margin: 12px 12px 0;
 }
 
 .embed > iframe {
@@ -413,7 +413,7 @@ small {
 
 .video-4by3 {
     height: 0;
-    padding: 0 12rem 75%;
+    padding: 0 12px 75%;
     position: relative;
     max-width: 100%;
 }
@@ -429,11 +429,11 @@ small {
 
 .breadcrumb {
     color: $border-color-base;
-    padding: 0 12rem 12rem;
+    padding: 0 12px 12px;
 }
 
 .breadcrumb > a {
-    padding: 0 4rem;
+    padding: 0 4px;
 
     &:first-child {
         padding-left: 0;
@@ -442,7 +442,7 @@ small {
 
 .breadcrumb > span {
     color: $text-color-base;
-    padding-left: 4rem;
+    padding-left: 4px;
 }
 
 .feed {
@@ -458,17 +458,17 @@ small {
 
 .feed-link {
     display: block;
-    font-size: 14rem;
-    line-height: 18rem;
-    padding: 12rem 12rem 13rem;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 12px 13px;
 }
 
 .feed-item-date {
     color: $text-color-light;
     display: block;
-    font-size: 11rem;
+    font-size: 11px;
     font-weight: 400;
-    line-height: 16rem;
+    line-height: 16px;
 }
 
 .icon-list {
@@ -476,18 +476,18 @@ small {
     list-style: none;
     margin: 0;
     overflow: hidden;
-    padding: 12rem;
+    padding: 12px;
 }
 
 .icon-list-item {
     float: left;
-    font-size: 14rem;
-    padding-bottom: 12rem;
+    font-size: 14px;
+    padding-bottom: 12px;
     position: relative;
     width: calc((135 / 270) * 1%);
 
     @media screen and (max-width: 800px) {
-        min-width: 140rem;
+        min-width: 140px;
     }
 }
 
@@ -496,7 +496,7 @@ small {
     display: block;
     font-weight: 600;
     line-height: 24px; /* px to preserve icon size */
-    padding: 6px 12rem 6px 42px; /* px to preserve icon size */
+    padding: 6px 12px 6px 42px; /* px to preserve icon size */
 
     &:hover {
         color: $text-color-base;
@@ -565,9 +565,9 @@ small {
     background: #000;
     border-radius: 5px;
     height: 168px;
-    margin: 24rem 0;
+    margin: 24px 0;
     overflow: hidden;
-    padding: 12rem 0;
+    padding: 12px 0;
     position: relative;
 
     @media $(mq-small) {
@@ -582,13 +582,13 @@ small {
 .font-specimen-marietta-five-inner,
 .font-specimen-marietta-seven-inner {
     height: 168px;
-    left: 36rem;
+    left: 36px;
     position: absolute;
-    top: 12rem;
+    top: 12px;
     width: 410px;
 
     @media $(mq-small) {
-        left: 14rem;
+        left: 14px;
         top: 0;
     }
 
