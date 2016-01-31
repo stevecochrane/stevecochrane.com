@@ -17,9 +17,9 @@ $shadow-color-base: fade(#000, 25%);
 $text-color-base: #484848;
 $text-color-light: #9f9f9f;
 
-$mq-medium: ~"screen and (max-width: 800px)";
-$mq-small: ~"screen and (max-width: 600px)";
-$mq-high-dpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)";
+$mq-medium: "screen and (max-width: 800px)";
+$mq-small: "screen and (max-width: 600px)";
+$mq-high-dpi: "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)";
 
 
 /*  --------------------------------------------------
@@ -48,7 +48,7 @@ $mq-high-dpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)"
 html {
     height: 100%;
 
-    @media $mq-medium {
+    @media $(mq-medium) {
         font-size: percentage(0.875);
     }
 }
@@ -84,7 +84,7 @@ h1 {
     margin: 0;
     padding: 0 12rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         font-size: 24rem;
         line-height: 30rem;
         padding: 0 12rem;
@@ -105,7 +105,7 @@ p {
     margin: 0;
     padding: 0 36rem 0 12rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding-right: 12rem;
     }
 }
@@ -144,7 +144,7 @@ small {
     padding: 24rem;
     vertical-align: middle;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding: 18rem 12rem;
     }
 }
@@ -163,7 +163,7 @@ small {
     margin-bottom: 24rem;
     padding: 48rem percentage(36 / $page-width) 0;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding-top: 36rem;
     }
 }
@@ -181,7 +181,7 @@ small {
     float: left;
     width: percentage(2 / 3);
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -192,7 +192,7 @@ small {
     float: left;
     width: percentage(1 / 3);
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -203,7 +203,7 @@ small {
     float: left;
     width: percentage(1 / $golden-ratio);
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -214,7 +214,7 @@ small {
     float: left;
     width: percentage(1 - (1 / $golden-ratio));
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -226,7 +226,7 @@ small {
     box-sizing: border-box;
     padding: 12rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding-right: 0;
         padding-left: 0;
     }
@@ -245,7 +245,7 @@ small {
     border-top: 1px solid $border-color-base;
     padding: 47rem 0 48rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding: 35rem 0 36rem;
     }
 }
@@ -254,7 +254,7 @@ small {
     line-height: 36rem;
     padding-left: 12rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding-left: 12rem;
     }
 }
@@ -263,7 +263,7 @@ small {
     border-top: 1px solid $border-color-base;
     margin: 36rem percentage(36 / $page-width) 12rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-top: 24rem;
     }
 }
@@ -271,7 +271,7 @@ small {
 .l-footer-extra-space {
     margin-top: 48rem;
 
-    @media $mq-small {
+    @media $(mq-small) {
         margin-top: 36rem;
     }
 }
@@ -523,7 +523,7 @@ small {
 .icon-twitter {
     background: data-uri('${img-dir}/elsewhere-twitter-1x.png') no-repeat;
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/elsewhere-twitter-2x.png') no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
@@ -533,7 +533,7 @@ small {
 .icon-github {
     background: data-uri('${img-dir}/elsewhere-github-1x.png') no-repeat;
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/elsewhere-github-2x.png') no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
@@ -543,7 +543,7 @@ small {
 .icon-resume {
     background: data-uri('${img-dir}/elsewhere-resume-1x.png') no-repeat;
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/elsewhere-resume-2x.png') no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
@@ -553,7 +553,7 @@ small {
 .icon-email {
     background: data-uri('${img-dir}/elsewhere-email-1x.png') no-repeat; /* /img/v6/elsewhere-email-1x.png */
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/elsewhere-email-2x.png') no-repeat; /* /img/v6/elsewhere-email-2x.png */
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
@@ -570,7 +570,7 @@ small {
     padding: 12rem 0;
     position: relative;
 
-    @media $mq-small {
+    @media $(mq-small) {
         padding: 0;
     }
 }
@@ -587,12 +587,12 @@ small {
     top: 12rem;
     width: 410px;
 
-    @media $mq-small {
+    @media $(mq-small) {
         left: 14rem;
         top: 0;
     }
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/marietta-five-specimen-2x.png') 0 0 no-repeat;
         background-size: cover;
         height: 168px;
@@ -605,7 +605,7 @@ small {
     height: 216px;
     width: 576px;
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         background: data-uri('${img-dir}/marietta-seven-specimen-2x.png') 0 0 no-repeat;
         background-size: cover;
         height: 216px;
@@ -617,7 +617,7 @@ small {
 .font-specimen-marietta-seven-inner > img {
     border-radius: 5px;
 
-    @media $mq-high-dpi {
+    @media $(mq-high-dpi) {
         display: none;
     }
 }
