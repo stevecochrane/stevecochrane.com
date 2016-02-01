@@ -13,10 +13,15 @@
     --page-background-color: #eff3f5;
     --base-text-color: #537681;
     --border-color: fade(var(--base-text-color), 25%);
-
-    --mq-medium: screen and (max-width: 800px);
-    --mq-small: screen and (max-width: 600px);
 }
+
+
+/*  --------------------------------------------------
+    MEDIA QUERIES
+    -------------------------------------------------- */
+
+@custom-media --mq-medium screen and (max-width: 800px);
+@custom-media --mq-small screen and (max-width: 600px);
 
 
 /*  --------------------------------------------------
@@ -39,7 +44,7 @@
 html {
     font-size: calc((var(--base-font-size) / 16) * 1%);
 
-    @media $(mq-medium) {
+    @media (--mq-medium) {
         font-size: calc((13 / 16) * 1%);
     }
 }
@@ -93,7 +98,7 @@ header > div {
     margin: 0 auto;
     padding: calc(var(--base-unit)px * 1.75) 0 calc(var(--base-unit)px * 0.75);
 
-    @media $mq-small {
+    @media (--mq-small) {
         padding-top: var(--base-unit)px;
     }
 }
@@ -109,7 +114,7 @@ header h1 {
     position: relative;
     top: -2px;
 
-    @media $mq-small {
+    @media (--mq-small) {
         float: none;
         margin: 0;
         text-align: center;
@@ -131,7 +136,7 @@ header h2 {
     position: relative;
     top: -1.25px; /* Normally this would be 1 but the extra 0.25 is to ensure it's still -1px when the font-size is reduced */
 
-    @media $mq-small {
+    @media (--mq-small) {
         border-left: 0;
         float: none;
         line-height: calc(var(--base-unit)px * 0.5);
@@ -147,7 +152,7 @@ header ul {
     list-style: none;
     margin-right: calc((40 - (var(--base-unit) * 0.5)) / var(--page-width)); /* Subtracts the amount of right padding on header li a */
 
-    @media $mq-small {
+    @media (--mq-small) {
         float: none;
         margin: 0;
         text-align: center;
@@ -160,7 +165,7 @@ header li {
     line-height: var(--base-unit)px;
     margin: 0;
 
-    @media $mq-small {
+    @media (--mq-small) {
         display: inline-block;
         float: none;
     }
@@ -170,7 +175,7 @@ header li a {
     float: left;
     padding: 0 calc(var(--base-unit)px * 0.5);
 
-    @media $mq-small {
+    @media (--mq-small) {
         display: inline-block;
         float: none;
     }
@@ -196,7 +201,7 @@ header a {
     margin: 0 auto;
     padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit) * 4.5);
 
-    @media $mq-small {
+    @media (--mq-small) {
         padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
     }
 }
@@ -211,7 +216,7 @@ header a {
     margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 1%) calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 2) / var(--page-width)) * 1%);
     text-align: center;
 
-    @media $mq-small {
+    @media (--mq-small) {
         margin-bottom: calc(var(--base-unit)px * 1.25);
     }
 }
@@ -254,7 +259,7 @@ header a {
     padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4) / var(--page-width)) * 1%) 0 calc(((var(--base-unit) * 4.25) / var(--page-width)) * 1%);
     width: calc((var(--base-unit) * 21) / var(--page-width));
 
-    @media $mq-small {
+    @media (--mq-small) {
         float: none;
         padding-left: percentage((var(--base-unit) * 3.5) / var(--page-width));
         padding-right: percentage((var(--base-unit) * 3.5) / var(--page-width));
@@ -266,7 +271,7 @@ header a {
     list-style: circle outside;
     padding-left: 17px;
 
-    @media $(mq-medium) {
+    @media (--mq-medium) {
         padding-left: 19px;
     }
 }
@@ -281,7 +286,7 @@ header a {
     padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4.25) / var(--page-width)) * 1%) 0 0;
     width: calc(((var(--base-unit) * 11.5) / var(--page-width)) * 1%);
 
-    @media $mq-small {
+    @media (--mq-small) {
         float: none;
         padding-right: 0;
         width: auto;
@@ -305,7 +310,7 @@ header a {
     padding: 4px 0 2px 12px;
     width: 48px;
 
-    @media $mq-small {
+    @media (--mq-small) {
         padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 1%);
     }
 }

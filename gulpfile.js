@@ -1,6 +1,7 @@
 var autoprefixer     = require("autoprefixer");
 var calc             = require("postcss-calc");
 var concat           = require("gulp-concat");
+var customMedia      = require("postcss-custom-media");
 var customProperties = require("postcss-custom-properties");
 var del              = require("del");
 var gulp             = require("gulp");
@@ -58,6 +59,7 @@ gulp.task("css-new", function() {
             postcssImport(),
             mixins(),
             customProperties(),
+            customMedia(),
             calc(),
             nested(),
             pxtorem({
