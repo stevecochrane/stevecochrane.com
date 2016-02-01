@@ -1,22 +1,23 @@
-var autoprefixer  = require("autoprefixer");
-var calc          = require("postcss-calc");
-var concat        = require("gulp-concat");
-var del           = require("del");
-var gulp          = require("gulp");
-var imagemin      = require("gulp-imagemin");
-var jade          = require("gulp-jade");
-var jshint        = require("gulp-jshint");
-var minifyCss     = require("gulp-minify-css");
-var mixins        = require("postcss-mixins");
-var nested        = require("postcss-nested");
-var pxtorem       = require("postcss-pxtorem");
-var postcss       = require("gulp-postcss");
-var postcssImport = require("postcss-import");
-var postcssUrl    = require("postcss-url");
-var rev           = require("gulp-rev");
-var revReplace    = require("gulp-rev-replace");
-var simpleVars    = require("postcss-simple-vars");
-var uglify        = require("gulp-uglify");
+var autoprefixer     = require("autoprefixer");
+var calc             = require("postcss-calc");
+var concat           = require("gulp-concat");
+var customProperties = require("postcss-custom-properties");
+var del              = require("del");
+var gulp             = require("gulp");
+var imagemin         = require("gulp-imagemin");
+var jade             = require("gulp-jade");
+var jshint           = require("gulp-jshint");
+var minifyCss        = require("gulp-minify-css");
+var mixins           = require("postcss-mixins");
+var nested           = require("postcss-nested");
+var pxtorem          = require("postcss-pxtorem");
+var postcss          = require("gulp-postcss");
+var postcssImport    = require("postcss-import");
+var postcssUrl       = require("postcss-url");
+var rev              = require("gulp-rev");
+var revReplace       = require("gulp-rev-replace");
+var simpleVars       = require("postcss-simple-vars");
+var uglify           = require("gulp-uglify");
 
 gulp.task("clean", function() {
     return del([
@@ -56,7 +57,7 @@ gulp.task("css-new", function() {
         .pipe(postcss([
             postcssImport(),
             mixins(),
-            simpleVars(),
+            customProperties(),
             calc(),
             nested(),
             pxtorem({

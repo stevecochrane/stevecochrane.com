@@ -5,16 +5,18 @@
     VARIABLES
     -------------------------------------------------- */
 
-$base-font-size: 15;
-$small-font-size: 11;
-$base-unit: 24;
-$page-width: 1080;
-$page-background-color: #eff3f5;
-$base-text-color: #537681;
-$border-color: fade($base-text-color, 25%);
+:root {
+    --base-font-size: 15;
+    --small-font-size: 11;
+    --base-unit: 24;
+    --page-width: 1080;
+    --page-background-color: #eff3f5;
+    --base-text-color: #537681;
+    --border-color: fade(var(--base-text-color), 25%);
 
-$mq-medium: screen and (max-width: 800px);
-$mq-small: screen and (max-width: 600px);
+    --mq-medium: screen and (max-width: 800px);
+    --mq-small: screen and (max-width: 600px);
+}
 
 
 /*  --------------------------------------------------
@@ -35,7 +37,7 @@ $mq-small: screen and (max-width: 600px);
     -------------------------------------------------- */
 
 html {
-    font-size: calc(($base-font-size / 16) * 1%);
+    font-size: calc((var(--base-font-size) / 16) * 1%);
 
     @media $(mq-medium) {
         font-size: calc((13 / 16) * 1%);
@@ -43,13 +45,13 @@ html {
 }
 
 body {
-    background: $page-background-color;
-    color: $base-text-color;
+    background: var(--page-background-color);
+    color: var(--base-text-color);
     font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
     font-size: 100%;
     font-style: normal;
     font-weight: 400;
-    line-height: $(base-unit)px;
+    line-height: var(--base-unit)px;
     text-rendering: optimizeLegibility;
 }
 
@@ -64,7 +66,7 @@ dd {
 p + p,
 p + ul,
 ul + p {
-    margin-top: $(base-unit)px;
+    margin-top: var(--base-unit)px;
 }
 
 a {
@@ -81,18 +83,18 @@ a {
 
 header {
     background: #fff;
-    box-shadow: 0 1px 8px fade($base-text-color, 25%);
+    box-shadow: 0 1px 8px fade(var(--base-text-color), 25%);
     position: relative;
 }
 
 header > div {
     @mixin pie-clearfix;
-    max-width: $(page-width)px;
+    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc($(base-unit)px * 1.75) 0 calc($(base-unit)px * 0.75);
+    padding: calc(var(--base-unit)px * 1.75) 0 calc(var(--base-unit)px * 0.75);
 
     @media $mq-small {
-        padding-top: $(base-unit)px;
+        padding-top: var(--base-unit)px;
     }
 }
 
@@ -102,8 +104,8 @@ header h1 {
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: $(base-unit)px;
-    margin: 0 calc($(base-unit)px * 0.5) 0 calc((40 / $page-width) * 1%);
+    line-height: var(--base-unit)px;
+    margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 1%);
     position: relative;
     top: -2px;
 
@@ -116,24 +118,24 @@ header h1 {
 }
 
 header h2 {
-    border-left: 1px solid $border-color;
+    border-left: 1px solid var(--border-color);
     color: #9cb7c0;
     float: left;
     font-size: 13px;
     font-family: "Sentinel SSm A", "Sentinel SSm B";
     font-style: italic;
     font-weight: 400;
-    line-height: $(base-unit)px;
+    line-height: var(--base-unit)px;
     margin: 0;
-    padding-left: calc($(base-unit)px * 0.5);
+    padding-left: calc(var(--base-unit)px * 0.5);
     position: relative;
     top: -1.25px; /* Normally this would be 1 but the extra 0.25 is to ensure it's still -1px when the font-size is reduced */
 
     @media $mq-small {
         border-left: 0;
         float: none;
-        line-height: calc($(base-unit)px * 0.5);
-        margin-bottom: $(base-unit)px;
+        line-height: calc(var(--base-unit)px * 0.5);
+        margin-bottom: var(--base-unit)px;
         padding: 0;
         text-align: center;
         top: 0;
@@ -143,7 +145,7 @@ header h2 {
 header ul {
     float: right;
     list-style: none;
-    margin-right: calc((40 - ($base-unit * 0.5)) / $page-width); /* Subtracts the amount of right padding on header li a */
+    margin-right: calc((40 - (var(--base-unit) * 0.5)) / var(--page-width)); /* Subtracts the amount of right padding on header li a */
 
     @media $mq-small {
         float: none;
@@ -155,7 +157,7 @@ header ul {
 header li {
     float: left;
     font-size: 13px;
-    line-height: $(base-unit)px;
+    line-height: var(--base-unit)px;
     margin: 0;
 
     @media $mq-small {
@@ -166,7 +168,7 @@ header li {
 
 header li a {
     float: left;
-    padding: 0 calc($(base-unit)px * 0.5);
+    padding: 0 calc(var(--base-unit)px * 0.5);
 
     @media $mq-small {
         display: inline-block;
@@ -184,18 +186,18 @@ header a {
 }
 
 #main section {
-    background: linear-gradient(#bbced3, $page-background-color) no-repeat;
+    background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat;
     background-size: 100% 450px;
 }
 
 #main section > div {
     @mixin pie-clearfix;
-    max-width: $(page-width)px;
+    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc($(base-unit)px * 3) 0 calc($(base-unit) * 4.5);
+    padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit) * 4.5);
 
     @media $mq-small {
-        padding: calc($(base-unit)px * 2) 0 calc($(base-unit)px * 3);
+        padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
     }
 }
 
@@ -205,20 +207,20 @@ header a {
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: calc($(base-unit)px * 1.5);
-    margin: 0 calc((($base-unit * 2) / $page-width) * 1%) calc($(base-unit) * 1.5) calc((($base-unit * 2) / $page-width) * 1%);
+    line-height: calc(var(--base-unit)px * 1.5);
+    margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 1%) calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 2) / var(--page-width)) * 1%);
     text-align: center;
 
     @media $mq-small {
-        margin-bottom: calc($(base-unit)px * 1.25);
+        margin-bottom: calc(var(--base-unit)px * 1.25);
     }
 }
 
 #main img {
-    box-shadow: 0 1px 8px fade($base-text-color, 25%);
+    box-shadow: 0 1px 8px fade(var(--base-text-color), 25%);
     display: block;
     height: auto;
-    margin-top: $(base-unit)px;
+    margin-top: var(--base-unit)px;
     width: 100%;
 }
 
@@ -229,8 +231,8 @@ header a {
 #main .half-size {
     clear: none;
     float: left;
-    margin: 0 0 $(base-unit)px;
-    max-width: calc(((($page-width - $base-unit) * 0.5) / $page-width) * 1%);
+    margin: 0 0 var(--base-unit)px;
+    max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 1%);
 }
 
 #main .half-size-right {
@@ -249,13 +251,13 @@ header a {
 
 .body-copy {
     float: left;
-    padding: calc($(base-unit)px * 1.5) calc((($base-unit * 4) / $page-width) * 1%) 0 calc((($base-unit * 4.25) / $page-width) * 1%);
-    width: calc(($base-unit * 21) / $page-width);
+    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4) / var(--page-width)) * 1%) 0 calc(((var(--base-unit) * 4.25) / var(--page-width)) * 1%);
+    width: calc((var(--base-unit) * 21) / var(--page-width));
 
     @media $mq-small {
         float: none;
-        padding-left: percentage(($base-unit * 3.5) / $page-width);
-        padding-right: percentage(($base-unit * 3.5) / $page-width);
+        padding-left: percentage((var(--base-unit) * 3.5) / var(--page-width));
+        padding-right: percentage((var(--base-unit) * 3.5) / var(--page-width));
         width: auto;
     }
 }
@@ -271,13 +273,13 @@ header a {
 
 .body-copy li {
     font-size: 13px;
-    line-height: $(base-unit)px;
+    line-height: var(--base-unit)px;
 }
 
 .summary {
     float: right;
-    padding: calc($(base-unit)px * 1.5) calc((($base-unit * 4.25) / $page-width) * 1%) 0 0;
-    width: calc((($base-unit * 11.5) / $page-width) * 1%);
+    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4.25) / var(--page-width)) * 1%) 0 0;
+    width: calc(((var(--base-unit) * 11.5) / var(--page-width)) * 1%);
 
     @media $mq-small {
         float: none;
@@ -287,12 +289,12 @@ header a {
 }
 
 .summary dl {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .summary dt,
 .summary dd {
-    font-size: $(small-font-size)px;
+    font-size: var(--small-font-size)px;
     line-height: 18px;
 }
 
@@ -304,13 +306,13 @@ header a {
     width: 48px;
 
     @media $mq-small {
-        padding-left: calc((($base-unit * 3.5) / $page-width) * 1%);
+        padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 1%);
     }
 }
 
 .summary dd {
-    border-top: 1px solid $border-color;
-    padding: 2px $(base-unit)px 3px 0;
+    border-top: 1px solid var(--border-color);
+    padding: 2px var(--base-unit)px 3px 0;
 }
 
 .button {
@@ -320,7 +322,7 @@ header a {
     color: #fff;
     display: inline-block;
     font-size: 14px;
-    line-height: $(base-unit)px;
+    line-height: var(--base-unit)px;
     margin-bottom: 4px;
     padding: 4px 16px;
     text-shadow: 0 -1px 0 fade(#000, 25%);
@@ -333,16 +335,16 @@ header a {
 }
 
 footer > div {
-    border-top: 1px solid $border-color;
-    max-width: $(page-width)px;
+    border-top: 1px solid var(--border-color);
+    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc($(base-unit) * 0.5) 0 calc($(base-unit)px * 1.5);
+    padding: calc(var(--base-unit) * 0.5) 0 calc(var(--base-unit)px * 1.5);
 }
 
 footer p {
     color: #7da1ac;
-    font-size: $(small-font-size)px;
-    line-height: $(base-unit)px;
-    margin: 0 calc((40 / $page-width) * 1%);
+    font-size: var(--small-font-size)px;
+    line-height: var(--base-unit)px;
+    margin: 0 calc((40 / var(--page-width)) * 1%);
     text-align: center;
 }

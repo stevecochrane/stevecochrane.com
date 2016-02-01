@@ -5,21 +5,23 @@
     VARIABLES
     -------------------------------------------------- */
 
-$border-color-base: rgba(0,0,0,0.1);
-$font-stack-base: "Ideal Sans SSm A", "Ideal Sans SSm B";
-$font-stack-header: "Ideal Sans A", "Ideal Sans B";
-$golden-ratio: 1.61803398875;
-$img-dir: ../img/v6;
-$link-color-base: #ff5b59;  /* http://0to255.com/ff6c6a, -1 */
-$link-color-hover: #ff8e8c; /* http://0to255.com/ff6c6a, +2 */
-$page-width: 888;
-$shadow-color-base: rgba(0,0,0,0.25);
-$text-color-base: #484848;
-$text-color-light: #9f9f9f;
+:root {
+    --border-color-base: rgba(0,0,0,0.1);
+    --font-stack-base:   "Ideal Sans SSm A", "Ideal Sans SSm B";
+    --font-stack-header: "Ideal Sans A", "Ideal Sans B";
+    --golden-ratio:      1.61803398875;
+    --img-dir:           ../img/v6;
+    --link-color-base:   #ff5b59;  /* http://0to255.com/ff6c6a, -1 */
+    --link-color-hover:  #ff8e8c; /* http://0to255.com/ff6c6a, +2 */
+    --page-width:        888;
+    --shadow-color-base: rgba(0,0,0,0.25);
+    --text-color-base:   #484848;
+    --text-color-light:  #9f9f9f;
 
-$mq-medium: screen and (max-width: 800px);
-$mq-small: screen and (max-width: 600px);
-$mq-high-dpi: (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
+    --mq-medium:         screen and (max-width: 800px);
+    --mq-small:          screen and (max-width: 600px);
+    --mq-high-dpi:       (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
+}
 
 
 /*  --------------------------------------------------
@@ -51,9 +53,9 @@ body {
     background: #ff6c6a;
     background: #ff6c6a linear-gradient(to top right, #ff6c6a, #ffbb72) fixed;
     background-size: cover;
-    color: $text-color-base;
+    color: var(--text-color-base);
     display: table;
-    font: 400 100%/24px $font-stack-base;
+    font: 400 100%/24px var(--font-stack-base);
     -webkit-font-smoothing: subpixel-antialiased;
     height: 100%;
     text-rendering: optimizeLegibility;
@@ -61,7 +63,7 @@ body {
 }
 
 h1 {
-    font: 400 32px/40px $font-stack-header;
+    font: 400 32px/40px var(--font-stack-header);
     margin: 0;
     padding: 0 12px;
 
@@ -73,7 +75,7 @@ h1 {
 }
 
 h2 {
-    color: $text-color-light;
+    color: var(--text-color-light);
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -96,13 +98,13 @@ p + p {
 }
 
 a {
-    color: $link-color-base;
+    color: var(--link-color-base);
     text-decoration: none;
     transition: all 0.2s;
 
     &:hover,
     &:focus {
-        color: $link-color-hover;
+        color: var(--link-color-hover);
     }
 }
 
@@ -134,15 +136,15 @@ small {
     @mixin pie-clearfix;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px $shadow-color-base;
+    box-shadow: 0 4px 8px var(--shadow-color-base);
     margin: 0 auto;
-    max-width: $(page-width)px;
+    max-width: var(--page-width)px;
     text-align: left;
 }
 
 .l-header {
     margin-bottom: 24px;
-    padding: 48px calc((36 / $page-width) * 1%) 0;
+    padding: 48px calc((36 / var(--page-width)) * 1%) 0;
 
     @media $(mq-small) {
         padding-top: 36px;
@@ -155,7 +157,7 @@ small {
 
 .l-content {
     @mixin pie-clearfix;
-    padding: 0 calc((36 / $page-width) * 1%);
+    padding: 0 calc((36 / var(--page-width)) * 1%);
 }
 
 .l-col-two-thirds {
@@ -182,7 +184,7 @@ small {
 
 .l-col-golden-main {
     float: left;
-    width: calc((1 / $golden-ratio) * 1%);
+    width: calc((1 / var(--golden-ratio)) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -193,7 +195,7 @@ small {
 
 .l-col-golden-sub {
     float: left;
-    width: calc((1 - (1 / $golden-ratio)) * 1%);
+    width: calc((1 - (1 / var(--golden-ratio))) * 1%);
 
     @media $(mq-small) {
         margin-right: 0;
@@ -223,7 +225,7 @@ small {
 
 .l-section {
     @mixin pie-clearfix;
-    border-top: 1px solid $border-color-base;
+    border-top: 1px solid var(--border-color-base);
     padding: 47px 0 48px;
 
     @media $(mq-small) {
@@ -241,8 +243,8 @@ small {
 }
 
 .l-footer {
-    border-top: 1px solid $border-color-base;
-    margin: 36px calc((36 / $page-width) * 1%) 12px;
+    border-top: 1px solid var(--border-color-base);
+    margin: 36px calc((36 / var(--page-width)) * 1%) 12px;
 
     @media $(mq-small) {
         margin-top: 24px;
@@ -259,7 +261,7 @@ small {
 
 .l-footer > p {
     /*  border + padding + line-height here adds up to 36 or 1.5x standard line height */
-    color: $text-color-light;
+    color: var(--text-color-light);
     font-size: 11px;
     line-height: 18px;
     margin: 0;
@@ -281,14 +283,14 @@ small {
 }
 
 .link-subtle {
-    border-bottom: 1px dotted $text-color-light;
-    color: $text-color-light;
+    border-bottom: 1px dotted var(--text-color-light);
+    color: var(--text-color-light);
     transition: none;
 
     &:hover,
     &:focus {
-        border-bottom: 1px solid $text-color-base;
-        color: $text-color-base;
+        border-bottom: 1px solid var(--text-color-base);
+        color: var(--text-color-base);
     }
 }
 
@@ -361,10 +363,10 @@ small {
 }
 
 .button {
-    background: $link-color-base;
+    background: var(--link-color-base);
     background-clip: padding-box;
     border-radius: 5px;
-    box-shadow: inset 0 -1px 0 $shadow-color-base;
+    box-shadow: inset 0 -1px 0 var(--shadow-color-base);
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -372,10 +374,10 @@ small {
     line-height: 20px;
     padding: 8px 18px;
     text-align: center;
-    text-shadow: 0 -1px 0 $shadow-color-base;
+    text-shadow: 0 -1px 0 var(--shadow-color-base);
 
     &:hover {
-        background: $link-color-hover;
+        background: var(--link-color-hover);
         color: #fff;
     }
 }
@@ -409,7 +411,7 @@ small {
 }
 
 .breadcrumb {
-    color: $border-color-base;
+    color: var(--border-color-base);
     padding: 0 12px 12px;
 }
 
@@ -422,7 +424,7 @@ small {
 }
 
 .breadcrumb > span {
-    color: $text-color-base;
+    color: var(--text-color-base);
     padding-left: 4px;
 }
 
@@ -433,7 +435,7 @@ small {
 }
 
 .feed-item {
-    border-top: 1px solid $border-color-base;
+    border-top: 1px solid var(--border-color-base);
     font-weight: 600;
 }
 
@@ -445,7 +447,7 @@ small {
 }
 
 .feed-item-date {
-    color: $text-color-light;
+    color: var(--text-color-light);
     display: block;
     font-size: 11px;
     font-weight: 400;
@@ -453,7 +455,7 @@ small {
 }
 
 .icon-list {
-    border-top: 1px solid $border-color-base;
+    border-top: 1px solid var(--border-color-base);
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -480,7 +482,7 @@ small {
     padding: 6px 12px 6px 42px; /* px to preserve icon size */
 
     &:hover {
-        color: $text-color-base;
+        color: var(--text-color-base);
     }
 }
 
@@ -502,40 +504,40 @@ small {
 }
 
 .icon-twitter {
-    background: url("$(img-dir)/elsewhere-twitter-1x.png") no-repeat;
+    background: url("var(--img-dir)/elsewhere-twitter-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/elsewhere-twitter-2x.png") no-repeat;
+        background: url("var(--img-dir)/elsewhere-twitter-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-github {
-    background: url("$(img-dir)/elsewhere-github-1x.png") no-repeat;
+    background: url("var(--img-dir)/elsewhere-github-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/elsewhere-github-2x.png") no-repeat;
+        background: url("var(--img-dir)/elsewhere-github-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-resume {
-    background: url("$(img-dir)/elsewhere-resume-1x.png") no-repeat;
+    background: url("var(--img-dir)/elsewhere-resume-1x.png") no-repeat;
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/elsewhere-resume-2x.png") no-repeat;
+        background: url("var(--img-dir)/elsewhere-resume-2x.png") no-repeat;
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
 }
 
 .icon-email {
-    background: url("$(img-dir)/elsewhere-email-1x.png") no-repeat; /* /img/v6/elsewhere-email-1x.png */
+    background: url("var(--img-dir)/elsewhere-email-1x.png") no-repeat; /* /img/v6/elsewhere-email-1x.png */
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/elsewhere-email-2x.png") no-repeat; /* /img/v6/elsewhere-email-2x.png */
+        background: url("var(--img-dir)/elsewhere-email-2x.png") no-repeat; /* /img/v6/elsewhere-email-2x.png */
         /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
         background-size: cover;
     }
@@ -574,7 +576,7 @@ small {
     }
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/marietta-five-specimen-2x.png") 0 0 no-repeat;
+        background: url("var(--img-dir)/marietta-five-specimen-2x.png") 0 0 no-repeat;
         background-size: cover;
         height: 168px;
         image-rendering: pixelated;
@@ -587,7 +589,7 @@ small {
     width: 576px;
 
     @media $(mq-high-dpi) {
-        background: url("$(img-dir)/marietta-seven-specimen-2x.png") 0 0 no-repeat;
+        background: url("var(--img-dir)/marietta-seven-specimen-2x.png") 0 0 no-repeat;
         background-size: cover;
         height: 216px;
         width: 576px;
