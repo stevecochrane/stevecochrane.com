@@ -33,21 +33,17 @@
     -------------------------------------------------- */
 
 html {
-    font-size: calc((var(--base-font-size) / 16) * 100%);
+    font-size: 100%;
 
     @media (--mq-medium) {
-        font-size: calc((13 / 16) * 100%);
+        font-size: 87.5%;
     }
 }
 
 body {
     background: var(--page-background-color);
     color: var(--base-text-color);
-    font-family: "Ideal Sans SSm A", "Ideal Sans SSm B";
-    font-size: 100%;
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--base-unit)px;
+    font: normal 400 var(--base-font-size)px/var(--base-unit)px "Ideal Sans SSm A", "Ideal Sans SSm B";
     text-rendering: optimizeLegibility;
 }
 
@@ -101,11 +97,7 @@ header > div {
 
 header h1 {
     float: left;
-    font-family: "Sentinel SSm A", "Sentinel SSm B";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: var(--base-unit)px;
+    font: normal 700 14px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B";
     margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
     position: relative;
     top: -2px;
@@ -122,11 +114,7 @@ header h2 {
     border-left: 1px solid var(--border-color);
     color: #9cb7c0;
     float: left;
-    font-size: 13px;
-    font-family: "Sentinel SSm A", "Sentinel SSm B";
-    font-style: italic;
-    font-weight: 400;
-    line-height: var(--base-unit)px;
+    font: italic 400 13px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B";
     margin: 0;
     padding-left: calc(var(--base-unit)px * 0.5);
     position: relative;
@@ -146,7 +134,7 @@ header h2 {
 header ul {
     float: right;
     list-style: none;
-    margin-right: calc((40 - (var(--base-unit)px * 0.5)) / var(--page-width)); /* Subtracts the amount of right padding on header li a */
+    margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
 
     @media (--mq-small) {
         float: none;
@@ -209,11 +197,7 @@ header a {
 
 #main h1 {
     color: #385158;
-    font-family: "Sentinel A", "Sentinel B";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: calc(var(--base-unit)px * 1.5);
+    font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B";
     margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
     text-align: center;
 
@@ -258,7 +242,7 @@ header a {
 .body-copy {
     float: left;
     padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
-    width: calc((var(--base-unit)px * 21) / var(--page-width));
+    width: calc(((var(--base-unit) * 21) / var(--page-width)) * 100%);
 
     @media (--mq-small) {
         float: none;
