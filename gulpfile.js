@@ -1,5 +1,6 @@
 var autoprefixer     = require("autoprefixer");
 var calc             = require("postcss-calc");
+var colorFunction    = require("postcss-color-function");
 var concat           = require("gulp-concat");
 var cssnano          = require("cssnano");
 var customMedia      = require("postcss-custom-media");
@@ -43,6 +44,7 @@ gulp.task("css", ["clean"], function() {
             customMedia(),
             calc(),
             nested(),
+            colorFunction(),
             pxtorem({
                 //  Apply pxtorem to all style properties.
                 propWhiteList: []
