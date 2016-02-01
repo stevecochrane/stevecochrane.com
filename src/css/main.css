@@ -30,19 +30,6 @@
 
 
 /*  --------------------------------------------------
-    MIXINS
-    -------------------------------------------------- */
-
-@define-mixin pie-clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-/*  --------------------------------------------------
     BASE STYLES
     -------------------------------------------------- */
 
@@ -138,13 +125,18 @@ small {
 }
 
 .l-page {
-    @mixin pie-clearfix;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color-base);
     margin: 0 auto;
     max-width: var(--page-width)px;
     text-align: left;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .l-header {
@@ -161,8 +153,13 @@ small {
 }
 
 .l-content {
-    @mixin pie-clearfix;
     padding: 0 calc((36 / var(--page-width)) * 1%);
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .l-col-two-thirds {
@@ -229,9 +226,14 @@ small {
 }
 
 .l-section {
-    @mixin pie-clearfix;
     border-top: 1px solid var(--border-color-base);
     padding: 47px 0 48px;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
     @media (--mq-small) {
         padding: 35px 0 36px;

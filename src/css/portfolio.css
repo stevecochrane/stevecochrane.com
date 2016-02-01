@@ -25,19 +25,6 @@
 
 
 /*  --------------------------------------------------
-    MIXINS
-    -------------------------------------------------- */
-
-@define-mixin pie-clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-/*  --------------------------------------------------
     STYLES
     -------------------------------------------------- */
 
@@ -93,10 +80,15 @@ header {
 }
 
 header > div {
-    @mixin pie-clearfix;
     max-width: var(--page-width)px;
     margin: 0 auto;
     padding: calc(var(--base-unit)px * 1.75) 0 calc(var(--base-unit)px * 0.75);
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
     @media (--mq-small) {
         padding-top: var(--base-unit)px;
@@ -196,10 +188,15 @@ header a {
 }
 
 #main section > div {
-    @mixin pie-clearfix;
     max-width: var(--page-width)px;
     margin: 0 auto;
     padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit) * 4.5);
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
     @media (--mq-small) {
         padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);

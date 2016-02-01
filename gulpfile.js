@@ -9,7 +9,6 @@ var imagemin         = require("gulp-imagemin");
 var jade             = require("gulp-jade");
 var jshint           = require("gulp-jshint");
 var minifyCss        = require("gulp-minify-css");
-var mixins           = require("postcss-mixins");
 var nested           = require("postcss-nested");
 var pxtorem          = require("postcss-pxtorem");
 var postcss          = require("gulp-postcss");
@@ -57,7 +56,6 @@ gulp.task("css-new", function() {
         ])
         .pipe(postcss([
             postcssImport(),
-            mixins(),
             customProperties(),
             customMedia(),
             calc(),
