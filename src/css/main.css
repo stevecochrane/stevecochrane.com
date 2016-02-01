@@ -24,8 +24,8 @@
     MEDIA QUERIES
     -------------------------------------------------- */
 
-@custom-media --mq-medium screen and (max-width: 800px);
-@custom-media --mq-small screen and (max-width: 600px);
+@custom-media --mq-medium (max-width: 800px);
+@custom-media --mq-small (max-width: 600px);
 @custom-media --mq-high-dpi (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi);
 
 
