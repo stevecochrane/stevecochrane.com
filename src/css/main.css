@@ -34,7 +34,7 @@
     -------------------------------------------------- */
 
 @define-mixin pie-clearfix {
-    &:after {
+    &::after {
         content: "";
         display: table;
         clear: both;
