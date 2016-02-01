@@ -367,10 +367,6 @@ small {
     padding: 0;
     position: absolute;
     right: 12px;
-
-    .carousel:hover & {
-        &:extend(.button:hover);
-    }
 }
 
 .button {
@@ -386,11 +382,12 @@ small {
     padding: 8px 18px;
     text-align: center;
     text-shadow: 0 -1px 0 var(--shadow-color-base);
+}
 
-    &:hover {
-        background: var(--link-color-hover);
-        color: #fff;
-    }
+.carousel:hover .carousel-button,
+.button:hover {
+    background: var(--link-color-hover);
+    color: #fff;
 }
 
 .button-no-wrap {
