@@ -54,11 +54,11 @@ gulp.task("css-new", function() {
             "src/css/portfolio.css"
         ])
         .pipe(postcss([
-            postcssImport,
-            mixins,
-            simpleVars,
-            calc,
-            nested,
+            postcssImport(),
+            mixins(),
+            simpleVars(),
+            calc(),
+            nested(),
             pxtorem({
                 //  Apply pxtorem to all style properties.
                 propWhiteList: []
@@ -66,7 +66,7 @@ gulp.task("css-new", function() {
             postcssUrl({
                 url: "inline"
             }),
-            autoprefixer
+            autoprefixer()
         ]))
         // .pipe(minifyCss())
         .pipe(gulp.dest("dist/css"));
