@@ -1,16 +1,23 @@
-var autoprefixer = require("gulp-autoprefixer");
-var concat       = require("gulp-concat");
-var del          = require("del");
-var gulp         = require("gulp");
-var imagemin     = require("gulp-imagemin");
-var jade         = require("gulp-jade");
-var jshint       = require("gulp-jshint");
-var less         = require("gulp-less");
-var minifyCss    = require("gulp-minify-css");
-var pixrem       = require("gulp-pixrem");
-var rev          = require("gulp-rev");
-var revReplace   = require("gulp-rev-replace");
-var uglify       = require("gulp-uglify");
+var autoprefixer     = require("autoprefixer");
+var calc             = require("postcss-calc");
+var colorFunction    = require("postcss-color-function");
+var concat           = require("gulp-concat");
+var cssnano          = require("cssnano");
+var customMedia      = require("postcss-custom-media");
+var customProperties = require("postcss-custom-properties");
+var del              = require("del");
+var gulp             = require("gulp");
+var imagemin         = require("gulp-imagemin");
+var jade             = require("gulp-jade");
+var jshint           = require("gulp-jshint");
+var nested           = require("postcss-nested");
+var pxtorem          = require("postcss-pxtorem");
+var postcss          = require("gulp-postcss");
+var postcssImport    = require("postcss-import");
+var postcssUrl       = require("postcss-url");
+var rev              = require("gulp-rev");
+var revReplace       = require("gulp-rev-replace");
+var uglify           = require("gulp-uglify");
 
 gulp.task("clean", function() {
     return del([
@@ -19,26 +26,34 @@ gulp.task("clean", function() {
     ]);
 });
 
-gulp.task("copy-assets", function() {
-    return gulp.src("node_modules/normalize.css/normalize.css")
-        .pipe(gulp.dest("src/css/lib"));
-});
-
 gulp.task("images", function() {
-    return gulp.src("src/img/**/*.{gif,jpg,png,svg}")
+    return gulp.src("src/img/**/*.{gif, jpg, png, svg}")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task("css", ["clean", "copy-assets"], function() {
+gulp.task("css", ["clean"], function() {
     return gulp.src([
-            "src/less/main.less",
-            "src/less/portfolio-main.less"
+            "src/css/main.css",
+            "src/css/portfolio.css"
         ])
-        .pipe(less())
-        .pipe(pixrem())
-        .pipe(autoprefixer())
-        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallbacks aren't marked as duplicates and removed.
+        .pipe(postcss([
+            postcssImport(),
+            customProperties(),
+            customMedia(),
+            calc(),
+            nested(),
+            colorFunction(),
+            pxtorem({
+                //  Apply pxtorem to all style properties.
+                propWhiteList: []
+            }),
+            postcssUrl({
+                url: "inline"
+            }),
+            autoprefixer(),
+            cssnano()
+        ]))
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -105,7 +120,6 @@ gulp.task("revisionReplace", ["revision"], function() {
 
 gulp.task("default", [
     "clean",
-    "copy-assets",
     "images",
     "css",
     "js-lint",
