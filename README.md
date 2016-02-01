@@ -3,7 +3,7 @@
 back in 2005, and the site is now in its sixth design iteration.
 
 ### Setup
-Assuming you already have [NPM](https://www.npmjs.com/) installed, navigate to the base directory with a command line
+Assuming you already have [Node](https://nodejs.org/) installed, navigate to the base directory with a command line
 interface and do this:
 
 ```bash
