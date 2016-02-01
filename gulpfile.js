@@ -17,7 +17,6 @@ var postcssImport    = require("postcss-import");
 var postcssUrl       = require("postcss-url");
 var rev              = require("gulp-rev");
 var revReplace       = require("gulp-rev-replace");
-var simpleVars       = require("postcss-simple-vars");
 var uglify           = require("gulp-uglify");
 
 gulp.task("clean", function() {
