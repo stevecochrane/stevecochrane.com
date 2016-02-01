@@ -1,5 +1,4 @@
 var autoprefixer  = require("autoprefixer");
-var base64        = require("postcss-base64");
 var calc          = require("postcss-calc");
 var concat        = require("gulp-concat");
 var del           = require("del");
