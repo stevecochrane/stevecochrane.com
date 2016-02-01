@@ -145,7 +145,7 @@ small {
 
 .l-header {
     margin-bottom: 24px;
-    padding: 48px calc((36 / var(--page-width)) * 1%) 0;
+    padding: 48px calc((36 / var(--page-width)) * 100%) 0;
 
     @media (--mq-small) {
         padding-top: 36px;
@@ -157,7 +157,7 @@ small {
 }
 
 .l-content {
-    padding: 0 calc((36 / var(--page-width)) * 1%);
+    padding: 0 calc((36 / var(--page-width)) * 100%);
 
     &::after {
         content: "";
@@ -168,7 +168,7 @@ small {
 
 .l-col-two-thirds {
     float: left;
-    width: calc((2 / 3) * 1%);
+    width: calc((2 / 3) * 100%);
 
     @media (--mq-small) {
         margin-right: 0;
@@ -179,7 +179,7 @@ small {
 
 .l-col-one-third {
     float: left;
-    width: calc((1 / 3) * 1%);
+    width: calc((1 / 3) * 100%);
 
     @media (--mq-small) {
         margin-right: 0;
@@ -190,7 +190,7 @@ small {
 
 .l-col-golden-main {
     float: left;
-    width: calc((1 / var(--golden-ratio)) * 1%);
+    width: calc((1 / var(--golden-ratio)) * 100%);
 
     @media (--mq-small) {
         margin-right: 0;
@@ -201,7 +201,7 @@ small {
 
 .l-col-golden-sub {
     float: left;
-    width: calc((1 - (1 / var(--golden-ratio))) * 1%);
+    width: calc((1 - (1 / var(--golden-ratio))) * 100%);
 
     @media (--mq-small) {
         margin-right: 0;
@@ -255,7 +255,7 @@ small {
 
 .l-footer {
     border-top: 1px solid var(--border-color-base);
-    margin: 36px calc((36 / var(--page-width)) * 1%) 12px;
+    margin: 36px calc((36 / var(--page-width)) * 100%) 12px;
 
     @media (--mq-small) {
         margin-top: 24px;
@@ -475,7 +475,7 @@ small {
     font-size: 14px;
     padding-bottom: 12px;
     position: relative;
-    width: calc((135 / 270) * 1%);
+    width: calc((135 / 270) * 100%);
 
     @media screen and (max-width: 800px) {
         min-width: 140px;
