@@ -26,30 +26,13 @@ gulp.task("clean", function() {
     ]);
 });
 
-gulp.task("copy-assets", function() {
-    return gulp.src("node_modules/normalize.css/normalize.css")
-        .pipe(gulp.dest("src/css/lib"));
-});
-
 gulp.task("images", function() {
-    return gulp.src("src/img/**/*.{gif,jpg,png,svg}")
+    return gulp.src("src/img/**/*.{gif, jpg, png, svg}")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task("css", ["clean", "copy-assets"], function() {
-    return gulp.src([
-            "src/less/main.less",
-            "src/less/portfolio-main.less"
-        ])
-        .pipe(less())
-        .pipe(pixrem())
-        .pipe(autoprefixer())
-        .pipe(minifyCss({ "noAdvanced": true })) // noAdvanced is true so pixrem fallbacks aren't marked as duplicates and removed.
-        .pipe(gulp.dest("dist/css"));
-});
-
-gulp.task("css-new", function() {
+gulp.task("css", ["clean"], function() {
     return gulp.src([
             "src/css/main.css",
             "src/css/portfolio.css"
@@ -69,7 +52,7 @@ gulp.task("css-new", function() {
             }),
             autoprefixer()
         ]))
-        // .pipe(minifyCss())
+        .pipe(minifyCss())
         .pipe(gulp.dest("dist/css"));
 });
 
@@ -136,7 +119,6 @@ gulp.task("revisionReplace", ["revision"], function() {
 
 gulp.task("default", [
     "clean",
-    "copy-assets",
     "images",
     "css",
     "js-lint",
