@@ -1,6 +1,7 @@
 var autoprefixer     = require("autoprefixer");
 var calc             = require("postcss-calc");
 var concat           = require("gulp-concat");
+var cssnano          = require("cssnano");
 var customMedia      = require("postcss-custom-media");
 var customProperties = require("postcss-custom-properties");
 var del              = require("del");
@@ -8,7 +9,6 @@ var gulp             = require("gulp");
 var imagemin         = require("gulp-imagemin");
 var jade             = require("gulp-jade");
 var jshint           = require("gulp-jshint");
-var minifyCss        = require("gulp-minify-css");
 var nested           = require("postcss-nested");
 var pxtorem          = require("postcss-pxtorem");
 var postcss          = require("gulp-postcss");
@@ -50,9 +50,9 @@ gulp.task("css", ["clean"], function() {
             postcssUrl({
                 url: "inline"
             }),
-            autoprefixer()
+            autoprefixer(),
+            cssnano()
         ]))
-        .pipe(minifyCss())
         .pipe(gulp.dest("dist/css"));
 });
 
