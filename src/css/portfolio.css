@@ -10,13 +10,13 @@
     -------------------------------------------------- */
 
 :root {
-    --base-font-size: 15;
-    --small-font-size: 11;
-    --base-unit: 24;
-    --page-width: 1080;
+    --base-font-size:        15;
+    --base-text-color:       #537681;
+    --base-unit:             24;
+    --border-color:          fade(var(--base-text-color), 25%);
+    --page-width:            1080;
     --page-background-color: #eff3f5;
-    --base-text-color: #537681;
-    --border-color: fade(var(--base-text-color), 25%);
+    --small-font-size:       11;
 }
 
 
