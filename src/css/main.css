@@ -38,11 +38,18 @@
     -------------------------------------------------- */
 
 html {
+    box-sizing: border-box;
     height: 100%;
 
     @media (--mq-medium) {
         font-size: 87.5%;
     }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -555,19 +562,24 @@ small {
 .font-specimen-marietta-seven {
     background: #000;
     border-radius: 5px;
-    height: 168px;
+    height: 192px;
     margin: 24px 0;
     overflow: hidden;
     padding: 12px 0;
     position: relative;
 
     @media (--mq-small) {
+        height: 168px;
         padding: 0;
     }
 }
 
 .font-specimen-marietta-seven {
-    height: 216px;
+    height: 240px;
+
+    @media (--mq-small) {
+        height: 216px;
+    }
 }
 
 .font-specimen-marietta-five-inner,
