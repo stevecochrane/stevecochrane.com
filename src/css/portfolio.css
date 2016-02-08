@@ -24,8 +24,8 @@
     MEDIA QUERIES
     -------------------------------------------------- */
 
-@custom-media --mq-medium (max-width: 800px);
-@custom-media --mq-small (max-width: 600px);
+@custom-media --mq-medium (max-width: 960px);
+@custom-media --mq-small (max-width: 640px);
 
 
 /*  --------------------------------------------------
@@ -33,11 +33,18 @@
     -------------------------------------------------- */
 
 html {
+    box-sizing: border-box;
     font-size: 100%;
 
     @media (--mq-medium) {
         font-size: 87.5%;
     }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -242,7 +249,7 @@ header a {
 .body-copy {
     float: left;
     padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
-    width: calc(((var(--base-unit) * 21) / var(--page-width)) * 100%);
+    width: calc(((var(--base-unit) * 29.25) / var(--page-width)) * 100%);
 
     @media (--mq-small) {
         float: none;
@@ -269,7 +276,7 @@ header a {
 .summary {
     float: right;
     padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%) 0 0;
-    width: calc(((var(--base-unit) * 11.5) / var(--page-width)) * 100%);
+    width: calc(((var(--base-unit) * 15.75) / var(--page-width)) * 100%);
 
     @media (--mq-small) {
         float: none;
@@ -278,31 +285,43 @@ header a {
     }
 }
 
-.summary dl {
-    border-bottom: 1px solid var(--border-color);
+.summary ul {
+    list-style: none;
+    position: relative;
+
+    &::after {
+        border-bottom: 1px solid var(--border-color);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
 }
 
-.summary dt,
-.summary dd {
+.summary li {
     font-size: var(--small-font-size)px;
-    line-height: 18px;
-}
+    height: var(--base-unit)px;
+    padding-left: calc(var(--base-unit)px / 2);
+    position: relative;
 
-.summary dt {
-    clear: left;
-    float: left;
-    font-weight: 600;
-    padding: 4px 0 2px 12px;
-    width: 48px;
+    &::before {
+        border-top: 1px solid var(--border-color);
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: -1px;
+    }
 
     @media (--mq-small) {
         padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
     }
 }
 
-.summary dd {
-    border-top: 1px solid var(--border-color);
-    padding: 2px var(--base-unit)px 3px 0;
+.summary strong {
+    display: inline-block;
+    width: 48px;
 }
 
 .button {
