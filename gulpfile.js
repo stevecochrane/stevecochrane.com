@@ -27,8 +27,13 @@ gulp.task("clean", function() {
 });
 
 gulp.task("images", function() {
-    return gulp.src("src/img/**/*.{gif, jpg, png, svg}")
-        .pipe(imagemin())
+    return gulp.src("src/img/**/*")
+        .pipe(imagemin({
+            svgoPlugins: [
+                {removeViewBox: false},
+                {cleanupIDs: false}
+            ]
+        }))
         .pipe(gulp.dest("dist/img"));
 });
 
