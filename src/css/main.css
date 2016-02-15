@@ -493,69 +493,28 @@ small {
     color: #bfbfbf;
     display: block;
     font-weight: 600;
-    line-height: 24px; /* px to preserve icon size */
-    padding: 6px 12px 6px 42px; /* px to preserve icon size */
+    line-height: 24px;
+    padding: 6px 12px 6px 36px;
 
     &:hover {
         color: var(--text-color-base);
     }
 }
 
-.icon-list .icon {
-    left: 4px; /* px to preserve icon size */
-    opacity: 0.21875; /* 1 - (200 / 256), same as #c8c8c8 */
-    position: absolute;
-    top: 4px; /* px to preserve icon size */
-    transition: all 0.2s;
-}
-
-.icon-list-link:hover .icon {
-    opacity: 0.75;
+.icon {
+    background-color: transparent;
+    fill: currentColor;
 }
 
 .icon-28 {
-    height: 28px; /* px to preserve icon size */
-    width: 28px; /* px to preserve icon size */
+    height: 28px;
+    width: 28px;
 }
 
-.icon-twitter {
-    background: url("var(--img-dir)/elsewhere-twitter-1x.png") no-repeat;
-
-    @media (--mq-high-dpi) {
-        background: url("var(--img-dir)/elsewhere-twitter-2x.png") no-repeat;
-        /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
-        background-size: cover;
-    }
-}
-
-.icon-github {
-    background: url("var(--img-dir)/elsewhere-github-1x.png") no-repeat;
-
-    @media (--mq-high-dpi) {
-        background: url("var(--img-dir)/elsewhere-github-2x.png") no-repeat;
-        /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
-        background-size: cover;
-    }
-}
-
-.icon-resume {
-    background: url("var(--img-dir)/elsewhere-resume-1x.png") no-repeat;
-
-    @media (--mq-high-dpi) {
-        background: url("var(--img-dir)/elsewhere-resume-2x.png") no-repeat;
-        /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
-        background-size: cover;
-    }
-}
-
-.icon-email {
-    background: url("var(--img-dir)/elsewhere-email-1x.png") no-repeat; /* /img/v6/elsewhere-email-1x.png */
-
-    @media (--mq-high-dpi) {
-        background: url("var(--img-dir)/elsewhere-email-2x.png") no-repeat; /* /img/v6/elsewhere-email-2x.png */
-        /*  background-size needs to go AFTER any background specifications or it will be disregarded in iOS7 Safari. */
-        background-size: cover;
-    }
+.icon-list .icon {
+    left: 0;
+    position: absolute;
+    top: 4px;
 }
 
 .font-specimen-marietta-five,
