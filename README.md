@@ -1,5 +1,5 @@
 # stevecochrane.com
-[stevecochrane.com](https://stevecochrane.com) has been my personal space on the internet since I was a college student
+[stevecochrane.com](https://stevecochrane.com/) has been my personal space on the internet since I was a college student
 back in 2005, and the site is now in its sixth design iteration.
 
 ### Setup
