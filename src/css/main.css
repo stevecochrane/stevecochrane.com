@@ -151,61 +151,39 @@ small {
 
 .l-content {
     padding: 0 calc((36 / var(--page-width)) * 100%);
+}
 
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+.l-grid {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .l-col-two-thirds {
-    float: left;
     width: calc((2 / 3) * 100%);
-
-    @media (--mq-small) {
-        margin-right: 0;
-        margin-left: 0;
-        width: 100%;
-    }
 }
 
 .l-col-one-third {
-    float: left;
     width: calc((1 / 3) * 100%);
-
-    @media (--mq-small) {
-        margin-right: 0;
-        margin-left: 0;
-        width: 100%;
-    }
 }
 
 .l-col-golden-main {
-    float: left;
     width: calc((1 / var(--golden-ratio)) * 100%);
-
-    @media (--mq-small) {
-        margin-right: 0;
-        margin-left: 0;
-        width: 100%;
-    }
 }
 
 .l-col-golden-sub {
-    float: left;
     width: calc((1 - (1 / var(--golden-ratio))) * 100%);
+}
 
+.l-col-two-thirds,
+.l-col-one-third,
+.l-col-golden-main,
+.l-col-golden-sub {
     @media (--mq-small) {
-        margin-right: 0;
-        margin-left: 0;
         width: 100%;
     }
 }
 
-.l-col-padding-left,
-.l-col-padding-right {
-    box-sizing: border-box;
+.l-col-padded {
     padding: 12px;
 
     @media (--mq-small) {
@@ -214,23 +192,17 @@ small {
     }
 }
 
-.l-col-padding-left {
+.l-col-no-left-padding {
     padding-left: 0;
 }
 
-.l-col-padding-right {
+.l-col-no-right-padding {
     padding-right: 0;
 }
 
 .l-section {
     border-top: 1px solid var(--border-color-base);
     padding: 47px 0 48px;
-
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
     @media (--mq-small) {
         padding: 35px 0 36px;

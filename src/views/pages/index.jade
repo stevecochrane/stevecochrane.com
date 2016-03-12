@@ -29,34 +29,35 @@ block page
                 li.carousel-item
                     a.carousel-link(href="/portfolio/"): img.carousel-image(src="/img/v4/recent-work-4.png", alt="VIDEOGAME", width="816", height="204")
             a.button.carousel-button(href="/portfolio/") See my recent work &rarr;
-        #blog.l-col-golden-main.l-col-padding-left
-            h2 Recent Writing
-            ul.feed
-                li.feed-item
-                    a.feed-link(href="http://blog.stevecochrane.com/post/129525257808/new-pixel-font-marietta-seven") New Pixel Font: Marietta Seven #[time.feed-item-date September 20, 2015]
-                li.feed-item
-                    a.feed-link(href="http://blog.stevecochrane.com/post/64453034923/berserker") Berserker #[time.feed-item-date October 18, 2013]
-                li.feed-item
-                    a.feed-link(href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem") INSTIGATION Postmortem #[time.feed-item-date August 27, 2013]
-        #elsewhere.l-col-golden-sub.l-col-padding-right
-            h2 Elsewhere
-            ul.icon-list
-                li#twitter.icon-list-item
-                    a.icon-list-link(href="https://twitter.com/stevecochrane/")
-                        svg.icon.icon-28(role="img"): use(xlink:href="#icon-twitter")
-                        | Twitter
-                li#github.icon-list-item
-                    a.icon-list-link(href="https://github.com/stevecochrane")
-                        svg.icon.icon-28(role="img"): use(xlink:href="#icon-github")
-                        | GitHub
-                li#resume.icon-list-item
-                    a.icon-list-link(href="/resume/")
-                        svg.icon.icon-28(role="img"): use(xlink:href="#icon-resume")
-                        | Resume
-                li#email.icon-list-item
-                    a.icon-list-link(href="mailto:steve@stevecochrane.com")
-                        svg.icon.icon-28(role="img"): use(xlink:href="#icon-email")
-                        | Email
+        .l-grid
+            #blog.l-col-golden-main.l-col-padded.l-col-no-left-padding
+                h2 Recent Writing
+                ul.feed
+                    li.feed-item
+                        a.feed-link(href="http://blog.stevecochrane.com/post/129525257808/new-pixel-font-marietta-seven") New Pixel Font: Marietta Seven #[time.feed-item-date September 20, 2015]
+                    li.feed-item
+                        a.feed-link(href="http://blog.stevecochrane.com/post/64453034923/berserker") Berserker #[time.feed-item-date October 18, 2013]
+                    li.feed-item
+                        a.feed-link(href="http://blog.stevecochrane.com/post/59561933700/instigation-postmortem") INSTIGATION Postmortem #[time.feed-item-date August 27, 2013]
+            #elsewhere.l-col-golden-sub.l-col-padded.l-col-no-right-padding
+                h2 Elsewhere
+                ul.icon-list
+                    li#twitter.icon-list-item
+                        a.icon-list-link(href="https://twitter.com/stevecochrane/")
+                            svg.icon.icon-28(role="img"): use(xlink:href="#icon-twitter")
+                            | Twitter
+                    li#github.icon-list-item
+                        a.icon-list-link(href="https://github.com/stevecochrane")
+                            svg.icon.icon-28(role="img"): use(xlink:href="#icon-github")
+                            | GitHub
+                    li#resume.icon-list-item
+                        a.icon-list-link(href="/resume/")
+                            svg.icon.icon-28(role="img"): use(xlink:href="#icon-resume")
+                            | Resume
+                    li#email.icon-list-item
+                        a.icon-list-link(href="mailto:steve@stevecochrane.com")
+                            svg.icon.icon-28(role="img"): use(xlink:href="#icon-email")
+                            | Email
 
 block script
     script(src="/js/main.js")
