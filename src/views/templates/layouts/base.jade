@@ -14,9 +14,8 @@ html(lang="en")
     body
         include ../partials/google-tag-manager
         include ../partials/defs.svg
-        .l-vert-center
-            .l-page
-                block page
-                footer.l-footer
-                    p: small Copyright &copy; 2005&ndash;#{currentYear} #[a.link-subtle(href="https://stevecochrane.com/") Steve Cochrane]. All rights reserved.
+        .l-page
+            block page
+            footer.l-footer
+                p: small Copyright &copy; 2005&ndash;#{currentYear} #[a.link-subtle(href="https://stevecochrane.com/") Steve Cochrane]. All rights reserved.
         block script

@@ -57,12 +57,16 @@ body {
     background: #ff6c6a linear-gradient(to top right, #ff6c6a, #ffbb72) fixed;
     background-size: cover;
     color: var(--text-color-base);
-    display: table;
+    display: flex;
     font: 400 100%/24px var(--font-stack-base);
     -webkit-font-smoothing: subpixel-antialiased;
-    height: 100%;
+    min-height: 100%;
+    padding: 24px;
     text-rendering: optimizeLegibility;
-    width: 100%;
+
+    @media (--mq-small) {
+        padding: 18px 12px;
+    }
 }
 
 h1 {
@@ -124,30 +128,12 @@ small {
     LAYOUT STYLES
     -------------------------------------------------- */
 
-/*  Requires two divs above with display: table and table-row to work */
-.l-vert-center {
-    display: table-cell;
-    padding: 24px;
-    vertical-align: middle;
-
-    @media (--mq-small) {
-        padding: 18px 12px;
-    }
-}
-
 .l-page {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color-base);
-    margin: 0 auto;
+    margin: auto;
     max-width: var(--page-width)px;
-    text-align: left;
-
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 }
 
 .l-header {
