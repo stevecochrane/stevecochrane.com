@@ -24,8 +24,8 @@
     MEDIA QUERIES
     -------------------------------------------------- */
 
-@custom-media --mq-medium (max-width: 960px);
-@custom-media --mq-small (max-width: 640px);
+@custom-media --mq-small (min-width: 640px);
+@custom-media --mq-medium (min-width: 960px);
 
 
 /*  --------------------------------------------------
@@ -34,10 +34,10 @@
 
 html {
     box-sizing: border-box;
-    font-size: 100%;
+    font-size: 87.5%;
 
     @media (--mq-medium) {
-        font-size: 87.5%;
+        font-size: 100%;
     }
 }
 
@@ -88,67 +88,66 @@ header {
 
 header > div {
     display: flex;
+    flex-direction: column;
     max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc(var(--base-unit)px * 1.75) 0 calc(var(--base-unit)px * 0.75);
+    padding: var(--base-unit)px 0 calc(var(--base-unit)px * 0.75);
 
     @media (--mq-small) {
-        flex-direction: column;
-        padding-top: var(--base-unit)px;
+        flex-direction: row;
+        padding-top: calc(var(--base-unit)px * 1.75)
     }
 }
 
 header h1 {
     flex: 0 1 auto;
     font: normal 700 14px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B";
-    margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
+    margin: 0;
     position: relative;
-    top: -2px;
+    text-align: center;
+    top: 0;
 
-    @media (--mq-medium) {
+    @media (--mq-small) {
+        margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
+        text-align: left;
         top: -1px;
     }
 
-    @media (--mq-small) {
-        margin: 0;
-        text-align: center;
-        top: 0;
+    @media (--mq-medium) {
+        top: -2px;
     }
 }
 
 header h2 {
-    border-left: 1px solid var(--border-color);
     color: #9cb7c0;
     flex: 0 1 auto;
-    font: italic 400 13px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B";
-    margin: 0;
-    padding-left: calc(var(--base-unit)px * 0.5);
+    font: italic 400 13px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B";
+    margin: 0 0 var(--base-unit)px;
     position: relative;
-    top: -1px;
-
-    @media (--mq-medium) {
-        top: 0;
-    }
+    text-align: center;
 
     @media (--mq-small) {
-        border-left: 0;
-        line-height: calc(var(--base-unit)px * 0.5);
-        margin-bottom: var(--base-unit)px;
-        padding-left: 0;
-        text-align: center;
+        border-left: 1px solid var(--border-color);
+        line-height: var(--base-unit)px;
+        margin-bottom: 0;
+        padding-left: calc(var(--base-unit)px * 0.5);
+        text-align: left;
+    }
+
+    @media (--mq-medium) {
+        top: -1px;
     }
 }
 
 header ul {
     display: flex;
     flex: 1 1 auto;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
-    margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
 
     @media (--mq-small) {
-        margin: 0;
-        justify-content: center;
+        margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
+        justify-content: flex-end;
     }
 }
 
@@ -181,21 +180,21 @@ section {
 section > div {
     max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit)px * 4.5);
+    padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
 
     @media (--mq-small) {
-        padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
+        padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit)px * 4.5);
     }
 }
 
 section h1 {
     color: #385158;
     font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B";
-    margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
+    margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
     text-align: center;
 
     @media (--mq-small) {
-        margin-bottom: calc(var(--base-unit)px * 1.25);
+        margin-bottom: calc(var(--base-unit)px * 1.5);
     }
 }
 
@@ -206,10 +205,10 @@ section h1 {
 .images {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (--mq-small) {
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
@@ -218,10 +217,8 @@ section h1 {
 }
 
 .image-half {
-    max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 100%);
-
     @media (--mq-small) {
-        max-width: none;
+        max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 100%);
     }
 }
 
@@ -230,10 +227,10 @@ section h1 {
 }
 
 .image-half + .image-half {
-    margin-top: 0;
+    margin-top: var(--base-unit)px;
 
     @media (--mq-small) {
-        margin-top: var(--base-unit)px;
+        margin-top: 0;
     }
 }
 
@@ -245,10 +242,10 @@ section h1 {
 
 .description {
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: column wrap;
 
     @media (--mq-small) {
-        flex-flow: column wrap;
+        flex-flow: row-reverse nowrap;
     }
 }
 
@@ -264,22 +261,21 @@ section h1 {
 
 .body-copy {
     flex: 0 1 auto;
-    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
-    width: calc(((var(--base-unit) * 29.25) / var(--page-width)) * 100%);
+    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
 
     @media (--mq-small) {
-        padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
-        padding-right: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
-        width: auto;
+        padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
+        padding-right: calc(((var(--base-unit) * 4) / var(--page-width)) * 100%);
+        width: calc(((var(--base-unit) * 29.25) / var(--page-width)) * 100%);
     }
 }
 
 .body-copy ul {
     list-style: circle outside;
-    padding-left: 17px;
+    padding-left: 19px;
 
     @media (--mq-medium) {
-        padding-left: 19px;
+        padding-left: 17px;
     }
 }
 
@@ -290,12 +286,11 @@ section h1 {
 
 .summary {
     flex: 0 1 auto;
-    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%) 0 0;
-    width: calc(((var(--base-unit) * 15.75) / var(--page-width)) * 100%);
+    padding-top: calc(var(--base-unit)px * 1.5);
 
     @media (--mq-small) {
-        padding-right: 0;
-        width: auto;
+        padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
+        width: calc(((var(--base-unit) * 15.75) / var(--page-width)) * 100%);
     }
 }
 
@@ -316,7 +311,7 @@ section h1 {
 .summary li {
     font-size: var(--small-font-size)px;
     height: var(--base-unit)px;
-    padding-left: calc(var(--base-unit)px / 2);
+    padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
     position: relative;
 
     &::before {
@@ -329,7 +324,7 @@ section h1 {
     }
 
     @media (--mq-small) {
-        padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
+        padding-left: calc(var(--base-unit)px / 2);
     }
 }
 
