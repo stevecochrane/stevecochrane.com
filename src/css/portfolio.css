@@ -173,12 +173,12 @@ header a {
     }
 }
 
-#main section {
+section {
     background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat;
     background-size: 100% 450px;
 }
 
-#main section > div {
+section > div {
     max-width: var(--page-width)px;
     margin: 0 auto;
     padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit)px * 4.5);
@@ -188,7 +188,7 @@ header a {
     }
 }
 
-#main h1 {
+section h1 {
     color: #385158;
     font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B";
     margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
@@ -199,27 +199,48 @@ header a {
     }
 }
 
-#main img {
-    box-shadow: 0 1px 8px color(var(--base-text-color) a(25%));
-    display: block;
-    height: auto;
-    margin-top: var(--base-unit)px;
-    width: 100%;
-}
-
-#main .lazy {
+.lazy {
     display: none; /* These will be shown again with .show() once the lazy load plugin is initialized in combined.js */
 }
 
-#main .half-size {
-    clear: none;
-    float: left;
-    margin: 0 0 var(--base-unit)px;
-    max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 100%);
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    @media (--mq-small) {
+        justify-content: center;
+    }
 }
 
-#main .half-size-right {
-    float: right;
+.image {
+    box-shadow: 0 1px 8px color(var(--base-text-color) a(25%));
+}
+
+.image-half {
+    max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 100%);
+
+    @media (--mq-small) {
+        max-width: none;
+    }
+}
+
+.image + .image {
+    margin-top: var(--base-unit)px;
+}
+
+.image-half + .image-half {
+    margin-top: 0;
+
+    @media (--mq-small) {
+        margin-top: var(--base-unit)px;
+    }
+}
+
+.image > img {
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .description {
