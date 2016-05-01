@@ -10,13 +10,13 @@
     -------------------------------------------------- */
 
 :root {
-    --base-font-size:        15;
-    --base-text-color:       #537681;
-    --base-unit:             24;
-    --border-color:          color(var(--base-text-color) a(25%));
-    --page-width:            1080;
+    --base-font-size: 15px;
+    --base-text-color: #537681;
+    --base-unit: 24px;
+    --border-color: color(var(--base-text-color) a(25%));
+    --page-width: 1080px;
     --page-background-color: #eff3f5;
-    --small-font-size:       11;
+    --small-font-size: 11px;
 }
 
 
@@ -42,15 +42,19 @@ html {
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
 body {
     background: var(--page-background-color);
     color: var(--base-text-color);
-    font: normal 400 var(--base-font-size)px/var(--base-unit)px "Ideal Sans SSm A", "Ideal Sans SSm B";
+    font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
+    font-size: var(--base-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--base-unit);
     text-rendering: optimizeLegibility;
 }
 
@@ -65,7 +69,7 @@ dd {
 p + p,
 p + ul,
 ul + p {
-    margin-top: var(--base-unit)px;
+    margin-top: var(--base-unit);
 }
 
 a {
@@ -89,26 +93,26 @@ header {
 header > div {
     display: flex;
     flex-direction: column;
-    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: var(--base-unit)px 0 calc(var(--base-unit)px * 0.75);
+    max-width: var(--page-width);
+    padding: var(--base-unit) 0 calc(var(--base-unit) * 0.75);
 
     @media (--mq-small) {
         flex-direction: row;
-        padding-top: calc(var(--base-unit)px * 1.75)
+        padding-top: calc(var(--base-unit) * 1.75);
     }
 }
 
 header h1 {
     flex: 0 1 auto;
-    font: normal 700 14px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B";
+    font: normal 700 14px/var(--base-unit) "Sentinel SSm A", "Sentinel SSm B", serif;
     margin: 0;
     position: relative;
     text-align: center;
     top: 0;
 
     @media (--mq-small) {
-        margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
+        margin: 0 calc(var(--base-unit) * 0.5) 0 calc((40 / var(--page-width)) * 100%);
         text-align: left;
         top: -1px;
     }
@@ -121,16 +125,16 @@ header h1 {
 header h2 {
     color: #9cb7c0;
     flex: 0 1 auto;
-    font: italic 400 13px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B";
-    margin: 0 0 var(--base-unit)px;
+    font: italic 400 13px/calc(var(--base-unit) * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
+    margin: 0 0 var(--base-unit);
     position: relative;
     text-align: center;
 
     @media (--mq-small) {
         border-left: 1px solid var(--border-color);
-        line-height: var(--base-unit)px;
+        line-height: var(--base-unit);
         margin-bottom: 0;
-        padding-left: calc(var(--base-unit)px * 0.5);
+        padding-left: calc(var(--base-unit) * 0.5);
         text-align: left;
     }
 
@@ -146,20 +150,16 @@ header ul {
     list-style: none;
 
     @media (--mq-small) {
-        margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
         justify-content: flex-end;
+        margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
     }
 }
 
 header li {
     flex: 0 1 auto;
     font-size: 13px;
-    line-height: var(--base-unit)px;
+    line-height: var(--base-unit);
     margin: 0;
-}
-
-header li a {
-    padding: 0 calc(var(--base-unit)px * 0.5);
 }
 
 header a {
@@ -172,29 +172,33 @@ header a {
     }
 }
 
+header li a {
+    padding: 0 calc(var(--base-unit) * 0.5);
+}
+
 section {
     background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat;
     background-size: 100% 450px;
 }
 
 section > div {
-    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
+    max-width: var(--page-width);
+    padding: calc(var(--base-unit) * 2) 0 calc(var(--base-unit) * 3);
 
     @media (--mq-small) {
-        padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit)px * 4.5);
+        padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 4.5);
     }
 }
 
 section h1 {
     color: #385158;
-    font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B";
-    margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
+    font: normal 700 32px/calc(var(--base-unit) * 1.5) "Sentinel A", "Sentinel B", serif;
+    margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit) * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
     text-align: center;
 
     @media (--mq-small) {
-        margin-bottom: calc(var(--base-unit)px * 1.5);
+        margin-bottom: calc(var(--base-unit) * 1.5);
     }
 }
 
@@ -223,11 +227,11 @@ section h1 {
 }
 
 .image + .image {
-    margin-top: var(--base-unit)px;
+    margin-top: var(--base-unit);
 }
 
 .image-half + .image-half {
-    margin-top: var(--base-unit)px;
+    margin-top: var(--base-unit);
 
     @media (--mq-small) {
         margin-top: 0;
@@ -261,7 +265,7 @@ section h1 {
 
 .body-copy {
     flex: 0 1 auto;
-    padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
+    padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
 
     @media (--mq-small) {
         padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
@@ -281,12 +285,12 @@ section h1 {
 
 .body-copy li {
     font-size: 13px;
-    line-height: var(--base-unit)px;
+    line-height: var(--base-unit);
 }
 
 .summary {
     flex: 0 1 auto;
-    padding-top: calc(var(--base-unit)px * 1.5);
+    padding-top: calc(var(--base-unit) * 1.5);
 
     @media (--mq-small) {
         padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
@@ -309,8 +313,8 @@ section h1 {
 }
 
 .summary li {
-    font-size: var(--small-font-size)px;
-    height: var(--base-unit)px;
+    font-size: var(--small-font-size);
+    height: var(--base-unit);
     padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
     position: relative;
 
@@ -324,7 +328,7 @@ section h1 {
     }
 
     @media (--mq-small) {
-        padding-left: calc(var(--base-unit)px / 2);
+        padding-left: calc(var(--base-unit) / 2);
     }
 }
 
@@ -340,7 +344,7 @@ section h1 {
     color: #fff;
     display: inline-block;
     font-size: 14px;
-    line-height: var(--base-unit)px;
+    line-height: var(--base-unit);
     margin-bottom: 4px;
     padding: 4px 16px;
     text-shadow: 0 -1px 0 color(#000 a(25%));
@@ -355,15 +359,15 @@ section h1 {
 
 footer > div {
     border-top: 1px solid var(--border-color);
-    max-width: var(--page-width)px;
     margin: 0 auto;
-    padding: calc(var(--base-unit)px * 0.5) 0 calc(var(--base-unit)px * 1.5);
+    max-width: var(--page-width);
+    padding: calc(var(--base-unit) * 0.5) 0 calc(var(--base-unit) * 1.5);
 }
 
 footer p {
     color: #7da1ac;
-    font-size: var(--small-font-size)px;
-    line-height: var(--base-unit)px;
+    font-size: var(--small-font-size);
+    line-height: var(--base-unit);
     margin: 0 calc((40 / var(--page-width)) * 100%);
     text-align: center;
 }
