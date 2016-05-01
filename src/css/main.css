@@ -17,7 +17,7 @@
     --img-dir: ../img/v6;
     --link-color-base: #ff5b59; /* http://0to255.com/ff6c6a, -1 */
     --link-color-hover: #ff8e8c; /* http://0to255.com/ff6c6a, +2 */
-    --page-width: 888px;
+    --page-width: 888;
     --shadow-color-base: color(#000 a(25%));
     --text-color-base: #484848;
     --text-color-light: #9f9f9f;
@@ -132,7 +132,7 @@ small {
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--shadow-color-base);
     margin: auto;
-    max-width: var(--page-width);
+    max-width: var(--page-width)px;
 }
 
 .l-header {

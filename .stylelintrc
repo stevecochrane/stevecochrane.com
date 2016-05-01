@@ -14,7 +14,6 @@
         "function-linear-gradient-no-nonstandard-direction": true,
         "function-name-case": "lower",
         "function-url-quotes": "double",
-        "function-whitespace-after": "always",
 
         "number-leading-zero": "always",
         "number-zero-length-no-unit": true,
