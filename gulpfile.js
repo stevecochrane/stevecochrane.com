@@ -17,6 +17,7 @@ var postcssImport    = require("postcss-import");
 var postcssUrl       = require("postcss-url");
 var rev              = require("gulp-rev");
 var revReplace       = require("gulp-rev-replace");
+var stylelint        = require("gulp-stylelint");
 var uglify           = require("gulp-uglify");
 
 gulp.task("clean", function() {
@@ -42,6 +43,14 @@ gulp.task("css", ["clean"], function() {
             "src/css/main.css",
             "src/css/portfolio.css"
         ])
+        .pipe(stylelint({
+            reporters: [
+                {
+                    console: true,
+                    formatter: "string"
+                }
+            ]
+        }))
         .pipe(postcss([
             postcssImport(),
             customProperties(),
