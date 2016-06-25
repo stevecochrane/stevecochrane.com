@@ -48,8 +48,12 @@ html(lang="en")
                 div
                     h1 World of Warcraft: Garrisons Website
                     .images
-                        .image.image-full: img(src="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
-                        .image.image-full: img(src="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+                    noscript
+                        .images
+                            .image.image-full: img(src="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
+                            .image.image-full: img(src="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
                     .description
                         .summary
                             ul
@@ -65,8 +69,12 @@ html(lang="en")
                 div
                     h1 Vidcaster Navigation Redesign
                     .images
-                        .image.image-full: img(src="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
-                        .image.image-full: img(src="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
+                    noscript
+                        .images
+                            .image.image-full: img(src="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
+                            .image.image-full: img(src="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
                     .description
                         .summary
                             ul
