@@ -28,11 +28,31 @@ html(lang="en")
                     li: a(href="mailto:steve@stevecochrane.com") Email
         #main(role="main")
 
+            section#wow-redesign
+                div
+                    h1 World of Warcraft Website Redesign
+                    .images
+                        .image.image-full: img(src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
+                        .image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+                    .description
+                        .summary
+                            ul
+                                li #[strong Role] Development
+                                li #[strong Client] Blizzard Entertainment
+                                li #[strong Date] Summer 2016
+                        .body-copy
+                            p I was one of a handful of front-end developers who worked on a top-to-bottom redesign of the World of Warcraft website, in preparation for the launch of the Legion expansion.
+                            p The site follows a lot of modern front-end best practices. It's beautiful at any screen size. It's built with reusable components, designed to function as predictably and independently as possible. We also have a living style guide for an up-to-date inventory of these components.
+                            p: a.button(href="https://worldofwarcraft.com/", target="_blank") Visit the live site
+
             section#wow-legion
                 div
                     h1 World of Warcraft: Legion Website
                     .images
-                        .image.image-full: img(src="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+                    noscript
+                        .images
+                            .image.image-full: img.lazy(src="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
                     .description
                         .summary
                             ul
