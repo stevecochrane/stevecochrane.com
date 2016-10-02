@@ -59,9 +59,9 @@ body {
     color: var(--text-color-base);
     display: flex;
     font: 400 100%/24px var(--font-stack-base);
+    font-kerning: normal;
     min-height: 100%;
     padding: 18px 12px;
-    text-rendering: optimizeLegibility;
 
     @media (--mq-small) {
         padding: 24px;
