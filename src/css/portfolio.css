@@ -51,7 +51,7 @@ body {
     background: var(--page-background-color);
     color: var(--base-text-color);
     font: normal 400 var(--base-font-size)px/var(--base-unit)px "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
-    text-rendering: optimizeLegibility;
+    font-kerning: normal;
 }
 
 p,
