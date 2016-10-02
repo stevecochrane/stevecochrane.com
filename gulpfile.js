@@ -79,11 +79,7 @@ gulp.task("js-lint", function() {
 });
 
 gulp.task("js-build-home", ["clean", "js-lint"], function() {
-    return gulp.src([
-            "src/js/lib/jquery-1.7.2.min.js",
-            "src/js/main.js"
-        ])
-        .pipe(concat("main.js"))
+    return gulp.src("src/js/main.js")
         .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
 });
