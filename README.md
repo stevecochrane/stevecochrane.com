@@ -14,9 +14,9 @@ gulp
 ### Notes
 * I've dropped both Less and Sass in favor of [PostCSS](https://github.com/postcss/postcss). I'm not necessarily
   advocating for this approach as this was mainly for research, but it's definitely growing on me.
-* The intent of the PostCSS usage here was to write valid CSS (plus
-  [proposed CSS features](http://cssnext.io/features/)) and then enhance and optimize it with PostCSS. So this follows
-  proposed standards and does not include things like mixins.
+* The intent of the PostCSS usage here was to write plain, valid CSS (plus
+  [proposed CSS features](http://cssnext.io/features/)) and then enhance it with PostCSS. So this follows proposed
+  standards and does not include things like mixins.
 * The CSS naming convention is [SMACSS](https://smacss.com/) but if I were writing it today, it would be like
   [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) instead.
 * The JavaScript is a little embarrassing but I haven't gotten around to updating it. jQuery really isn't necessary
