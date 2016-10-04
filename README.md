@@ -19,5 +19,4 @@ gulp
   standards and does not include things like mixins.
 * The CSS naming convention is [SMACSS](https://smacss.com/) but if I were writing it today, it would be like
   [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) instead.
-* The JavaScript is a little embarrassing but I haven't gotten around to updating it. jQuery really isn't necessary
-  here.
+* I could further optimize by finding another way to lazy load images on the Portfolio without using jQuery.
