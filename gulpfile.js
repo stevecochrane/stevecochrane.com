@@ -8,13 +8,13 @@ var customProperties = require("postcss-custom-properties");
 var del              = require("del");
 var gulp             = require("gulp");
 var imagemin         = require("gulp-imagemin");
-var jade             = require("gulp-jade");
 var jshint           = require("gulp-jshint");
 var nested           = require("postcss-nested");
 var pxtorem          = require("postcss-pxtorem");
 var postcss          = require("gulp-postcss");
 var postcssImport    = require("postcss-import");
 var postcssUrl       = require("postcss-url");
+var pug              = require("gulp-pug");
 var rev              = require("gulp-rev");
 var revReplace       = require("gulp-rev-replace");
 var stylelint        = require("gulp-stylelint");
@@ -100,8 +100,8 @@ gulp.task("html", function() {
     var dateObj = new Date();
     var currentYear = dateObj.getFullYear();
 
-    return gulp.src("src/views/pages/**/*.jade")
-        .pipe(jade({
+    return gulp.src("src/views/pages/**/*.pug")
+        .pipe(pug({
             "locals": {
                 "currentYear": currentYear
             }
