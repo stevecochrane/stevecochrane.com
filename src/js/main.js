@@ -47,7 +47,7 @@ function addLoadEvent(newFunction) {
 
 addLoadEvent(() => {
     let carousels = document.querySelectorAll(".carousel");
-    carousels.forEach(function(carousel) {
+    carousels.forEach(carousel => {
         var newCarousel = new Carousel(carousel);
         newCarousel.init();
     });
