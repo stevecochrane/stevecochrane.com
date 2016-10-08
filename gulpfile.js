@@ -86,7 +86,7 @@ gulp.task("js-lint", () => {
 gulp.task("js-build-home", ["clean", "js-lint"], () => {
     return gulp.src("src/js/main.js")
         .pipe(babel({
-            presets: ["es2015"]
+            "presets": ["es2015"]
         }))
         .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
