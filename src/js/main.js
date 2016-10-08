@@ -3,7 +3,7 @@ function Carousel(elem, intervalDuration) {
     this.intervalDuration = intervalDuration || 5000;
 }
 
-Carousel.prototype.init = () => {
+Carousel.prototype.init = function() {
     this.currentListElement = 0;
     this.listElements = this.elem.querySelectorAll("li");
     this.lastListElement = this.listElements.length - 1;
@@ -11,7 +11,7 @@ Carousel.prototype.init = () => {
     setInterval(this.rotateListElements.bind(this), this.intervalDuration);
 };
 
-Carousel.prototype.rotateListElements = () => {
+Carousel.prototype.rotateListElements = function() {
     //  Check if we've reached the last list element of the group.
     if (this.currentListElement !== this.lastListElement) {
         //  If not, increment the counter and show the next list element.
@@ -22,7 +22,7 @@ Carousel.prototype.rotateListElements = () => {
     } else {
         //  If so, hide the middle list elements (all but first and last) immediately.
         //  Keep the first showing since we'll fade back to it next.
-        for (let i = 1; i < this.lastListElement; i++) {
+        for (var i = 1; i < this.lastListElement; i++) {
             this.listElements[i].classList.remove("is-showing");
             this.listElements[i].classList.add("is-hidden-immediately");
         }
