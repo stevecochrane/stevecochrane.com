@@ -1,4 +1,5 @@
 const autoprefixer     = require("autoprefixer");
+const babel            = require("gulp-babel");
 const calc             = require("postcss-calc");
 const colorFunction    = require("postcss-color-function");
 const concat           = require("gulp-concat");
@@ -80,6 +81,9 @@ gulp.task("js-lint", () => {
 
 gulp.task("js-build-home", ["clean", "js-lint"], () => {
     return gulp.src("src/js/main.js")
+        .pipe(babel({
+            presets: ["es2015"]
+        }))
         .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
 });
