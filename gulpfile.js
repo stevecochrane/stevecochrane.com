@@ -1,3 +1,5 @@
+"use strict";
+
 const autoprefixer     = require("autoprefixer");
 const babel            = require("gulp-babel");
 const calc             = require("postcss-calc");
@@ -101,8 +103,8 @@ gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
 
 gulp.task("html", () => {
     //  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
-    var dateObj = new Date();
-    var currentYear = dateObj.getFullYear();
+    let dateObj = new Date();
+    let currentYear = dateObj.getFullYear();
 
     return gulp.src("src/views/pages/**/*.pug")
         .pipe(pug({
@@ -125,7 +127,7 @@ gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], () => {
 });
 
 gulp.task("revisionReplace", ["revision"], () => {
-    var manifest = gulp.src("dist/rev-manifest.json");
+    let manifest = gulp.src("dist/rev-manifest.json");
 
     return gulp.src("dist/**/*.html")
         .pipe(revReplace({"manifest": manifest}))
