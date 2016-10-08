@@ -33,9 +33,9 @@ gulp.task("clean", () => {
 gulp.task("images", () => {
     return gulp.src("src/img/**/*")
         .pipe(imagemin({
-            svgoPlugins: [
-                {removeViewBox: false},
-                {cleanupIDs: false}
+            "svgoPlugins": [
+                { "removeViewBox": false },
+                { "cleanupIDs": false }
             ]
         }))
         .pipe(gulp.dest("dist/img"));
@@ -47,10 +47,10 @@ gulp.task("css", ["clean"], () => {
             "src/css/portfolio.css"
         ])
         .pipe(stylelint({
-            reporters: [
+            "reporters": [
                 {
-                    console: true,
-                    formatter: "string"
+                    "console": true,
+                    "formatter": "string"
                 }
             ]
         }))
@@ -63,10 +63,10 @@ gulp.task("css", ["clean"], () => {
             colorFunction(),
             pxtorem({
                 //  Apply pxtorem to all style properties.
-                propWhiteList: []
+                "propWhiteList": []
             }),
             postcssUrl({
-                url: "inline"
+                "url": "inline"
             }),
             autoprefixer(),
             cssnano()
@@ -132,7 +132,7 @@ gulp.task("revisionReplace", ["revision"], () => {
     let manifest = gulp.src("dist/rev-manifest.json");
 
     return gulp.src("dist/**/*.html")
-        .pipe(revReplace({"manifest": manifest}))
+        .pipe(revReplace({ "manifest": manifest }))
         .pipe(gulp.dest("dist"));
 });
 
