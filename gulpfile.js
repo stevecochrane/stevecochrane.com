@@ -20,14 +20,14 @@ const revReplace       = require("gulp-rev-replace");
 const stylelint        = require("gulp-stylelint");
 const uglify           = require("gulp-uglify");
 
-gulp.task("clean", function() {
+gulp.task("clean", () => {
     return del([
         "dist/css/*.css",
         "dist/js/*.js"
     ]);
 });
 
-gulp.task("images", function() {
+gulp.task("images", () => {
     return gulp.src("src/img/**/*")
         .pipe(imagemin({
             svgoPlugins: [
@@ -38,7 +38,7 @@ gulp.task("images", function() {
         .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task("css", ["clean"], function() {
+gulp.task("css", ["clean"], () => {
     return gulp.src([
             "src/css/main.css",
             "src/css/portfolio.css"
@@ -71,20 +71,20 @@ gulp.task("css", ["clean"], function() {
         .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("js-lint", function() {
+gulp.task("js-lint", () => {
     return gulp.src("src/js/*.js")
         .pipe(jshint())
         .pipe(jshint.reporter("default"))
         .pipe(jshint.reporter("fail"));
 });
 
-gulp.task("js-build-home", ["clean", "js-lint"], function() {
+gulp.task("js-build-home", ["clean", "js-lint"], () => {
     return gulp.src("src/js/main.js")
         .pipe(uglify())
         .pipe(gulp.dest("dist/js/"));
 });
 
-gulp.task("js-build-portfolio", ["clean", "js-lint"], function() {
+gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
     return gulp.src([
             "src/js/lib/jquery-2.0.3.min.js",
             "src/js/lib/jquery.lazyload.min.js",
@@ -95,7 +95,7 @@ gulp.task("js-build-portfolio", ["clean", "js-lint"], function() {
         .pipe(gulp.dest("dist/js/"));
 });
 
-gulp.task("html", function() {
+gulp.task("html", () => {
     //  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
     var dateObj = new Date();
     var currentYear = dateObj.getFullYear();
@@ -109,7 +109,7 @@ gulp.task("html", function() {
         .pipe(gulp.dest("dist/"));
 });
 
-gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], function() {
+gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], () => {
     return gulp.src([
             "dist/**/*.css",
             "dist/**/*.js"
@@ -120,7 +120,7 @@ gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], function()
         .pipe(gulp.dest("dist"));
 });
 
-gulp.task("revisionReplace", ["revision"], function() {
+gulp.task("revisionReplace", ["revision"], () => {
     var manifest = gulp.src("dist/rev-manifest.json");
 
     return gulp.src("dist/**/*.html")
