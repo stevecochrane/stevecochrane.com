@@ -3,7 +3,7 @@ function Carousel(elem, intervalDuration) {
     this.intervalDuration = intervalDuration || 5000;
 }
 
-Carousel.prototype.init = function() {
+Carousel.prototype.init = () => {
     this.currentListElement = 0;
     this.listElements = this.elem.querySelectorAll("li");
     this.lastListElement = this.listElements.length - 1;
@@ -11,7 +11,7 @@ Carousel.prototype.init = function() {
     setInterval(this.rotateListElements.bind(this), this.intervalDuration);
 };
 
-Carousel.prototype.rotateListElements = function() {
+Carousel.prototype.rotateListElements = () => {
     //  Check if we've reached the last list element of the group.
     if (this.currentListElement !== this.lastListElement) {
         //  If not, increment the counter and show the next list element.
@@ -34,19 +34,19 @@ Carousel.prototype.rotateListElements = function() {
 };
 
 function addLoadEvent(newFunction) {
-    var currentOnload = window.onload;
+    let currentOnload = window.onload;
     if (typeof window.onload != "function") {
         window.onload = newFunction;
     } else {
-        window.onload = function() {
+        window.onload = () => {
             currentOnload();
             newFunction();
         };
     }
 }
 
-addLoadEvent(function() {
-    var carousels = document.querySelectorAll(".carousel");
+addLoadEvent(() => {
+    let carousels = document.querySelectorAll(".carousel");
     carousels.forEach(function(carousel) {
         var newCarousel = new Carousel(carousel);
         newCarousel.init();
