@@ -34,21 +34,21 @@ Carousel.prototype.rotateListElements = function() {
 };
 
 function addLoadEvent(newFunction) {
-    var currentOnload = window.onload;
+    let currentOnload = window.onload;
     if (typeof window.onload != "function") {
         window.onload = newFunction;
     } else {
-        window.onload = function() {
+        window.onload = () => {
             currentOnload();
             newFunction();
         };
     }
 }
 
-addLoadEvent(function() {
-    var carousels = document.querySelectorAll(".carousel");
-    carousels.forEach(function(carousel) {
-        var newCarousel = new Carousel(carousel);
+addLoadEvent(() => {
+    let carousels = document.querySelectorAll(".carousel");
+    carousels.forEach(carousel => {
+        let newCarousel = new Carousel(carousel);
         newCarousel.init();
     });
 });
