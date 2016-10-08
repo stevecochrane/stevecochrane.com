@@ -22,7 +22,7 @@ Carousel.prototype.rotateListElements = () => {
     } else {
         //  If so, hide the middle list elements (all but first and last) immediately.
         //  Keep the first showing since we'll fade back to it next.
-        for (var i = 1; i < this.lastListElement; i++) {
+        for (let i = 1; i < this.lastListElement; i++) {
             this.listElements[i].classList.remove("is-showing");
             this.listElements[i].classList.add("is-hidden-immediately");
         }
@@ -48,7 +48,7 @@ function addLoadEvent(newFunction) {
 addLoadEvent(() => {
     let carousels = document.querySelectorAll(".carousel");
     carousels.forEach(carousel => {
-        var newCarousel = new Carousel(carousel);
+        let newCarousel = new Carousel(carousel);
         newCarousel.init();
     });
 });
