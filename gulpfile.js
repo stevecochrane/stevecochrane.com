@@ -76,7 +76,9 @@ gulp.task("css", ["clean"], () => {
 
 gulp.task("js-lint", () => {
     return gulp.src("src/js/*.js")
-        .pipe(jshint())
+        .pipe(jshint({
+            "esversion": 6
+        }))
         .pipe(jshint.reporter("default"))
         .pipe(jshint.reporter("fail"));
 });
