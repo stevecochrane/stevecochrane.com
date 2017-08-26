@@ -49,8 +49,12 @@ html(lang="en")
                 div
                     h1 World of Warcraft Website Redesign
                     .images
-                        .image.image-full: img(src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
-                        .image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+                    noscript
+                        .images
+                            .image.image-full: img(src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
+                            .image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
                     .description
                         .summary
                             ul
@@ -66,8 +70,12 @@ html(lang="en")
                 div
                     h1 Diablo 20th Anniversary Website
                     .images
-                        .image.image-full: img(src="img/diablo-20th-anniversary-1.jpg", width="1080", height="480", alt="Diablo 20th Anniversary Page: Masthead")
-                        .image.image-full: img(src="img/diablo-20th-anniversary-2.jpg", width="1080", height="792", alt="Diablo 20th Anniversary Page: Diablo")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/diablo-20th-anniversary-1.jpg", width="1080", height="480", alt="Diablo 20th Anniversary Page: Masthead")
+                        .image.image-full: img.lazy(src="img/placeholder.png", data-original="img/diablo-20th-anniversary-2.jpg", width="1080", height="792", alt="Diablo 20th Anniversary Page: Diablo")
+                    noscript
+                        .images
+                            .image.image-full: img(src="img/diablo-20th-anniversary-1.jpg", width="1080", height="480", alt="Diablo 20th Anniversary Page: Masthead")
+                            .image.image-full: img(src="img/diablo-20th-anniversary-2.jpg", width="1080", height="792", alt="Diablo 20th Anniversary Page: Diablo")
                     .description
                         .summary
                             ul
