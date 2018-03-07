@@ -24,126 +24,126 @@ const stylelint        = require("gulp-stylelint");
 const uglify           = require("gulp-uglify");
 
 gulp.task("clean", () => {
-    return del([
-        "dist/css/*.css",
-        "dist/js/*.js"
-    ]);
+	return del([
+		"dist/css/*.css",
+		"dist/js/*.js"
+	]);
 });
 
 gulp.task("images", () => {
-    return gulp.src("src/img/**/*")
-        .pipe(imagemin({
-            "svgoPlugins": [
-                { "removeViewBox": false },
-                { "cleanupIDs": false }
-            ]
-        }))
-        .pipe(gulp.dest("dist/img"));
+	return gulp.src("src/img/**/*")
+		.pipe(imagemin({
+			"svgoPlugins": [
+				{ "removeViewBox": false },
+				{ "cleanupIDs": false }
+			]
+		}))
+		.pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("css", ["clean"], () => {
-    return gulp.src([
-            "src/css/main.css",
-            "src/css/portfolio.css"
-        ])
-        .pipe(stylelint({
-            "reporters": [
-                {
-                    "console": true,
-                    "formatter": "string"
-                }
-            ]
-        }))
-        .pipe(postcss([
-            postcssImport(),
-            customProperties(),
-            customMedia(),
-            calc(),
-            nested(),
-            colorFunction(),
-            pxtorem({
-                //  Apply pxtorem to all style properties.
-                "propWhiteList": []
-            }),
-            postcssUrl({
-                "url": "inline"
-            }),
-            autoprefixer(),
-            cssnano()
-        ]))
-        .pipe(gulp.dest("dist/css"));
+	return gulp.src([
+			"src/css/main.css",
+			"src/css/portfolio.css"
+		])
+		.pipe(stylelint({
+			"reporters": [
+				{
+					"console": true,
+					"formatter": "string"
+				}
+			]
+		}))
+		.pipe(postcss([
+			postcssImport(),
+			customProperties(),
+			customMedia(),
+			calc(),
+			nested(),
+			colorFunction(),
+			pxtorem({
+				//  Apply pxtorem to all style properties.
+				"propWhiteList": []
+			}),
+			postcssUrl({
+				"url": "inline"
+			}),
+			autoprefixer(),
+			cssnano()
+		]))
+		.pipe(gulp.dest("dist/css"));
 });
 
 gulp.task("js-lint", () => {
-    return gulp.src("src/js/*.js")
-        .pipe(jshint({
-            "esversion": 6
-        }))
-        .pipe(jshint.reporter("default"))
-        .pipe(jshint.reporter("fail"));
+	return gulp.src("src/js/*.js")
+		.pipe(jshint({
+			"esversion": 6
+		}))
+		.pipe(jshint.reporter("default"))
+		.pipe(jshint.reporter("fail"));
 });
 
 gulp.task("js-build-home", ["clean", "js-lint"], () => {
-    return gulp.src("src/js/main.js")
-        .pipe(babel({
-            "presets": ["es2015"]
-        }))
-        .pipe(uglify())
-        .pipe(gulp.dest("dist/js/"));
+	return gulp.src("src/js/main.js")
+		.pipe(babel({
+			"presets": ["es2015"]
+		}))
+		.pipe(uglify())
+		.pipe(gulp.dest("dist/js/"));
 });
 
 gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
-    return gulp.src([
-            "src/js/lib/jquery-2.0.3.min.js",
-            "src/js/lib/jquery.lazyload.min.js",
-            "src/js/portfolio-main.js"
-        ])
-        .pipe(concat("portfolio-main.js"))
-        .pipe(uglify())
-        .pipe(gulp.dest("dist/js/"));
+	return gulp.src([
+			"src/js/lib/jquery-2.0.3.min.js",
+			"src/js/lib/jquery.lazyload.min.js",
+			"src/js/portfolio-main.js"
+		])
+		.pipe(concat("portfolio-main.js"))
+		.pipe(uglify())
+		.pipe(gulp.dest("dist/js/"));
 });
 
 gulp.task("html", () => {
-    //  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
-    let dateObj = new Date();
-    let currentYear = dateObj.getFullYear();
+	//  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
+	let dateObj = new Date();
+	let currentYear = dateObj.getFullYear();
 
-    return gulp.src("src/views/pages/**/*.pug")
-        .pipe(pug({
-            "locals": {
-                "currentYear": currentYear
-            }
-        }))
-        .pipe(gulp.dest("dist/"));
+	return gulp.src("src/views/pages/**/*.pug")
+		.pipe(pug({
+			"locals": {
+				"currentYear": currentYear
+			}
+		}))
+		.pipe(gulp.dest("dist/"));
 });
 
 gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], () => {
-    return gulp.src([
-            "dist/**/*.css",
-            "dist/**/*.js"
-        ])
-        .pipe(rev())
-        .pipe(gulp.dest("dist"))
-        .pipe(rev.manifest())
-        .pipe(gulp.dest("dist"));
+	return gulp.src([
+			"dist/**/*.css",
+			"dist/**/*.js"
+		])
+		.pipe(rev())
+		.pipe(gulp.dest("dist"))
+		.pipe(rev.manifest())
+		.pipe(gulp.dest("dist"));
 });
 
 gulp.task("revisionReplace", ["revision"], () => {
-    let manifest = gulp.src("dist/rev-manifest.json");
+	let manifest = gulp.src("dist/rev-manifest.json");
 
-    return gulp.src("dist/**/*.html")
-        .pipe(revReplace({ "manifest": manifest }))
-        .pipe(gulp.dest("dist"));
+	return gulp.src("dist/**/*.html")
+		.pipe(revReplace({ "manifest": manifest }))
+		.pipe(gulp.dest("dist"));
 });
 
 gulp.task("default", [
-    "clean",
-    "images",
-    "css",
-    "js-lint",
-    "js-build-home",
-    "js-build-portfolio",
-    "html",
-    "revision",
-    "revisionReplace"
+	"clean",
+	"images",
+	"css",
+	"js-lint",
+	"js-build-home",
+	"js-build-portfolio",
+	"html",
+	"revision",
+	"revisionReplace"
 ]);

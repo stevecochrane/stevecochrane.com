@@ -1,46 +1,46 @@
 extends ../../templates/layouts/base
 
 block title
-    title Videogames - Steve Cochrane
+	title Videogames - Steve Cochrane
 
 block description
-    meta(name="description", content="Videogames made by Steve Cochrane, a front-end developer and designer from Austin, Texas.")
+	meta(name="description", content="Videogames made by Steve Cochrane, a front-end developer and designer from Austin, Texas.")
 
 block openGraph
-    meta(property="og:url", content="https://stevecochrane.com/videogames/")
-    meta(property="og:title", content="Videogames")
-    meta(property="og:description", content="Videogames made by Steve Cochrane, a front-end developer and designer from Austin, Texas.")
-    meta(property="og:site_name", content="Steve Cochrane")
-    meta(property="og:image", content="https://stevecochrane.com/tumblr/images/portrait-512.png")
+	meta(property="og:url", content="https://stevecochrane.com/videogames/")
+	meta(property="og:title", content="Videogames")
+	meta(property="og:description", content="Videogames made by Steve Cochrane, a front-end developer and designer from Austin, Texas.")
+	meta(property="og:site_name", content="Steve Cochrane")
+	meta(property="og:image", content="https://stevecochrane.com/tumblr/images/portrait-512.png")
 
 block page
-    header.l-header.l-mini-header
-        nav.breadcrumb #[a(href="/") Steve Cochrane] / #[span Videogames]
-    .l-content
-        section#the-mountaineers.l-section
-            h1 The Mountaineers
-            img.img-block(src="/img/v6/the-mountaineers.png", srcset="/img/v6/the-mountaineers.png, /img/v6/the-mountaineers-2x.png 2x", alt="Screenshots of The Mountaineers", width="816", height="192")
-            .l-grid
-                .l-col-two-thirds
-                    p A game about climbing mountains, parenting, and hams. This is still a work in progress but I #[a(href="http://blog.stevecochrane.com/") blog] about its development (among other things) and there is some #[a(href="/music/") music] available as well.
-        section#instigation.l-section
-            h1 INSTIGATION
-            img.img-block(src="/img/v6/instigation.png", srcset="/img/v6/instigation.png, /img/v6/instigation-2x.png 2x", alt="Screenshot of INSTIGATION", width="816", height="192")
-            .l-grid
-                .l-col-two-thirds
-                    p My second entry for the #[a(href="http://ludumdare.com") Ludum Dare] 48-hour game jam, made in August 2013. A frantic match-three puzzle game that explains what instigated the alien invasion in Space Invaders. It ranked in the top 10% of 1,400+ entries in the Fun category and very nearly so in Audio and Overall (top 11%).
-                    p: a.button(href="http://ludumdare.com/compo/ludum-dare-27/?action=preview&uid=12266") Play INSTIGATION
-        section#intergalactic-curling-league.l-section
-            h1 Intergalactic Curling League
-            img.img-block(src="/img/v6/intergalactic-curling-league.png", srcset="/img/v6/intergalactic-curling-league.png, /img/v6/intergalactic-curling-league-2x.png 2x", alt="Screenshot of Intergalactic Curling League", width="816", height="192")
-            .l-grid
-                .l-col-two-thirds
-                    p My first entry for the #[a(href="http://ludumdare.com") Ludum Dare] 48-hour game jam, made in April 2012. This is an 8-bit, two-player version of curling, set in outer space for no good reason. It ranked in the top 100 out of 1,400+ entries in the Fun, Audio, and Humor categories.
-                    p: a.button(href="http://ludumdare.com/compo/ludum-dare-23/?action=preview&uid=12266") Play Intergalactic Curling League
-        section#videogame.l-section
-            h1 VIDEOGAME
-            img.img-block(src="/img/v6/videogame.png", srcset="/img/v6/videogame.png, /img/v6/videogame-2x.png 2x", alt="Screenshot of VIDEOGAME", width="816", height="192")
-            .l-grid
-                .l-col-two-thirds
-                    p My first videogame, made from scratch with HTML5 in April 2011. While it&apos;s not much of a game (it&apos;s basically Space Invaders plus a new weapon, minus some other stuff) I am pretty proud of it from a technical perspective. It still runs on desktop browsers, though the mobile-specific functionality is now broken due to browser changes, sadly.
-                    p: a.button(href="/videogame/") Play VIDEOGAME
+	header.l-header.l-mini-header
+		nav.breadcrumb #[a(href="/") Steve Cochrane] / #[span Videogames]
+	.l-content
+		section#the-mountaineers.l-section
+			h1 The Mountaineers
+			img.img-block(src="/img/v6/the-mountaineers.png", srcset="/img/v6/the-mountaineers.png, /img/v6/the-mountaineers-2x.png 2x", alt="Screenshots of The Mountaineers", width="816", height="192")
+			.l-grid
+				.l-col-two-thirds
+					p A game about climbing mountains, parenting, and hams. This is still a work in progress but I #[a(href="http://blog.stevecochrane.com/") blog] about its development (among other things) and there is some #[a(href="/music/") music] available as well.
+		section#instigation.l-section
+			h1 INSTIGATION
+			img.img-block(src="/img/v6/instigation.png", srcset="/img/v6/instigation.png, /img/v6/instigation-2x.png 2x", alt="Screenshot of INSTIGATION", width="816", height="192")
+			.l-grid
+				.l-col-two-thirds
+					p My second entry for the #[a(href="http://ludumdare.com") Ludum Dare] 48-hour game jam, made in August 2013. A frantic match-three puzzle game that explains what instigated the alien invasion in Space Invaders. It ranked in the top 10% of 1,400+ entries in the Fun category and very nearly so in Audio and Overall (top 11%).
+					p: a.button(href="http://ludumdare.com/compo/ludum-dare-27/?action=preview&uid=12266") Play INSTIGATION
+		section#intergalactic-curling-league.l-section
+			h1 Intergalactic Curling League
+			img.img-block(src="/img/v6/intergalactic-curling-league.png", srcset="/img/v6/intergalactic-curling-league.png, /img/v6/intergalactic-curling-league-2x.png 2x", alt="Screenshot of Intergalactic Curling League", width="816", height="192")
+			.l-grid
+				.l-col-two-thirds
+					p My first entry for the #[a(href="http://ludumdare.com") Ludum Dare] 48-hour game jam, made in April 2012. This is an 8-bit, two-player version of curling, set in outer space for no good reason. It ranked in the top 100 out of 1,400+ entries in the Fun, Audio, and Humor categories.
+					p: a.button(href="http://ludumdare.com/compo/ludum-dare-23/?action=preview&uid=12266") Play Intergalactic Curling League
+		section#videogame.l-section
+			h1 VIDEOGAME
+			img.img-block(src="/img/v6/videogame.png", srcset="/img/v6/videogame.png, /img/v6/videogame-2x.png 2x", alt="Screenshot of VIDEOGAME", width="816", height="192")
+			.l-grid
+				.l-col-two-thirds
+					p My first videogame, made from scratch with HTML5 in April 2011. While it&apos;s not much of a game (it&apos;s basically Space Invaders plus a new weapon, minus some other stuff) I am pretty proud of it from a technical perspective. It still runs on desktop browsers, though the mobile-specific functionality is now broken due to browser changes, sadly.
+					p: a.button(href="/videogame/") Play VIDEOGAME
