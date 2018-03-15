@@ -30,8 +30,15 @@ html(lang="en")
 				div
 					h1 Diablo III: Rise of the Necromancer
 					.images
-						.image.image-full: img(src="img/rise-of-the-necromancer-1.jpg", width="1080", height="744", alt="Rise of the Necromancer: Book Cover")
-						.image.image-full: img(src="img/rise-of-the-necromancer-2.jpg", width="1080", height="696", alt="Rise of the Necromancer: Foreword")
+						.image.image-full
+							img(
+								srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
+								src="img/rise-of-the-necromancer-1.jpg",
+								width="1280",
+								height="882",
+								alt="Rise of the Necromancer: Book Cover"
+							)
+						.image.image-full: img(src="img/rise-of-the-necromancer-2.jpg", width="1280", height="696", alt="Rise of the Necromancer: Foreword")
 					.description
 						.summary
 							ul
