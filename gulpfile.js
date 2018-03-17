@@ -94,8 +94,7 @@ gulp.task("js-build-home", ["clean", "js-lint"], () => {
 
 gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
 	return gulp.src([
-			"src/js/lib/jquery-2.0.3.min.js",
-			"src/js/lib/jquery.lazyload.min.js",
+			"src/js/lib/lozad-1.3.0.js",
 			"src/js/portfolio-main.js"
 		])
 		.pipe(concat("portfolio-main.js"))
