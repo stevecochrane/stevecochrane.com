@@ -69,7 +69,14 @@ html(lang="en")
 								height="669",
 								alt="World of Warcraft Website Redesign: Homepage"
 							)
-						.image.image-full: img.lazy(data-src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+						.image.image-full
+							img.lazy(
+								data-src-set="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
+								data-src="img/wow-redesign-2.jpg",
+								width="1280",
+								height="800",
+								alt="World of Warcraft Website Redesign: New Player's Guide"
+							)
 					noscript
 						.images
 							.image.image-full
@@ -80,7 +87,14 @@ html(lang="en")
 									height="669",
 									alt="World of Warcraft Website Redesign: Homepage"
 								)
-							.image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+							.image.image-full
+								img(
+									srcset="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
+									src="img/wow-redesign-2.jpg",
+									width="1280",
+									height="800",
+									alt="World of Warcraft Website Redesign: New Player's Guide"
+								)
 					.description
 						.summary
 							ul
