@@ -1,5 +1,5 @@
 var observer = lozad(".lazy", {
-	rootMargin: "50vh 50vw",
+	rootMargin: "25%",
 	threshold: 0
 });
 observer.observe();
