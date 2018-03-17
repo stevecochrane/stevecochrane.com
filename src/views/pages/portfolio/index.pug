@@ -159,10 +159,24 @@ html(lang="en")
 				div
 					h1 World of Warcraft: Legion Website
 					.images
-						.image.image-full: img.lazy(data-src="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+						.image.image-full
+							img.lazy(
+								data-srcset="img/wow-legion-1.jpg 1x, img/wow-legion-1-2x.jpg 2x",
+								data-src="img/wow-legion-1.jpg",
+								width="1280",
+								height="877",
+								alt="World of Warcraft: Legion Website: Masthead"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+							.image.image-full
+								img(
+									srcset="img/wow-legion-1.jpg 1x, img/wow-legion-1-2x.jpg 2x",
+									src="img/wow-legion-1.jpg",
+									width="1280",
+									height="877",
+									alt="World of Warcraft: Legion Website: Masthead"
+								)
 					.description
 						.summary
 							ul
