@@ -61,11 +61,25 @@ html(lang="en")
 				div
 					h1 World of Warcraft Website Redesign
 					.images
-						.image.image-full: img.lazy(data-src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
+						.image.image-full
+							img.lazy(
+								data-srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
+								data-src="img/wow-redesign-1.jpg",
+								width="1280",
+								height="669",
+								alt="World of Warcraft Website Redesign: Homepage"
+							)
 						.image.image-full: img.lazy(data-src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
 					noscript
 						.images
-							.image.image-full: img(src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
+							.image.image-full
+								img(
+									srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
+									src="img/wow-redesign-1.jpg",
+									width="1280",
+									height="669",
+									alt="World of Warcraft Website Redesign: Homepage"
+								)
 							.image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
 					.description
 						.summary
