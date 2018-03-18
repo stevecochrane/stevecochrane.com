@@ -96,9 +96,9 @@ gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
 	return gulp.src([
 			"src/js/lib/intersection-observer-0.5.0.js",
 			"src/js/lib/lozad-1.3.0.js",
-			"src/js/portfolio-main.js"
+			"src/js/portfolio.js"
 		])
-		.pipe(concat("portfolio-main.js"))
+		.pipe(concat("portfolio.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest("dist/js/"));
 });
