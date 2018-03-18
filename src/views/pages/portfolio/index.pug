@@ -237,6 +237,38 @@ html(lang="en")
 							p The page was published in the lead-up to the expansion launch to build interest, with lots of in-game screenshots and information on all the new things you can do with your garrison.
 							p: a.button(href="http://battle.net/wow/game/garrisons/", target="_blank") Visit the live site
 
+			section#pixel-art-scrapbook
+				div
+					h1 Pixel Art Scrapbook Application
+					.images
+						.image.image-full
+							img.lazy(
+								data-src="img/pixel-art-scrapbook-1.jpg",
+								data-srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+								width="1280",
+								height="666",
+								alt="Pixel Art Scrapbook"
+							)
+					noscript
+						.images
+							.image.image-full
+								img(
+									src="img/pixel-art-scrapbook-1.jpg",
+									srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+									width="1280",
+									height="666",
+									alt="Pixel Art Scrapbook"
+								)
+					.description
+						.summary
+							ul
+								li #[strong Role] Development, Design
+								li #[strong Client] Myself
+								li #[strong Date] Fall 2013
+						.body-copy
+							p A prototype of a web application for cataloguing pixel art that inspires you, for reference when you make your own. It uses #[a(href="http://emberjs.com") Ember] for MVC, #[a(href="https://nodejs.org") Node] + #[a(href="http://expressjs.com") Express] for a simple RESTful API and #[a(href="https://mongodb.org") MongoDB] for the database. The demo here is just of the interface and the back-end functionality has been disabled. You can make changes but nothing is stored. The full version is #[a(href="https://github.com/stevecochrane/pixel-art-scrapbook") available on GitHub] but you&apos;ll need to run a local Node server to use it.
+							p: a.button(href="pixel-art-scrapbook/", target="_blank") View a demo
+
 			section#vidcaster-theme-editor
 				div
 					h1 Vidcaster Theme Editor
@@ -275,38 +307,6 @@ html(lang="en")
 						.body-copy
 							p The message we wanted to convey with this homepage redesign was not so much &ldquo;look how great our product is,&rdquo; but &ldquo;look how great your video site could be.&rdquo; So I chose to highlight some of our most impressive customer sites to build excitement and then demonstrate that visitors can build a similar website in minutes, for free, right now. There was a pretty strong uptick in new signups once this went live.
 							p: a.button(href="vidcaster-website/archive/", target="_blank") View the archived site
-
-			section#pixel-art-scrapbook
-				div
-					h1 Pixel Art Scrapbook Application
-					.images
-						.image.image-full
-							img.lazy(
-								data-src="img/pixel-art-scrapbook-1.jpg",
-								data-srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
-								width="1280",
-								height="666",
-								alt="Pixel Art Scrapbook"
-							)
-					noscript
-						.images
-							.image.image-full
-								img(
-									src="img/pixel-art-scrapbook-1.jpg",
-									srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
-									width="1280",
-									height="666",
-									alt="Pixel Art Scrapbook"
-								)
-					.description
-						.summary
-							ul
-								li #[strong Role] Development, Design
-								li #[strong Client] Myself
-								li #[strong Date] Fall 2013
-						.body-copy
-							p A prototype of a web application for cataloguing pixel art that inspires you, for reference when you make your own. It uses #[a(href="http://emberjs.com") Ember] for MVC, #[a(href="https://nodejs.org") Node] + #[a(href="http://expressjs.com") Express] for a simple RESTful API and #[a(href="https://mongodb.org") MongoDB] for the database. The demo here is just of the interface and the back-end functionality has been disabled. You can make changes but nothing is stored. The full version is #[a(href="https://github.com/stevecochrane/pixel-art-scrapbook") available on GitHub] but you&apos;ll need to run a local Node server to use it.
-							p: a.button(href="pixel-art-scrapbook/", target="_blank") View a demo
 
 			section#vidcaster-video-player
 				div
