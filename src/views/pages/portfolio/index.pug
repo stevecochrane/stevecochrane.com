@@ -192,12 +192,40 @@ html(lang="en")
 				div
 					h1 World of Warcraft: Garrisons Website
 					.images
-						.image.image-full: img.lazy(data-src="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
-						.image.image-full: img.lazy(data-src="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+						.image.image-full
+							img.lazy(
+								data-src="img/wow-garrisons-1.jpg",
+								data-srcset="img/wow-garrisons-1.jpg 1x, img/wow-garrisons-1-2x.jpg 2x",
+								width="1280",
+								height="589",
+								alt="World of Warcraft: Garrisons Website: Masthead"
+							)
+						.image.image-full
+							img.lazy(
+								data-src="img/wow-garrisons-2.jpg",
+								data-srcset="img/wow-garrisons-2.jpg 1x, img/wow-garrisons-2-2x.jpg 2x",
+								width="1280",
+								height="559",
+								alt="World of Warcraft: Garrisons Website: Buildings"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
-							.image.image-full: img(src="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+							.image.image-full
+								img(
+									src="img/wow-garrisons-1.jpg",
+									srcset="img/wow-garrisons-1.jpg 1x, img/wow-garrisons-1-2x.jpg 2x",
+									width="1280",
+									height="589",
+									alt="World of Warcraft: Garrisons Website: Masthead"
+								)
+							.image.image-full
+								img(
+									src="img/wow-garrisons-2.jpg",
+									srcset="img/wow-garrisons-2.jpg 1x, img/wow-garrisons-2-2x.jpg 2x",
+									width="1280",
+									height="559",
+									alt="World of Warcraft: Garrisons Website: Buildings"
+								)
 					.description
 						.summary
 							ul
