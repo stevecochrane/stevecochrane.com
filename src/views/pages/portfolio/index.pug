@@ -280,10 +280,24 @@ html(lang="en")
 				div
 					h1 Pixel Art Scrapbook Application
 					.images
-						.image.image-full: img.lazy(data-src="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
+						.image.image-full
+							img.lazy(
+								data-src="img/pixel-art-scrapbook-1.jpg",
+								data-srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+								width="1280",
+								height="666",
+								alt="Pixel Art Scrapbook"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
+							.image.image-full
+								img(
+									src="img/pixel-art-scrapbook-1.jpg",
+									srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+									width="1280",
+									height="666",
+									alt="Pixel Art Scrapbook"
+								)
 					.description
 						.summary
 							ul
