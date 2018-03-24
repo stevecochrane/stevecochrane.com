@@ -294,10 +294,24 @@ html(lang="en")
 				div
 					h1 Vidcaster Website
 					.images
-						.image.image-full: img.lazy(data-src="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+						.image.image-full
+							img.lazy(
+								data-src="img/vidcaster-website-1.jpg",
+								data-srcset="img/vidcaster-website-1.jpg 1x, img/vidcaster-website-1-2x.jpg 2x",
+								width="1280",
+								height="660",
+								alt="Vidcaster home page"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+							.image.image-full
+								img(
+									src="img/vidcaster-website-1.jpg",
+									srcset="img/vidcaster-website-1.jpg 1x, img/vidcaster-website-1-2x.jpg 2x",
+									width="1280",
+									height="660",
+									alt="Vidcaster home page"
+								)
 					.description
 						.summary
 							ul
