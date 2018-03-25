@@ -213,6 +213,62 @@ html(lang="en")
 							p
 								a.button(href="http://battle.net/wow/legion/", target="_blank") Visit the live site
 
+			section#html-reference
+				div
+					h1 HTML Reference API &apos; Web Application
+					.images
+						.image.image-full
+							img.lazy(
+								data-src="img/html-reference-1.jpg",
+								data-srcset="img/html-reference-1.jpg 1x, img/html-reference-1-2x.jpg 2x",
+								width="1280",
+								height="686",
+								alt="HTML Reference Web Application index view"
+							)
+							img.lazy(
+								data-src="img/html-reference-2.jpg",
+								data-srcset="img/html-reference-2.jpg 1x, img/html-reference-2-2x.jpg 2x",
+								width="1280",
+								height="412",
+								alt="HTML Reference API list results"
+							)
+					noscript
+						.images
+							.image.image-full
+								img(
+									src="img/html-reference-1.jpg",
+									srcset="img/html-reference-1.jpg 1x, img/html-reference-1-2x.jpg 2x",
+									width="1280",
+									height="686",
+									alt="HTML Reference Web Application index view"
+								)
+								img.lazy(
+									src="img/html-reference-2.jpg",
+									srcset="img/html-reference-2.jpg 1x, img/html-reference-2-2x.jpg 2x",
+									width="1280",
+									height="412",
+									alt="HTML Reference API list results"
+								)
+					.description
+						.summary
+							ul
+								li #[strong Role] Engineering, Design
+								li #[strong Client] Myself
+								li #[strong Date] Spring 2016
+						.body-copy
+							p.
+								For personal development, I decided to get out of my front-end engineering comfort zone a little bit and build
+								a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database,
+								and it has the standard CRUD (Create, Read, Update, Delete) operations available. There&apos;s also a Mocha
+								test suite, and API requests are cached for better performance.
+							p.
+								I then made a simple companion web application for interfacing with the API, also with Node and Express. It has
+								a central list for viewing all elements and form pages for adding, editing, and deleting elements, with error
+								handling.
+							p
+								a.button(href="https://github.com/stevecochrane/html-reference-api", target="_blank") View the API on GitHub
+								a.button(href="https://github.com/stevecochrane/html-reference-webapp", target="_blank") View the web application on GitHub
+
 			section#wow-garrisons
 				div
 					h1 World of Warcraft: Garrisons Website
