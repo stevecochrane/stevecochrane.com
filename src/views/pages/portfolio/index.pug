@@ -269,6 +269,60 @@ html(lang="en")
 								a.button(href="https://github.com/stevecochrane/html-reference-api", target="_blank") View the API on GitHub
 								a.button(href="https://github.com/stevecochrane/html-reference-webapp", target="_blank") View the web application on GitHub
 
+			section#andy-wowhol
+				div
+					h1 Andy WoWhol Website
+					.images
+						.image.image-full
+							img.lazy(
+								data-src="img/andy-wowhol-1.jpg",
+								data-srcset="img/andy-wowhol-1.jpg 1x, img/andy-wowhol-1-2x.jpg 2x",
+								width="1280",
+								height="590",
+								alt="Andy WoWhol form"
+							)
+							img.lazy(
+								data-src="img/andy-wowhol-2.jpg",
+								data-srcset="img/andy-wowhol-2.jpg 1x, img/andy-wowhol-2-2x.jpg 2x",
+								width="1280",
+								height="796",
+								alt="Andy WoWhol display"
+							)
+					noscript
+						.images
+							.image.image-full
+								img(
+									src="img/andy-wowhol-1.jpg",
+									srcset="img/andy-wowhol-1.jpg 1x, img/andy-wowhol-1-2x.jpg 2x",
+									width="1280",
+									height="590",
+									alt="Andy WoWhol form"
+								)
+								img.lazy(
+									src="img/andy-wowhol-2.jpg",
+									srcset="img/andy-wowhol-2.jpg 1x, img/andy-wowhol-2-2x.jpg 2x",
+									width="1280",
+									height="796",
+									alt="Andy WoWhol display"
+								)
+					.description
+						.summary
+							ul
+								li #[strong Role] Engineering, Design
+								li #[strong Client] Myself
+								li #[strong Date] Spring 2016
+						.body-copy
+							p.
+								Andy WoWhol is a silly website that I made to get more familiar with Blizzard&apos;s Battle.net API, which
+								provides game data for building WoW community sites. It was also one of my first projects to use Node and
+								Express.
+							p.
+								The site is about as simple as it gets: you input your WoW character&apos; name and realm, it fetches the
+								character&apos;s avatar image, and then the site displays it in four different color variations using CSS
+								filters.
+							p
+								a.button(href="https://github.com/stevecochrane/andy-wowhol", target="_blank") View on GitHub
+
 			section#wow-garrisons
 				div
 					h1 World of Warcraft: Garrisons Website
