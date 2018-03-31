@@ -232,7 +232,8 @@ section h1 {
 	margin-top: var(--base-unit)px;
 }
 
-.image-half + .image-half {
+.image-half + .image-half,
+.image-third + .image-third {
 	margin-top: var(--base-unit)px;
 
 	@media (--mq-small) {
