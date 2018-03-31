@@ -110,11 +110,16 @@ html(lang="en")
 						.body-copy
 							p.
 								I was one of a handful of front-end engineers who worked on a top-to-bottom redesign of the World of Warcraft
-								website, in preparation for the launch of the Legion expansion.
+								website, in preparation for the launch of the Legion expansion. The site follows a lot of modern front-end best
+								practices. It&apos;s beautiful at any screen size, and it&apos;s built with reusable components, designed to
+								function as predictably and independently as possible.
 							p.
-								The site follows a lot of modern front-end best practices. It&apos;s beautiful at any screen size. It&apos;s
-								built with reusable components, designed to function as predictably and independently as possible. We also have
-								a living style guide for an up-to-date inventory of these components.
+								For the previous iteration of the site, there was a lot of repetition in code throughout, and a lot
+								of minor variations on things, resulting in a lack of consistency and maintenance issues. We also had style
+								guides in the past, but they never lasted long. So when we started, I identified living style guides as a way
+								to solve these issues, researched best practices, and made our living style guide, along with establishing
+								CSS and Less coding conventions for our team. It was the first living style guide at Blizzard Web &amp; Mobile,
+								and now all of our sites have one.
 							.button-container
 								a.button(href="https://worldofwarcraft.com/", target="_blank") View Site
 
@@ -317,13 +322,13 @@ html(lang="en")
 								li #[strong Date] Spring 2016
 						.body-copy
 							p.
-								Andy Wowhol is a silly website that I made to get more familiar with Blizzard&apos;s Battle.net API, which
-								provides game data for building WoW community sites. It was also one of my first projects to use Node and
-								Express.
+								Andy Wowhol is a silly website that I made to get more familiar with Blizzard&apos;s
+								#[a(href="https://dev.battle.net/") Game Data APIs], which provide game data for building World of Warcraft and
+								Diablo III community sites. This was one of my first projects to use Node and Express.
 							p.
 								The site is about as simple as it gets: you input your WoW character&apos;s name and realm, it fetches the
-								character&apos;s avatar image from the API, and then the site displays it in four different color variations
-								using CSS filters.
+								character&apos;s avatar image from the API, and then displays it in four different color variations using CSS
+								filters.
 							.button-container
 								a.button(href="https://github.com/stevecochrane/andy-wowhol", target="_blank") View on GitHub
 
@@ -483,8 +488,8 @@ html(lang="en")
 								li #[strong Date] Spring 2013
 						.body-copy
 							p.
-								The Vidcaster Theme Editor is where you can choose from one of Vidcaster&apos;s public themes, customize
-								colors and images, and make changes to any of the templates. All changes are immediately reflected in a
+								The Vidcaster Theme Editor was where you could choose from one of Vidcaster&apos;s public themes, customize
+								colors and images, and make changes to any of the templates. All changes were immediately reflected in a
 								full-size preview of the site.
 
 			section#vidcaster-website
@@ -520,7 +525,7 @@ html(lang="en")
 								The message we wanted to convey with this homepage redesign was not so much &ldquo;look how great our product
 								is,&rdquo; but &ldquo;look how great your video site could be.&rdquo; So I chose to highlight some of our most
 								impressive customer sites to build excitement and then demonstrate that visitors can build a similar website in
-								minutes, for free, right now. There was a pretty strong uptick in new signups once this went live.
+								minutes, for free, right away. There was a pretty strong uptick in new signups once this went live.
 							.button-container
 								a.button(href="vidcaster-website/archive/", target="_blank") View Archived Site
 
@@ -594,7 +599,7 @@ html(lang="en")
 								li #[strong Date] Winter 2010 &ndash; Fall 2013
 						.body-copy
 							p.
-								Being a video service provider, Vidcaster needs a world-class video player. To that end we worked with the
+								Being a video service provider, Vidcaster needed a world-class video player. To that end we worked with the
 								Brightcove team, started with their excellent open source
 								#[a(href="http://videojs.com", target="_blank") VideoJS] video player as a base, and then extended it with the
 								following new features:
