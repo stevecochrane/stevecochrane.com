@@ -341,6 +341,23 @@ section h1 {
 	width: 48px;
 }
 
+.button-container {
+	display: flex;
+	flex-direction: column;
+
+	@media (--mq-small) {
+		flex-direction: row;
+	}
+}
+
+.button-container .button {
+	margin-left: calc(var(--base-unit)px * 0.5);
+}
+
+.button-container .button:first-child {
+	margin-left: 0;
+}
+
 .button {
 	background: #0ca6d8;
 	border-radius: 5px;
@@ -359,10 +376,6 @@ section h1 {
 		background: #0a8db8;
 		color: #fff;
 	}
-}
-
-.button + .button {
-	margin-left: calc(var(--base-unit)px * 0.5);
 }
 
 footer > div {
