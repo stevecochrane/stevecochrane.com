@@ -360,6 +360,10 @@ section h1 {
 	}
 }
 
+.button + .button {
+	margin-left: calc(var(--base-unit)px * 0.5);
+}
+
 footer > div {
 	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
