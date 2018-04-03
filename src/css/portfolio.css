@@ -269,7 +269,7 @@ section h1 {
 
 .body-copy {
 	flex: 0 1 auto;
-	padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
+	padding: calc(var(--base-unit)px * 2) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
 
 	@media (--mq-small) {
 		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
@@ -294,7 +294,7 @@ section h1 {
 
 .summary {
 	flex: 0 1 auto;
-	padding-top: calc(var(--base-unit)px * 1.5);
+	padding-top: calc(var(--base-unit)px * 2);
 
 	@media (--mq-small) {
 		padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
