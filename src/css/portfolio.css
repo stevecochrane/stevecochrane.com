@@ -10,13 +10,13 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-font-size: 15;
+	--base-font-size: 17;
 	--base-text-color: #537681;
-	--base-unit: 24;
+	--base-unit: 28;
 	--border-color: color(var(--base-text-color) a(25%));
 	--page-width: 1280;
 	--page-background-color: #eff3f5;
-	--small-font-size: 11;
+	--small-font-size: 13;
 }
 
 
@@ -189,7 +189,7 @@ section > div {
 
 section h1 {
 	color: #385158;
-	font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B", serif;
+	font: normal 700 36px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B", serif;
 	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
 	text-align: center;
 
