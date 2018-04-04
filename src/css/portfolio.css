@@ -24,8 +24,9 @@
 	MEDIA QUERIES
 	-------------------------------------------------- */
 
-@custom-media --mq-small (min-width: 640px);
-@custom-media --mq-medium (min-width: 960px);
+@custom-media --mq-small  (min-width:  640px);
+@custom-media --mq-medium (min-width:  960px);
+@custom-media --mq-large  (min-width: 1280px);
 
 
 /*	--------------------------------------------------
@@ -333,7 +334,7 @@ section h1 {
 	flex-direction: column;
 	margin-top: var(--base-unit)px;
 
-	@media (--mq-medium) {
+	@media (--mq-large) {
 		flex-direction: row;
 	}
 }
@@ -341,7 +342,7 @@ section h1 {
 .button-container .button {
 	margin-top: calc((var(--base-unit)px * 0.5) + 1);
 
-	@media (--mq-medium) {
+	@media (--mq-large) {
 		margin-left: calc(var(--base-unit)px * 0.5);
 		margin-top: 1px;
 	}
@@ -350,7 +351,7 @@ section h1 {
 .button-container .button:first-child {
 	margin-top: 1px;
 
-	@media (--mq-medium) {
+	@media (--mq-large) {
 		margin-left: 0;
 	}
 }
