@@ -101,29 +101,21 @@ header > div {
 
 header h1 {
 	flex: 0 1 auto;
-	font: normal 700 14px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: normal 700 15px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B", serif;
 	margin: 0;
-	position: relative;
 	text-align: center;
-	top: 0;
 
 	@media (--mq-small) {
 		margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
 		text-align: left;
-		top: -1px;
-	}
-
-	@media (--mq-medium) {
-		top: -2px;
 	}
 }
 
 header h2 {
 	color: #9cb7c0;
 	flex: 0 1 auto;
-	font: italic 400 13px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: italic 400 15px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
 	margin: 0 0 var(--base-unit)px;
-	position: relative;
 	text-align: center;
 
 	@media (--mq-small) {
@@ -132,10 +124,6 @@ header h2 {
 		margin-bottom: 0;
 		padding-left: calc(var(--base-unit)px * 0.5);
 		text-align: left;
-	}
-
-	@media (--mq-medium) {
-		top: -1px;
 	}
 }
 
@@ -153,9 +141,7 @@ header ul {
 
 header li {
 	flex: 0 1 auto;
-	font-size: 13px;
-	line-height: var(--base-unit)px;
-	margin: 0;
+	font-size: 14px;
 }
 
 header a {
