@@ -338,11 +338,15 @@ section h1 {
 }
 
 .button-container .button {
-	margin-left: calc(var(--base-unit)px * 0.5);
+	@media (--mq-small) {
+		margin-left: calc(var(--base-unit)px * 0.5);
+	}
 }
 
 .button-container .button:first-child {
-	margin-left: 0;
+	@media (--mq-small) {
+		margin-left: 0;
+	}
 }
 
 .button {
