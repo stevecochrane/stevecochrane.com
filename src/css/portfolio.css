@@ -328,6 +328,7 @@ section h1 {
 }
 
 .button-container {
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
 	margin-top: var(--base-unit)px;
