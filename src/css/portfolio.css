@@ -351,10 +351,10 @@ section h1 {
 	box-shadow: inset 0 -1px 0 color(#000 a(25%));
 	color: #fff;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: var(--base-unit)px;
-	margin-bottom: 4px;
-	padding: 4px 16px;
+	margin: 1px 0;
+	padding: 6px 20px;
 	text-shadow: 0 -1px 0 color(#000 a(25%));
 	transition: background-color 0.2s, color 0.2s;
 
