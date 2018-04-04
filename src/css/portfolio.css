@@ -339,12 +339,17 @@ section h1 {
 }
 
 .button-container .button {
+	margin-top: calc((var(--base-unit)px * 0.5) + 1);
+
 	@media (--mq-medium) {
 		margin-left: calc(var(--base-unit)px * 0.5);
+		margin-top: 1px;
 	}
 }
 
 .button-container .button:first-child {
+	margin-top: 1px;
+
 	@media (--mq-medium) {
 		margin-left: 0;
 	}
