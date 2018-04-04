@@ -333,19 +333,19 @@ section h1 {
 	flex-direction: column;
 	margin-top: var(--base-unit)px;
 
-	@media (--mq-small) {
+	@media (--mq-medium) {
 		flex-direction: row;
 	}
 }
 
 .button-container .button {
-	@media (--mq-small) {
+	@media (--mq-medium) {
 		margin-left: calc(var(--base-unit)px * 0.5);
 	}
 }
 
 .button-container .button:first-child {
-	@media (--mq-small) {
+	@media (--mq-medium) {
 		margin-left: 0;
 	}
 }
