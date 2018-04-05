@@ -10,13 +10,13 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-font-size: 15;
+	--base-font-size: 17;
 	--base-text-color: #537681;
-	--base-unit: 24;
+	--base-unit: 28;
 	--border-color: color(var(--base-text-color) a(25%));
-	--page-width: 1080;
+	--page-width: 1280;
 	--page-background-color: #eff3f5;
-	--small-font-size: 11;
+	--small-font-size: 13;
 }
 
 
@@ -24,8 +24,9 @@
 	MEDIA QUERIES
 	-------------------------------------------------- */
 
-@custom-media --mq-small (min-width: 640px);
-@custom-media --mq-medium (min-width: 960px);
+@custom-media --mq-small  (min-width:  800px);
+@custom-media --mq-medium (min-width:  960px);
+@custom-media --mq-large  (min-width: 1280px);
 
 
 /*	--------------------------------------------------
@@ -101,29 +102,21 @@ header > div {
 
 header h1 {
 	flex: 0 1 auto;
-	font: normal 700 14px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: normal 700 15px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B", serif;
 	margin: 0;
-	position: relative;
 	text-align: center;
-	top: 0;
 
 	@media (--mq-small) {
 		margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
 		text-align: left;
-		top: -1px;
-	}
-
-	@media (--mq-medium) {
-		top: -2px;
 	}
 }
 
 header h2 {
 	color: #9cb7c0;
 	flex: 0 1 auto;
-	font: italic 400 13px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: italic 400 15px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
 	margin: 0 0 var(--base-unit)px;
-	position: relative;
 	text-align: center;
 
 	@media (--mq-small) {
@@ -132,10 +125,6 @@ header h2 {
 		margin-bottom: 0;
 		padding-left: calc(var(--base-unit)px * 0.5);
 		text-align: left;
-	}
-
-	@media (--mq-medium) {
-		top: -1px;
 	}
 }
 
@@ -153,9 +142,7 @@ header ul {
 
 header li {
 	flex: 0 1 auto;
-	font-size: 13px;
-	line-height: var(--base-unit)px;
-	margin: 0;
+	font-size: 14px;
 }
 
 header a {
@@ -189,7 +176,7 @@ section > div {
 
 section h1 {
 	color: #385158;
-	font: normal 700 32px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B", serif;
+	font: normal 700 36px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B", serif;
 	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
 	text-align: center;
 
@@ -222,11 +209,18 @@ section h1 {
 	}
 }
 
+.image-third {
+	@media (--mq-small) {
+		max-width: calc((((var(--page-width) - var(--base-unit)) * 0.33333333) / var(--page-width)) * 100%);
+	}
+}
+
 .image + .image {
 	margin-top: var(--base-unit)px;
 }
 
-.image-half + .image-half {
+.image-half + .image-half,
+.image-third + .image-third {
 	margin-top: var(--base-unit)px;
 
 	@media (--mq-small) {
@@ -243,6 +237,7 @@ section h1 {
 .description {
 	display: flex;
 	flex-flow: column wrap;
+	justify-content: center;
 
 	@media (--mq-small) {
 		flex-flow: row-reverse nowrap;
@@ -266,6 +261,7 @@ section h1 {
 	@media (--mq-small) {
 		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
 		padding-right: calc(((var(--base-unit) * 4) / var(--page-width)) * 100%);
+		padding-top: calc(var(--base-unit)px * 2);
 		width: calc(((var(--base-unit) * 29.25) / var(--page-width)) * 100%);
 	}
 }
@@ -290,6 +286,7 @@ section h1 {
 
 	@media (--mq-small) {
 		padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
+		padding-top: calc(var(--base-unit)px * 2);
 		width: calc(((var(--base-unit) * 15.75) / var(--page-width)) * 100%);
 	}
 }
@@ -333,22 +330,50 @@ section h1 {
 	width: 48px;
 }
 
+.button-container {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	margin-top: var(--base-unit)px;
+
+	@media (--mq-large) {
+		flex-direction: row;
+	}
+}
+
+.button-container .button {
+	margin-top: calc((var(--base-unit)px * 0.5) + 1);
+
+	@media (--mq-large) {
+		margin-left: calc(var(--base-unit)px * 0.5);
+		margin-top: 1px;
+	}
+}
+
+.button-container .button:first-child {
+	margin-top: 1px;
+
+	@media (--mq-large) {
+		margin-left: 0;
+	}
+}
+
 .button {
-	background: #0ca6d8;
+	background-color: #0ca6d8;
 	border-radius: 5px;
 	box-shadow: inset 0 -1px 0 color(#000 a(25%));
 	color: #fff;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: var(--base-unit)px;
-	margin-bottom: 4px;
-	padding: 4px 16px;
+	margin: 1px 0;
+	padding: 6px 20px;
 	text-shadow: 0 -1px 0 color(#000 a(25%));
-	transition: background 0.2s, color 0.2s;
+	transition: background-color 0.2s, color 0.2s;
 
 	&:hover,
 	&:focus {
-		background: #0a8db8;
+		background-color: #0a8db8;
 		color: #fff;
 	}
 }

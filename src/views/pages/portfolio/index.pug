@@ -28,346 +28,699 @@ html(lang="en")
 
 			section#rise-of-the-necromancer
 				div
-					h1 Diablo III: Rise of the Necromancer
+					h1 Diablo III: Rise of the Necromancer Website
 					.images
-						.image.image-full: img(src="img/rise-of-the-necromancer-1.jpg", width="1080", height="744", alt="Rise of the Necromancer: Book Cover")
-						.image.image-full: img(src="img/rise-of-the-necromancer-2.jpg", width="1080", height="696", alt="Rise of the Necromancer: Foreword")
+						.image.image-full
+							img(
+								src="img/rise-of-the-necromancer-1.jpg",
+								srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
+								width="1280",
+								height="663",
+								alt="Rise of the Necromancer: Book Cover"
+							)
+						.image.image-full
+							img(
+								src="img/rise-of-the-necromancer-2.jpg",
+								srcset="img/rise-of-the-necromancer-2.jpg 1x, img/rise-of-the-necromancer-2-2x.jpg 2x",
+								width="1280",
+								height="795",
+								alt="Rise of the Necromancer: Foreword"
+							)
 					.description
 						.summary
 							ul
-								li #[strong Role] Development
+								li #[strong Role] Engineering
 								li #[strong Client] Blizzard Entertainment
 								li #[strong Date] Summer 2017
 						.body-copy
-							p This is the announcement site for Rise of the Necromancer, an expansion for Diablo III. I'm very proud of this one because it's much more than just a brochure, it's an interactive experience that really ties into the world of the game.
-							p It also makes heavy use of CSS3 animation for a page-turning effect, and despite being heavily textured, it is (mostly) optimized for high-resolution screens and it scales to fit screens of any size.
-							p: a.button(href="https://us.diablo3.com/en/rise-of-the-necromancer/", target="_blank") Visit the live site
+							p.
+								This is the announcement site for Rise of the Necromancer, an expansion for Diablo III. I&apos;m very proud of
+								this one because it&apos;s much more than just a brochure, it&apos;s an interactive experience that really ties
+								into the world of the game.
+							p.
+								It also makes heavy use of CSS3 animation for a page-turning effect, and despite being heavily textured, it is
+								(mostly) optimized for high-resolution screens and it scales to fit screens of any size.
+							.button-container
+								a.button(href="https://us.diablo3.com/en/rise-of-the-necromancer/", target="_blank") View Site
 
 			section#wow-redesign
 				div
 					h1 World of Warcraft Website Redesign
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/wow-redesign-1.jpg",
+								data-srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
+								width="1280",
+								height="669",
+								alt="World of Warcraft Website Redesign: Homepage"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/wow-redesign-2.jpg",
+								data-srcset="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
+								width="1280",
+								height="802",
+								alt="World of Warcraft Website Redesign: New Player's Guide"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/wow-reboot-homepage-1.jpg", width="1080", height="782", alt="World of Warcraft Website Redesign: Homepage")
-							.image.image-full: img(src="img/wow-reboot-animation-1.jpg", width="1080", height="580", alt="World of Warcraft Website Redesign: Animation")
+							.image.image-full
+								img(
+									src="img/wow-redesign-1.jpg",
+									srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
+									width="1280",
+									height="669",
+									alt="World of Warcraft Website Redesign: Homepage"
+								)
+							.image.image-full
+								img(
+									src="img/wow-redesign-2.jpg",
+									srcset="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
+									width="1280",
+									height="802",
+									alt="World of Warcraft Website Redesign: New Player's Guide"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Development
+								li #[strong Role] Engineering
 								li #[strong Client] Blizzard Entertainment
 								li #[strong Date] Summer 2016
 						.body-copy
-							p I was one of a handful of front-end engineers who worked on a top-to-bottom redesign of the World of Warcraft website, in preparation for the launch of the Legion expansion.
-							p The site follows a lot of modern front-end best practices. It's beautiful at any screen size. It's built with reusable components, designed to function as predictably and independently as possible. We also have a living style guide for an up-to-date inventory of these components.
-							p: a.button(href="https://worldofwarcraft.com/", target="_blank") Visit the live site
+							p.
+								I was one of a handful of front-end engineers who worked on a top-to-bottom redesign of the World of Warcraft
+								website, in preparation for the launch of the Legion expansion. The site follows a lot of modern front-end best
+								practices. It&apos;s beautiful at any screen size, and it&apos;s built with reusable components, designed to
+								function as predictably and independently as possible.
+							p.
+								For the previous iteration of the site, there was a lot of repetition in code throughout, and a lot
+								of minor variations on things, resulting in a lack of consistency and maintenance issues. We also had style
+								guides in the past, but they never lasted long. So when we started, I identified living style guides as a way
+								to solve these issues, researched best practices, and made our living style guide, along with establishing
+								CSS and Less coding conventions for our team. It was the first living style guide at Blizzard Web &amp; Mobile,
+								and now all of our sites have one.
+							.button-container
+								a.button(href="https://worldofwarcraft.com/", target="_blank") View Site
 
 			section#diablo-20th-anniversary
 				div
 					h1 Diablo 20th Anniversary Website
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/diablo-20th-anniversary-1.jpg", width="1080", height="480", alt="Diablo 20th Anniversary Page: Masthead")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/diablo-20th-anniversary-2.jpg", width="1080", height="792", alt="Diablo 20th Anniversary Page: Diablo")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/diablo-20th-anniversary-1.jpg",
+								data-srcset="img/diablo-20th-anniversary-1.jpg 1x, img/diablo-20th-anniversary-1-2x.jpg 2x",
+								width="1280",
+								height="575",
+								alt="Diablo 20th Anniversary Page: Masthead"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/diablo-20th-anniversary-2.jpg",
+								data-srcset="img/diablo-20th-anniversary-2.jpg 1x, img/diablo-20th-anniversary-2-2x.jpg 2x",
+								width="1280",
+								height="758",
+								alt="Diablo 20th Anniversary Page: Diablo"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/diablo-20th-anniversary-1.jpg", width="1080", height="480", alt="Diablo 20th Anniversary Page: Masthead")
-							.image.image-full: img(src="img/diablo-20th-anniversary-2.jpg", width="1080", height="792", alt="Diablo 20th Anniversary Page: Diablo")
+							.image.image-full
+								img(
+									src="img/diablo-20th-anniversary-1.jpg",
+									srcset="img/diablo-20th-anniversary-1.jpg 1x, img/diablo-20th-anniversary-1-2x.jpg 2x",
+									width="1280",
+									height="575",
+									alt="Diablo 20th Anniversary Page: Masthead"
+								)
+							.image.image-full
+								img(
+									src="img/diablo-20th-anniversary-2.jpg",
+									srcset="img/diablo-20th-anniversary-2.jpg 1x, img/diablo-20th-anniversary-2-2x.jpg 2x",
+									width="1280",
+									height="758",
+									alt="Diablo 20th Anniversary Page: Diablo"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Development
+								li #[strong Role] Engineering
 								li #[strong Client] Blizzard Entertainment
 								li #[strong Date] Winter 2017
 						.body-copy
-							p The Diablo franchise turned 20 years old on December 31, 2016, so we launched a retrospective site with lots of great imagery from over the years. I'm a huge fan of the franchise so I'm proud to honor its history.
-							p There aren't any new processes or technologies on display here, but because of this, we were able to use a process and tech that we were very comfortable with to turn out a high-quality page quickly and on time, with a very lean team.
-							p: a.button(href="https://us.diablo3.com/en/game/anniversary/", target="_blank") Visit the live site
+							p.
+								The Diablo franchise turned 20 years old on December 31, 2016, so we launched a retrospective site with lots of
+								great imagery from over the years. I&apos;m a huge fan of the franchise so I&apos;m proud to honor its history.
+							p.
+								There aren&apos;t any new processes or technologies on display here, but because of this, we were able to use a
+								process and tech that we were very comfortable with to turn out a high-quality page quickly and on time, with a
+								very lean team.
+							.button-container
+								a.button(href="https://us.diablo3.com/en/game/anniversary/", target="_blank") View Site
+
+			section#html-reference
+				div
+					h1 HTML Reference API &amp; Web Application
+					.images
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/html-reference-1.jpg",
+								data-srcset="img/html-reference-1.jpg 1x, img/html-reference-1-2x.jpg 2x",
+								width="1280",
+								height="686",
+								alt="HTML Reference Web Application index view"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/html-reference-2.jpg",
+								data-srcset="img/html-reference-2.jpg 1x, img/html-reference-2-2x.jpg 2x",
+								width="1280",
+								height="412",
+								alt="HTML Reference API list results"
+							)
+					noscript
+						.images
+							.image.image-full
+								img(
+									src="img/html-reference-1.jpg",
+									srcset="img/html-reference-1.jpg 1x, img/html-reference-1-2x.jpg 2x",
+									width="1280",
+									height="686",
+									alt="HTML Reference Web Application index view"
+								)
+							.image.image-full
+								img.lazy(
+									src="img/html-reference-2.jpg",
+									srcset="img/html-reference-2.jpg 1x, img/html-reference-2-2x.jpg 2x",
+									width="1280",
+									height="412",
+									alt="HTML Reference API list results"
+								)
+					.description
+						.summary
+							ul
+								li #[strong Role] Engineering, Design
+								li #[strong Client] Myself
+								li #[strong Date] Spring 2016
+						.body-copy
+							p.
+								For personal development, I decided to get out of my front-end engineering comfort zone a little bit and build
+								a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database,
+								and it has the standard CRUD (Create, Read, Update, Delete) operations available. There&apos;s also a Mocha
+								test suite, and API requests are cached for better performance.
+							p.
+								I then made a simple companion web application for interfacing with the API, also with Node and Express. It has
+								a central list for viewing all elements and form pages for adding, editing, and deleting elements, with error
+								handling.
+							.button-container
+								a.button(href="https://github.com/stevecochrane/html-reference-api", target="_blank") View API on GitHub
+								a.button(href="https://github.com/stevecochrane/html-reference-webapp", target="_blank") View Application on GitHub
 
 			section#wow-legion
 				div
 					h1 World of Warcraft: Legion Website
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/wow-legion-1.jpg",
+								data-srcset="img/wow-legion-1.jpg 1x, img/wow-legion-1-2x.jpg 2x",
+								width="1280",
+								height="877",
+								alt="World of Warcraft: Legion Website: Masthead"
+							)
 					noscript
 						.images
-							.image.image-full: img.lazy(src="img/wow-legion-1.jpg", width="1080", height="816", alt="World of Warcraft: Legion Website: Masthead")
+							.image.image-full
+								img(
+									src="img/wow-legion-1.jpg",
+									srcset="img/wow-legion-1.jpg 1x, img/wow-legion-1-2x.jpg 2x",
+									width="1280",
+									height="877",
+									alt="World of Warcraft: Legion Website: Masthead"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Development
+								li #[strong Role] Engineering
 								li #[strong Client] Blizzard Entertainment
 								li #[strong Date] Summer 2015
 						.body-copy
-							p I'm proud to say that I was given the opportunity to work on the announcement site for World of Warcraft: Legion, an expansion for one of the most successful games of all time. This was a very challenging and fulfilling project, with lush visuals and lots of video.
-							p I worked with four extremely talented designers for the duration of the project, and I was the sole engineer up until the last couple weeks when I had some additional help to polish and ship the site. The launch of the site was timed with our announcement of Legion at Gamescom 2015 in Cologne, Germany.
-							p: a.button(href="http://battle.net/wow/legion/", target="_blank") Visit the live site
+							p.
+								I&apos;m proud to say that I was given the opportunity to work on the announcement site for World of Warcraft:
+								Legion, an expansion for one of the most successful games of all time. This was a very challenging and
+								fulfilling project, with lush visuals and lots of video.
+							p.
+								I worked with four extremely talented designers for the duration of the project, and I was the sole engineer up
+								until the last couple weeks when I had some additional help to polish and ship the site. The launch of the site
+								was timed with our announcement of Legion at Gamescom 2015 in Cologne, Germany.
+							.button-container
+								a.button(href="http://battle.net/wow/legion/", target="_blank") View Site
+
+			section#andy-wowhol
+				div
+					h1 Andy Wowhol Website
+					.images
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/andy-wowhol-1.jpg",
+								data-srcset="img/andy-wowhol-1.jpg 1x, img/andy-wowhol-1-2x.jpg 2x",
+								width="1280",
+								height="590",
+								alt="Andy WoWhol form"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/andy-wowhol-2.jpg",
+								data-srcset="img/andy-wowhol-2.jpg 1x, img/andy-wowhol-2-2x.jpg 2x",
+								width="1280",
+								height="796",
+								alt="Andy WoWhol display"
+							)
+					noscript
+						.images
+							.image.image-full
+								img(
+									src="img/andy-wowhol-1.jpg",
+									srcset="img/andy-wowhol-1.jpg 1x, img/andy-wowhol-1-2x.jpg 2x",
+									width="1280",
+									height="590",
+									alt="Andy WoWhol form"
+								)
+							.image.image-full
+								img.lazy(
+									src="img/andy-wowhol-2.jpg",
+									srcset="img/andy-wowhol-2.jpg 1x, img/andy-wowhol-2-2x.jpg 2x",
+									width="1280",
+									height="796",
+									alt="Andy WoWhol display"
+								)
+					.description
+						.summary
+							ul
+								li #[strong Role] Engineering, Design
+								li #[strong Client] Myself
+								li #[strong Date] Spring 2016
+						.body-copy
+							p.
+								Andy Wowhol is a silly website that I made to get more familiar with Blizzard&apos;s
+								#[a(href="https://dev.battle.net/") Game Data APIs], which provide game data for building World of Warcraft and
+								Diablo III community sites. This was one of my first projects to use Node and Express.
+							p.
+								The site is about as simple as it gets: you input your WoW character&apos;s name and realm, it fetches the
+								character&apos;s avatar image from the API, and then displays it in four different color variations using CSS
+								filters.
+							.button-container
+								a.button(href="https://github.com/stevecochrane/andy-wowhol", target="_blank") View on GitHub
 
 			section#wow-garrisons
 				div
 					h1 World of Warcraft: Garrisons Website
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/wow-garrisons-1.jpg",
+								data-srcset="img/wow-garrisons-1.jpg 1x, img/wow-garrisons-1-2x.jpg 2x",
+								width="1280",
+								height="589",
+								alt="World of Warcraft: Garrisons Website: Masthead"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/wow-garrisons-2.jpg",
+								data-srcset="img/wow-garrisons-2.jpg 1x, img/wow-garrisons-2-2x.jpg 2x",
+								width="1280",
+								height="559",
+								alt="World of Warcraft: Garrisons Website: Buildings"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/wow-garrisons-1.jpg", width="1080", height="648", alt="World of Warcraft: Garrisons Website: Masthead")
-							.image.image-full: img(src="img/wow-garrisons-2.jpg", width="1080", height="600", alt="World of Warcraft: Garrisons Website: Buildings")
+							.image.image-full
+								img(
+									src="img/wow-garrisons-1.jpg",
+									srcset="img/wow-garrisons-1.jpg 1x, img/wow-garrisons-1-2x.jpg 2x",
+									width="1280",
+									height="589",
+									alt="World of Warcraft: Garrisons Website: Masthead"
+								)
+							.image.image-full
+								img(
+									src="img/wow-garrisons-2.jpg",
+									srcset="img/wow-garrisons-2.jpg 1x, img/wow-garrisons-2-2x.jpg 2x",
+									width="1280",
+									height="559",
+									alt="World of Warcraft: Garrisons Website: Buildings"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Development
+								li #[strong Role] Engineering
 								li #[strong Client] Blizzard Entertainment
 								li #[strong Date] Fall 2014
 						.body-copy
-							p This was one of the first full pages that I worked on for the World of Warcraft website: a feature page for Garrisons, a big new feature for the Warlords of Draenor expansion.
-							p The page was published in the lead-up to the expansion launch to build interest, with lots of in-game screenshots and information on all the new things you can do with your garrison.
-							p: a.button(href="http://battle.net/wow/game/garrisons/", target="_blank") Visit the live site
+							p.
+								This was one of the first full pages that I worked on for the World of Warcraft website: a feature page for
+								Garrisons, a big new feature for the Warlords of Draenor expansion.
+							p.
+								The page was published in the lead-up to the expansion launch to build interest, with lots of in-game
+								screenshots and information on all the new things you can do with your garrison.
+							.button-container
+								a.button(href="http://battle.net/wow/game/garrisons/", target="_blank") View Site
 
-			section#vidcaster-navigation-redesign
+			section#pixel-art-scrapbook
 				div
-					h1 Vidcaster Navigation Redesign
+					h1 Pixel Art Scrapbook Web Application
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/pixel-art-scrapbook-1.jpg",
+								data-srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+								width="1280",
+								height="666",
+								alt="Pixel Art Scrapbook"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/vidcaster-navigation-1.jpg", width="1080", height="558", alt="Vidcaster admin navigation")
-							.image.image-full: img(src="img/vidcaster-navigation-2.jpg", width="1080", height="232", alt="Vidcaster admin navigation for in an alternate view when not enough horizontal space is available")
+							.image.image-full
+								img(
+									src="img/pixel-art-scrapbook-1.jpg",
+									srcset="img/pixel-art-scrapbook-1.jpg 1x, img/pixel-art-scrapbook-1-2x.jpg 2x",
+									width="1280",
+									height="666",
+									alt="Pixel Art Scrapbook"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Design
-								li #[strong Client] Vidcaster
-								li #[strong Date] Summer 2013
+								li #[strong Role] Engineering, Design
+								li #[strong Client] Myself
+								li #[strong Date] Fall 2013
 						.body-copy
-							p Vidcaster&apos;s navigation structure had remained essentially unchanged since its inception a few years ago and it was long overdue for an update. We started with an audit of all of the pages in the application, then we mapped out on paper a revised structure and where each page might go, and with that I iterated on visual design variations while collecting feedback.
-							p The most common complaint about the previous design was that it took too many steps to move around the app, so with this design the sections can be expanded and collapsed for instant access to any page in one step. We also use a sidebar to optimize screen space for widescreen displays, and when there isn&apos;t enough space available we have an alternate layout with navigation across the top.
+							p.
+								When I was looking to apply for my current position at Blizzard, their job listing mentioned experience with
+								JavaScript MVC frameworks such as Angular, Ember, etc. as a nice-to-have, and I hadn&apos;t used any of those
+								before, so before applying I decided to improve my chances and quickly made this.
+							p.
+								Pixel Art Scrapbook is a prototype of a web application for cataloguing pixel art that inspires you, for
+								reference when you make your own. It uses Ember for MVC, Node &amp; Express for a simple RESTful API and
+								MongoDB for the database. The demo here is just of the interface and the back-end functionality has been
+								disabled. You can make changes but nothing is stored. The full version is
+								#[a(href="https://github.com/stevecochrane/pixel-art-scrapbook") available on GitHub] but you&apos;ll need to
+								run a local Node server to use it.
+							.button-container
+								a.button(href="pixel-art-scrapbook/", target="_blank") View Limited Demo
 
 			section#vidcaster-theme-editor
 				div
 					h1 Vidcaster Theme Editor
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-1.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Themes View")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-2.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Basic Editor View")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-theme-editor-3.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Advanced Editor View")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-theme-editor-1.jpg",
+								data-srcset="img/vidcaster-theme-editor-1.jpg 1x, img/vidcaster-theme-editor-1-2x.jpg 2x",
+								width="1280",
+								height="352",
+								alt="Vidcaster Theme Editor: Themes View"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-theme-editor-2.jpg",
+								data-srcset="img/vidcaster-theme-editor-2.jpg 1x, img/vidcaster-theme-editor-2-2x.jpg 2x",
+								width="1280",
+								height="352",
+								alt="Vidcaster Theme Editor: Basic Editor View"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-theme-editor-3.jpg",
+								data-srcset="img/vidcaster-theme-editor-3.jpg 1x, img/vidcaster-theme-editor-3-2x.jpg 2x",
+								width="1280",
+								height="382",
+								alt="Vidcaster Theme Editor: Advanced Editor View"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/vidcaster-theme-editor-1.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Themes View")
-							.image.image-full: img(src="img/vidcaster-theme-editor-2.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Basic Editor View")
-							.image.image-full: img(src="img/vidcaster-theme-editor-3.jpg", width="1080", height="362", alt="Vidcaster Theme Editor: Advanced Editor View")
+							.image.image-full
+								img(
+									src="img/vidcaster-theme-editor-1.jpg",
+									srcset="img/vidcaster-theme-editor-1.jpg 1x, img/vidcaster-theme-editor-1-2x.jpg 2x",
+									width="1280",
+									height="352",
+									alt="Vidcaster Theme Editor: Themes View"
+								)
+							.image.image-full
+								img(
+									src="img/vidcaster-theme-editor-2.jpg",
+									srcset="img/vidcaster-theme-editor-2.jpg 1x, img/vidcaster-theme-editor-2-2x.jpg 2x",
+									width="1280",
+									height="352",
+									alt="Vidcaster Theme Editor: Basic Editor View"
+								)
+							.image.image-full
+								img(
+									src="img/vidcaster-theme-editor-3.jpg",
+									srcset="img/vidcaster-theme-editor-3.jpg 1x, img/vidcaster-theme-editor-3-2x.jpg 2x",
+									width="1280",
+									height="382",
+									alt="Vidcaster Theme Editor: Advanced Editor View"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Design, Development
+								li #[strong Role] Design, Engineering
 								li #[strong Client] Vidcaster
 								li #[strong Date] Spring 2013
 						.body-copy
-							p The Vidcaster Theme Editor is where you can choose from one of Vidcaster&apos;s public themes, customize colors and images, and make changes to any of the templates. All changes are immediately reflected in a full-size preview of the site.
+							p.
+								Vidcaster was a platform for building custom video websites, sort of like YouTube channels but much more
+								personalized, with full control over site layout and with business-oriented features like pay-per-view. Some of
+								our more famous clients included Airbnb and VMWare.
+							p.
+								Probably the coolest part of our platform was the Theme Editor, which was where you could choose from one of
+								Vidcaster&apos;s themes, customize colors and images, and make changes to any of the templates. All of these
+								changes were immediately reflected in a full-size preview of the&nbsp;site.
 
 			section#vidcaster-website
 				div
 					h1 Vidcaster Website
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-website-1.jpg",
+								data-srcset="img/vidcaster-website-1.jpg 1x, img/vidcaster-website-1-2x.jpg 2x",
+								width="1280",
+								height="660",
+								alt="Vidcaster home page"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/vidcaster-website-1.jpg", width="1080", height="660", alt="Vidcaster home page")
+							.image.image-full
+								img(
+									src="img/vidcaster-website-1.jpg",
+									srcset="img/vidcaster-website-1.jpg 1x, img/vidcaster-website-1-2x.jpg 2x",
+									width="1280",
+									height="660",
+									alt="Vidcaster home page"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Design, Development
+								li #[strong Role] Design, Engineering
 								li #[strong Client] Vidcaster
 								li #[strong Date] Spring 2012
 						.body-copy
-							p The message we wanted to convey with this homepage redesign was not so much &ldquo;look how great our product is,&rdquo; but &ldquo;look how great your video site could be.&rdquo; So I chose to highlight some of our most impressive customer sites to build excitement and then demonstrate that visitors can build a similar website in minutes, for free, right now. There was a pretty strong uptick in new signups once this went live.
-							p: a.button(href="vidcaster-website/archive/", target="_blank") View the archived site
-
-			section#pixel-art-scrapbook
-				div
-					h1 Pixel Art Scrapbook Application
-					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
-					noscript
-						.images
-							.image.image-full: img(src="img/pixel-art-scrapbook-1.jpg", width="1080", height="666", alt="Pixel Art Scrapbook")
-					.description
-						.summary
-							ul
-								li #[strong Role] Development, Design
-								li #[strong Client] Myself
-								li #[strong Date] Fall 2013
-						.body-copy
-							p A prototype of a web application for cataloguing pixel art that inspires you, for reference when you make your own. It uses #[a(href="http://emberjs.com") Ember] for MVC, #[a(href="https://nodejs.org") Node] + #[a(href="http://expressjs.com") Express] for a simple RESTful API and #[a(href="https://mongodb.org") MongoDB] for the database. The demo here is just of the interface and the back-end functionality has been disabled. You can make changes but nothing is stored. The full version is #[a(href="https://github.com/stevecochrane/pixel-art-scrapbook") available on GitHub] but you&apos;ll need to run a local Node server to use it.
-							p: a.button(href="pixel-art-scrapbook/", target="_blank") View a demo
+							p.
+								The message we wanted to convey with this homepage redesign was not so much &ldquo;look how great our product
+								is,&rdquo; but &ldquo;look how great your video site could be.&rdquo; So I chose to highlight some of our most
+								impressive customer sites to build excitement and then demonstrate that visitors can build a similar website in
+								minutes, for free, right away. There was a pretty strong uptick in new signups once this went live.
+							.button-container
+								a.button(href="vidcaster-website/archive/", target="_blank") View Archived Site
 
 			section#vidcaster-video-player
 				div
 					h1 Vidcaster Video Player
 					.images
-						.image.image-half: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-video-player-1.jpg", width="528", height="297", alt="Sharing functionality in the Vidcaster video player")
-						.image.image-half: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-video-player-2.jpg", width="528", height="297", alt="Vidcaster Default player theme with Resolutions menu open")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidcaster-video-player-3.jpg", width="1080", height="492", alt="Interactive transcript and captioning functionality")
+						.image.image-third
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-video-player-1.jpg",
+								width="410",
+								height="231",
+								alt="Vidcaster Default player theme with Resolutions menu open"
+							)
+						.image.image-third
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-video-player-2.jpg",
+								width="410",
+								height="231",
+								alt="Vidcaster One Button player theme"
+							)
+						.image.image-third
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-video-player-3.jpg",
+								width="410",
+								height="231",
+								alt="Sharing functionality in the Vidcaster video player"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-video-player-4.jpg",
+								width="1280",
+								height="492",
+								alt="Interactive transcript and captioning functionality"
+							)
 					noscript
 						.images
-							.image.image-half: img(src="img/vidcaster-video-player-1.jpg", width="528", height="297", alt="Sharing functionality in the Vidcaster video player")
-							.image.image-half: img(src="img/vidcaster-video-player-2.jpg", width="528", height="297", alt="Vidcaster Default player theme with Resolutions menu open")
-							.image.image-full: img(src="img/vidcaster-video-player-3.jpg", width="1080", height="492", alt="Interactive transcript and captioning functionality")
+							.image.image-third
+								img(
+									src="img/vidcaster-video-player-1.jpg",
+									width="410",
+									height="231",
+									alt="Vidcaster Default player theme with Resolutions menu open"
+								)
+							.image.image-third
+								img(
+									src="img/vidcaster-video-player-2.jpg",
+									width="410",
+									height="231",
+									alt="Vidcaster One Button player theme"
+								)
+							.image.image-third
+								img(
+									src="img/vidcaster-video-player-3.jpg",
+									width="410",
+									height="231",
+									alt="Sharing functionality in the Vidcaster video player"
+								)
+							.image.image-full
+								img(
+									src="img/vidcaster-video-player-4.jpg",
+									width="1280",
+									height="492",
+									alt="Interactive transcript and captioning functionality"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Design, Development
+								li #[strong Role] Design, Engineering
 								li #[strong Client] Vidcaster
-								li #[strong Date] Jan. 2010 &ndash; Fall 2013
+								li #[strong Date] Winter 2010 &ndash; Fall 2013
 						.body-copy
-							p Being a video service provider, Vidcaster needs a world-class video player. To that end we worked with the Brightcove team, started with their excellent open source #[a(href="http://videojs.com", target="_blank") VideoJS] video player as a base, and then extended it with the following new features:
+							p.
+								Being a video service provider, Vidcaster needed a world-class video player. To that end we worked with the
+								Brightcove team, started with their excellent open source
+								#[a(href="http://videojs.com", target="_blank") VideoJS] video player as a base, and then extended it with the
+								following new features:
 							ul
 								li Analytics integrations with Google Analytics and Mixpanel
 								li Interactivity integrations with HapYak
 								li Advertising integrations with LiveRail and Brainient
 								li Social media sharing from within the player
-								li An interactive transcript
-							p I also designed and developed two custom themes, &ldquo;Vidcaster Default&rdquo; and &ldquo;One Button,&rdquo; and I&apos;ve made multiple contributions to the VideoJS core which are in the process of being integrated into the next release. Some of the above customizations are also available as open source on #[a(href="https://github.com/vidcaster/", target="_blank") Vidcaster&apos;s GitHub page].
+								li Interactive transcripts
+							p.
+								I also designed and built two custom themes, &ldquo;Vidcaster Default&rdquo; and &ldquo;One Button,&rdquo;
+								and I made multiple contributions to the VideoJS core.
 
 			section#launch-theme-for-vidcaster
 				div
-					h1 Launch Theme for Vidcaster
+					h1 Vidcaster Webite Themes
 					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/launch-theme-for-vidcaster-1.jpg", width="1080", height="852", alt="Launch theme home page")
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-site-themes-1.jpg",
+								data-srcset="img/vidcaster-site-themes-1.jpg 1x, img/vidcaster-site-themes-1-2x.jpg 2x",
+								width="1280",
+								height="698",
+								alt="Launch theme home page"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-site-themes-2.jpg",
+								data-srcset="img/vidcaster-site-themes-2.jpg 1x, img/vidcaster-site-themes-2-2x.jpg 2x",
+								width="1280",
+								height="570",
+								alt="Obsidian theme video page"
+							)
+						.image.image-full
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/vidcaster-site-themes-3.jpg",
+								width="1280",
+								height="751",
+								alt="Carbon theme home page"
+							)
 					noscript
 						.images
-							.image.image-full: img(src="img/launch-theme-for-vidcaster-1.jpg", width="1080", height="852", alt="Launch theme home page")
+							.image.image-full
+								img(
+									src="img/vidcaster-site-themes-1.jpg",
+									srcset="img/vidcaster-site-themes-1.jpg 1x, img/vidcaster-site-themes-1-2x.jpg 2x",
+									width="1280",
+									height="698",
+									alt="Launch theme home page"
+								)
+							.image.image-full
+								img(
+									src="img/vidcaster-site-themes-2.jpg",
+									srcset="img/vidcaster-site-themes-2.jpg 1x, img/vidcaster-site-themes-2-2x.jpg 2x",
+									width="1280",
+									height="570",
+									alt="Obsidian theme video page"
+								)
+							.image.image-full
+								img(
+									src="img/vidcaster-site-themes-3.jpg",
+									width="1280",
+									height="751",
+									alt="Carbon theme home page"
+								)
 					.description
 						.summary
 							ul
-								li #[strong Role] Design, Development
+								li #[strong Role] Design, Engineering
 								li #[strong Client] Vidcaster
-								li #[strong Date] Summer 2011
+								li #[strong Date] Fall 2011 &ndash; Fall 2013
 						.body-copy
-							p This is one of the flashier Vidcaster themes and it was made with the introduction of a new site in mind. It greatly emphasizes one video in particular (perfect for an introduction or product launch) and all other videos are playable on a single page.
-							p: a.button(href="launch-theme-for-vidcaster/archive/", target="_blank") View a demo
-
-			section#obsidian-theme-for-vidcaster
-				div
-					h1 Obsidian Theme for Vidcaster
-					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/obsidian-theme-for-vidcaster-2.jpg", width="1080", height="558", alt="Obsidian theme video page")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/obsidian-theme-for-vidcaster-1.jpg", width="1080", height="564", alt="Obsidian theme home page")
-					noscript
-						.images
-							.image.image-full: img(src="img/obsidian-theme-for-vidcaster-2.jpg", width="1080", height="558", alt="Obsidian theme video page")
-							.image.image-full: img(src="img/obsidian-theme-for-vidcaster-1.jpg", width="1080", height="564", alt="Obsidian theme home page")
-					.description
-						.summary
-							ul
-								li #[strong Role] Design, Development
-								li #[strong Client] Vidcaster
-								li #[strong Date] Summer 2011
-						.body-copy
-							p Here&apos;s another public theme I did for Vidcaster. The idea for this one was to make something with dark colors by default, and for whatever reason I thought of the central idea &ldquo;volcanic rock&rdquo; and went from&nbsp;there.
-							p: a.button(href="obsidian-theme-for-vidcaster/archive/", target="_blank") View a demo
-
-			section#vidsf-website
-				div
-					h1 VidSF Website
-					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidsf-website-1.jpg", width="1080", height="544", alt="VidSF home page")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/vidsf-website-2.jpg", width="1080", height="684", alt="VidSF video page")
-					noscript
-						.images
-							.image.image-full: img(src="img/vidsf-website-1.jpg", width="1080", height="544", alt="VidSF home page")
-							.image.image-full: img(src="img/vidsf-website-2.jpg", width="1080", height="684", alt="VidSF video page")
-					.description
-						.summary
-							ul
-								li #[strong Role] Design, Development
-								li #[strong Client] VidSF
-								li #[strong Date] Jan. 2008 &ndash; Fall 2010
-						.body-copy
-							p VidSF was an attempt to make local news interesting and relevant again. I was the sole designer and front-end engineer, and I co-founded the project with Kieran Farr. We eventually decided to change focus and release the CMS we had built for VidSF as a software-as-a-service product, and that was how Vidcaster began.
-
-			section#the-little-school-website
-				div
-					h1 The Little School Website
-					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/the-little-school-website-1.jpg", width="1080", height="710", alt="The Little School home page")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/the-little-school-website-2.jpg", width="1080", height="687", alt="The Little School's About Us page")
-					noscript
-						.images
-							.image.image-full: img(src="img/the-little-school-website-1.jpg", width="1080", height="710", alt="The Little School home page")
-							.image.image-full: img(src="img/the-little-school-website-2.jpg", width="1080", height="687", alt="The Little School's About Us page")
-					.description
-						.summary
-							ul
-								li #[strong Role] Development
-								li #[strong Client] The Little School
-								li #[strong Date] Fall 2011
-						.body-copy
-							p The Little School is a local preschool in San Francisco. They had a nice design ready and submitted from a member of their board, and I worked with the Drupal engineers at AF83 to write the front-end code for a custom Drupal theme based on that design.
-							p: a.button(href="http://littleschool.org", target="_blank") Visit the live site
-
-			//-
-				section#econtact-pro-website
-					div
-						h1 Econtact Pro Website
-						.images
-							.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/econtact-pro-1.jpg", width="1080", height="612", alt="Econtact Pro homepage")
-						noscript
-							.images
-								.image.image-full: img(src="img/econtact-pro-1.jpg", width="1080", height="612", alt="Econtact Pro homepage")
-						.description
-							.summary
-								ul
-									li #[strong Role] Development
-									li #[strong Client] FaberNovel
-									li #[strong Date] Apr. 2010
-							.body-copy
-								p Econtact Pro is an iPhone application that instantly transcribes contact information, and it was the #1 business application in France&#8217;s App Store when it launched. I was provided a Photoshop file with the design and I did a little transcribing of my own in translating it from pixels to HTML and CSS. It even looks great with IE6, and of course, the iPhone.
-								p: a.button(href="http://econtact-pro.com", target="_blank") Visit the live site
-
-			section#videogame
-				div
-					h1 VIDEOGAME
-					.images
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/videogame-1.png", width="1080", height="419", alt="VIDEOGAME title screen and gameplay screenshots")
-						.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/videogame-2.jpg", width="1080", height="410", alt="VIDEOGAME mini-site")
-					noscript
-						.images
-							.image.image-full: img(src="img/videogame-1.png", width="1080", height="419", alt="VIDEOGAME title screen and gameplay screenshots")
-							.image.image-full: img(src="img/videogame-2.jpg", width="1080", height="410", alt="VIDEOGAME mini-site")
-					.description
-						.summary
-							ul
-								li #[strong Role] Development, Design
-								li #[strong Client] Myself
-								li #[strong Date] Apr. 2011
-						.body-copy
-							p Videogames have always been a passion of mine, and once I found out about HTML5&apos;s canvas element I finally set out to make one of my own. This being my first game I decided to apply as many constraints as possible in order to ship something, so it&apos;s a Space Invaders clone.
-							p While it&apos;s nothing special from a game design or visual perspective, it was made from scratch with JavaScript and it utilizes every HTML5 feature I could throw in there, including canvas (of course), audio, cache manifest support for offline play, local storage support for high score storage, and touch controls for mobile devices. It not only continues to work over two years later, it works better thanks to improvements in JavaScript performance.
-							p: a.button(href="/videogame/", target="_blank") Visit the live site
-
-			//-
-				section#arena-plm-new-release-page
-					div
-						h1 Arena PLM New Release Page
-						.images
-							.image.image-full: img.lazy(src="img/placeholder.png", data-original="img/arena-plm-new-release-page-1.jpg", width="1080", height="727", alt="Side-by-side view of the before and after versions of the Arena PLM new release page.")
-						noscript
-							.images
-								.image.image-full: img(src="img/arena-plm-new-release-page-1.jpg", width="1080", height="727", alt="Side-by-side view of the before and after versions of the Arena PLM new release page.")
-						.description
-							.summary
-								ul
-									li #[strong Role] Design, Development
-									li #[strong Client] Arena Solutions
-									li #[strong Date] May 2008
-							.body-copy
-								p I was the lead HTML and CSS engineer for Arena PLM from 2006 to 2009, and this was one of the cases where I got to design too. This page promotes all the new features when a quarterly release goes live and it&apos;s made to get people excited with lots of enticing screenshots.
-								p: a.button(href="arena-plm-new-release-page/archive/", target="_blank") View the archived page
+							p.
+								As a platform for building video sites, Vidcaster needed a large library of quality site themes that served a
+								variety of different needs. I designed and built several of these myself while also being a resource for our
+								network of theme design contractors.
+							p.
+								Launch was one of the flashier Vidcaster themes and it was made with the introduction of a new product in mind.
+								It greatly emphasizes one video in particular (perfect for an introduction or product launch) and all other
+								videos are playable on a single page.
+							p.
+								Obsidian was another public theme I made for Vidcaster. The idea for this one was to make something with dark
+								colors by default, since all of our themes to that point had light color schemes, so I went with a central idea
+								of &ldquo;volcanic rock&rdquo; and went from there.
+							p.
+								Carbon was the last theme I made, designed for businesses with large video libraries. We went beyond our usual
+								sorted-by-recency list and added ways to browse by show and category. There was also a focus on the content
+								itself, with large promotional images and minimal design&nbsp;ornamentation.
 
 		footer
 			div
 				p Copyright &copy; 2005&ndash;#{currentYear} Steve Cochrane. All rights reserved.
 
-		script(src="js/portfolio-main.js")
+		script(src="js/portfolio.js")
