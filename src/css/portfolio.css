@@ -230,11 +230,8 @@ section h1 {
 
 .image > img {
 	display: block;
+	height: auto;
 	max-width: 100%;
-
-	@media (--mq-large) {
-		height: auto;
-	}
 }
 
 .description {
