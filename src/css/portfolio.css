@@ -24,7 +24,7 @@
 	MEDIA QUERIES
 	-------------------------------------------------- */
 
-@custom-media --mq-small  (min-width:  640px);
+@custom-media --mq-small  (min-width:  800px);
 @custom-media --mq-medium (min-width:  960px);
 @custom-media --mq-large  (min-width: 1280px);
 
