@@ -201,6 +201,7 @@ section h1 {
 
 .image {
 	box-shadow: 0 1px 8px color(var(--base-text-color) a(25%));
+	display: -ms-flexbox;
 }
 
 .image-half {
