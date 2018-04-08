@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/stevecochrane/stevecochrane.com.git"
   },
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "~6.3.1",
     "babel-core": "~6.26.0",
     "babel-preset-env": "~1.6.1",
