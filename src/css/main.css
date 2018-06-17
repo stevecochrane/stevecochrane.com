@@ -3,6 +3,7 @@
 	-------------------------------------------------- */
 
 @import "normalize.css";
+@import "fonts.css";
 
 
 /*	--------------------------------------------------
@@ -11,8 +12,7 @@
 
 :root {
 	--border-color-base: color(#000 a(10%));
-	--font-stack-base: sans-serif;
-	--font-stack-header: sans-serif;
+	--font-stack-base: "Tofino", sans-serif;
 	--golden-ratio: 1.61803398875;
 	--img-dir: ../img/v6;
 	--link-color-base: #ff5b59; /* http://0to255.com/ff6c6a, -1 */
@@ -69,7 +69,9 @@ body {
 }
 
 h1 {
-	font: 400 24px/30px var(--font-stack-header);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30px;
 	margin: 0;
 	padding: 0 12px;
 
