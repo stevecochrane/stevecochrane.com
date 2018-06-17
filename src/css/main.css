@@ -220,6 +220,7 @@ small {
 }
 
 .l-section > h1 {
+	font-weight: 700;
 	line-height: 36px;
 	padding-left: 12px;
 }
