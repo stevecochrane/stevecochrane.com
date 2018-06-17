@@ -11,8 +11,8 @@
 
 :root {
 	--border-color-base: color(#000 a(10%));
-	--font-stack-base: "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
-	--font-stack-header: "Ideal Sans A", "Ideal Sans B", sans-serif;
+	--font-stack-base: sans-serif;
+	--font-stack-header: sans-serif;
 	--golden-ratio: 1.61803398875;
 	--img-dir: ../img/v6;
 	--link-color-base: #ff5b59; /* http://0to255.com/ff6c6a, -1 */

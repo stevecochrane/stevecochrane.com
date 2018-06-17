@@ -51,7 +51,7 @@ html {
 body {
 	background: var(--page-background-color);
 	color: var(--base-text-color);
-	font: normal 400 var(--base-font-size)px/var(--base-unit)px "Ideal Sans SSm A", "Ideal Sans SSm B", sans-serif;
+	font: normal 400 var(--base-font-size)px/var(--base-unit)px sans-serif;
 	font-kerning: normal;
 }
 
@@ -102,7 +102,7 @@ header > div {
 
 header h1 {
 	flex: 0 1 auto;
-	font: normal 700 15px/var(--base-unit)px "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: normal 700 15px/var(--base-unit)px serif;
 	margin: 0;
 	text-align: center;
 
@@ -115,7 +115,7 @@ header h1 {
 header h2 {
 	color: #9cb7c0;
 	flex: 0 1 auto;
-	font: italic 400 15px/calc(var(--base-unit)px * 0.5) "Sentinel SSm A", "Sentinel SSm B", serif;
+	font: italic 400 15px/calc(var(--base-unit)px * 0.5) serif;
 	margin: 0 0 var(--base-unit)px;
 	text-align: center;
 
@@ -176,7 +176,7 @@ section > div {
 
 section h1 {
 	color: #385158;
-	font: normal 700 36px/calc(var(--base-unit)px * 1.5) "Sentinel A", "Sentinel B", serif;
+	font: normal 700 36px/calc(var(--base-unit)px * 1.5) serif;
 	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
 	text-align: center;
 
