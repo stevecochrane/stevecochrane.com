@@ -83,7 +83,7 @@ h1 {
 
 h2 {
 	color: var(--text-color-light);
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	margin: 0;
@@ -245,7 +245,7 @@ small {
 .l-footer > p {
 	/*  border + padding + line-height here adds up to 36 or 1.5x standard line height */
 	color: var(--text-color-light);
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 18px;
 	margin: 0;
 	padding: 9px 12px 8px;
@@ -347,10 +347,10 @@ small {
 	box-shadow: inset 0 -1px 0 var(--shadow-color-base);
 	color: #fff;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
-	line-height: 20px;
-	padding: 8px 18px;
+	line-height: 24px;
+	padding: 8px 24px;
 	text-align: center;
 	text-shadow: 0 -1px 0 var(--shadow-color-base);
 	transition: background 0.2s, color 0.2s;
@@ -421,15 +421,15 @@ small {
 
 .feed-link {
 	display: block;
-	font-size: 14px;
-	line-height: 18px;
-	padding: 12px 12px 13px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 12px;
 }
 
 .feed-item-date {
 	color: var(--text-color-light);
 	display: block;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 16px;
 }
@@ -444,7 +444,7 @@ small {
 
 .icon-list-item {
 	float: left;
-	font-size: 14px;
+	font-size: 16px;
 	padding-bottom: 12px;
 	position: relative;
 	width: 50%;
@@ -459,9 +459,8 @@ small {
 }
 
 .icon-list-link {
-	color: #bfbfbf;
+	color: var(--text-color-light);
 	display: block;
-	font-weight: 600;
 	line-height: 24px;
 	padding: 6px 12px 6px 36px;
 
