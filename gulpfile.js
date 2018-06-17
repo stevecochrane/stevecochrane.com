@@ -41,6 +41,11 @@ gulp.task("images", () => {
 		.pipe(gulp.dest("dist/img"));
 });
 
+gulp.task("webfonts", () => {
+	return gulp.src("src/webfonts/**/*")
+		.pipe(gulp.dest("dist/webfonts"));
+});
+
 gulp.task("css", ["clean"], () => {
 	return gulp.src([
 			"src/css/main.css",
@@ -137,6 +142,7 @@ gulp.task("revisionReplace", ["revision"], () => {
 gulp.task("default", [
 	"clean",
 	"images",
+	"webfonts",
 	"css",
 	"js-lint",
 	"js-build-home",
