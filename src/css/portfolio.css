@@ -15,6 +15,7 @@
 	--base-text-color: #537681;
 	--base-unit: 28;
 	--border-color: color(var(--base-text-color) a(25%));
+	--font-stack-base: "Tofino", sans-serif;
 	--page-width: 1280;
 	--page-background-color: #eff3f5;
 	--small-font-size: 13;
@@ -52,9 +53,9 @@ html {
 body {
 	background: var(--page-background-color);
 	color: var(--base-text-color);
-	font-family: "Tofino", sans-serif;
-	font-kerning: normal;
+	font-family: var(--font-stack-base);
 	font-size: var(--base-font-size)px;
+	font-kerning: normal;
 	font-weight: 400;
 	line-height: var(--base-unit)px;
 }
