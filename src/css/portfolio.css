@@ -51,8 +51,11 @@ html {
 body {
 	background: var(--page-background-color);
 	color: var(--base-text-color);
-	font: normal 400 var(--base-font-size)px/var(--base-unit)px "Tofino", sans-serif;
+	font-family: "Tofino", sans-serif;
 	font-kerning: normal;
+	font-size: var(--base-font-size)px;
+	font-weight: 400;
+	line-height: var(--base-unit)px;
 }
 
 p,
