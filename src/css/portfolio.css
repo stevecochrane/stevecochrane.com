@@ -11,7 +11,7 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-font-size: 17;
+	--base-font-size: 18;
 	--base-text-color: #537681;
 	--base-unit: 28;
 	--border-color: color(var(--base-text-color) a(25%));
@@ -54,10 +54,14 @@ body {
 	background: var(--page-background-color);
 	color: var(--base-text-color);
 	font-family: var(--font-stack-base);
-	font-size: var(--base-font-size)px;
+	font-size: 16px;
 	font-kerning: normal;
 	font-weight: 400;
 	line-height: var(--base-unit)px;
+
+	@media (--mq-small) {
+		font-size: var(--base-font-size)px;
+	}
 }
 
 p,
@@ -76,7 +80,7 @@ ul + p {
 
 a {
 	color: #0a8db8;
-	font-weight: 600;
+	font-weight: 700;
 	text-decoration: none;
 	transition: color 0.2s;
 
@@ -107,7 +111,7 @@ header > div {
 
 header h1 {
 	flex: 0 1 auto;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: var(--base-unit)px;
 	margin: 0;
 	text-align: center;
@@ -121,15 +125,15 @@ header h1 {
 header h2 {
 	color: #9cb7c0;
 	flex: 0 1 auto;
-	font-size: 15px;
-	font-style: italic;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: calc(var(--base-unit)px * 0.5);
+	line-height: calc(var(--base-unit)px * 0.75);
 	margin: 0 0 var(--base-unit)px;
 	text-align: center;
 
 	@media (--mq-small) {
 		border-left: 1px solid var(--border-color);
+		font-size: 16px;
 		line-height: var(--base-unit)px;
 		margin-bottom: 0;
 		padding-left: calc(var(--base-unit)px * 0.5);
@@ -151,7 +155,7 @@ header ul {
 
 header li {
 	flex: 0 1 auto;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 header a {
