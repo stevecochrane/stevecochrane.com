@@ -46,7 +46,7 @@ gulp.task("webfonts", () => {
 		.pipe(gulp.dest("dist/webfonts"));
 });
 
-gulp.task("css", gulp.series("clean", () => {
+gulp.task("css", ["clean"], () => {
 	return gulp.src([
 			"src/css/main.css",
 			"src/css/portfolio.css"
@@ -77,7 +77,7 @@ gulp.task("css", gulp.series("clean", () => {
 			cssnano()
 		]))
 		.pipe(gulp.dest("dist/css"));
-}));
+});
 
 gulp.task("js-lint", () => {
 	return gulp.src("src/js/*.js")
@@ -88,14 +88,14 @@ gulp.task("js-lint", () => {
 		.pipe(jshint.reporter("fail"));
 });
 
-gulp.task("js-build-home", gulp.series("clean", "js-lint", () => {
+gulp.task("js-build-home", ["clean", "js-lint"], () => {
 	return gulp.src("src/js/main.js")
 		.pipe(babel())
 		.pipe(uglify())
 		.pipe(gulp.dest("dist/js/"));
-}));
+});
 
-gulp.task("js-build-portfolio", gulp.series("clean", "js-lint", () => {
+gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
 	return gulp.src([
 			"src/js/lib/intersection-observer-0.5.0.js",
 			"src/js/lib/lozad-1.3.0.js",
@@ -104,7 +104,7 @@ gulp.task("js-build-portfolio", gulp.series("clean", "js-lint", () => {
 		.pipe(concat("portfolio.js"))
 		.pipe(uglify())
 		.pipe(gulp.dest("dist/js/"));
-}));
+});
 
 gulp.task("html", () => {
 	//  Normally the locals would be out of Gulp and in a controller but this site is otherwise all static.
@@ -120,7 +120,7 @@ gulp.task("html", () => {
 		.pipe(gulp.dest("dist/"));
 });
 
-gulp.task("revision", gulp.series("css", "js-build-home", "js-build-portfolio", () => {
+gulp.task("revision", ["css", "js-build-home", "js-build-portfolio"], () => {
 	return gulp.src([
 			"dist/**/*.css",
 			"dist/**/*.js"
@@ -129,17 +129,17 @@ gulp.task("revision", gulp.series("css", "js-build-home", "js-build-portfolio", 
 		.pipe(gulp.dest("dist"))
 		.pipe(rev.manifest())
 		.pipe(gulp.dest("dist"));
-}));
+});
 
-gulp.task("revisionReplace", gulp.series("revision", () => {
+gulp.task("revisionReplace", ["revision"], () => {
 	let manifest = gulp.src("dist/rev-manifest.json");
 
 	return gulp.src("dist/**/*.html")
 		.pipe(revReplace({ "manifest": manifest }))
 		.pipe(gulp.dest("dist"));
-}));
+});
 
-gulp.task("default", gulp.series(
+gulp.task("default", [
 	"clean",
 	"images",
 	"webfonts",
@@ -150,4 +150,4 @@ gulp.task("default", gulp.series(
 	"html",
 	"revision",
 	"revisionReplace"
-));
+]);
