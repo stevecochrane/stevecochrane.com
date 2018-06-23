@@ -116,7 +116,7 @@ a {
 }
 
 strong {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 small {
@@ -212,10 +212,10 @@ small {
 
 .l-section {
 	border-top: 1px solid var(--border-color-base);
-	padding: 35px 0 36px;
+	padding: 36px 0;
 
 	@media (--mq-small) {
-		padding: 47px 0 48px;
+		padding: 48px 0;
 	}
 }
 
@@ -248,7 +248,7 @@ small {
 	font-size: 12px;
 	line-height: 18px;
 	margin: 0;
-	padding: 9px 12px 8px;
+	padding: 9px 12px;
 }
 
 
@@ -281,9 +281,13 @@ small {
 	border-radius: 5px;
 	display: block;
 	height: auto;
-	margin: 24px 0;
+	margin: 16px 0 24px;
 	max-width: 100%;
 	width: 100%;
+
+	@media (--mq-small) {
+		margin: 24px 0;
+	}
 }
 
 .carousel {
@@ -348,7 +352,7 @@ small {
 	color: #fff;
 	display: inline-block;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 24px;
 	padding: 8px 24px;
 	text-align: center;
@@ -416,7 +420,7 @@ small {
 
 .feed-item {
 	border-top: 1px solid var(--border-color-base);
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .feed-link {
@@ -482,5 +486,5 @@ small {
 .icon-list .icon {
 	left: 0;
 	position: absolute;
-	top: 4px;
+	top: 2px;
 }
