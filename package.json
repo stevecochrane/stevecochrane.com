@@ -9,6 +9,7 @@
     "url": "https://github.com/stevecochrane/stevecochrane.com.git"
   },
   "scripts": {
+    "lint:css": "stylelint ./src/css/*.css",
     "lint:js": "eslint --ignore-path .eslintignore --cache ."
   },
   "devDependencies": {
