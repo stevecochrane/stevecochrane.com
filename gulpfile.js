@@ -66,14 +66,14 @@ gulp.task("css", ["clean"], () => {
 		.pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("js-build-home", ["clean", "js-lint"], () => {
+gulp.task("js-build-home", ["clean"], () => {
 	return gulp.src("src/js/main.js")
 		.pipe(babel())
 		.pipe(uglify())
 		.pipe(gulp.dest("dist/js/"));
 });
 
-gulp.task("js-build-portfolio", ["clean", "js-lint"], () => {
+gulp.task("js-build-portfolio", ["clean"], () => {
 	return gulp.src([
 			"src/js/lib/intersection-observer-0.5.0.js",
 			"src/js/lib/lozad-1.3.0.js",
