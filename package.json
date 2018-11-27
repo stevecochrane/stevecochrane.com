@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/stevecochrane/stevecochrane.com.git"
   },
+  "scripts": {
+    "lint:js": "eslint --ignore-path .eslintignore --cache ."
+  },
   "devDependencies": {
     "@babel/core": "~7.1.6",
     "@babel/polyfill": "~7.0.0",
@@ -15,6 +18,7 @@
     "autoprefixer": "~6.3.1",
     "cssnano": "~3.4.0",
     "del": "~2.1.0",
+    "eslint": "~5.9.0",
     "gulp": "~3.8.10",
     "gulp-babel": "~8.0.0",
     "gulp-concat": "~2.4.2",
