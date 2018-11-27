@@ -66,8 +66,8 @@ gulp.task("js-build-home", ["clean"], () => {
 
 gulp.task("js-build-portfolio", ["clean"], () => {
 	return gulp.src([
-			"src/js/lib/intersection-observer-0.5.0.js",
-			"src/js/lib/lozad-1.3.0.js",
+			"node_modules/intersection-observer/intersection-observer.js",
+			"node_modules/lozad/dist/lozad.js",
 			"src/js/portfolio.js"
 		])
 		.pipe(concat("portfolio.js"))
