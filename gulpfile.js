@@ -10,7 +10,6 @@ const customMedia      = require("postcss-custom-media");
 const customProperties = require("postcss-custom-properties");
 const del              = require("del");
 const gulp             = require("gulp");
-const jshint           = require("gulp-jshint");
 const nested           = require("postcss-nested");
 const pxtorem          = require("postcss-pxtorem");
 const postcss          = require("gulp-postcss");
@@ -65,15 +64,6 @@ gulp.task("css", ["clean"], () => {
 			cssnano()
 		]))
 		.pipe(gulp.dest("dist/css"));
-});
-
-gulp.task("js-lint", () => {
-	return gulp.src("src/js/*.js")
-		.pipe(jshint({
-			"esversion": 6
-		}))
-		.pipe(jshint.reporter("default"))
-		.pipe(jshint.reporter("fail"));
 });
 
 gulp.task("js-build-home", ["clean", "js-lint"], () => {
@@ -131,7 +121,6 @@ gulp.task("default", [
 	"clean",
 	"webfonts",
 	"css",
-	"js-lint",
 	"js-build-home",
 	"js-build-portfolio",
 	"html",
