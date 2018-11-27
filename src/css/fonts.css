@@ -2,30 +2,34 @@
 	font-family: "Tofino";
 	font-style: normal;
 	font-weight: 400;
-	src: url("/webfonts/Tofino-Regular.woff2") format("woff2"),
-	     url("/webfonts/Tofino-Regular.woff") format("woff");
+	src:
+		url("/webfonts/Tofino-Regular.woff2") format("woff2"),
+		url("/webfonts/Tofino-Regular.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Tofino";
 	font-style: italic;
 	font-weight: 400;
-	src: url("/webfonts/Tofino-RegularItalic.woff2") format("woff2"),
-	     url("/webfonts/Tofino-RegularItalic.woff") format("woff");
+	src:
+		url("/webfonts/Tofino-RegularItalic.woff2") format("woff2"),
+		url("/webfonts/Tofino-RegularItalic.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Tofino";
 	font-style: normal;
 	font-weight: 700;
-	src: url("/webfonts/Tofino-Bold.woff2") format("woff2"),
-	     url("/webfonts/Tofino-Bold.woff") format("woff");
+	src:
+		url("/webfonts/Tofino-Bold.woff2") format("woff2"),
+		url("/webfonts/Tofino-Bold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Tofino";
 	font-style: italic;
 	font-weight: 700;
-	src: url("/webfonts/Tofino-BoldItalic.woff2") format("woff2"),
-	     url("/webfonts/Tofino-BoldItalic.woff") format("woff");
+	src:
+		url("/webfonts/Tofino-BoldItalic.woff2") format("woff2"),
+		url("/webfonts/Tofino-BoldItalic.woff") format("woff");
 }
