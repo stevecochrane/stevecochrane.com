@@ -10,7 +10,6 @@ const customMedia      = require("postcss-custom-media");
 const customProperties = require("postcss-custom-properties");
 const del              = require("del");
 const gulp             = require("gulp");
-const imagemin         = require("gulp-imagemin");
 const jshint           = require("gulp-jshint");
 const nested           = require("postcss-nested");
 const pxtorem          = require("postcss-pxtorem");
@@ -28,17 +27,6 @@ gulp.task("clean", () => {
 		"dist/css/*.css",
 		"dist/js/*.js"
 	]);
-});
-
-gulp.task("images", () => {
-	return gulp.src("src/img/**/*")
-		.pipe(imagemin({
-			"svgoPlugins": [
-				{ "removeViewBox": false },
-				{ "cleanupIDs": false }
-			]
-		}))
-		.pipe(gulp.dest("dist/img"));
 });
 
 gulp.task("webfonts", () => {
@@ -141,7 +129,6 @@ gulp.task("revisionReplace", ["revision"], () => {
 
 gulp.task("default", [
 	"clean",
-	"images",
 	"webfonts",
 	"css",
 	"js-lint",
