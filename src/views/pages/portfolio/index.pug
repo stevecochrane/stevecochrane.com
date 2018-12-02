@@ -3,11 +3,11 @@ html(lang="en")
 	head
 		meta(charset="utf-8")
 		title Portfolio - Steve Cochrane
-		meta(name="description", content="The digital portfolio of Steve Cochrane, a front-end engineer and designer from Austin, Texas.")
+		meta(name="description", content="The digital portfolio of Steve Cochrane, a web software engineer and designer from Austin, Texas.")
 		meta(name="author", content="Steve Cochrane")
 		meta(property="og:url", content="https://stevecochrane.com/portfolio/")
 		meta(property="og:title", content="Portfolio")
-		meta(property="og:description", content="The digital portfolio of Steve Cochrane, a front-end engineer and designer from Austin, Texas.")
+		meta(property="og:description", content="The digital portfolio of Steve Cochrane, a web software engineer and designer from Austin, Texas.")
 		meta(property="og:site_name", content="Steve Cochrane")
 		meta(property="og:image", content="https://stevecochrane.com/tumblr/images/portrait-512.png")
 		meta(name="twitter:card", content="summary")
@@ -18,29 +18,75 @@ html(lang="en")
 		header
 			div
 				h1: a(href="/") Steve Cochrane
-				h2 Front-end Engineer &amp; Designer
+				h2 Web Software Engineer &amp; Designer
 				ul
 					li: a(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
 					li: a(href="https://github.com/stevecochrane/") GitHub
 					li: a(href="mailto:steve@stevecochrane.com") Email
 		#main(role="main")
 
+			section#blizzcon-2018-virtual-ticket
+				div
+					h1 BlizzCon 2018 Virtual Ticket Website
+					.images
+						.image.image-full
+							img(
+								src="img/blizzcon-2018-1.jpg",
+								srcset="img/blizzcon-2018-1.jpg 1x, img/blizzcon-2018-1-2x.jpg 2x",
+								width="1280",
+								height="520",
+								alt="BlizzCon 2018 Virtual Ticket: Video Player"
+							)
+						.image.image-full
+							img(
+								src="img/blizzcon-2018-2.jpg",
+								srcset="img/blizzcon-2018-2.jpg 1x, img/blizzcon-2018-2-2x.jpg 2x",
+								width="1280",
+								height="705",
+								alt="BlizzCon 2018 Virtual Ticket: Video Browser"
+							)
+					.description
+						.summary
+							ul
+								li #[strong Role] Engineering
+								li #[strong Client] Blizzard Entertainment
+								li #[strong Date] Fall 2018
+						.body-copy
+							p.
+								BlizzCon Virtual Ticket is a premium online video product that provides access to live and archived video of
+								all of the BlizzCon convention, to Blizzard fans around the world.
+							p.
+								We wanted to make some big technical upgrades to the Virtual Ticket experience in 2018. Everything had been
+								rendering server-side, with front-end asynchronous requests receiving large blocks of server-side-rendered
+								HTML. This caused server load issues when there were traffic spikes, and it incurred costs as it required us to
+								run more servers than necessary. We decided to offload a lot of rendering to the client.
+							p.
+								I was charged with overseeing our React implementation for a team of five engineers. I started by researching
+								to determine if reimplementing large portions of the Virtual Ticket experience with React was feasible with
+								our resources, and it was. We then made a library of React components, all of them connected to a Redux state
+								container. This workflow not only made for a more responsive interface for the user, but the component-based
+								approach also made it easier for several engineers to work in parallel.
+							.button-container
+								a.button(href="https://blizzcon.com/watch", target="_blank") View Site
+
 			section#rise-of-the-necromancer
 				div
 					h1 Diablo III: Rise of the Necromancer Website
 					.images
 						.image.image-full
-							img(
-								src="img/rise-of-the-necromancer-1.jpg",
-								srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/rise-of-the-necromancer-1.jpg",
+								data-srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
 								width="1280",
 								height="663",
 								alt="Rise of the Necromancer: Book Cover"
 							)
 						.image.image-full
-							img(
-								src="img/rise-of-the-necromancer-2.jpg",
-								srcset="img/rise-of-the-necromancer-2.jpg 1x, img/rise-of-the-necromancer-2-2x.jpg 2x",
+							img.lazy(
+								src="img/placeholder.png",
+								data-src="img/rise-of-the-necromancer-2.jpg",
+								data-srcset="img/rise-of-the-necromancer-2.jpg 1x, img/rise-of-the-necromancer-2-2x.jpg 2x",
 								width="1280",
 								height="795",
 								alt="Rise of the Necromancer: Foreword"
