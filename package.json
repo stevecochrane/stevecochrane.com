@@ -3,7 +3,7 @@
   "version": "6.20.1",
   "description": "My personal space on the internet since 2005.",
   "author": "Steve Cochrane <steve@stevecochrane.com>",
-  "license": "MIT",
+  "license": "ISC",
   "private": true,
   "repository": {
     "type": "git",
