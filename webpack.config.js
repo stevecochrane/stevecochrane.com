@@ -21,22 +21,27 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
+			chunks: ['main'],
 			filename: 'index.html',
 			template: 'src/views/pages/index.pug'
 		}),
 		new HtmlWebpackPlugin({
+			chunks: ['main'],
 			filename: 'fonts/index.html',
 			template: 'src/views/pages/fonts/index.pug'
 		}),
 		new HtmlWebpackPlugin({
+			chunks: ['main'],
 			filename: 'music/index.html',
 			template: 'src/views/pages/music/index.pug'
 		}),
 		new HtmlWebpackPlugin({
+			chunks: ['portfolio'],
 			filename: 'portfolio/index.html',
 			template: 'src/views/pages/portfolio/index.pug'
 		}),
 		new HtmlWebpackPlugin({
+			chunks: ['main'],
 			filename: 'videogames/index.html',
 			template: 'src/views/pages/videogames/index.pug'
 		})
