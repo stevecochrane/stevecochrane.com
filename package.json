@@ -10,6 +10,7 @@
     "url": "https://github.com/stevecochrane/stevecochrane.com.git"
   },
   "scripts": {
+    "build": "webpack",
     "lint:css": "stylelint ./src/css/*.css",
     "lint:js": "eslint --ignore-path .eslintignore --cache ."
   },
