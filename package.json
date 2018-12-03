@@ -4,6 +4,7 @@
   "description": "My personal space on the internet since 2005.",
   "author": "Steve Cochrane <steve@stevecochrane.com>",
   "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/stevecochrane/stevecochrane.com.git"
