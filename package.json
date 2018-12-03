@@ -39,6 +39,8 @@
     "postcss-nested": "1.0.0",
     "postcss-pxtorem": "3.3.1",
     "postcss-url": "5.1.0",
-    "stylelint": "9.3.0"
+    "stylelint": "9.3.0",
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2"
   }
 }
