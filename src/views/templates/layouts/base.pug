@@ -8,9 +8,10 @@ html(lang="en")
 		block openGraph
 		meta(name="twitter:card", content="summary")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
+		include ../partials/google-tag-manager-head.pug
 		link(rel="stylesheet", href="/css/main.css")
 	body
-		include ../partials/google-tag-manager.pug
+		include ../partials/google-tag-manager-body.pug
 		include ../partials/defs.svg
 		.l-page
 			block page
