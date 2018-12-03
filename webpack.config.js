@@ -11,7 +11,7 @@ module.exports = {
 		new CleanWebpackPlugin(['dist/js'])
 	],
 	output: {
-		filename: '[name].js',
+		filename: '[name].[contenthash].js',
 		path: path.resolve(__dirname, 'dist/js')
 	}
 };
