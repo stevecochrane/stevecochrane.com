@@ -1,3 +1,7 @@
+import NormalizeCss from 'normalize.css';
+import '../css/fonts.css';
+import '../css/main.css';
+
 function Carousel(elem, intervalDuration) {
 	this.elem = elem;
 	this.intervalDuration = intervalDuration || 5000;

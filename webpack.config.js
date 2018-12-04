@@ -1,6 +1,9 @@
+const path = require('path');
+
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PostcssPresetEnv = require('postcss-preset-env');
 
 module.exports = {
 	mode: 'production',
@@ -11,6 +14,34 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							// you can specify a publicPath here
+							// by default it use publicPath in webpackOptions.output
+							publicPath: '../'
+						}
+					},
+					{
+						loader: 'css-loader',
+						options: {
+							importLoaders: 1
+						}
+					},
+					{
+						loader: 'postcss-loader',
+						options: {
+							ident: 'postcss',
+							plugins: () => [
+								PostcssPresetEnv()
+							]
+						}
+					}
+				]
+			},
+			{
 				test: /\.pug$/,
 				use: [
 					'pug-loader'
@@ -20,6 +51,7 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
+		new MiniCssExtractPlugin(),
 		new HtmlWebpackPlugin({
 			chunks: ['main'],
 			filename: 'index.html',
