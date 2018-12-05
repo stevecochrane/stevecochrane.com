@@ -18,7 +18,6 @@
     "@babel/core": "7.1.6",
     "@babel/polyfill": "7.0.0",
     "@babel/preset-env": "7.1.6",
-    "autoprefixer": "9.4.0",
     "clean-webpack-plugin": "1.0.0",
     "css-loader": "1.0.1",
     "eslint": "5.9.0",
