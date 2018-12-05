@@ -30,7 +30,6 @@
     "postcss-preset-env": "6.4.0",
     "pug": "2.0.3",
     "pug-loader": "2.4.0",
-    "style-loader": "0.23.1",
     "stylelint": "9.3.0",
     "webpack": "4.26.1",
     "webpack-cli": "3.1.2"
