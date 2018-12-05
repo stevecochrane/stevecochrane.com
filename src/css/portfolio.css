@@ -3,14 +3,15 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-font-size: 18;
+	--base-font-size: 18px;
 	--base-text-color: #537681;
-	--base-unit: 28;
+	--base-unit: 28px;
 	--border-color: color(var(--base-text-color) a(25%));
 	--font-stack-base: "Tofino", sans-serif;
-	--page-width: 1280;
+	--page-width: 1280px;
+	--page-width-int: 1280;
 	--page-background-color: #eff3f5;
-	--small-font-size: 13;
+	--small-font-size: 13px;
 }
 
 
@@ -49,10 +50,10 @@ body {
 	font-size: 16px;
 	font-kerning: normal;
 	font-weight: 400;
-	line-height: var(--base-unit)px;
+	line-height: var(--base-unit);
 
 	@media (--mq-small) {
-		font-size: var(--base-font-size)px;
+		font-size: var(--base-font-size);
 	}
 }
 
@@ -67,7 +68,7 @@ dd {
 p + p,
 p + ul,
 ul + p {
-	margin-top: var(--base-unit)px;
+	margin-top: var(--base-unit);
 }
 
 a {
@@ -92,24 +93,24 @@ header > div {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	max-width: var(--page-width)px;
-	padding: var(--base-unit)px 0 calc(var(--base-unit)px * 0.75);
+	max-width: var(--page-width);
+	padding: var(--base-unit) 0 calc(var(--base-unit) * 0.75);
 
 	@media (--mq-small) {
 		flex-direction: row;
-		padding-top: calc(var(--base-unit)px * 1.75);
+		padding-top: calc(var(--base-unit) * 1.75);
 	}
 }
 
 header h1 {
 	flex: 0 1 auto;
 	font-size: 16px;
-	line-height: var(--base-unit)px;
+	line-height: var(--base-unit);
 	margin: 0;
 	text-align: center;
 
 	@media (--mq-small) {
-		margin: 0 calc(var(--base-unit)px * 0.5) 0 calc((40 / var(--page-width)) * 100%);
+		margin: 0 calc(var(--base-unit) * 0.5) 0 calc((40 / var(--page-width-int)) * 100%);
 		text-align: left;
 	}
 }
@@ -119,16 +120,16 @@ header h2 {
 	flex: 0 1 auto;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: calc(var(--base-unit)px * 0.75);
-	margin: 0 0 var(--base-unit)px;
+	line-height: calc(var(--base-unit) * 0.75);
+	margin: 0 0 var(--base-unit);
 	text-align: center;
 
 	@media (--mq-small) {
 		border-left: 1px solid var(--border-color);
 		font-size: 16px;
-		line-height: var(--base-unit)px;
+		line-height: var(--base-unit);
 		margin-bottom: 0;
-		padding-left: calc(var(--base-unit)px * 0.5);
+		padding-left: calc(var(--base-unit) * 0.5);
 		text-align: left;
 	}
 }
@@ -141,7 +142,7 @@ header ul {
 
 	@media (--mq-small) {
 		justify-content: flex-end;
-		margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width)) * 100%); /* Subtracts the amount of right padding on header li a */
+		margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width-int)) * 100%); /* Subtracts the amount of right padding on header li a */
 	}
 }
 
@@ -161,7 +162,7 @@ header a {
 }
 
 header li a {
-	padding: 0 calc(var(--base-unit)px * 0.5);
+	padding: 0 calc(var(--base-unit) * 0.5);
 }
 
 section {
@@ -171,23 +172,23 @@ section {
 
 section > div {
 	margin: 0 auto;
-	max-width: var(--page-width)px;
-	padding: calc(var(--base-unit)px * 2) 0 calc(var(--base-unit)px * 3);
+	max-width: var(--page-width);
+	padding: calc(var(--base-unit) * 2) 0 calc(var(--base-unit) * 3);
 
 	@media (--mq-small) {
-		padding: calc(var(--base-unit)px * 3) 0 calc(var(--base-unit)px * 4.5);
+		padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 4.5);
 	}
 }
 
 section h1 {
 	color: #385158;
 	font-size: 36px;
-	line-height: calc(var(--base-unit)px * 1.5);
-	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width)) * 100%) calc(var(--base-unit)px * 1.25) calc(((var(--base-unit) * 2) / var(--page-width)) * 100%);
+	line-height: calc(var(--base-unit) * 1.5);
+	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25) calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%);
 	text-align: center;
 
 	@media (--mq-small) {
-		margin-bottom: calc(var(--base-unit)px * 1.5);
+		margin-bottom: calc(var(--base-unit) * 1.5);
 	}
 }
 
@@ -212,23 +213,23 @@ section h1 {
 
 .image-half {
 	@media (--mq-small) {
-		max-width: calc((((var(--page-width) - var(--base-unit)) * 0.5) / var(--page-width)) * 100%);
+		max-width: calc((((var(--page-width-int) - var(--base-unit)) * 0.5) / var(--page-width-int)) * 100%);
 	}
 }
 
 .image-third {
 	@media (--mq-small) {
-		max-width: calc((((var(--page-width) - var(--base-unit)) * 0.33333333) / var(--page-width)) * 100%);
+		max-width: calc((((var(--page-width-int) - var(--base-unit)) * 0.33333333) / var(--page-width-int)) * 100%);
 	}
 }
 
 .image + .image {
-	margin-top: var(--base-unit)px;
+	margin-top: var(--base-unit);
 }
 
 .image-half + .image-half,
 .image-third + .image-third {
-	margin-top: var(--base-unit)px;
+	margin-top: var(--base-unit);
 
 	@media (--mq-small) {
 		margin-top: 0;
@@ -263,13 +264,13 @@ section h1 {
 
 .body-copy {
 	flex: 0 1 auto;
-	padding: calc(var(--base-unit)px * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
+	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
 
 	@media (--mq-small) {
-		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
-		padding-right: calc(((var(--base-unit) * 4) / var(--page-width)) * 100%);
-		padding-top: calc(var(--base-unit)px * 2);
-		width: calc(((var(--base-unit) * 29.25) / var(--page-width)) * 100%);
+		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width-int)) * 100%);
+		padding-right: calc(((var(--base-unit) * 4) / var(--page-width-int)) * 100%);
+		padding-top: calc(var(--base-unit) * 2);
+		width: calc(((var(--base-unit) * 29.25) / var(--page-width-int)) * 100%);
 	}
 }
 
@@ -284,17 +285,17 @@ section h1 {
 
 .body-copy li {
 	font-size: 14px;
-	line-height: var(--base-unit)px;
+	line-height: var(--base-unit);
 }
 
 .summary {
 	flex: 0 1 auto;
-	padding-top: calc(var(--base-unit)px * 1.5);
+	padding-top: calc(var(--base-unit) * 1.5);
 
 	@media (--mq-small) {
-		padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width)) * 100%);
-		padding-top: calc(var(--base-unit)px * 2);
-		width: calc(((var(--base-unit) * 15.75) / var(--page-width)) * 100%);
+		padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width-int)) * 100%);
+		padding-top: calc(var(--base-unit) * 2);
+		width: calc(((var(--base-unit) * 15.75) / var(--page-width-int)) * 100%);
 	}
 }
 
@@ -313,9 +314,9 @@ section h1 {
 }
 
 .summary li {
-	font-size: var(--small-font-size)px;
-	height: var(--base-unit)px;
-	padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width)) * 100%);
+	font-size: var(--small-font-size);
+	height: var(--base-unit);
+	padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
 	position: relative;
 
 	&::before {
@@ -328,7 +329,7 @@ section h1 {
 	}
 
 	@media (--mq-small) {
-		padding-left: calc(var(--base-unit)px / 2);
+		padding-left: calc(var(--base-unit) / 2);
 	}
 }
 
@@ -341,7 +342,7 @@ section h1 {
 	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
-	margin-top: var(--base-unit)px;
+	margin-top: var(--base-unit);
 
 	@media (--mq-large) {
 		flex-direction: row;
@@ -349,10 +350,10 @@ section h1 {
 }
 
 .button-container .button {
-	margin-top: calc((var(--base-unit)px * 0.5) + 1);
+	margin-top: calc((var(--base-unit) * 0.5) + 1);
 
 	@media (--mq-large) {
-		margin-left: calc(var(--base-unit)px * 0.5);
+		margin-left: calc(var(--base-unit) * 0.5);
 		margin-top: 1px;
 	}
 }
@@ -372,7 +373,7 @@ section h1 {
 	color: #fff;
 	display: inline-block;
 	font-size: 16px;
-	line-height: var(--base-unit)px;
+	line-height: var(--base-unit);
 	margin: 1px 0;
 	padding: 6px 20px;
 	text-shadow: 0 -1px 0 color(#000 a(25%));
@@ -388,14 +389,14 @@ section h1 {
 footer > div {
 	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
-	max-width: var(--page-width)px;
-	padding: calc(var(--base-unit)px * 0.5) 0 calc(var(--base-unit)px * 1.5);
+	max-width: var(--page-width);
+	padding: calc(var(--base-unit) * 0.5) 0 calc(var(--base-unit) * 1.5);
 }
 
 footer p {
 	color: #7da1ac;
-	font-size: var(--small-font-size)px;
-	line-height: var(--base-unit)px;
-	margin: 0 calc((40 / var(--page-width)) * 100%);
+	font-size: var(--small-font-size);
+	line-height: var(--base-unit);
+	margin: 0 calc((40 / var(--page-width-int)) * 100%);
 	text-align: center;
 }
