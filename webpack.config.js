@@ -4,7 +4,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const PostcssPresetEnv = require('postcss-preset-env');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -32,15 +31,7 @@ module.exports = {
 							importLoaders: 1
 						}
 					},
-					{
-						loader: 'postcss-loader',
-						options: {
-							ident: 'postcss',
-							plugins: () => [
-								PostcssPresetEnv()
-							]
-						}
-					}
+					'postcss-loader'
 				]
 			},
 			{
