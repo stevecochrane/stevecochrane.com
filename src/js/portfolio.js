@@ -1,4 +1,4 @@
-import IntersectionObserver from "intersection-observer";
+import "intersection-observer";
 import Lozad from "lozad";
 
 import "../css/normalize.css";
