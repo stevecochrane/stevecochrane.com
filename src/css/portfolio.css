@@ -14,15 +14,13 @@
 	--small-font-size: 13px;
 }
 
-
 /*	--------------------------------------------------
 	MEDIA QUERIES
 	-------------------------------------------------- */
 
-@custom-media --mq-small  (min-width:  800px);
-@custom-media --mq-medium (min-width:  960px);
-@custom-media --mq-large  (min-width: 1280px);
-
+@custom-media --mq-small (min-width: 800px);
+@custom-media --mq-medium (min-width: 960px);
+@custom-media --mq-large (min-width: 1280px);
 
 /*	--------------------------------------------------
 	STYLES
@@ -142,7 +140,9 @@ header ul {
 
 	@media (--mq-small) {
 		justify-content: flex-end;
-		margin-right: calc(((40 - (var(--base-unit) * 0.5)) / var(--page-width-int)) * 100%); /* Subtracts the amount of right padding on header li a */
+		margin-right: calc(
+			((40 - (var(--base-unit) * 0.5)) / var(--page-width-int)) * 100%
+		); /* Subtracts the amount of right padding on header li a */
 	}
 }
 
@@ -184,7 +184,8 @@ section h1 {
 	color: #385158;
 	font-size: 36px;
 	line-height: calc(var(--base-unit) * 1.5);
-	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25) calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%);
+	margin: 0 calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25)
+		calc(((var(--base-unit) * 2) / var(--page-width-int)) * 100%);
 	text-align: center;
 
 	@media (--mq-small) {
@@ -264,7 +265,8 @@ section h1 {
 
 .body-copy {
 	flex: 0 1 auto;
-	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%) 0 calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
+	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%) 0
+		calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
 
 	@media (--mq-small) {
 		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width-int)) * 100%);
