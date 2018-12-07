@@ -17,14 +17,7 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-						options: {
-							// you can specify a publicPath here
-							// by default it use publicPath in webpackOptions.output
-							publicPath: '../'
-						}
-					},
+					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
 						options: {
@@ -58,8 +51,7 @@ module.exports = {
 		minimizer: [
 			new UglifyJsPlugin({
 				cache: true,
-				parallel: true,
-				sourceMap: true
+				parallel: true
 			}),
 			new OptimizeCssAssetsPlugin()
 		]
@@ -67,7 +59,7 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(['dist']),
 		new MiniCssExtractPlugin({
-			filename: '[name].[contenthash].css'
+			filename: 'css/[name].[contenthash].css'
 		}),
 		new HtmlWebpackPlugin({
 			chunks: ['main'],
@@ -96,7 +88,7 @@ module.exports = {
 		})
 	],
 	output: {
-		filename: '[name].[contenthash].js',
+		filename: 'js/[name].[contenthash].js',
 		path: path.resolve(__dirname, 'dist')
 	}
 };
