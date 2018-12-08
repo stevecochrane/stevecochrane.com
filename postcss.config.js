@@ -1,9 +1,11 @@
 const PostcssNormalize = require('postcss-normalize');
 const PostcssPresetEnv = require('postcss-preset-env');
+const Stylelint = require('stylelint');
 
 module.exports = {
 	plugins: [
-		PostcssPresetEnv(),
-		PostcssNormalize()
+		Stylelint(),
+		PostcssNormalize(),
+		PostcssPresetEnv()
 	]
 };
