@@ -1,43 +1,50 @@
 {
-  "name": "stevecochrane.com",
-  "version": "6.20.1",
-  "description": "My personal space on the internet since 2005.",
-  "author": "Steve Cochrane <steve@stevecochrane.com>",
-  "license": "ISC",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stevecochrane/stevecochrane.com.git"
-  },
-  "scripts": {
-    "build": "webpack",
-    "lint:css": "stylelint ./src/css/*.css",
-    "lint:js": "eslint --ignore-path .eslintignore --cache ."
-  },
-  "devDependencies": {
-    "@babel/core": "7.1.6",
-    "@babel/polyfill": "7.0.0",
-    "@babel/preset-env": "7.1.6",
-    "babel-loader": "8.0.4",
-    "clean-webpack-plugin": "1.0.0",
-    "css-loader": "1.0.1",
-    "eslint": "5.9.0",
-    "eslint-loader": "2.1.1",
-    "html-webpack-plugin": "3.2.0",
-    "intersection-observer": "0.5.0",
-    "lozad": "1.3.0",
-    "mini-css-extract-plugin": "0.4.5",
-    "optimize-css-assets-webpack-plugin": "5.0.1",
-    "postcss-loader": "3.0.0",
-    "postcss-normalize": "7.0.1",
-    "postcss-preset-env": "6.4.0",
-    "prettier": "1.15.3",
-    "pug": "2.0.3",
-    "pug-loader": "2.4.0",
-    "stylelint": "9.3.0",
-    "stylelint-config-recommended": "2.1.0",
-    "uglifyjs-webpack-plugin": "2.0.1",
-    "webpack": "4.26.1",
-    "webpack-cli": "3.1.2"
-  }
+	"name": "stevecochrane.com",
+	"version": "6.20.1",
+	"description": "My personal space on the internet since 2005.",
+	"author": "Steve Cochrane <steve@stevecochrane.com>",
+	"license": "ISC",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/stevecochrane/stevecochrane.com.git"
+	},
+	"scripts": {
+		"build": "webpack",
+		"lint:css": "stylelint ./src/css/*.css",
+		"lint:js": "eslint --ignore-path .eslintignore --cache ."
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	},
+	"devDependencies": {
+		"@babel/core": "7.1.6",
+		"@babel/polyfill": "7.0.0",
+		"@babel/preset-env": "7.1.6",
+		"babel-loader": "8.0.4",
+		"clean-webpack-plugin": "1.0.0",
+		"css-loader": "1.0.1",
+		"eslint": "5.9.0",
+		"eslint-loader": "2.1.1",
+		"html-webpack-plugin": "3.2.0",
+		"husky": "1.2.0",
+		"intersection-observer": "0.5.0",
+		"lozad": "1.3.0",
+		"mini-css-extract-plugin": "0.4.5",
+		"optimize-css-assets-webpack-plugin": "5.0.1",
+		"postcss-loader": "3.0.0",
+		"postcss-normalize": "7.0.1",
+		"postcss-preset-env": "6.4.0",
+		"prettier": "1.15.3",
+		"pretty-quick": "1.8.0",
+		"pug": "2.0.3",
+		"pug-loader": "2.4.0",
+		"stylelint": "9.3.0",
+		"stylelint-config-recommended": "2.1.0",
+		"uglifyjs-webpack-plugin": "2.0.1",
+		"webpack": "4.26.1",
+		"webpack-cli": "3.1.2"
+	}
 }
