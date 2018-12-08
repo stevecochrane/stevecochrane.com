@@ -12,7 +12,8 @@
 	"scripts": {
 		"build": "webpack",
 		"lint:css": "stylelint ./src/css/*.css",
-		"lint:js": "eslint --ignore-path .eslintignore --cache ."
+		"lint:js": "eslint --ignore-path .eslintignore --cache .",
+		"prettify": "pretty-quick"
 	},
 	"husky": {
 		"hooks": {
