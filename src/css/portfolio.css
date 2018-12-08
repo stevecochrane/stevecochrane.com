@@ -351,23 +351,6 @@ section h1 {
 	}
 }
 
-.button-container .button {
-	margin-top: calc((var(--base-unit) * 0.5) + 1);
-
-	@media (--mq-large) {
-		margin-left: calc(var(--base-unit) * 0.5);
-		margin-top: 1px;
-	}
-}
-
-.button-container .button:first-child {
-	margin-top: 1px;
-
-	@media (--mq-large) {
-		margin-left: 0;
-	}
-}
-
 .button {
 	background-color: #0ca6d8;
 	border-radius: 5px;
@@ -385,6 +368,23 @@ section h1 {
 	&:focus {
 		background-color: #0a8db8;
 		color: #fff;
+	}
+}
+
+.button-container .button {
+	margin-top: calc((var(--base-unit) * 0.5) + 1);
+
+	@media (--mq-large) {
+		margin-left: calc(var(--base-unit) * 0.5);
+		margin-top: 1px;
+	}
+}
+
+.button-container .button:first-child {
+	margin-top: 1px;
+
+	@media (--mq-large) {
+		margin-left: 0;
 	}
 }
 
