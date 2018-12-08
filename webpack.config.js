@@ -36,7 +36,8 @@ module.exports = {
 						options: {
 							cacheDirectory: true
 						}
-					}
+					},
+					'eslint-loader'
 				]
 			},
 			{
