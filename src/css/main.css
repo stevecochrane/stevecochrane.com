@@ -51,6 +51,7 @@ body {
 	display: flex;
 	font: 400 100%/24px var(--font-stack-base);
 	font-kerning: normal;
+	margin: 0;
 	min-height: 100%;
 	padding: 18px 12px;
 
