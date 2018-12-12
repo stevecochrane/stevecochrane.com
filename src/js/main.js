@@ -7,7 +7,7 @@ function Carousel(elem, intervalDuration) {
 	this.intervalDuration = intervalDuration || 5000;
 }
 
-Carousel.prototype.init = () => {
+Carousel.prototype.init = function() {
 	this.currentListElement = 0;
 	this.listElements = this.elem.querySelectorAll("li");
 	this.lastListElement = this.listElements.length - 1;
@@ -15,7 +15,7 @@ Carousel.prototype.init = () => {
 	setInterval(this.rotateListElements.bind(this), this.intervalDuration);
 };
 
-Carousel.prototype.rotateListElements = () => {
+Carousel.prototype.rotateListElements = function() {
 	if (this.currentListElement !== this.lastListElement) {
 		this.currentListElement++;
 		this.listElements[this.currentListElement].classList.remove("is-hidden-immediately");
