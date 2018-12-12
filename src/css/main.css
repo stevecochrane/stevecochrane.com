@@ -3,7 +3,7 @@
 	-------------------------------------------------- */
 
 :root {
-	--border-color-base: color(#000 a(10%));
+	--border-color-base: rgba(0, 0, 0, 0.1);
 	--font-stack-base: "Tofino", sans-serif;
 	--golden-ratio: 1.61803398875;
 	--img-dir: ../img/v6;
@@ -11,7 +11,7 @@
 	--link-color-hover: #ff8e8c; /* http://0to255.com/ff6c6a, +2 */
 	--page-width: 888px;
 	--page-width-int: 888;
-	--shadow-color-base: color(#000 a(25%));
+	--shadow-color-base: rgba(0, 0, 0, 0.25);
 	--text-color-base: #484848;
 	--text-color-light: #9f9f9f;
 }
