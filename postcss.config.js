@@ -4,5 +4,12 @@ const PostcssPresetEnv = require("postcss-preset-env");
 const Stylelint = require("stylelint");
 
 module.exports = {
-	plugins: [Stylelint(), PostcssPresetEnv(), PostcssPxtorem(), PostcssNormalize()]
+	plugins: [
+		Stylelint(),
+		PostcssPresetEnv({
+			stage: 0
+		}),
+		PostcssPxtorem(),
+		PostcssNormalize()
+	]
 };
