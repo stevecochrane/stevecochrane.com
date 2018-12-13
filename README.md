@@ -21,8 +21,7 @@ npm run build
   advocating for this approach as this was mainly for research, but it's definitely growing on me.
 - The intent of the PostCSS usage here was to write plain, valid CSS, plus proposed CSS features, and then polyfill for
   older browsers using [postcss-preset-env](https://github.com/csstools/postcss-preset-env), just like using Babel for
-  writing modern JavaScript. So this follows proposed standards and does not include things like mixins, though I do
-  currently use [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) for convenience.
+  writing modern JavaScript. So this follows proposed standards and does not include things like mixins.
 - The CSS naming convention is [SMACSS](https://smacss.com/) but if I were writing it today, it would be like
   [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) instead.
 - I could reduce repetition in the Portfolio template by populating it with data.
