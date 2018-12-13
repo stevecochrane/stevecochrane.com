@@ -3,9 +3,9 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-font-size: 18px;
 	--base-text-color: #537681;
 	--base-unit: 28px;
+	--base-unit-int: 28;
 	--border-color: rgba(83, 118, 129, 0.25);
 	--font-stack-base: "Tofino", sans-serif;
 	--page-width: 1280px;
@@ -53,7 +53,7 @@ body {
 	margin: 0;
 
 	@media (--mq-small) {
-		font-size: var(--base-font-size);
+		font-size: 18px;
 	}
 }
 
@@ -143,7 +143,7 @@ header ul {
 	@media (--mq-small) {
 		justify-content: flex-end;
 		margin-right: calc(
-			((40 - (var(--base-unit) * 0.5)) / var(--page-width-int)) * 100%
+			((40 - (var(--base-unit-int) * 0.5)) / var(--page-width-int)) * 100%
 		); /* Subtracts the amount of right padding on header li a */
 	}
 }
@@ -267,14 +267,14 @@ section h1 {
 
 .body-copy {
 	flex: 0 1 auto;
-	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%) 0
-		calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
+	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%) 0
+		calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%);
 
 	@media (--mq-small) {
-		padding-left: calc(((var(--base-unit) * 4.25) / var(--page-width-int)) * 100%);
-		padding-right: calc(((var(--base-unit) * 4) / var(--page-width-int)) * 100%);
+		padding-left: calc(((var(--base-unit-int) * 4.25) / var(--page-width-int)) * 100%);
+		padding-right: calc(((var(--base-unit-int) * 4) / var(--page-width-int)) * 100%);
 		padding-top: calc(var(--base-unit) * 2);
-		width: calc(((var(--base-unit) * 29.25) / var(--page-width-int)) * 100%);
+		width: calc(((var(--base-unit-int) * 29.25) / var(--page-width-int)) * 100%);
 	}
 }
 
@@ -297,9 +297,9 @@ section h1 {
 	padding-top: calc(var(--base-unit) * 1.5);
 
 	@media (--mq-small) {
-		padding-right: calc(((var(--base-unit) * 4.25) / var(--page-width-int)) * 100%);
+		padding-right: calc(((var(--base-unit-int) * 4.25) / var(--page-width-int)) * 100%);
 		padding-top: calc(var(--base-unit) * 2);
-		width: calc(((var(--base-unit) * 15.75) / var(--page-width-int)) * 100%);
+		width: calc(((var(--base-unit-int) * 15.75) / var(--page-width-int)) * 100%);
 	}
 }
 
@@ -320,7 +320,7 @@ section h1 {
 .summary li {
 	font-size: var(--small-font-size);
 	height: var(--base-unit);
-	padding-left: calc(((var(--base-unit) * 3.5) / var(--page-width-int)) * 100%);
+	padding-left: calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%);
 	position: relative;
 
 	&::before {
