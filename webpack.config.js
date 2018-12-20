@@ -8,7 +8,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
 	mode: "production",
-	entry: "./src/js/portfolio.js",
+	entry: "./src/js/main.js",
 	module: {
 		rules: [
 			{

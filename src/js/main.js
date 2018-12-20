@@ -3,7 +3,7 @@ import Lozad from "lozad";
 
 import "../css/normalize.css";
 import "../css/fonts.css";
-import "../css/portfolio.css";
+import "../css/main.css";
 
 let observer = Lozad(".lazy", {
 	rootMargin: "25%",
