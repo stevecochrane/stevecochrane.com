@@ -1,9 +1,9 @@
-section#vidcaster-theme-editor
-	div
-		h1 Vidcaster Theme Editor
-		.images
-			.image.image-full
-				img.lazy(
+section.Project#vidcaster-theme-editor
+	.Project-wrap
+		h1.Project-title Vidcaster Theme Editor
+		.Project-images
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/vidcaster-theme-editor-1.jpg",
 					data-srcset="img/vidcaster-theme-editor-1.jpg 1x, img/vidcaster-theme-editor-1-2x.jpg 2x",
@@ -11,8 +11,8 @@ section#vidcaster-theme-editor
 					height="352",
 					alt="Vidcaster Theme Editor: Themes View"
 				)
-			.image.image-full
-				img.lazy(
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/vidcaster-theme-editor-2.jpg",
 					data-srcset="img/vidcaster-theme-editor-2.jpg 1x, img/vidcaster-theme-editor-2-2x.jpg 2x",
@@ -20,8 +20,8 @@ section#vidcaster-theme-editor
 					height="352",
 					alt="Vidcaster Theme Editor: Basic Editor View"
 				)
-			.image.image-full
-				img.lazy(
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/vidcaster-theme-editor-3.jpg",
 					data-srcset="img/vidcaster-theme-editor-3.jpg 1x, img/vidcaster-theme-editor-3-2x.jpg 2x",
@@ -30,38 +30,38 @@ section#vidcaster-theme-editor
 					alt="Vidcaster Theme Editor: Advanced Editor View"
 				)
 		noscript
-			.images
-				.image.image-full
-					img(
+			.Project-images
+				.Project-imageWrap
+					img.Project-image(
 						src="img/vidcaster-theme-editor-1.jpg",
 						srcset="img/vidcaster-theme-editor-1.jpg 1x, img/vidcaster-theme-editor-1-2x.jpg 2x",
 						width="1280",
 						height="352",
 						alt="Vidcaster Theme Editor: Themes View"
 					)
-				.image.image-full
-					img(
+				.Project-imageWrap
+					img.Project-image(
 						src="img/vidcaster-theme-editor-2.jpg",
 						srcset="img/vidcaster-theme-editor-2.jpg 1x, img/vidcaster-theme-editor-2-2x.jpg 2x",
 						width="1280",
 						height="352",
 						alt="Vidcaster Theme Editor: Basic Editor View"
 					)
-				.image.image-full
-					img(
+				.Project-imageWrap
+					img.Project-image(
 						src="img/vidcaster-theme-editor-3.jpg",
 						srcset="img/vidcaster-theme-editor-3.jpg 1x, img/vidcaster-theme-editor-3-2x.jpg 2x",
 						width="1280",
 						height="382",
 						alt="Vidcaster Theme Editor: Advanced Editor View"
 					)
-		.description
-			.summary
-				ul
-					li #[strong Role] Design, Engineering
-					li #[strong Client] Vidcaster
-					li #[strong Date] Spring 2013
-			.body-copy
+		.Project-description
+			.Project-summary
+				ul.Project-summaryItems
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Design, Engineering
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Vidcaster
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Spring 2013
+			.Project-body
 				p.
 					Vidcaster was a platform for building custom video websites, sort of like YouTube channels but much more
 					personalized, with full control over site layout and with business-oriented features like pay-per-view. Some of

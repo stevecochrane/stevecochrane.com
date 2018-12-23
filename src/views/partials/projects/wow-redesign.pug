@@ -1,9 +1,9 @@
-section#wow-redesign
-	div
-		h1 World of Warcraft Website Redesign
-		.images
-			.image.image-full
-				img.lazy(
+section.Project#wow-redesign
+	.Project-wrap
+		h1.Project-title World of Warcraft Website Redesign
+		.Project-images
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/wow-redesign-1.jpg",
 					data-srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
@@ -11,8 +11,8 @@ section#wow-redesign
 					height="669",
 					alt="World of Warcraft Website Redesign: Homepage"
 				)
-			.image.image-full
-				img.lazy(
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/wow-redesign-2.jpg",
 					data-srcset="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
@@ -21,30 +21,30 @@ section#wow-redesign
 					alt="World of Warcraft Website Redesign: New Player’s Guide"
 				)
 		noscript
-			.images
-				.image.image-full
-					img(
+			.Project-images
+				.Project-imageWrap
+					img.Project-image(
 						src="img/wow-redesign-1.jpg",
 						srcset="img/wow-redesign-1.jpg 1x, img/wow-redesign-1-2x.jpg 2x",
 						width="1280",
 						height="669",
 						alt="World of Warcraft Website Redesign: Homepage"
 					)
-				.image.image-full
-					img(
+				.Project-imageWrap
+					img.Project-image(
 						src="img/wow-redesign-2.jpg",
 						srcset="img/wow-redesign-2.jpg 1x, img/wow-redesign-2-2x.jpg 2x",
 						width="1280",
 						height="802",
 						alt="World of Warcraft Website Redesign: New Player’s Guide"
 					)
-		.description
-			.summary
-				ul
-					li #[strong Role] Engineering
-					li #[strong Client] Blizzard Entertainment
-					li #[strong Date] Summer 2016
-			.body-copy
+		.Project-description
+			.Project-summary
+				ul.Project-summaryItems
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Engineering
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Blizzard Entertainment
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Summer 2016
+			.Project-body
 				p.
 					I was one of a handful of front-end engineers who worked on a top-to-bottom redesign of the World of Warcraft
 					website, in preparation for the launch of the Legion expansion. The site follows a lot of modern front-end best
@@ -57,5 +57,5 @@ section#wow-redesign
 					to solve these issues, researched best practices, and made our living style guide, along with establishing
 					CSS and Less coding conventions for our team. It was the first living style guide at Blizzard Web &amp; Mobile,
 					and now all of our sites have one.
-				.button-container
-					a.button(href="https://worldofwarcraft.com/", target="_blank") View Site
+				.Buttons
+					a.Buttons-button(href="https://worldofwarcraft.com/", target="_blank") View Site

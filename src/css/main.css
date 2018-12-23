@@ -83,13 +83,17 @@ a {
 	}
 }
 
-header {
+.lazy {
+	display: none;
+}
+
+.Header {
 	background: #fff;
 	box-shadow: 0 0.1rem 0.8rem var(--border-color);
 	position: relative;
 }
 
-header > div {
+.Header-wrap {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
@@ -102,7 +106,7 @@ header > div {
 	}
 }
 
-header h1 {
+.Header-title {
 	flex: 0 1 auto;
 	font-size: 1.6rem;
 	line-height: var(--base-unit);
@@ -115,7 +119,7 @@ header h1 {
 	}
 }
 
-header h2 {
+.Header-subtitle {
 	color: #9cb7c0;
 	flex: 0 1 auto;
 	font-size: 1.4rem;
@@ -134,7 +138,7 @@ header h2 {
 	}
 }
 
-header ul {
+.Header-items {
 	display: flex;
 	flex: 1 1 auto;
 	justify-content: center;
@@ -148,14 +152,15 @@ header ul {
 	}
 }
 
-header li {
+.Header-item {
 	flex: 0 1 auto;
 	font-size: 1.6rem;
 }
 
-header a {
+.Header-link {
 	color: #5a808b;
 	display: block;
+	padding: 0 calc(var(--base-unit) * 0.5);
 
 	&:hover,
 	&:focus {
@@ -163,16 +168,12 @@ header a {
 	}
 }
 
-header li a {
-	padding: 0 calc(var(--base-unit) * 0.5);
-}
-
-section {
+.Project {
 	background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat;
 	background-size: 100% 45rem;
 }
 
-section > div {
+.Project-wrap {
 	margin: 0 auto;
 	max-width: var(--page-width);
 	padding: calc(var(--base-unit) * 2) 0 calc(var(--base-unit) * 3);
@@ -182,7 +183,7 @@ section > div {
 	}
 }
 
-section h1 {
+.Project-title {
 	color: #385158;
 	font-size: 3.6rem;
 	line-height: calc(var(--base-unit) * 1.5);
@@ -195,11 +196,7 @@ section h1 {
 	}
 }
 
-.lazy {
-	display: none;
-}
-
-.images {
+.Project-images {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -209,29 +206,29 @@ section h1 {
 	}
 }
 
-.image {
+.Project-imageWrap {
 	box-shadow: 0 0.1rem 0.8rem var(--border-color);
 	display: -ms-flexbox;
 }
 
-.image-half {
+.Project-imageWrap--half {
 	@media (--mq-small) {
 		max-width: calc((((var(--page-width-int) - var(--base-unit)) * 0.5) / var(--page-width-int)) * 100%);
 	}
 }
 
-.image-third {
+.Project-imageWrap--third {
 	@media (--mq-small) {
 		max-width: calc((((var(--page-width-int) - var(--base-unit)) * 0.33333333) / var(--page-width-int)) * 100%);
 	}
 }
 
-.image + .image {
+.Project-imageWrap + .Project-imageWrap {
 	margin-top: var(--base-unit);
 }
 
-.image-half + .image-half,
-.image-third + .image-third {
+.Project-imageWrap--half + .Project-imageWrap--half,
+.Project-imageWrap--third + .Project-imageWrap--third {
 	margin-top: var(--base-unit);
 
 	@media (--mq-small) {
@@ -239,13 +236,13 @@ section h1 {
 	}
 }
 
-.image > img {
+.Project-image {
 	display: block;
 	height: auto;
 	max-width: 100%;
 }
 
-.description {
+.Project-description {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -257,15 +254,15 @@ section h1 {
 
 /*
 	Total page width is 1080, and 1080 / 24 = 45.
-	.body-copy: padding-right of 4, width of 21, padding-left of 4.25. 4 + 21 + 4.25 = 29.25.
-	.summary: padding-right: of 4.25, width of 11.5. 4.25 + 11.5 = 15.75.
+	.Project-body: padding-right of 4, width of 21, padding-left of 4.25. 4 + 21 + 4.25 = 29.25.
+	.Project-summary: padding-right: of 4.25, width of 11.5. 4.25 + 11.5 = 15.75.
 	29.25 + 15.75 = 45.
 
 	This is basically 2/3 to body-copy and 1/3 to summary, though not quite (0.65/0.35), since it started as a total page width of 972,
 	and an even amount of whitespace was added to both sides.
 */
 
-.body-copy {
+.Project-body {
 	flex: 0 1 auto;
 	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%) 0
 		calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%);
@@ -278,7 +275,7 @@ section h1 {
 	}
 }
 
-.body-copy ul {
+.List {
 	list-style: circle outside;
 	padding-left: 1.9rem;
 
@@ -287,12 +284,12 @@ section h1 {
 	}
 }
 
-.body-copy li {
+.List-item {
 	font-size: 1.4rem;
 	line-height: var(--base-unit);
 }
 
-.summary {
+.Project-summary {
 	flex: 0 1 auto;
 	padding-top: calc(var(--base-unit) * 1.5);
 
@@ -303,7 +300,7 @@ section h1 {
 	}
 }
 
-.summary ul {
+.Project-summaryItems {
 	list-style: none;
 	position: relative;
 
@@ -317,7 +314,7 @@ section h1 {
 	}
 }
 
-.summary li {
+.Project-summaryItem {
 	font-size: var(--small-font-size);
 	height: var(--base-unit);
 	padding-left: calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%);
@@ -337,12 +334,12 @@ section h1 {
 	}
 }
 
-.summary strong {
+.Project-summaryItemTitle {
 	display: inline-block;
 	width: 4.8rem;
 }
 
-.button-container {
+.Buttons {
 	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
@@ -353,7 +350,7 @@ section h1 {
 	}
 }
 
-.button {
+.Buttons-button {
 	background-color: #0ca6d8;
 	border-radius: 0.5rem;
 	box-shadow: inset 0 -1px 0 var(--shadow-color);
@@ -361,7 +358,7 @@ section h1 {
 	display: inline-block;
 	font-size: 1.6rem;
 	line-height: var(--base-unit);
-	margin: 0.1rem 0;
+	margin: calc((var(--base-unit) * 0.5) + 0.1rem) 0 0.1rem;
 	padding: 0.6rem 2rem;
 	text-shadow: 0 -1px 0 var(--shadow-color);
 	transition: background-color 0.2s, color 0.2s;
@@ -371,33 +368,29 @@ section h1 {
 		background-color: #0a8db8;
 		color: #fff;
 	}
-}
 
-.button-container .button {
-	margin-top: calc((var(--base-unit) * 0.5) + 0.1rem);
+	&:first-child {
+		margin-top: 0.1rem;
+	}
 
 	@media (--mq-large) {
 		margin-left: calc(var(--base-unit) * 0.5);
 		margin-top: 0.1rem;
+
+		&:first-child {
+			margin-left: 0;
+		}
 	}
 }
 
-.button-container .button:first-child {
-	margin-top: 0.1rem;
-
-	@media (--mq-large) {
-		margin-left: 0;
-	}
-}
-
-footer > div {
+.Footer-wrap {
 	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
 	max-width: var(--page-width);
 	padding: calc(var(--base-unit) * 0.5) 0 calc(var(--base-unit) * 1.5);
 }
 
-footer p {
+.Footer-copyright {
 	color: #7da1ac;
 	font-size: var(--small-font-size);
 	line-height: var(--base-unit);

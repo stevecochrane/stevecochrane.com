@@ -15,14 +15,14 @@ html(lang="en")
 		include ./partials/google-tag-manager/head.pug
 	body
 		include ./partials/google-tag-manager/body.pug
-		header
-			div
-				h1: a(href="/") Steve Cochrane
-				h2 Web Software Engineer &amp; Designer
-				ul
-					li: a(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
-					li: a(href="https://github.com/stevecochrane") GitHub
-					li: a(href="mailto:steve@stevecochrane.com") Email
+		header.Header
+			.Header-wrap
+				h1.Header-title Steve Cochrane
+				h2.Header-subtitle Web Software Engineer &amp; Designer
+				ul.Header-items
+					li.Header-item: a.Header-link(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
+					li.Header-item: a.Header-link(href="https://github.com/stevecochrane") GitHub
+					li.Header-item: a.Header-link(href="mailto:steve@stevecochrane.com") Email
 		#main(role="main")
 			include ./partials/projects/blizzcon-2018-virtual-ticket
 			include ./partials/projects/rise-of-the-necromancer
@@ -37,6 +37,6 @@ html(lang="en")
 			include ./partials/projects/vidcaster-website
 			include ./partials/projects/vidcaster-video-player
 			include ./partials/projects/vidcaster-themes
-		footer
-			div
-				p Copyright &copy; 2005&ndash;2018 Steve Cochrane. All rights reserved.
+		footer.Footer
+			.Footer-wrap
+				p.Footer-copyright Copyright &copy; 2005&ndash;2018 Steve Cochrane. All rights reserved.

@@ -1,9 +1,9 @@
-section#rise-of-the-necromancer
-	div
-		h1 Diablo III: Rise of the Necromancer Website
-		.images
-			.image.image-full
-				img.lazy(
+section.Project#rise-of-the-necromancer
+	.Project-wrap
+		h1.Project-title Diablo III: Rise of the Necromancer Website
+		.Project-images
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/rise-of-the-necromancer-1.jpg",
 					data-srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
@@ -11,8 +11,8 @@ section#rise-of-the-necromancer
 					height="663",
 					alt="Rise of the Necromancer: Book Cover"
 				)
-			.image.image-full
-				img.lazy(
+			.Project-imageWrap
+				img.Project-image.lazy(
 					src="img/placeholder.png",
 					data-src="img/rise-of-the-necromancer-2.jpg",
 					data-srcset="img/rise-of-the-necromancer-2.jpg 1x, img/rise-of-the-necromancer-2-2x.jpg 2x",
@@ -21,30 +21,30 @@ section#rise-of-the-necromancer
 					alt="Rise of the Necromancer: Foreword"
 				)
 		noscript
-			.images
-				.image.image-full
-					img(
+			.Project-images
+				.Project-imageWrap
+					img.Project-image(
 						src="img/rise-of-the-necromancer-1.jpg",
 						srcset="img/rise-of-the-necromancer-1.jpg 1x, img/rise-of-the-necromancer-1-2x.jpg 2x",
 						width="1280",
 						height="663",
 						alt="Rise of the Necromancer: Book Cover"
 					)
-				.image.image-full
-					img(
+				.Project-imageWrap
+					img.Project-image(
 						src="img/rise-of-the-necromancer-2.jpg",
 						srcset="img/rise-of-the-necromancer-2.jpg 1x, img/rise-of-the-necromancer-2-2x.jpg 2x",
 						width="1280",
 						height="795",
 						alt="Rise of the Necromancer: Foreword"
 					)
-		.description
-			.summary
-				ul
-					li #[strong Role] Engineering
-					li #[strong Client] Blizzard Entertainment
-					li #[strong Date] Summer 2017
-			.body-copy
+		.Project-description
+			.Project-summary
+				ul.Project-summaryItems
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Engineering
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Blizzard Entertainment
+					li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Summer 2017
+			.Project-body
 				p.
 					This is the announcement site for Rise of the Necromancer, an expansion for Diablo III. I’m very proud of this
 					one because it’s much more than just a brochure, it’s an interactive experience that really ties into the world
@@ -52,5 +52,5 @@ section#rise-of-the-necromancer
 				p.
 					It also makes heavy use of CSS3 animation for a page-turning effect, and despite being heavily textured, it is
 					(mostly) optimized for high-resolution screens and it scales to fit screens of any size.
-				.button-container
-					a.button(href="https://us.diablo3.com/en/rise-of-the-necromancer/", target="_blank") View Site
+				.Buttons
+					a.Buttons-button(href="https://us.diablo3.com/en/rise-of-the-necromancer/", target="_blank") View Site
