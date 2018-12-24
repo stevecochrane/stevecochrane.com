@@ -1,6 +1,7 @@
 const path = require("path");
 
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
@@ -14,7 +15,12 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: "../"
+						}
+					},
 					{
 						loader: "css-loader",
 						options: {
@@ -38,6 +44,18 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.(woff2|woff)$/,
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[name].[hash].[ext]",
+							outputPath: "webfonts"
+						}
+					}
+				]
+			},
+			{
 				test: /\.pug$/,
 				use: ["pug-loader"]
 			}
@@ -54,6 +72,12 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
+		new CopyWebpackPlugin([
+			{
+				from: "src/img/",
+				to: "img"
+			}
+		]),
 		new MiniCssExtractPlugin({
 			filename: "css/[name].[contenthash].css"
 		}),
@@ -65,5 +89,8 @@ module.exports = {
 	output: {
 		filename: "js/[name].[contenthash].js",
 		path: path.resolve(__dirname, "dist")
+	},
+	performance: {
+		maxAssetSize: 1000000
 	}
 };
