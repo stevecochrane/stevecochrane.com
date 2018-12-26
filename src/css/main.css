@@ -89,20 +89,21 @@ a {
 
 .Header {
 	background: #fff;
-	box-shadow: 0 0.1rem 0.8rem var(--border-color);
+	/* box-shadow: 0 0.1rem 0.8rem var(--border-color); */
 	position: relative;
 }
 
 .Header-wrap {
+	border-bottom: 1px solid var(--border-color);
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
 	max-width: var(--page-width);
-	padding: var(--base-unit) 0 calc(var(--base-unit) * 0.75);
+	padding: var(--base-unit) 0 calc(var(--base-unit) * 0.5);
 
 	@media (--mq-small) {
 		flex-direction: row;
-		padding-top: calc(var(--base-unit) * 1.75);
+		padding-top: calc(var(--base-unit) * 2);
 	}
 }
 
@@ -164,6 +165,23 @@ a {
 	&:focus {
 		color: #2b3e43;
 	}
+}
+
+.Intro {
+	background: #fff;
+}
+
+.Intro-wrap {
+	margin: 0 auto;
+	max-width: calc(var(--page-width) - 384px);
+	padding: calc(var(--base-unit) * 3) 0;
+}
+
+.Intro-message {
+	font-size: 27px;
+	font-weight: 400;
+	line-height: 42px;
+	margin: 0;
 }
 
 .Project {
