@@ -252,26 +252,16 @@ a {
 	}
 }
 
-/*
-	Total page width is 1080, and 1080 / 24 = 45.
-	.Project-body: padding-right of 4, width of 21, padding-left of 4.25. 4 + 21 + 4.25 = 29.25.
-	.Project-summary: padding-right: of 4.25, width of 11.5. 4.25 + 11.5 = 15.75.
-	29.25 + 15.75 = 45.
-
-	This is basically 2/3 to body-copy and 1/3 to summary, though not quite (0.65/0.35), since it started as a total page width of 972,
-	and an even amount of whitespace was added to both sides.
-*/
-
 .Project-body {
 	flex: 0 1 auto;
 	padding: calc(var(--base-unit) * 1.5) calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%) 0
 		calc(((var(--base-unit-int) * 3.5) / var(--page-width-int)) * 100%);
 
 	@media (--mq-small) {
-		padding-left: calc(((var(--base-unit-int) * 4.25) / var(--page-width-int)) * 100%);
-		padding-right: calc(((var(--base-unit-int) * 4) / var(--page-width-int)) * 100%);
+		padding-left: calc((128 / var(--page-width-int)) * 100%);
+		padding-right: calc((128 / var(--page-width-int)) * 100%);
 		padding-top: calc(var(--base-unit) * 2);
-		width: calc(((var(--base-unit-int) * 29.25) / var(--page-width-int)) * 100%);
+		width: calc((832 / var(--page-width-int)) * 100%);
 	}
 }
 
@@ -294,9 +284,9 @@ a {
 	padding-top: calc(var(--base-unit) * 1.5);
 
 	@media (--mq-small) {
-		padding-right: calc(((var(--base-unit-int) * 4.25) / var(--page-width-int)) * 100%);
+		padding-right: calc((128 / var(--page-width-int)) * 100%);
 		padding-top: calc(var(--base-unit) * 2);
-		width: calc(((var(--base-unit-int) * 15.75) / var(--page-width-int)) * 100%);
+		width: calc((448 / var(--page-width-int)) * 100%);
 	}
 }
 
