@@ -3,10 +3,10 @@
 	-------------------------------------------------- */
 
 :root {
-	--base-text-color: #537681;
+	--base-text-color: #484848;
 	--base-unit: 2.8rem;
 	--base-unit-int: 28;
-	--border-color: rgba(83, 118, 129, 0.25);
+	--border-color: rgba(0, 0, 0, 0.1);
 	--font-stack-base: "Tofino", sans-serif;
 	--page-width: 128rem;
 	--page-width-int: 1280;
@@ -72,14 +72,14 @@ ul + p {
 }
 
 a {
-	color: #0a8db8;
+	color: #ff5b59;
 	font-weight: 700;
 	text-decoration: none;
 	transition: color 0.2s;
 
 	&:hover,
 	&:focus {
-		color: #075c77;
+		color: #ff8e8c;
 	}
 }
 
@@ -157,13 +157,13 @@ a {
 }
 
 .Header-link {
-	color: #5a808b;
+	color: #ff5b59;
 	display: block;
 	padding: 0 calc(var(--base-unit) * 0.5);
 
 	&:hover,
 	&:focus {
-		color: #2b3e43;
+		color: #ff8e8c;
 	}
 }
 
@@ -201,7 +201,7 @@ a {
 }
 
 .Project-title {
-	color: #385158;
+	/* color: #385158; */
 	font-size: 3.6rem;
 	line-height: calc(var(--base-unit) * 1.5);
 	margin: 0 calc(((var(--base-unit-int) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25)
@@ -358,21 +358,21 @@ a {
 }
 
 .Buttons-button {
-	background-color: #0ca6d8;
+	background-color: #ff5b59;
 	border-radius: 0.5rem;
-	box-shadow: inset 0 -1px 0 var(--shadow-color);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 	color: #fff;
 	display: inline-block;
 	font-size: 1.6rem;
 	line-height: var(--base-unit);
 	margin: calc((var(--base-unit) * 0.5) + 0.1rem) 0 0.1rem;
 	padding: 0.6rem 2rem;
-	text-shadow: 0 -1px 0 var(--shadow-color);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	transition: background-color 0.2s, color 0.2s;
 
 	&:hover,
 	&:focus {
-		background-color: #0a8db8;
+		background-color: #ff8e8c;
 		color: #fff;
 	}
 
@@ -419,7 +419,7 @@ a {
 }
 
 .Footer-copyright {
-	color: #7da1ac;
+	color: #9f9f9f;
 	font-size: var(--small-font-size);
 	line-height: var(--base-unit);
 	margin: 0 calc((40 / var(--page-width-int)) * 100%);
