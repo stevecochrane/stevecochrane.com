@@ -13,7 +13,8 @@
 		"build": "webpack",
 		"lint:css": "stylelint ./src/css/*.css",
 		"lint:js": "eslint --ignore-path .eslintignore --cache .",
-		"prettify": "pretty-quick"
+		"prettify": "pretty-quick",
+		"start": "webpack-dev-server"
 	},
 	"husky": {
 		"hooks": {
@@ -48,6 +49,7 @@
 		"stylelint-config-recommended": "2.1.0",
 		"uglifyjs-webpack-plugin": "2.0.1",
 		"webpack": "4.26.1",
-		"webpack-cli": "3.1.2"
+		"webpack-cli": "3.1.2",
+		"webpack-dev-server": "3.1.14"
 	}
 }
