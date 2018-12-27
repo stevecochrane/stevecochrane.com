@@ -10,7 +10,7 @@
 	--font-stack-base: "Tofino", sans-serif;
 	--page-width: 128rem;
 	--page-width-int: 1280;
-	--page-background-color: #eff3f5;
+	--page-background-color: #fff;
 	--small-font-size: 1.3rem;
 	--shadow-color: rgba(0, 0, 0, 0.25);
 }
@@ -185,11 +185,12 @@ a {
 }
 
 .Project {
-	background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat;
-	background-size: 100% 45rem;
+	/* background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat; */
+	/* background-size: 100% 45rem; */
 }
 
 .Project-wrap {
+	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
 	max-width: var(--page-width);
 	padding: calc(var(--base-unit) * 2) 0 calc(var(--base-unit) * 3);
@@ -387,6 +388,27 @@ a {
 			margin-left: 0;
 		}
 	}
+}
+
+.Closing-wrap {
+	border-top: 1px solid var(--border-color);
+	margin: 0 auto;
+	max-width: var(--page-width);
+	padding: calc(var(--base-unit) * 3) 192px;
+}
+
+.Closing-message {
+	font-size: 27px;
+	font-weight: 400;
+	line-height: 42px;
+	margin: 0 0 28px;
+	text-align: center;
+}
+
+.Closing-items {
+	line-height: 42px;
+	list-style: none;
+	text-align: center;
 }
 
 .Footer-wrap {
