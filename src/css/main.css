@@ -72,16 +72,26 @@ ul + p {
 	margin-top: var(--base-unit);
 }
 
-a {
+.Link {
+	border-bottom: 1px solid rgba(255, 91, 89, 0.75);
 	color: #ff5b59;
-	font-weight: 700;
 	text-decoration: none;
-	transition: color 0.2s;
+	transition: border-color 0.2s, color 0.2s;
 
 	&:hover,
 	&:focus {
-		color: #ff8e8c;
+		border-color: #d00300;
+		color: #d00300;
 	}
+}
+
+.Link--small {
+	border-bottom: none;
+	font-weight: 700;
+}
+
+.Link--large {
+	border-bottom-width: 2px;
 }
 
 .lazy {
@@ -164,14 +174,8 @@ a {
 }
 
 .Header-link {
-	color: #ff5b59;
 	display: block;
 	padding: 0 calc(var(--base-unit) * 0.5);
-
-	&:hover,
-	&:focus {
-		color: #ff8e8c;
-	}
 }
 
 .Intro {
@@ -373,15 +377,17 @@ a {
 	color: #fff;
 	display: inline-block;
 	font-size: 1.6rem;
+	font-weight: 700;
 	line-height: var(--base-unit);
 	margin: calc((var(--base-unit) * 0.5) + 0.1rem) 0 0.1rem;
 	padding: 0.6rem 2rem;
+	text-decoration: none;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	transition: background-color 0.2s, color 0.2s;
 
 	&:hover,
 	&:focus {
-		background-color: #ff8e8c;
+		background-color: #ff1815;
 		color: #fff;
 	}
 

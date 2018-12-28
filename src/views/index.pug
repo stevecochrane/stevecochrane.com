@@ -22,14 +22,14 @@ html(lang="en")
 				.Header-wrap
 					h1.Header-title Steve Cochrane
 					ul.Header-items
-						li.Header-item: a.Header-link(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
-						li.Header-item: a.Header-link(href="https://github.com/stevecochrane") GitHub
-						li.Header-item: a.Header-link(href="mailto:steve@stevecochrane.com") Email
+						li.Header-item: a.Header-link.Link.Link--small(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
+						li.Header-item: a.Header-link.Link.Link--small(href="https://github.com/stevecochrane") GitHub
+						li.Header-item: a.Header-link.Link.Link--small(href="mailto:steve@stevecochrane.com") Email
 			section.Intro
 				.Intro-wrap
 					h2.Intro-message.
 						Hello! I’m Steve Cochrane, a web software engineer with a passion for design. I currently make websites for
-						#[a(href="https://www.blizzard.com") Blizzard Entertainment] in Austin, Texas. Here is some of my recent work.
+						#[a.Link.Link--large(href="https://www.blizzard.com") Blizzard Entertainment] in Austin, Texas. Here is some of my recent work.
 			include ./partials/projects/blizzcon-2018-virtual-ticket
 			include ./partials/projects/rise-of-the-necromancer
 			include ./partials/projects/wow-redesign
@@ -48,11 +48,11 @@ html(lang="en")
 					h2.Closing-message Thanks for visiting!
 					ul.Closing-items
 						li.Closing-item
-							a.Closing-link(href="https://www.linkedin.com/in/stevecochrane") See my work history on LinkedIn
+							a.Closing-link.Link(href="https://www.linkedin.com/in/stevecochrane") See my work history on LinkedIn
 						li.Closing-item
-							a.Closing-link(href="https://github.com/stevecochrane") Check out my personal projects on GitHub
+							a.Closing-link.Link(href="https://github.com/stevecochrane") Check out my personal projects on GitHub
 						li.Closing-item
-							a.Closing-link(href="mailto:steve@stevecochrane.com") Send me an email
+							a.Closing-link.Link(href="mailto:steve@stevecochrane.com") Send me an email
 			footer.Footer
 				.Footer-wrap
 					p.Footer-copyright Copyright &copy; 2005&ndash;2018 Steve Cochrane. All rights reserved.
