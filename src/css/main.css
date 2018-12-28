@@ -189,6 +189,7 @@ ul + p {
 }
 
 .Project-title {
+	color: #50473e;
 	font-size: 3.6rem;
 	line-height: calc(var(--base-unit) * 1.5);
 	margin: 0 calc(((var(--base-unit-int) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25)
