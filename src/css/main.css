@@ -1,31 +1,27 @@
-/*	--------------------------------------------------
-	VARIABLES
-	-------------------------------------------------- */
-
 :root {
-	--base-text-color: #484848;
+	--color-palette-primary: #ff6c6a;
+	--color-palette-secondary: #ffbb72;
+	--color-palette-tertiary: #99857d;
+
+	/*	Possible new base text color: #63584d
+		http://www.0to255.com/998B7D -6 */
+
+	/* --base-text-color: #484848; */
+	--base-text-color: #595046;
 	--base-unit: 2.8rem;
 	--base-unit-int: 28;
-	--border-color: rgba(0, 0, 0, 0.1);
+	--border-color: #e4e0dc;
 	--font-stack-base: "Tofino", sans-serif;
 	--page-width: 128rem;
 	--page-width-int: 1280;
-	--page-background-color: #fff;
+	--page-background-color: #faf9f9;
 	--small-font-size: 1.3rem;
 	--shadow-color: rgba(0, 0, 0, 0.25);
 }
 
-/*	--------------------------------------------------
-	MEDIA QUERIES
-	-------------------------------------------------- */
-
 @custom-media --mq-small (min-width: 800px);
 @custom-media --mq-medium (min-width: 960px);
 @custom-media --mq-large (min-width: 1280px);
-
-/*	--------------------------------------------------
-	STYLES
-	-------------------------------------------------- */
 
 html {
 	box-sizing: border-box;
@@ -99,13 +95,12 @@ ul + p {
 }
 
 .Wrapper {
-	background: #fff;
+	background: var(--page-background-color);
 	margin: 0 auto;
 	max-width: calc(1280px + 56px + 56px);
 }
 
 .Header {
-	background: #fff;
 	padding: 0 56px;
 	position: relative;
 }
@@ -137,25 +132,6 @@ ul + p {
 	}
 }
 
-.Header-subtitle {
-	color: #9cb7c0;
-	flex: 0 1 auto;
-	font-size: 1.4rem;
-	font-weight: 400;
-	line-height: calc(var(--base-unit) * 0.75);
-	margin: 0 0 var(--base-unit);
-	text-align: center;
-
-	@media (--mq-small) {
-		border-left: 1px solid var(--border-color);
-		font-size: 1.6rem;
-		line-height: var(--base-unit);
-		margin-bottom: 0;
-		padding-left: calc(var(--base-unit) * 0.5);
-		text-align: left;
-	}
-}
-
 .Header-items {
 	display: flex;
 	flex: 1 1 auto;
@@ -179,7 +155,6 @@ ul + p {
 }
 
 .Intro {
-	background: #fff;
 	padding: 0 56px;
 }
 
@@ -214,7 +189,6 @@ ul + p {
 }
 
 .Project-title {
-	/* color: #385158; */
 	font-size: 3.6rem;
 	line-height: calc(var(--base-unit) * 1.5);
 	margin: 0 calc(((var(--base-unit-int) * 2) / var(--page-width-int)) * 100%) calc(var(--base-unit) * 1.25)
@@ -374,7 +348,7 @@ ul + p {
 	background-color: #ff5b59;
 	border-radius: 0.5rem;
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-	color: #fff;
+	color: var(--page-background-color);
 	display: inline-block;
 	font-size: 1.6rem;
 	font-weight: 700;
@@ -388,7 +362,7 @@ ul + p {
 	&:hover,
 	&:focus {
 		background-color: #ff1815;
-		color: #fff;
+		color: var(--page-background-color);
 	}
 
 	&:first-child {
@@ -442,7 +416,7 @@ ul + p {
 }
 
 .Footer-copyright {
-	color: #9f9f9f;
+	color: #a09387;
 	font-size: var(--small-font-size);
 	line-height: var(--base-unit);
 	margin: 0 calc((40 / var(--page-width-int)) * 100%);
