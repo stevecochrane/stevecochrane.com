@@ -44,6 +44,7 @@ html {
 
 body {
 	background: var(--page-background-color);
+	background: #ff6c6a linear-gradient(to top right, #ff6c6a, #ffbb72) fixed;
 	color: var(--base-text-color);
 	font-family: var(--font-stack-base);
 	font-size: 1.6rem;
@@ -87,9 +88,15 @@ a {
 	display: none;
 }
 
+.Wrapper {
+	background: #fff;
+	margin: 0 auto;
+	max-width: calc(1280px + 56px + 56px);
+}
+
 .Header {
 	background: #fff;
-	/* box-shadow: 0 0.1rem 0.8rem var(--border-color); */
+	padding: 0 56px;
 	position: relative;
 }
 
@@ -169,6 +176,7 @@ a {
 
 .Intro {
 	background: #fff;
+	padding: 0 56px;
 }
 
 .Intro-wrap {
@@ -187,16 +195,17 @@ a {
 .Project {
 	/* background: linear-gradient(#bbced3, var(--page-background-color)) no-repeat; */
 	/* background-size: 100% 45rem; */
+	padding: 0 56px;
 }
 
 .Project-wrap {
 	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
 	max-width: var(--page-width);
-	padding: calc(var(--base-unit) * 2) 0 calc(var(--base-unit) * 3);
+	padding: calc(var(--base-unit) * 2) 0;
 
 	@media (--mq-small) {
-		padding: calc(var(--base-unit) * 3) 0 calc(var(--base-unit) * 4.5);
+		padding: calc(var(--base-unit) * 3) 0;
 	}
 }
 
@@ -390,6 +399,10 @@ a {
 	}
 }
 
+.Closing {
+	padding: 0 56px;
+}
+
 .Closing-wrap {
 	border-top: 1px solid var(--border-color);
 	margin: 0 auto;
@@ -409,6 +422,10 @@ a {
 	line-height: 42px;
 	list-style: none;
 	text-align: center;
+}
+
+.Footer {
+	padding: 0 56px;
 }
 
 .Footer-wrap {
