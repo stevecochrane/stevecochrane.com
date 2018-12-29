@@ -96,6 +96,7 @@ ul + p {
 
 .Wrapper {
 	background: var(--page-background-color);
+	box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.125);
 	margin: 0 auto;
 	max-width: calc(1280px + 56px + 56px);
 }
@@ -212,7 +213,7 @@ ul + p {
 }
 
 .Project-imageWrap {
-	box-shadow: 0 0.1rem 0.8rem var(--border-color);
+	box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.125);
 	display: -ms-flexbox;
 }
 
