@@ -45,10 +45,10 @@
 	--space-xxl-int: calc(var(--space-base-unit-int) * 3);
 }
 
-@custom-media --mq-small (min-width: 800px);
-@custom-media --mq-medium (min-width: 960px);
-@custom-media --mq-large (min-width: 1280px);
-@custom-media --mq-xlarge (min-width: 1392px);
+@custom-media --mq-small (min-width: 50em); /* 800 / 16 */
+@custom-media --mq-medium (min-width: 60em); /* 960 / 16 */
+@custom-media --mq-large (min-width: 80em); /* 1280 / 16 */
+@custom-media --mq-xlarge (min-width: 87em); /* 1392 / 16 */
 
 html {
 	box-sizing: border-box;
