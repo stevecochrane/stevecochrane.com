@@ -48,6 +48,7 @@
 @custom-media --mq-small (min-width: 800px);
 @custom-media --mq-medium (min-width: 960px);
 @custom-media --mq-large (min-width: 1280px);
+@custom-media --mq-xlarge (min-width: 1392px);
 
 html {
 	box-sizing: border-box;
@@ -130,8 +131,12 @@ ul + p {
 
 .Wrapper {
 	background: var(--color-background-content);
-	margin: 0 auto;
-	max-width: var(--page-width-outer);
+	margin: var(--space-sm) auto 0;
+
+	@media (--mq-xlarge) {
+		margin-top: 0;
+		max-width: var(--page-width-outer);
+	}
 }
 
 .Wrapper-inner {
@@ -142,11 +147,14 @@ ul + p {
 	border-bottom: 1px solid var(--color-border);
 	display: flex;
 	flex-direction: column;
-	padding: var(--space-md) 0 var(--space-sm);
+	padding: var(--space-lg) 0 var(--space-sm);
 	position: relative;
 
 	@media (--mq-small) {
 		flex-direction: row;
+	}
+
+	@media (--mq-xlarge) {
 		padding-top: var(--space-xl);
 	}
 }
