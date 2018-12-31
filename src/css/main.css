@@ -451,6 +451,6 @@ ul + p {
 	color: var(--color-text-subtle);
 	font-size: var(--font-size-xs);
 	line-height: var(--space-md);
-	margin: 0 calc((var(--space-lg-int) / var(--page-width-int)) * 100%);
+	margin: 0;
 	text-align: center;
 }
