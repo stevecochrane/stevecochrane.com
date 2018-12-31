@@ -297,6 +297,12 @@ ul + p {
 	padding: var(--space-lg) calc((var(--space-xxl-int) / var(--page-width-int)) * 100%) 0;
 
 	@media (--mq-small) {
+		padding-left: calc(((var(--grid-column-width) * 0.5) / var(--page-width-int)) * 100%);
+		padding-right: calc(((var(--grid-column-width) * 0.5) / var(--page-width-int)) * 100%);
+		width: calc(((var(--grid-column-width) * 7.5) / var(--page-width-int)) * 100%);
+	}
+
+	@media (--mq-medium) {
 		padding-left: calc((var(--grid-column-width) / var(--page-width-int)) * 100%);
 		padding-right: calc((var(--grid-column-width) / var(--page-width-int)) * 100%);
 		padding-top: var(--space-xl);
@@ -309,6 +315,11 @@ ul + p {
 	padding-top: var(--space-lg);
 
 	@media (--mq-small) {
+		padding-right: calc(((var(--grid-column-width) * 0.5) / var(--page-width-int)) * 100%);
+		width: calc(((var(--grid-column-width) * 4) / var(--page-width-int)) * 100%);
+	}
+
+	@media (--mq-medium) {
 		padding-right: calc((var(--grid-column-width) / var(--page-width-int)) * 100%);
 		padding-top: var(--space-xl);
 		width: calc(((var(--grid-column-width) * 3.5) / var(--page-width-int)) * 100%);
