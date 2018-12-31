@@ -248,7 +248,7 @@ ul + p {
 }
 
 .Project-imageWrap {
-	box-shadow: 0 0.1rem 0.8rem var(--color-border);
+	box-shadow: 0 1px 8px var(--color-border);
 }
 
 .Project-imageWrap--half {
