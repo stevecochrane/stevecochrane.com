@@ -28,6 +28,9 @@ npm run build     # Build for production
 - Now that I've tried using just PostCSS, there are definitely some Sass features that I miss, such as unit conversion
   and color functions. Manually converting the units everywhere is really verbose, and I need to make color operations
   outside of my CSS. So this approach definitely isn’t perfect.
+- The image files are currently the same for all screen sizes, which isn’t ideal for smaller screens because the
+  aspect ratio is too wide, resulting in some pretty tiny images. I’d like to add another set of image files at a
+  taller aspect ratio for smaller screens.
 - I would like to have used CSS Grid, but the page’s grid, which I carried over from version 6, is weird and
-  unconventional. I’ve kept it as-is for now.
-- I could reduce repetition in the project templates by populating the page with data.
+  unconventional. I’ve kept things as-is for now.
+- There’s a lot of repetition in the project templates, which I could reduce by populating the page with data.
