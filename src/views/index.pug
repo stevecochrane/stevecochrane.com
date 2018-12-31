@@ -18,33 +18,31 @@ html(lang="en")
 	body
 		include ./partials/google-tag-manager/body.pug
 		.Wrapper
-			header.Header
-				.Header-wrap
+			.Wrapper-inner
+				header.Header
 					h1.Header-title Steve Cochrane
 					ul.Header-items
 						li.Header-item: a.Header-link.Link.Link--small(href="https://www.linkedin.com/in/stevecochrane") LinkedIn
 						li.Header-item: a.Header-link.Link.Link--small(href="https://github.com/stevecochrane") GitHub
 						li.Header-item: a.Header-link.Link.Link--small(href="mailto:steve@stevecochrane.com") Email
-			section.Intro
-				.Intro-wrap
+				section.Intro
 					h2.Intro-message.
 						Hello! I’m Steve Cochrane, a web software engineer with a passion for design. I currently make websites for
 						#[a.Link.Link--large(href="https://www.blizzard.com") Blizzard Entertainment] in Austin, Texas. Here is some of my recent work.
-			include ./partials/projects/blizzcon-2018-virtual-ticket
-			include ./partials/projects/rise-of-the-necromancer
-			include ./partials/projects/wow-redesign
-			include ./partials/projects/diablo-20th-anniversary
-			include ./partials/projects/html-reference-web-application
-			include ./partials/projects/wow-legion
-			include ./partials/projects/andy-wowhol
-			include ./partials/projects/wow-garrisons
-			include ./partials/projects/pixel-art-scrapbook
-			include ./partials/projects/vidcaster-theme-editor
-			include ./partials/projects/vidcaster-website
-			include ./partials/projects/vidcaster-video-player
-			include ./partials/projects/vidcaster-themes
-			section.Closing
-				.Closing-wrap
+				include ./partials/projects/blizzcon-2018-virtual-ticket
+				include ./partials/projects/rise-of-the-necromancer
+				include ./partials/projects/wow-redesign
+				include ./partials/projects/diablo-20th-anniversary
+				include ./partials/projects/html-reference-web-application
+				include ./partials/projects/wow-legion
+				include ./partials/projects/andy-wowhol
+				include ./partials/projects/wow-garrisons
+				include ./partials/projects/pixel-art-scrapbook
+				include ./partials/projects/vidcaster-theme-editor
+				include ./partials/projects/vidcaster-website
+				include ./partials/projects/vidcaster-video-player
+				include ./partials/projects/vidcaster-themes
+				section.Closing
 					h2.Closing-message Thanks for visiting!
 					ul.Closing-items
 						li.Closing-item
@@ -53,6 +51,5 @@ html(lang="en")
 							a.Closing-link.Link(href="https://github.com/stevecochrane") Check out my personal projects on GitHub
 						li.Closing-item
 							a.Closing-link.Link(href="mailto:steve@stevecochrane.com") Send me an email
-			footer.Footer
-				.Footer-wrap
+				footer.Footer
 					p.Footer-copyright Copyright &copy; 2005&ndash;2018 Steve Cochrane. All rights reserved.

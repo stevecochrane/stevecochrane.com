@@ -1,40 +1,39 @@
 section.Project#wow-legion
-	.Project-wrap
-		h1.Project-title World of Warcraft: Legion Website
+	h1.Project-title World of Warcraft: Legion Website
+	.Project-images
+		.Project-imageWrap
+			img.Project-image.lazy(
+				src="img/v7/placeholder.png",
+				data-src="img/v7/wow-legion-1.jpg",
+				data-srcset="img/v7/wow-legion-1.jpg 1x, img/v7/wow-legion-1-2x.jpg 2x",
+				width="1280",
+				height="877",
+				alt="World of Warcraft: Legion Website: Masthead"
+			)
+	noscript
 		.Project-images
 			.Project-imageWrap
-				img.Project-image.lazy(
-					src="img/v7/placeholder.png",
-					data-src="img/v7/wow-legion-1.jpg",
-					data-srcset="img/v7/wow-legion-1.jpg 1x, img/v7/wow-legion-1-2x.jpg 2x",
+				img.Project-image(
+					src="img/v7/wow-legion-1.jpg",
+					srcset="img/v7/wow-legion-1.jpg 1x, img/v7/wow-legion-1-2x.jpg 2x",
 					width="1280",
 					height="877",
 					alt="World of Warcraft: Legion Website: Masthead"
 				)
-		noscript
-			.Project-images
-				.Project-imageWrap
-					img.Project-image(
-						src="img/v7/wow-legion-1.jpg",
-						srcset="img/v7/wow-legion-1.jpg 1x, img/v7/wow-legion-1-2x.jpg 2x",
-						width="1280",
-						height="877",
-						alt="World of Warcraft: Legion Website: Masthead"
-					)
-		.Project-description
-			.Project-summary
-				ul.Project-summaryItems
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Engineering
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Blizzard Entertainment
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Summer 2015
-			.Project-body
-				p.
-					I’m proud to say that I was given the opportunity to work on the announcement site for World of Warcraft:
-					Legion, an expansion for one of the most successful games of all time. This was a very challenging and
-					fulfilling project, with lush visuals and lots of video.
-				p.
-					I worked with four extremely talented designers for the duration of the project, and I was the sole engineer up
-					until the last couple weeks when I had some additional help to polish and ship the site. The launch of the site
-					was timed with our announcement of Legion at Gamescom 2015 in Cologne, Germany.
-				.Buttons
-					a.Buttons-button(href="http://battle.net/wow/legion/", target="_blank") View Site
+	.Project-description
+		.Project-summary
+			ul.Project-summaryItems
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Engineering
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Blizzard Entertainment
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Summer 2015
+		.Project-body
+			p.
+				I’m proud to say that I was given the opportunity to work on the announcement site for World of Warcraft:
+				Legion, an expansion for one of the most successful games of all time. This was a very challenging and
+				fulfilling project, with lush visuals and lots of video.
+			p.
+				I worked with four extremely talented designers for the duration of the project, and I was the sole engineer up
+				until the last couple weeks when I had some additional help to polish and ship the site. The launch of the site
+				was timed with our announcement of Legion at Gamescom 2015 in Cologne, Germany.
+			.Buttons
+				a.Buttons-button(href="http://battle.net/wow/legion/", target="_blank") View Site

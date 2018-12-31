@@ -1,37 +1,36 @@
 section.Project#vidcaster-website
-	.Project-wrap
-		h1.Project-title Vidcaster Website
+	h1.Project-title Vidcaster Website
+	.Project-images
+		.Project-imageWrap
+			img.Project-image.lazy(
+				src="img/v7/placeholder.png",
+				data-src="img/v7/vidcaster-website-1.jpg",
+				data-srcset="img/v7/vidcaster-website-1.jpg 1x, img/v7/vidcaster-website-1-2x.jpg 2x",
+				width="1280",
+				height="660",
+				alt="Vidcaster home page"
+			)
+	noscript
 		.Project-images
 			.Project-imageWrap
-				img.Project-image.lazy(
-					src="img/v7/placeholder.png",
-					data-src="img/v7/vidcaster-website-1.jpg",
-					data-srcset="img/v7/vidcaster-website-1.jpg 1x, img/v7/vidcaster-website-1-2x.jpg 2x",
+				img.Project-image(
+					src="img/v7/vidcaster-website-1.jpg",
+					srcset="img/v7/vidcaster-website-1.jpg 1x, img/v7/vidcaster-website-1-2x.jpg 2x",
 					width="1280",
 					height="660",
 					alt="Vidcaster home page"
 				)
-		noscript
-			.Project-images
-				.Project-imageWrap
-					img.Project-image(
-						src="img/v7/vidcaster-website-1.jpg",
-						srcset="img/v7/vidcaster-website-1.jpg 1x, img/v7/vidcaster-website-1-2x.jpg 2x",
-						width="1280",
-						height="660",
-						alt="Vidcaster home page"
-					)
-		.Project-description
-			.Project-summary
-				ul.Project-summaryItems
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Design, Engineering
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Vidcaster
-					li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Spring 2012
-			.Project-body
-				p.
-					The message we wanted to convey with this homepage redesign was not so much “look how great our product is,”
-					but “look how great your video site could be.” So I chose to highlight some of our more impressive customer
-					sites to build excitement and then demonstrate that visitors can build a similar website in minutes, for free,
-					right away. There was a pretty strong uptick in new signups once this went live.
-				.Buttons
-					a.Buttons-button(href="vidcaster-website/archive/", target="_blank") View Archived Site
+	.Project-description
+		.Project-summary
+			ul.Project-summaryItems
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Design, Engineering
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Vidcaster
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Spring 2012
+		.Project-body
+			p.
+				The message we wanted to convey with this homepage redesign was not so much “look how great our product is,”
+				but “look how great your video site could be.” So I chose to highlight some of our more impressive customer
+				sites to build excitement and then demonstrate that visitors can build a similar website in minutes, for free,
+				right away. There was a pretty strong uptick in new signups once this went live.
+			.Buttons
+				a.Buttons-button(href="vidcaster-website/archive/", target="_blank") View Archived Site
