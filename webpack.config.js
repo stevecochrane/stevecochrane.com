@@ -1,30 +1,33 @@
-const path = require('path');
+const path = require("path");
 
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-	mode: 'production',
-	entry: {
-		main: './src/js/main.js',
-		portfolio: './src/js/portfolio.js'
-	},
+	mode: "production",
+	entry: "./src/js/main.js",
 	module: {
 		rules: [
 			{
 				test: /\.css$/,
 				use: [
-					MiniCssExtractPlugin.loader,
 					{
-						loader: 'css-loader',
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: "../"
+						}
+					},
+					{
+						loader: "css-loader",
 						options: {
 							importLoaders: 1
 						}
 					},
-					'postcss-loader'
+					"postcss-loader"
 				]
 			},
 			{
@@ -32,19 +35,29 @@ module.exports = {
 				exclude: /node_modules/,
 				use: [
 					{
-						loader: 'babel-loader',
+						loader: "babel-loader",
 						options: {
 							cacheDirectory: true
 						}
 					},
-					'eslint-loader'
+					"eslint-loader"
+				]
+			},
+			{
+				test: /\.(woff2|woff)$/,
+				use: [
+					{
+						loader: "file-loader",
+						options: {
+							name: "[name].[hash].[ext]",
+							outputPath: "webfonts"
+						}
+					}
 				]
 			},
 			{
 				test: /\.pug$/,
-				use: [
-					'pug-loader'
-				]
+				use: ["pug-loader"]
 			}
 		]
 	},
@@ -58,38 +71,26 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(["dist"]),
+		new CopyWebpackPlugin([
+			{
+				from: "src/img/",
+				to: "img"
+			}
+		]),
 		new MiniCssExtractPlugin({
-			filename: 'css/[name].[contenthash].css'
+			filename: "css/[name].[contenthash].css"
 		}),
 		new HtmlWebpackPlugin({
-			chunks: ['main'],
-			filename: 'index.html',
-			template: 'src/views/pages/index.pug'
-		}),
-		new HtmlWebpackPlugin({
-			chunks: ['main'],
-			filename: 'fonts/index.html',
-			template: 'src/views/pages/fonts/index.pug'
-		}),
-		new HtmlWebpackPlugin({
-			chunks: ['main'],
-			filename: 'music/index.html',
-			template: 'src/views/pages/music/index.pug'
-		}),
-		new HtmlWebpackPlugin({
-			chunks: ['portfolio'],
-			filename: 'portfolio/index.html',
-			template: 'src/views/pages/portfolio/index.pug'
-		}),
-		new HtmlWebpackPlugin({
-			chunks: ['main'],
-			filename: 'videogames/index.html',
-			template: 'src/views/pages/videogames/index.pug'
+			filename: "index.html",
+			template: "src/views/index.pug"
 		})
 	],
 	output: {
-		filename: 'js/[name].[contenthash].js',
-		path: path.resolve(__dirname, 'dist')
+		filename: "js/[name].[contenthash].js",
+		path: path.resolve(__dirname, "dist")
+	},
+	performance: {
+		maxAssetSize: 1000000
 	}
 };

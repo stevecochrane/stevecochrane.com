@@ -1,0 +1,58 @@
+section.Project#html-reference-web-application
+	h1.Project-title HTML Reference API &amp; Web Application
+	.Project-images
+		.Project-imageWrap
+			img.Project-image.lazy(
+				src="img/v7/placeholder.png",
+				data-src="img/v7/html-reference-1.jpg",
+				data-srcset="img/v7/html-reference-1.jpg 1x, img/v7/html-reference-1-2x.jpg 2x",
+				width="1280",
+				height="686",
+				alt="HTML Reference Web Application index view"
+			)
+		.Project-imageWrap
+			img.Project-image.lazy(
+				src="img/v7/placeholder.png",
+				data-src="img/v7/html-reference-2.jpg",
+				data-srcset="img/v7/html-reference-2.jpg 1x, img/v7/html-reference-2-2x.jpg 2x",
+				width="1280",
+				height="412",
+				alt="HTML Reference API list results"
+			)
+	noscript
+		.Project-images
+			.Project-imageWrap
+				img.Project-image(
+					src="img/v7/html-reference-1.jpg",
+					srcset="img/v7/html-reference-1.jpg 1x, img/v7/html-reference-1-2x.jpg 2x",
+					width="1280",
+					height="686",
+					alt="HTML Reference Web Application index view"
+				)
+			.Project-imageWrap
+				img.Project-image(
+					src="img/v7/html-reference-2.jpg",
+					srcset="img/v7/html-reference-2.jpg 1x, img/v7/html-reference-2-2x.jpg 2x",
+					width="1280",
+					height="412",
+					alt="HTML Reference API list results"
+				)
+	.Project-description
+		.Project-summary
+			ul.Project-summaryItems
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Role] Engineering, Design
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Client] Myself
+				li.Project-summaryItem #[strong.Project-summaryItemTitle Date] Spring 2016
+		.Project-body
+			p.
+				For personal development, I decided to get out of my front-end engineering comfort zone a little bit and build
+				a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database,
+				and it has the standard CRUD (Create, Read, Update, Delete) operations available. There’s also a Mocha test
+				suite, and API requests are cached for better performance.
+			p.
+				I then made a simple companion web application for interfacing with the API, also with Node and Express. It has
+				a central list for viewing all elements and form pages for adding, editing, and deleting elements, with error
+				handling.
+			.ButtonGroup
+				a.Button(href="https://github.com/stevecochrane/html-reference-api", target="_blank") View API on GitHub
+				a.Button(href="https://github.com/stevecochrane/html-reference-webapp", target="_blank") View Application on GitHub
