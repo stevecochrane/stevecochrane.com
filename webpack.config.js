@@ -8,6 +8,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
+const projectsData = require("./src/data/projects.json");
+
 module.exports = {
 	mode: "production",
 	entry: "./src/js/main.js",
@@ -57,8 +59,8 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.pug$/,
-				use: ["pug-loader"]
+				test: /\.handlebars$/,
+				use: ["handlebars-loader"]
 			}
 		]
 	},
@@ -84,7 +86,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			filename: "index.html",
-			template: "src/views/index.pug"
+			template: "src/views/index.handlebars"
 		}),
 		new HtmlInlineCssWebpackPlugin()
 	],
