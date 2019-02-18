@@ -86,7 +86,8 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			filename: "index.html",
-			template: "src/views/index.handlebars"
+			template: "src/views/index.handlebars",
+			templateParameters: projectsData
 		}),
 		new HtmlInlineCssWebpackPlugin()
 	],
