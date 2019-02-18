@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Steve Cochrane</title>
+		<meta name="description" content="The digital portfolio of Steve Cochrane, a web software engineer from Austin, Texas." />
+		<meta name="author" content="Steve Cochrane" />
+		<meta property="og:url" content="https://stevecochrane.com" />
+		<meta property="og:title" content="Steve Cochrane" />
+		<meta property="og:description" content="The digital portfolio of Steve Cochrane, a web software engineer from Austin, Texas." />
+		<meta property="og:site_name" content="Steve Cochrane" />
+		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		{{> ./partials/google-tag-manager/head.handlebars}}
+	</head>
+	<body>
+		{{> ./partials/google-tag-manager/body.handlebars}}
+		<div class="Wrapper">
+			<div class="Wrapper-inner">
+				<header class="Header">
+					<h1 class="Header-title">Steve Cochrane</h1>
+					<ul class="Header-items">
+						<li class="Header-item"><a class="Header-link Link Link--small" href="https://www.linkedin.com/in/stevecochrane")>LinkedIn</a></li>
+						<li class="Header-item"><a class="Header-link Link Link--small" href="https://github.com/stevecochrane">GitHub</a></li>
+						<li class="Header-item"><a class="Header-link Link Link--small" href="mailto:steve@stevecochrane.com">Email</a></li>
+					</ul>
+				</header>
+				<section class="Intro">
+					<h2 class="Intro-message">
+						Hello! I’m Steve Cochrane, a web software engineer with a passion for design. I currently make websites for
+						<a class="Link Link--large" href="https://www.blizzard.com">Blizzard Entertainment</a> in Austin, Texas. Here is some of my recent work.
+					</h2>
+				</section>
+				{{#each projects}}
+					<section class="Project" id="{{this.id}}">
+						<h1 class="Project-title">{{this.title}}</h1>
+						<div class="Project-images">
+							{{#each this.images}}
+								<div class="Project-imageWrap">
+									<img class="Project-image" src="{{this.sources.1x}}" srcset="{{this.sources.1x}} 1x, {{this.sources.2x}} 2x" width="{{this.width}}" height="{{this.height}}" alt="{{this.alt}}" />
+								</div>
+							{{/each}}
+						</div>
+						<div class="Project-description">
+							<div class="Project-summary">
+								<ul class="Project-summaryItems">
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Role</strong>{{this.role}}</li>
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Client</strong>{{this.client}}</li>
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Date</strong>{{this.date}}</li>
+								</ul>
+							</div>
+							<div class="Project-body">
+								{{#each this.body}}
+									<p>{{{this}}}</p>
+								{{/each}}
+								{{#if this.buttons}}
+									<div class="ButtonGroup">
+										{{#each this.buttons}}
+											<a class="Button" href="{{this.linkUrl}}" target="_blank">{{this.label}}</a>
+										{{/each}}
+									</div>
+								{{/if}}
+							</div>
+						</div>
+					</section>
+				{{/each}}
+				<section class="Closing">
+					<h2 class="Closing-message">Thanks for visiting!</h2>
+					<ul class="Closing-items">
+						<li class="Closing-item"><a class="Closing-link Link" href="https://www.linkedin.com/in/stevecochrane">See my work history on LinkedIn</a></li>
+						<li class="Closing-item"><a class="Closing-link Link" href="https://github.com/stevecochrane">Check out my personal projects on GitHub</a></li>
+						<li class="Closing-item"><a class="Closing-link Link" href="mailto:steve@stevecochrane.com">Send me an email</a></li>
+					</ul>
+				</section>
+				<footer class="Footer">
+					<p class="Footer-copyright">Copyright &copy; 2005&ndash;2019 Steve Cochrane. All rights reserved.</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
