@@ -27,9 +27,9 @@
 	"client": "Blizzard Entertainment",
 	"date": "Fall 2018",
 	"body": [
-		"BlizzCon Virtual Ticket is a premium online video product that provides access to live and archived video of all of the BlizzCon convention, to Blizzard fans around the world.",
-		"We wanted to make some big technical upgrades to the Virtual Ticket experience in 2018. Everything had been rendering server-side, with front-end asynchronous requests receiving large blocks of server-side-rendered HTML. This caused server load issues when there were traffic spikes, and it incurred costs as it required us to run more servers than necessary. We decided to offload a lot of rendering to the client.",
-		"I was charged with overseeing our React implementation for a team of five engineers. I started by researching to determine if reimplementing large portions of the Virtual Ticket experience with React was feasible with our resources, and it was. We then made a library of React components, all of them connected to a Redux state container. This workflow not only made for a more responsive interface for the user, but the component-based approach also made it easier for several engineers to work in parallel."
+		"<p>BlizzCon Virtual Ticket is a premium online video product that provides access to live and archived video of all of the BlizzCon convention, to Blizzard fans around the world.</p>",
+		"<p>We wanted to make some big technical upgrades to the Virtual Ticket experience in 2018. Everything had been rendering server-side, with front-end asynchronous requests receiving large blocks of server-side-rendered HTML. This caused server load issues when there were traffic spikes, and it incurred costs as it required us to run more servers than necessary. We decided to offload a lot of rendering to the client.</p>",
+		"<p>I was charged with overseeing our React implementation for a team of five engineers. I started by researching to determine if reimplementing large portions of the Virtual Ticket experience with React was feasible with our resources, and it was. We then made a library of React components, all of them connected to a Redux state container. This workflow not only made for a more responsive interface for the user, but the component-based approach also made it easier for several engineers to work in parallel.</p>"
 	],
 	"buttons": [
 		{
