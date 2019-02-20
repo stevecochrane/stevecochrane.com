@@ -1,0 +1,39 @@
+{
+	"id": "andy-wowhol",
+	"title": "Andy Wowhol Website",
+	"images": [
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/andy-wowhol-1.jpg",
+				"2x": "img/v7/andy-wowhol-1-2x.jpg"
+			},
+			"width": "1280",
+			"height": "590",
+			"alt": "Andy WoWhol form"
+		},
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/andy-wowhol-2.jpg",
+				"2x": "img/v7/andy-wowhol-2-2x.jpg"
+			},
+			"width": "1280",
+			"height": "796",
+			"alt": "Andy WoWhol display"
+		}
+	],
+	"role": "Engineering, Design",
+	"client": "Myself",
+	"date": "Spring 2016",
+	"body": [
+		"<p>Andy Wowhol is a silly website that I made to get more familiar with Blizzard’s <a class=\"Link\" href=\"https://dev.battle.net/\" target=\"_blank\">Game Data APIs</a>, which provide game data for building World of Warcraft and Diablo III community sites. This was one of my first projects to use Node and Express.</p>",
+		"<p>The site is about as simple as it gets: you input your WoW character’s name and realm, it fetches the character’s avatar image from the API, and then displays it in four different color variations using CSS filters.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://github.com/stevecochrane/andy-wowhol",
+			"label": "View on GitHub"
+		}
+	]
+}

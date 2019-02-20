@@ -1,0 +1,43 @@
+{
+	"id": "vidcaster-theme-editor",
+	"title": "Vidcaster Theme Editor",
+	"images": [
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/vidcaster-theme-editor-1.jpg",
+				"2x": "img/v7/vidcaster-theme-editor-1-2x.jpg"
+			},
+			"width": "1280",
+			"height": "352",
+			"alt": "Vidcaster Theme Editor: Themes View"
+		},
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/vidcaster-theme-editor-2.jpg",
+				"2x": "img/v7/vidcaster-theme-editor-2-2x.jpg"
+			},
+			"width": "1280",
+			"height": "352",
+			"alt": "Vidcaster Theme Editor: Basic Editor View"
+		},
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/vidcaster-theme-editor-3.jpg",
+				"2x": "img/v7/vidcaster-theme-editor-3-2x.jpg"
+			},
+			"width": "1280",
+			"height": "382",
+			"alt": "Vidcaster Theme Editor: Basic Editor View"
+		}
+	],
+	"role": "Design, Engineering",
+	"client": "Vidcaster",
+	"date": "Spring 2013",
+	"body": [
+		"<p>Vidcaster was a platform for building custom video websites, sort of like YouTube channels but much more personalized, with full control over site layout and with business-oriented features like pay-per-view. Some of our more famous clients included Airbnb and VMware.</p>",
+		"<p>Probably the coolest part of our platform was the Theme Editor, which was where you could choose from one of Vidcaster’s themes, customize colors and images, and make changes to any of the templates. All of these changes were immediately reflected in a full-size preview of the&nbsp;site.</p>"
+	]
+}

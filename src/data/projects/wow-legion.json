@@ -1,0 +1,23 @@
+{
+	"id": "wow-legion",
+	"title": "World of Warcraft: Legion Website",
+	"images": [
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/wow-legion-1.jpg",
+				"2x": "img/v7/wow-legion-1-2x.jpg"
+			},
+			"width": "1280",
+			"height": "877",
+			"alt": "World of Warcraft: Legion Website: Masthead"
+		}
+	],
+	"role": "Engineering",
+	"client": "Blizzard Entertainment",
+	"date": "Summer 2015",
+	"body": [
+		"<p>I’m proud to say that I was given the opportunity to work on the announcement site for World of Warcraft: Legion, an expansion for one of the most successful games of all time. This was a very challenging and fulfilling project, with lush visuals and lots of video.</p>",
+		"<p>I worked with four extremely talented designers for the duration of the project, and I was the sole engineer up until the last couple weeks when I had some additional help to polish and ship the site. The launch of the site was timed with our announcement of Legion at Gamescom 2015 in Cologne, Germany.</p>"
+	]
+}

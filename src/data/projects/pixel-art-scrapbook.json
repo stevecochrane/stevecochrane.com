@@ -1,0 +1,29 @@
+{
+	"id": "pixel-art-scrapbook",
+	"title": "Pixel Art Scrapbook Web Application",
+	"images": [
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/pixel-art-scrapbook-1.jpg",
+				"2x": "img/v7/pixel-art-scrapbook-1-2x.jpg"
+			},
+			"width": "1280",
+			"height": "666",
+			"alt": "Pixel Art Scrapbook"
+		}
+	],
+	"role": "Engineering, Design",
+	"client": "Myself",
+	"date": "Fall 2013",
+	"body": [
+		"<p>When I was looking to apply for my current position at Blizzard, their job listing mentioned experience with JavaScript MVC frameworks such as Angular, Ember, etc. as a nice-to-have, and I hadn’t used any of those before, so before applying I decided to improve my chances and quickly made this.</p>",
+		"<p>Pixel Art Scrapbook is a prototype of a web application for cataloguing pixel art that inspires you, for reference when you make your own. It uses Ember for MVC, Node &amp; Express for a simple RESTful API and MongoDB for the database. The demo here is just of the interface and the back-end functionality has been disabled. You can make changes but nothing is stored. The full version is <a class=\"Link\" href=\"https://github.com/stevecochrane/pixel-art-scrapbook\" target=\"_blank\">available on GitHub</a> but you’ll need to run a local Node server to use it.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "v6/portfolio/pixel-art-scrapbook/",
+			"label": "View Limited Demo"
+		}
+	]
+}

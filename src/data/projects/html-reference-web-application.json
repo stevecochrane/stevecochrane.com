@@ -1,0 +1,43 @@
+{
+	"id": "html-reference-web-application",
+	"title": "HTML Reference API &amp; Web Application",
+	"images": [
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/html-reference-1.jpg",
+				"2x": "img/v7/html-reference-1-2x.jpg"
+			},
+			"width": "1280",
+			"height": "686",
+			"alt": "HTML Reference Web Application index view"
+		},
+		{
+			"size": "full",
+			"sources": {
+				"1x": "img/v7/html-reference-2.jpg",
+				"2x": "img/v7/html-reference-2-2x.jpg"
+			},
+			"width": "1280",
+			"height": "412",
+			"alt": "HTML Reference API list results"
+		}
+	],
+	"role": "Engineering, Design",
+	"client": "Myself",
+	"date": "Spring 2016",
+	"body": [
+		"<p>For personal development, I decided to get out of my front-end engineering comfort zone a little bit and build a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database, and it has the standard CRUD (Create, Read, Update, Delete) operations available. There’s also a Mocha test suite, and API requests are cached for better performance.</p>",
+		"<p>I then made a simple companion web application for interfacing with the API, also with Node and Express. It has a central list for viewing all elements and form pages for adding, editing, and deleting elements, with error handling.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://github.com/stevecochrane/html-reference-api",
+			"label": "View API on GitHub"
+		},
+		{
+			"linkUrl": "https://github.com/stevecochrane/html-reference-webapp",
+			"label": "View Application on GitHub"
+		}
+	]
+}
