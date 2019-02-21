@@ -33,37 +33,37 @@
 					</h2>
 				</section>
 				{{#each projects}}
-					<section class="Project" id="{{this.id}}">
-						<h1 class="Project-title">{{this.title}}</h1>
+					<section class="Project" id="{{id}}">
+						<h1 class="Project-title">{{title}}</h1>
 						<div class="Project-images">
-							{{#each this.images}}
-								<div class="Project-imageWrap Project-imageWrap--{{this.size}}">
+							{{#each images}}
+								<div class="Project-imageWrap Project-imageWrap--{{size}}">
 									<img
 										class="Project-image"
-										src="{{../../imageDir}}{{this.sources.1x}}"
-										srcset="{{../../imageDir}}{{this.sources.1x}} 1x, {{../../imageDir}}{{this.sources.2x}} 2x"
-										width="{{this.width}}"
-										height="{{this.height}}"
-										alt="{{this.alt}}" />
+										src="{{../../imageDir}}{{sources.1x}}"
+										srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+										width="{{width}}"
+										height="{{height}}"
+										alt="{{alt}}" />
 								</div>
 							{{/each}}
 						</div>
 						<div class="Project-description">
 							<div class="Project-summary">
 								<ul class="Project-summaryItems">
-									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Role</strong>{{this.role}}</li>
-									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Client</strong>{{this.client}}</li>
-									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Date</strong>{{this.date}}</li>
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Role</strong>{{role}}</li>
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Client</strong>{{client}}</li>
+									<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Date</strong>{{date}}</li>
 								</ul>
 							</div>
 							<div class="Project-body">
-								{{#each this.body}}
+								{{#each body}}
 									{{{this}}}
 								{{/each}}
-								{{#if this.buttons}}
+								{{#if buttons}}
 									<div class="ButtonGroup">
-										{{#each this.buttons}}
-											<a class="Button" href="{{this.linkUrl}}" target="_blank">{{this.label}}</a>
+										{{#each buttons}}
+											<a class="Button" href="{{linkUrl}}" target="_blank">{{label}}</a>
 										{{/each}}
 									</div>
 								{{/if}}
