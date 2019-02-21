@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
-const projectsData = require("./src/data/projects");
+const indexData = require("./src/data/index.js");
 
 module.exports = {
 	mode: "production",
@@ -87,7 +87,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: "index.html",
 			template: "src/views/index.handlebars",
-			templateParameters: projectsData
+			templateParameters: indexData
 		}),
 		new HtmlInlineCssWebpackPlugin()
 	],
