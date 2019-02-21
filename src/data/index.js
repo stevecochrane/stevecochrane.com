@@ -13,6 +13,7 @@ const wowLegion = require("./projects/wow-legion.json");
 const wowRedesign = require("./projects/wow-redesign.json");
 
 module.exports = {
+	imageDir: "img/v7/",
 	projects: [
 		blizzcon2018VirtualTicket,
 		riseOfTheNecromancer,

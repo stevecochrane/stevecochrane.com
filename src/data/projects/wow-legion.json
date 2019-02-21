@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/wow-legion-1.jpg",
-				"2x": "img/v7/wow-legion-1-2x.jpg"
+				"1x": "wow-legion-1.jpg",
+				"2x": "wow-legion-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "877",

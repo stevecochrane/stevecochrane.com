@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/pixel-art-scrapbook-1.jpg",
-				"2x": "img/v7/pixel-art-scrapbook-1-2x.jpg"
+				"1x": "pixel-art-scrapbook-1.jpg",
+				"2x": "pixel-art-scrapbook-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "666",

@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/diablo-20th-anniversary-1.jpg",
-				"2x": "img/v7/diablo-20th-anniversary-1-2x.jpg"
+				"1x": "diablo-20th-anniversary-1.jpg",
+				"2x": "diablo-20th-anniversary-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "575",
@@ -15,8 +15,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/diablo-20th-anniversary-2.jpg",
-				"2x": "img/v7/diablo-20th-anniversary-2-2x.jpg"
+				"1x": "diablo-20th-anniversary-2.jpg",
+				"2x": "diablo-20th-anniversary-2-2x.jpg"
 			},
 			"width": "1280",
 			"height": "758",

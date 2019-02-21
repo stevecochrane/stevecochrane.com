@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/andy-wowhol-1.jpg",
-				"2x": "img/v7/andy-wowhol-1-2x.jpg"
+				"1x": "andy-wowhol-1.jpg",
+				"2x": "andy-wowhol-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "590",
@@ -15,8 +15,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/andy-wowhol-2.jpg",
-				"2x": "img/v7/andy-wowhol-2-2x.jpg"
+				"1x": "andy-wowhol-2.jpg",
+				"2x": "andy-wowhol-2-2x.jpg"
 			},
 			"width": "1280",
 			"height": "796",

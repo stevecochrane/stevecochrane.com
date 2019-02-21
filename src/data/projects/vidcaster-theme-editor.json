@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/vidcaster-theme-editor-1.jpg",
-				"2x": "img/v7/vidcaster-theme-editor-1-2x.jpg"
+				"1x": "vidcaster-theme-editor-1.jpg",
+				"2x": "vidcaster-theme-editor-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "352",
@@ -15,8 +15,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/vidcaster-theme-editor-2.jpg",
-				"2x": "img/v7/vidcaster-theme-editor-2-2x.jpg"
+				"1x": "vidcaster-theme-editor-2.jpg",
+				"2x": "vidcaster-theme-editor-2-2x.jpg"
 			},
 			"width": "1280",
 			"height": "352",
@@ -25,8 +25,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/vidcaster-theme-editor-3.jpg",
-				"2x": "img/v7/vidcaster-theme-editor-3-2x.jpg"
+				"1x": "vidcaster-theme-editor-3.jpg",
+				"2x": "vidcaster-theme-editor-3-2x.jpg"
 			},
 			"width": "1280",
 			"height": "382",

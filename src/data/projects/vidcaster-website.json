@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/vidcaster-website-1.jpg",
-				"2x": "img/v7/vidcaster-website-1-2x.jpg"
+				"1x": "vidcaster-website-1.jpg",
+				"2x": "vidcaster-website-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "660",

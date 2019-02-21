@@ -38,7 +38,13 @@
 						<div class="Project-images">
 							{{#each this.images}}
 								<div class="Project-imageWrap Project-imageWrap--{{this.size}}">
-									<img class="Project-image" src="{{this.sources.1x}}" srcset="{{this.sources.1x}} 1x, {{this.sources.2x}} 2x" width="{{this.width}}" height="{{this.height}}" alt="{{this.alt}}" />
+									<img
+										class="Project-image"
+										src="{{../../imageDir}}{{this.sources.1x}}"
+										srcset="{{../../imageDir}}{{this.sources.1x}} 1x, {{../../imageDir}}{{this.sources.2x}} 2x"
+										width="{{this.width}}"
+										height="{{this.height}}"
+										alt="{{this.alt}}" />
 								</div>
 							{{/each}}
 						</div>

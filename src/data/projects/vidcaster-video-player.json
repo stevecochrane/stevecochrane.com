@@ -5,7 +5,7 @@
 		{
 			"size": "third",
 			"sources": {
-				"1x": "img/v7/vidcaster-video-player-1.jpg"
+				"1x": "vidcaster-video-player-1.jpg"
 			},
 			"width": "410",
 			"height": "231",
@@ -14,7 +14,7 @@
 		{
 			"size": "third",
 			"sources": {
-				"1x": "img/v7/vidcaster-video-player-2.jpg"
+				"1x": "vidcaster-video-player-2.jpg"
 			},
 			"width": "410",
 			"height": "231",
@@ -23,7 +23,7 @@
 		{
 			"size": "third",
 			"sources": {
-				"1x": "img/v7/vidcaster-video-player-3.jpg"
+				"1x": "vidcaster-video-player-3.jpg"
 			},
 			"width": "410",
 			"height": "231",
@@ -32,7 +32,7 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/vidcaster-video-player-4.jpg"
+				"1x": "vidcaster-video-player-4.jpg"
 			},
 			"width": "1280",
 			"height": "492",

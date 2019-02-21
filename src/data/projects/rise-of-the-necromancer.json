@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/rise-of-the-necromancer-1.jpg",
-				"2x": "img/v7/rise-of-the-necromancer-1-2x.jpg"
+				"1x": "rise-of-the-necromancer-1.jpg",
+				"2x": "rise-of-the-necromancer-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "663",
@@ -15,8 +15,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/rise-of-the-necromancer-2.jpg",
-				"2x": "img/v7/rise-of-the-necromancer-2-2x.jpg"
+				"1x": "rise-of-the-necromancer-2.jpg",
+				"2x": "rise-of-the-necromancer-2-2x.jpg"
 			},
 			"width": "1280",
 			"height": "795",

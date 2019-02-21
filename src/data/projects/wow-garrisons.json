@@ -5,8 +5,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/wow-garrisons-1.jpg",
-				"2x": "img/v7/wow-garrisons-1-2x.jpg"
+				"1x": "wow-garrisons-1.jpg",
+				"2x": "wow-garrisons-1-2x.jpg"
 			},
 			"width": "1280",
 			"height": "589",
@@ -15,8 +15,8 @@
 		{
 			"size": "full",
 			"sources": {
-				"1x": "img/v7/wow-garrisons-2.jpg",
-				"2x": "img/v7/wow-garrisons-2-2x.jpg"
+				"1x": "wow-garrisons-2.jpg",
+				"2x": "wow-garrisons-2-2x.jpg"
 			},
 			"width": "1280",
 			"height": "559",
