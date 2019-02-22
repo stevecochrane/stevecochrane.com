@@ -41,7 +41,9 @@
 									<img
 										class="Project-image"
 										src="{{../../imageDir}}{{sources.1x}}"
-										srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+										{{#if sources.2x}}
+											srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+										{{/if}}
 										width="{{width}}"
 										height="{{height}}"
 										alt="{{alt}}" />
