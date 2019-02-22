@@ -39,10 +39,19 @@
 							{{#each images}}
 								<div class="Project-imageWrap Project-imageWrap--{{size}}">
 									<img
-										class="Project-image"
-										src="{{../../imageDir}}{{sources.1x}}"
-										{{#if sources.2x}}
-											srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+										{{#if @../first}}
+											class="Project-image"
+											src="{{../../imageDir}}{{sources.1x}}"
+											{{#if sources.2x}}
+												srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+											{{/if}}
+										{{else}}
+											class="Project-image lazy"
+											src="{{../../imageDir}}{{../../placeholderImg}}"
+											data-src="{{../../imageDir}}{{sources.1x}}"
+											{{#if sources.2x}}
+												data-srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
+											{{/if}}
 										{{/if}}
 										width="{{width}}"
 										height="{{height}}"
