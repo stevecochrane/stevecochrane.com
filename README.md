@@ -33,4 +33,3 @@ npm run build     # Build for production
   taller aspect ratio for smaller screens.
 - I would like to have used CSS Grid, but the page’s grid, which I carried over from version 6, is weird and
   unconventional. I’ve kept things as-is for now.
-- There’s a lot of repetition in the project templates, which I could reduce by populating the page with data.
