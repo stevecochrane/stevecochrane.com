@@ -4,7 +4,11 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-website-1.webp",
+				"2x": "vidcaster-website-1-2x.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-website-1.jpg",
 				"2x": "vidcaster-website-1-2x.jpg"
 			},

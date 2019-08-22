@@ -15,7 +15,6 @@ const wowRedesign = require("./projects/wow-redesign.json");
 module.exports = {
 	currentYear: new Date().getFullYear(),
 	imageDir: "img/v7/",
-	placeholderImg: "placeholder.png",
 	projects: [
 		blizzcon2018VirtualTicket,
 		riseOfTheNecromancer,

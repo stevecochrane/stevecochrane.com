@@ -38,24 +38,19 @@
 						<div class="Project-images">
 							{{#each images}}
 								<div class="Project-imageWrap Project-imageWrap--{{size}}">
-									<img
-										{{#if @../first}}
-											class="Project-image"
-											src="{{../../imageDir}}{{sources.1x}}"
-											{{#if sources.2x}}
-												srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
-											{{/if}}
-										{{else}}
-											class="Project-image lazy"
-											src="{{../../imageDir}}{{../../placeholderImg}}"
-											data-src="{{../../imageDir}}{{sources.1x}}"
-											{{#if sources.2x}}
-												data-srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
-											{{/if}}
-										{{/if}}
-										width="{{width}}"
-										height="{{height}}"
-										alt="{{alt}}" />
+									{{#if @../first}}
+										<picture class="Project-image">
+											<source srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
+											<source srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+											<img src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
+										</picture>
+									{{else}}
+										<picture class="Project-image">
+											<source data-srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
+											<source data-srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+											<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
+										</picture>
+									{{/if}}
 								</div>
 							{{/each}}
 						</div>

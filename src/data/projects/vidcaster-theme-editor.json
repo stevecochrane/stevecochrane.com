@@ -4,7 +4,11 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-theme-editor-1.webp",
+				"2x": "vidcaster-theme-editor-1-2x.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-theme-editor-1.jpg",
 				"2x": "vidcaster-theme-editor-1-2x.jpg"
 			},
@@ -14,7 +18,11 @@
 		},
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-theme-editor-2.webp",
+				"2x": "vidcaster-theme-editor-2-2x.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-theme-editor-2.jpg",
 				"2x": "vidcaster-theme-editor-2-2x.jpg"
 			},
@@ -24,7 +32,11 @@
 		},
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-theme-editor-3.webp",
+				"2x": "vidcaster-theme-editor-3-2x.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-theme-editor-3.jpg",
 				"2x": "vidcaster-theme-editor-3-2x.jpg"
 			},

@@ -4,7 +4,11 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "wow-legion-1.webp",
+				"2x": "wow-legion-1-2x.webp"
+			},
+			"jpg": {
 				"1x": "wow-legion-1.jpg",
 				"2x": "wow-legion-1-2x.jpg"
 			},

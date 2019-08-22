@@ -4,7 +4,10 @@
 	"images": [
 		{
 			"size": "third",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-video-player-1.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-video-player-1.jpg"
 			},
 			"width": "410",
@@ -13,7 +16,10 @@
 		},
 		{
 			"size": "third",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-video-player-2.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-video-player-2.jpg"
 			},
 			"width": "410",
@@ -22,7 +28,10 @@
 		},
 		{
 			"size": "third",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-video-player-3.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-video-player-3.jpg"
 			},
 			"width": "410",
@@ -31,7 +40,10 @@
 		},
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "vidcaster-video-player-4.webp"
+			},
+			"jpg": {
 				"1x": "vidcaster-video-player-4.jpg"
 			},
 			"width": "1280",

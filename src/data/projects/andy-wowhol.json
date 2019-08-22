@@ -4,7 +4,11 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "andy-wowhol-1.webp",
+				"2x": "andy-wowhol-1-2x.webp"
+			},
+			"jpg": {
 				"1x": "andy-wowhol-1.jpg",
 				"2x": "andy-wowhol-1-2x.jpg"
 			},
@@ -14,7 +18,11 @@
 		},
 		{
 			"size": "full",
-			"sources": {
+			"webp": {
+				"1x": "andy-wowhol-2.webp",
+				"2x": "andy-wowhol-2-2x.webp"
+			},
+			"jpg": {
 				"1x": "andy-wowhol-2.jpg",
 				"2x": "andy-wowhol-2-2x.jpg"
 			},
