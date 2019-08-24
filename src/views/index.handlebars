@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Steve Cochrane</title>
+		{{> ./partials/google-tag-manager/head.handlebars}}
+		<link rel="preconnect" href="https://www.google-analytics.com" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="The digital portfolio of Steve Cochrane, a web software engineer from Austin, Texas." />
 		<meta name="author" content="Steve Cochrane" />
 		<meta property="og:url" content="https://stevecochrane.com" />
@@ -11,9 +14,6 @@
 		<meta property="og:site_name" content="Steve Cochrane" />
 		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
 		<meta name="twitter:card" content="summary" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://www.google-analytics.com" />
-		{{> ./partials/google-tag-manager/head.handlebars}}
 	</head>
 	<body>
 		{{> ./partials/google-tag-manager/body.handlebars}}
