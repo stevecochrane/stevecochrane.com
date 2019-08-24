@@ -37,21 +37,17 @@
 						<h1 class="Project-title">{{title}}</h1>
 						<div class="Project-images">
 							{{#each images}}
-								<div class="Project-imageWrap Project-imageWrap--{{size}}">
+								<picture class="Project-imageWrap Project-imageWrap--{{size}}">
 									{{#if @../first}}
-										<picture class="Project-image">
-											<source srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
-											<source srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
-											<img src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
-										</picture>
+										<source srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
+										<source srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<img class="Project-image" src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
 									{{else}}
-										<picture class="Project-image">
-											<source data-srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
-											<source data-srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
-											<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
-										</picture>
+										<source data-srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
+										<source data-srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<img class="Project-image lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
 									{{/if}}
-								</div>
+								</picture>
 							{{/each}}
 						</div>
 						<div class="Project-description">
