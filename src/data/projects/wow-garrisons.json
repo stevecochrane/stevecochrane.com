@@ -29,11 +29,5 @@
 	"body": [
 		"<p>This was one of the first full pages that I worked on for the World of Warcraft website: a feature page for Garrisons, a big new feature for the Warlords of Draenor expansion.</p>",
 		"<p>The page was published in the lead-up to the expansion launch to build interest, with lots of in-game screenshots and information on all the new things you can do with your garrison.</p>"
-	],
-	"buttons": [
-		{
-			"linkUrl": "http://battle.net/wow/game/garrisons/",
-			"label": "View Site"
-		}
 	]
 }
