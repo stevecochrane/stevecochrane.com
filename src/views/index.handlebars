@@ -40,12 +40,16 @@
 							{{#each images}}
 								<picture class="Project-imageWrap Project-imageWrap--{{size}}">
 									{{#if @../first}}
-										<source srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
-										<source srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
-										<img class="Project-image" src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
+										<source srcset="{{../../imageDir}}{{desktop.webp.1x}}{{#if desktop.webp.2x}} 1x, {{../../imageDir}}{{desktop.webp.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/webp" />
+										<source srcset="{{../../imageDir}}{{mobile.webp.1x}}{{#if mobile.webp.2x}} 1x, {{../../imageDir}}{{mobile.webp.2x}} 2x{{/if}}" type="image/webp" />
+										<source srcset="{{../../imageDir}}{{desktop.jpg.1x}}{{#if desktop.jpg.2x}} 1x, {{../../imageDir}}{{desktop.jpg.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/jpeg" />
+										<source srcset="{{../../imageDir}}{{mobile.jpg.1x}}{{#if mobile.jpg.2x}} 1x, {{../../imageDir}}{{mobile.jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<img class="Project-image" src="{{../../imageDir}}{{desktop.jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
 									{{else}}
-										<source data-srcset="{{../../imageDir}}{{webp.1x}}{{#if webp.2x}} 1x, {{../../imageDir}}{{webp.2x}} 2x{{/if}}" type="image/webp" />
-										<source data-srcset="{{../../imageDir}}{{jpg.1x}}{{#if jpg.2x}} 1x, {{../../imageDir}}{{jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<source data-srcset="{{../../imageDir}}{{desktop.webp.1x}}{{#if desktop.webp.2x}} 1x, {{../../imageDir}}{{desktop.webp.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/webp" />
+										<source data-srcset="{{../../imageDir}}{{mobile.webp.1x}}{{#if mobile.webp.2x}} 1x, {{../../imageDir}}{{mobile.webp.2x}} 2x{{/if}}" type="image/webp" />
+										<source data-srcset="{{../../imageDir}}{{desktop.jpg.1x}}{{#if desktop.jpg.2x}} 1x, {{../../imageDir}}{{desktop.jpg.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/jpeg" />
+										<source data-srcset="{{../../imageDir}}{{mobile.jpg.1x}}{{#if mobile.jpg.2x}} 1x, {{../../imageDir}}{{mobile.jpg.2x}} 2x{{/if}}" type="image/jpeg" />
 										<img class="Project-image lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{../../imageDir}}{{jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
 									{{/if}}
 								</picture>
