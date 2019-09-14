@@ -4,13 +4,25 @@
 	"images": [
 		{
 			"size": "full",
-			"webp": {
-				"1x": "wow-legion-1.webp",
-				"2x": "wow-legion-1-2x.webp"
+			"mobile": {
+				"webp": {
+					"1x": "wow-legion-1-sm.webp",
+					"2x": "wow-legion-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "wow-legion-1-sm.jpg",
+					"2x": "wow-legion-1-sm-2x.jpg"
+				}
 			},
-			"jpg": {
-				"1x": "wow-legion-1.jpg",
-				"2x": "wow-legion-1-2x.jpg"
+			"desktop": {
+				"webp": {
+					"1x": "wow-legion-1.webp",
+					"2x": "wow-legion-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "wow-legion-1.jpg",
+					"2x": "wow-legion-1-2x.jpg"
+				}
 			},
 			"width": "1280",
 			"height": "877",

@@ -4,11 +4,13 @@
 	"images": [
 		{
 			"size": "third",
-			"webp": {
-				"1x": "vidcaster-video-player-1.webp"
-			},
-			"jpg": {
-				"1x": "vidcaster-video-player-1.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "vidcaster-video-player-1-sm.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-video-player-1-sm.jpg"
+				}
 			},
 			"width": "410",
 			"height": "231",
@@ -16,11 +18,13 @@
 		},
 		{
 			"size": "third",
-			"webp": {
-				"1x": "vidcaster-video-player-2.webp"
-			},
-			"jpg": {
-				"1x": "vidcaster-video-player-2.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "vidcaster-video-player-2-sm.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-video-player-2-sm.jpg"
+				}
 			},
 			"width": "410",
 			"height": "231",
@@ -28,11 +32,13 @@
 		},
 		{
 			"size": "third",
-			"webp": {
-				"1x": "vidcaster-video-player-3.webp"
-			},
-			"jpg": {
-				"1x": "vidcaster-video-player-3.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "vidcaster-video-player-3-sm.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-video-player-3-sm.jpg"
+				}
 			},
 			"width": "410",
 			"height": "231",
@@ -40,11 +46,21 @@
 		},
 		{
 			"size": "full",
-			"webp": {
-				"1x": "vidcaster-video-player-4.webp"
+			"mobile": {
+				"webp": {
+					"1x": "vidcaster-video-player-4-sm.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-video-player-4-sm.jpg"
+				}
 			},
-			"jpg": {
-				"1x": "vidcaster-video-player-4.jpg"
+			"desktop": {
+				"webp": {
+					"1x": "vidcaster-video-player-4.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-video-player-4.jpg"
+				}
 			},
 			"width": "1280",
 			"height": "492",
