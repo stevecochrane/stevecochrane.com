@@ -21,6 +21,10 @@ npm run build     # Build for production
 
 - This development setup is overly complex for a tiny personal site developed by one person, but I do this to try out
   the latest tools and to get some experience with them.
+- The site has a perfect score of 100 for Performance, Best Practices, and SEO in
+  [Lighthouse](https://developers.google.com/web/tools/lighthouse) as of September 2019. Accessibility is at 93/100
+  because of insufficient contrast between background and foreground colors, which will need to wait until the next
+  redesign.
 - I've dropped both Less and Sass in favor of [PostCSS](https://github.com/postcss/postcss). The intent is to write
   plain, valid CSS, plus proposed CSS features, and then polyfill for older browsers using
   [postcss-preset-env](https://github.com/csstools/postcss-preset-env), just like using Babel for writing modern
