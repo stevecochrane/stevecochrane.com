@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Steve Cochrane</title>
+		{{> ./partials/google-tag-manager/head.handlebars}}
+		<link rel="preconnect" href="https://www.google-analytics.com" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="The digital portfolio of Steve Cochrane, a web software engineer from Austin, Texas." />
 		<meta name="author" content="Steve Cochrane" />
 		<meta property="og:url" content="https://stevecochrane.com" />
@@ -11,8 +14,6 @@
 		<meta property="og:site_name" content="Steve Cochrane" />
 		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
 		<meta name="twitter:card" content="summary" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		{{> ./partials/google-tag-manager/head.handlebars}}
 	</head>
 	<body>
 		{{> ./partials/google-tag-manager/body.handlebars}}
@@ -37,26 +38,29 @@
 						<h1 class="Project-title">{{title}}</h1>
 						<div class="Project-images">
 							{{#each images}}
-								<div class="Project-imageWrap Project-imageWrap--{{size}}">
-									<img
-										{{#if @../first}}
-											class="Project-image"
-											src="{{../../imageDir}}{{sources.1x}}"
-											{{#if sources.2x}}
-												srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
-											{{/if}}
-										{{else}}
-											class="Project-image lazy"
-											src="{{../../imageDir}}{{../../placeholderImg}}"
-											data-src="{{../../imageDir}}{{sources.1x}}"
-											{{#if sources.2x}}
-												data-srcset="{{../../imageDir}}{{sources.1x}} 1x, {{../../imageDir}}{{sources.2x}} 2x"
-											{{/if}}
+								<picture class="Project-imageWrap Project-imageWrap--{{size}}">
+									{{#if @../first}}
+										{{#if desktop.webp.1x}}
+											<source srcset="{{../../imageDir}}{{desktop.webp.1x}}{{#if desktop.webp.2x}} 1x, {{../../imageDir}}{{desktop.webp.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/webp" />
 										{{/if}}
-										width="{{width}}"
-										height="{{height}}"
-										alt="{{alt}}" />
-								</div>
+										<source srcset="{{../../imageDir}}{{mobile.webp.1x}}{{#if mobile.webp.2x}} 1x, {{../../imageDir}}{{mobile.webp.2x}} 2x{{/if}}" type="image/webp" />
+										{{#if desktop.jpg.1x}}
+											<source srcset="{{../../imageDir}}{{desktop.jpg.1x}}{{#if desktop.jpg.2x}} 1x, {{../../imageDir}}{{desktop.jpg.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/jpeg" />
+										{{/if}}
+										<source srcset="{{../../imageDir}}{{mobile.jpg.1x}}{{#if mobile.jpg.2x}} 1x, {{../../imageDir}}{{mobile.jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<img class="Project-image" src="{{../../imageDir}}{{mobile.jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
+									{{else}}
+										{{#if desktop.webp.1x}}
+											<source data-srcset="{{../../imageDir}}{{desktop.webp.1x}}{{#if desktop.webp.2x}} 1x, {{../../imageDir}}{{desktop.webp.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/webp" />
+										{{/if}}
+										<source data-srcset="{{../../imageDir}}{{mobile.webp.1x}}{{#if mobile.webp.2x}} 1x, {{../../imageDir}}{{mobile.webp.2x}} 2x{{/if}}" type="image/webp" />
+										{{#if desktop.jpg.1x}}
+											<source data-srcset="{{../../imageDir}}{{desktop.jpg.1x}}{{#if desktop.jpg.2x}} 1x, {{../../imageDir}}{{desktop.jpg.2x}} 2x{{/if}}" media="(min-width: 640px)" type="image/jpeg" />
+										{{/if}}
+										<source data-srcset="{{../../imageDir}}{{mobile.jpg.1x}}{{#if mobile.jpg.2x}} 1x, {{../../imageDir}}{{mobile.jpg.2x}} 2x{{/if}}" type="image/jpeg" />
+										<img class="Project-image lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{../../imageDir}}{{mobile.jpg.1x}}" width="{{width}}" height="{{height}}" alt="{{alt}}" />
+									{{/if}}
+								</picture>
 							{{/each}}
 						</div>
 						<div class="Project-description">
@@ -74,7 +78,7 @@
 								{{#if buttons}}
 									<div class="ButtonGroup">
 										{{#each buttons}}
-											<a class="Button" href="{{linkUrl}}" target="_blank">{{label}}</a>
+											<a class="Button" href="{{linkUrl}}" target="_blank" rel="noopener">{{label}}</a>
 										{{/each}}
 									</div>
 								{{/if}}

@@ -93,10 +93,6 @@ ul + p {
 	margin-top: var(--space-md);
 }
 
-.lazy {
-	display: none;
-}
-
 .Link {
 	border-bottom: 1px solid var(--color-link-border);
 	color: var(--color-link);

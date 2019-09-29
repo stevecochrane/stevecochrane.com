@@ -4,9 +4,25 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
-				"1x": "vidcaster-website-1.jpg",
-				"2x": "vidcaster-website-1-2x.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "vidcaster-website-1-sm.webp",
+					"2x": "vidcaster-website-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-website-1-sm.jpg",
+					"2x": "vidcaster-website-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "vidcaster-website-1.webp",
+					"2x": "vidcaster-website-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "vidcaster-website-1.jpg",
+					"2x": "vidcaster-website-1-2x.jpg"
+				}
 			},
 			"width": "1280",
 			"height": "660",

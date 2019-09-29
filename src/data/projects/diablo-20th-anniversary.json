@@ -4,9 +4,25 @@
 	"images": [
 		{
 			"size": "full",
-			"sources": {
-				"1x": "diablo-20th-anniversary-1.jpg",
-				"2x": "diablo-20th-anniversary-1-2x.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "diablo-20th-anniversary-1-sm.webp",
+					"2x": "diablo-20th-anniversary-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo-20th-anniversary-1-sm.jpg",
+					"2x": "diablo-20th-anniversary-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo-20th-anniversary-1.webp",
+					"2x": "diablo-20th-anniversary-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo-20th-anniversary-1.jpg",
+					"2x": "diablo-20th-anniversary-1-2x.jpg"
+				}
 			},
 			"width": "1280",
 			"height": "575",
@@ -14,9 +30,25 @@
 		},
 		{
 			"size": "full",
-			"sources": {
-				"1x": "diablo-20th-anniversary-2.jpg",
-				"2x": "diablo-20th-anniversary-2-2x.jpg"
+			"mobile": {
+				"webp": {
+					"1x": "diablo-20th-anniversary-2-sm.webp",
+					"2x": "diablo-20th-anniversary-2-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo-20th-anniversary-2-sm.jpg",
+					"2x": "diablo-20th-anniversary-2-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo-20th-anniversary-2.webp",
+					"2x": "diablo-20th-anniversary-2-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo-20th-anniversary-2.jpg",
+					"2x": "diablo-20th-anniversary-2-2x.jpg"
+				}
 			},
 			"width": "1280",
 			"height": "758",

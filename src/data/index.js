@@ -5,17 +5,14 @@ const htmlReferenceWebApplication = require("./projects/html-reference-web-appli
 const pixelArtScrapbook = require("./projects/pixel-art-scrapbook.json");
 const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
 const vidcasterThemeEditor = require("./projects/vidcaster-theme-editor.json");
-const vidcasterThemes = require("./projects/vidcaster-themes.json");
 const vidcasterVideoPlayer = require("./projects/vidcaster-video-player.json");
 const vidcasterWebsite = require("./projects/vidcaster-website.json");
-const wowGarrisons = require("./projects/wow-garrisons.json");
 const wowLegion = require("./projects/wow-legion.json");
 const wowRedesign = require("./projects/wow-redesign.json");
 
 module.exports = {
 	currentYear: new Date().getFullYear(),
 	imageDir: "img/v7/",
-	placeholderImg: "placeholder.png",
 	projects: [
 		blizzcon2018VirtualTicket,
 		riseOfTheNecromancer,
@@ -24,11 +21,9 @@ module.exports = {
 		htmlReferenceWebApplication,
 		wowLegion,
 		andyWowhol,
-		wowGarrisons,
 		pixelArtScrapbook,
 		vidcasterThemeEditor,
-		vidcasterWebsite,
 		vidcasterVideoPlayer,
-		vidcasterThemes
+		vidcasterWebsite
 	]
 };
