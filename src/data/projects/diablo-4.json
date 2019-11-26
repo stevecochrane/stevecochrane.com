@@ -1,0 +1,73 @@
+{
+	"id": "diablo-4",
+	"title": "Diablo IV Website",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "blizzcon-2018-1-sm.webp",
+					"2x": "blizzcon-2018-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "blizzcon-2018-1-sm.jpg",
+					"2x": "blizzcon-2018-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "blizzcon-2018-1.webp",
+					"2x": "blizzcon-2018-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "blizzcon-2018-1.jpg",
+					"2x": "blizzcon-2018-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "520",
+			"alt": "BlizzCon 2018 Virtual Ticket: Video Player"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "blizzcon-2018-2-sm.webp",
+					"2x": "blizzcon-2018-2-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "blizzcon-2018-2-sm.jpg",
+					"2x": "blizzcon-2018-2-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "blizzcon-2018-2.webp",
+					"2x": "blizzcon-2018-2-2x.webp"
+				},
+				"jpg": {
+					"1x": "blizzcon-2018-2.jpg",
+					"2x": "blizzcon-2018-2-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "705",
+			"alt": "BlizzCon 2018 Virtual Ticket: Video Browser"
+		}
+	],
+	"role": "Engineering, Architecture",
+	"client": "Blizzard Entertainment",
+	"date": "Fall 2019",
+	"body": [
+		"<!--<p><em>Warning: this site contains graphic violence.</em></p>-->",
+		"<p>At last, Diablo IV! It's a dream come true to not only be able to build the official website, but also a rare opportunity to be involved from the very beginning with a brand new project. This was my first time designing the system architecture for a new site of this stature.</p>",
+		"<p>The site's front end is entirely in React and uses the <a class=\"Link\" href=\"https://nextjs.org\">Next.js</a> framework, which we chose to easily enable server-side rendering. Our styles are primarily done using <a class=\"Link\" href=\"https://tailwindcss.com\">Tailwind</a>, which I think is impeccably designed, and its creator noticed and had <a class=\"Link\" href=\"https://twitter.com/adamwathan/status/1190421615068270592\">some very kind words</a> for us on Twitter.",
+		"<!--<p>Fill in some info about viewership analytics here</p>-->"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://diablo.blizzard.com",
+			"label": "View Site"
+		}
+	]
+}
