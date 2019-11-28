@@ -6,53 +6,105 @@
 			"size": "full",
 			"mobile": {
 				"webp": {
-					"1x": "blizzcon-2018-1-sm.webp",
-					"2x": "blizzcon-2018-1-sm-2x.webp"
+					"1x": "diablo4-1-sm.webp",
+					"2x": "diablo4-1-sm-2x.webp"
 				},
 				"jpg": {
-					"1x": "blizzcon-2018-1-sm.jpg",
-					"2x": "blizzcon-2018-1-sm-2x.jpg"
+					"1x": "diablo4-1-sm.jpg",
+					"2x": "diablo4-1-sm-2x.jpg"
 				}
 			},
 			"desktop": {
 				"webp": {
-					"1x": "blizzcon-2018-1.webp",
-					"2x": "blizzcon-2018-1-2x.webp"
+					"1x": "diablo4-1.webp",
+					"2x": "diablo4-1-2x.webp"
 				},
 				"jpg": {
-					"1x": "blizzcon-2018-1.jpg",
-					"2x": "blizzcon-2018-1-2x.jpg"
+					"1x": "diablo4-1.jpg",
+					"2x": "diablo4-1-2x.jpg"
 				}
 			},
 			"width": "1280",
-			"height": "520",
-			"alt": "BlizzCon 2018 Virtual Ticket: Video Player"
+			"height": "800",
+			"alt": "Diablo IV: Introduction"
 		},
 		{
 			"size": "full",
 			"mobile": {
 				"webp": {
-					"1x": "blizzcon-2018-2-sm.webp",
-					"2x": "blizzcon-2018-2-sm-2x.webp"
+					"1x": "diablo4-2-sm.webp",
+					"2x": "diablo4-2-sm-2x.webp"
 				},
 				"jpg": {
-					"1x": "blizzcon-2018-2-sm.jpg",
-					"2x": "blizzcon-2018-2-sm-2x.jpg"
+					"1x": "diablo4-2-sm.jpg",
+					"2x": "diablo4-2-sm-2x.jpg"
 				}
 			},
 			"desktop": {
 				"webp": {
-					"1x": "blizzcon-2018-2.webp",
-					"2x": "blizzcon-2018-2-2x.webp"
+					"1x": "diablo4-2.webp",
+					"2x": "diablo4-2-2x.webp"
 				},
 				"jpg": {
-					"1x": "blizzcon-2018-2.jpg",
-					"2x": "blizzcon-2018-2-2x.jpg"
+					"1x": "diablo4-2.jpg",
+					"2x": "diablo4-2-2x.jpg"
 				}
 			},
 			"width": "1280",
-			"height": "705",
-			"alt": "BlizzCon 2018 Virtual Ticket: Video Browser"
+			"height": "800",
+			"alt": "Diablo IV: Age Gate"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "diablo4-3-sm.webp",
+					"2x": "diablo4-3-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-3-sm.jpg",
+					"2x": "diablo4-3-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo4-3.webp",
+					"2x": "diablo4-3-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-3.jpg",
+					"2x": "diablo4-3-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "800",
+			"alt": "Diablo IV: Classes"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "diablo4-4-sm.webp",
+					"2x": "diablo4-4-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-4-sm.jpg",
+					"2x": "diablo4-4-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo4-4.webp",
+					"2x": "diablo4-4-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-4.jpg",
+					"2x": "diablo4-4-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "800",
+			"alt": "Diablo IV: Sorceress Details"
 		}
 	],
 	"role": "Engineering, Architecture",
