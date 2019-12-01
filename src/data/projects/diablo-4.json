@@ -52,7 +52,7 @@
 			},
 			"width": "1280",
 			"height": "800",
-			"alt": "Diablo IV: Age Gate"
+			"alt": "Diablo IV: Classes"
 		},
 		{
 			"size": "full",
@@ -78,33 +78,7 @@
 			},
 			"width": "1280",
 			"height": "800",
-			"alt": "Diablo IV: Classes"
-		},
-		{
-			"size": "full",
-			"mobile": {
-				"webp": {
-					"1x": "diablo4-4-sm.webp",
-					"2x": "diablo4-4-sm-2x.webp"
-				},
-				"jpg": {
-					"1x": "diablo4-4-sm.jpg",
-					"2x": "diablo4-4-sm-2x.jpg"
-				}
-			},
-			"desktop": {
-				"webp": {
-					"1x": "diablo4-4.webp",
-					"2x": "diablo4-4-2x.webp"
-				},
-				"jpg": {
-					"1x": "diablo4-4.jpg",
-					"2x": "diablo4-4-2x.jpg"
-				}
-			},
-			"width": "1280",
-			"height": "800",
-			"alt": "Diablo IV: Sorceress Details"
+			"alt": "Diablo IV: Sorceress Class Details"
 		}
 	],
 	"role": "Engineering, Architecture",
