@@ -1,0 +1,98 @@
+{
+	"id": "diablo-4",
+	"title": "Diablo IV Website",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "diablo4-1-sm.webp",
+					"2x": "diablo4-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-1-sm.jpg",
+					"2x": "diablo4-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo4-1.webp",
+					"2x": "diablo4-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-1.jpg",
+					"2x": "diablo4-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "800",
+			"alt": "Diablo IV: Introduction"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "diablo4-2-sm.webp",
+					"2x": "diablo4-2-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-2-sm.jpg",
+					"2x": "diablo4-2-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo4-2.webp",
+					"2x": "diablo4-2-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-2.jpg",
+					"2x": "diablo4-2-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "800",
+			"alt": "Diablo IV: Classes"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "diablo4-3-sm.webp",
+					"2x": "diablo4-3-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-3-sm.jpg",
+					"2x": "diablo4-3-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "diablo4-3.webp",
+					"2x": "diablo4-3-2x.webp"
+				},
+				"jpg": {
+					"1x": "diablo4-3.jpg",
+					"2x": "diablo4-3-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "800",
+			"alt": "Diablo IV: Sorceress Class Details"
+		}
+	],
+	"role": "Engineering, Architecture",
+	"client": "Blizzard Entertainment",
+	"date": "Fall 2019",
+	"body": [
+		"<p>It’s a dream come true to build the official Diablo IV website. I was not just an engineer but an architect as well, creating the system design for the site. Starting a new, greenfield project takes a lot of consideration, so I conducted initial research, diagrammed how all the various technical pieces (services, libraries, etc.) would fit together, defined some of our working processes, and circulated all of that internally for iteration and feedback before production began.</p>",
+		"<p>Our designers wanted the experience to be as immersive as possible, so the site expands to cover the entire viewport with each section, makes heavy use of video, and even has an audio player with ambient audio that plays while you browse the site. While the image and video assets are pretty heavy, going with a screen-by-screen structure rather than a long scroll makes it easy to only load what is needed. I kept a close eye on overall file size and integrated some image optimization into our build, and we were happy with the resulting Lighthouse scores.</p>",
+		"<p>The site’s front end is entirely in React with the <a class=\"Link\" href=\"https://nextjs.org\">Next.js</a> framework, which we chose to remove a lot of initial boilerplate and to easily enable server-side rendering. Our styles are primarily done in the Atomic CSS style with <a class=\"Link\" href=\"https://tailwindcss.com\">Tailwind</a>, which I think is impeccably designed, and its creator noticed and had <a class=\"Link\" href=\"https://twitter.com/adamwathan/status/1190421615068270592\">some very kind words</a> for us.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://diablo4.blizzard.com",
+			"label": "View Site"
+		}
+	]
+}

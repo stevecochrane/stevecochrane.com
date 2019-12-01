@@ -1,6 +1,7 @@
 const andyWowhol = require("./projects/andy-wowhol.json");
 const blizzcon2018VirtualTicket = require("./projects/blizzcon-2018-virtual-ticket.json");
 const diablo20thAnniversary = require("./projects/diablo-20th-anniversary");
+const diablo4 = require("./projects/diablo-4");
 const htmlReferenceWebApplication = require("./projects/html-reference-web-application.json");
 const pixelArtScrapbook = require("./projects/pixel-art-scrapbook.json");
 const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
@@ -14,6 +15,7 @@ module.exports = {
 	currentYear: new Date().getFullYear(),
 	imageDir: "img/v7/",
 	projects: [
+		diablo4,
 		blizzcon2018VirtualTicket,
 		riseOfTheNecromancer,
 		wowRedesign,
