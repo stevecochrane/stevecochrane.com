@@ -11,9 +11,8 @@ interface and do this:
 ```bash
 npm install       # Install Node dependencies
 npm run start     # Run webpack-dev-server for local development
-npm run lint:css  # Lint CSS with Stylelint (also runs during start/build)
-npm run lint:js   # Lint JavaScript with ESLint (also runs during start/build)
-npm run prettify  # Run Prettier on staged files (also runs on pre-commit)
+npm run lint:css  # Lint CSS with Stylelint (also runs during start/build/pre-commit)
+npm run lint:js   # Lint JavaScript with ESLint (also runs during start/build/pre-commit)
 npm run build     # Build for production
 ```
 
