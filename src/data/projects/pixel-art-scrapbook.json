@@ -39,7 +39,8 @@
 	"buttons": [
 		{
 			"linkUrl": "v6/portfolio/pixel-art-scrapbook/",
-			"label": "View Limited Demo"
+			"label": "View Limited Demo",
+			"labelWithContext": "View Pixel Art Scrapbook Limited Demo"
 		}
 	]
 }

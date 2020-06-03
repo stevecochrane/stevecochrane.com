@@ -92,7 +92,8 @@
 	"buttons": [
 		{
 			"linkUrl": "https://diablo4.blizzard.com",
-			"label": "View Site"
+			"label": "View Site",
+			"labelWithContext": "View Diablo IV Website"
 		}
 	]
 }

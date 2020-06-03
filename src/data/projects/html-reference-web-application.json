@@ -65,11 +65,13 @@
 	"buttons": [
 		{
 			"linkUrl": "https://github.com/stevecochrane/html-reference-api",
-			"label": "View API on GitHub"
+			"label": "View API on GitHub",
+			"labelWithContext": "View HTML Reference API on GitHub"
 		},
 		{
 			"linkUrl": "https://github.com/stevecochrane/html-reference-webapp",
-			"label": "View Application on GitHub"
+			"label": "View Application on GitHub",
+			"labelWithContext": "View HTML Reference Web Application on GitHub"
 		}
 	]
 }

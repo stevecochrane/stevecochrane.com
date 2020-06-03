@@ -65,7 +65,8 @@
 	"buttons": [
 		{
 			"linkUrl": "https://github.com/stevecochrane/andy-wowhol",
-			"label": "View on GitHub"
+			"label": "View on GitHub",
+			"labelWithContext": "View Andy WoWhol on GitHub"
 		}
 	]
 }
