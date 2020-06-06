@@ -65,7 +65,8 @@
 	"buttons": [
 		{
 			"linkUrl": "https://worldofwarcraft.com/",
-			"label": "View Site"
+			"label": "View Site",
+			"labelWithContext": "View World of Warcraft Website"
 		}
 	]
 }

@@ -38,7 +38,8 @@
 	"buttons": [
 		{
 			"linkUrl": "v6/portfolio/vidcaster-website/archive/",
-			"label": "View Archived Site"
+			"label": "View Archived Site",
+			"labelWithContext": "View Archived Vidcaster Website"
 		}
 	]
 }
