@@ -69,12 +69,14 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
-		new CopyWebpackPlugin([
-			{
-				from: "src/img/",
-				to: "img"
-			}
-		]),
+		new CopyWebpackPlugin({
+			patterns: [
+				{
+					from: "src/img/",
+					to: "img"
+				}
+			]
+		}),
 		new MiniCssExtractPlugin({
 			filename: "css/[name].[contenthash].css"
 		}),
