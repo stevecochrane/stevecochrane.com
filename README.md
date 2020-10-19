@@ -14,6 +14,7 @@ npm run start     # Run webpack-dev-server for local development
 npm run lint:css  # Lint CSS with Stylelint (also runs during start/build/pre-commit)
 npm run lint:js   # Lint JavaScript with ESLint (also runs during start/build/pre-commit)
 npm run build     # Build for production
+npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git for security)
 ```
 
 ### Notes

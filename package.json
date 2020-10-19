@@ -11,6 +11,7 @@
 	},
 	"scripts": {
 		"build": "webpack",
+		"deploy": "./deploy-to-aws.sh",
 		"lint:css": "stylelint ./src/css/*.css",
 		"lint:js": "eslint --ignore-path .eslintignore --cache .",
 		"start": "webpack-dev-server"
