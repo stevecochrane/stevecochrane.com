@@ -1,7 +1,7 @@
 # stevecochrane.com
 
-[stevecochrane.com](https://stevecochrane.com/) has been my personal space on the internet since I was a college student
-back in 2005, and the site is now in its seventh design iteration.
+[stevecochrane.com](https://stevecochrane.com/) has been my little corner of the World Wide Web since I was a college
+student back in 2005, and the site is now in its seventh design iteration.
 
 ### Setup
 
