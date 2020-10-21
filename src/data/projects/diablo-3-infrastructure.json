@@ -6,53 +6,27 @@
 			"size": "full",
 			"mobile": {
 				"webp": {
-					"1x": "diablo-3-infrastructure-1-sm.webp",
-					"2x": "diablo-3-infrastructure-1-sm-2x.webp"
+					"1x": "diablo3-infrastructure-1-sm.webp",
+					"2x": "diablo3-infrastructure-1-sm-2x.webp"
 				},
 				"jpg": {
-					"1x": "diablo-3-infrastructure-1-sm.jpg",
-					"2x": "diablo-3-infrastructure-1-sm-2x.jpg"
+					"1x": "diablo3-infrastructure-1-sm.jpg",
+					"2x": "diablo3-infrastructure-1-sm-2x.jpg"
 				}
 			},
 			"desktop": {
 				"webp": {
-					"1x": "diablo-3-infrastructure-1.webp",
-					"2x": "diablo-3-infrastructure-1-2x.webp"
+					"1x": "diablo3-infrastructure-1.webp",
+					"2x": "diablo3-infrastructure-1-2x.webp"
 				},
 				"jpg": {
-					"1x": "diablo-3-infrastructure-1.jpg",
-					"2x": "diablo-3-infrastructure-1-2x.jpg"
+					"1x": "diablo3-infrastructure-1.jpg",
+					"2x": "diablo3-infrastructure-1-2x.jpg"
 				}
 			},
 			"width": "1280",
-			"height": "520",
+			"height": "610",
 			"alt": "Diablo III Website: Homepage"
-		},
-		{
-			"size": "full",
-			"mobile": {
-				"webp": {
-					"1x": "diablo-3-infrastructure-1-sm.webp",
-					"2x": "diablo-3-infrastructure-1-sm-2x.webp"
-				},
-				"jpg": {
-					"1x": "diablo-3-infrastructure-1-sm.jpg",
-					"2x": "diablo-3-infrastructure-1-sm-2x.jpg"
-				}
-			},
-			"desktop": {
-				"webp": {
-					"1x": "diablo-3-infrastructure-1.webp",
-					"2x": "diablo-3-infrastructure-1-2x.webp"
-				},
-				"jpg": {
-					"1x": "diablo-3-infrastructure-1.jpg",
-					"2x": "diablo-3-infrastructure-1-2x.jpg"
-				}
-			},
-			"width": "1280",
-			"height": "520",
-			"alt": "Diablo III Website: Leaderboards"
 		}
 	],
 	"role": "Engineering",
