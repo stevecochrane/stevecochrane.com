@@ -62,5 +62,12 @@
 		"<p>Diablo III originally launched back in 2012 and still gets regular updates, making its website one of the oldest actively-maintained Blizzard sites. In 2020 we were told the aging cloud compute infrastructure it was hosted on was being decommissioned. In order to get where we wanted to be, there was a lot of tech debt to address first, so this was a pretty significant upgrade.</p>",
 		"<p>The following upgrades were made:</p>",
 		"<ul class=\"List\"><li class=\"List-item\"></li><li class=\"List-item\">Kubernetes</li><li class=\"List-item\">Dockerized our Java Spring web application</li><li class=\"List-item\">Added NGINX instances for both site and API</li><li>Moved from Memcached to Redis caching</li></ul>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://diablo3.blizzard.com",
+			"label": "View Site",
+			"labelWithContext": "View Diablo III Website"
+		}
 	]
 }
