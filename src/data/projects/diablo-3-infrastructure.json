@@ -33,9 +33,10 @@
 	"client": "Blizzard Entertainment",
 	"date": "Fall 2020",
 	"body": [
-		"<p>Diablo III originally launched back in 2012 and still gets regular updates, making its website one of the oldest actively-maintained Blizzard sites. In 2020 we were told the aging cloud compute infrastructure it was hosted on was being decommissioned. In order to get where we wanted to be, there was a lot of tech debt to address first, so this was a pretty significant upgrade.</p>",
-		"<p>The following upgrades were made:</p>",
-		"<ul class=\"List\"><li class=\"List-item\"></li><li class=\"List-item\">Kubernetes</li><li class=\"List-item\">Dockerized our Java Spring web application</li><li class=\"List-item\">Added NGINX instances for both site and API</li><li>Moved from Memcached to Redis caching</li></ul>"
+		"<p>Diablo III originally launched back in 2012 and went on to become one of the best-selling videogames of all time, having sold over 30 million copies by 2015. It still gets regular updates to this day, making its website one of the oldest actively maintained Blizzard sites.</p>",
+		"<p>In 2020 we were told the aging cloud compute infrastructure it was running on was being decommissioned. In order to get where we wanted to be, there was a lot of tech debt to address first, so this was a pretty significant upgrade. (Note that I cannot say specifically which technologies our sites run on, so I will use general terms here.)</p>",
+		"<ul class=\"List\"><li class=\"List-item\">Containerized our web application and API</li><li class=\"List-item\">Adopted a container orchestration platform</li><li class=\"List-item\">Increased deployment automation</li><li class=\"List-item\">Overhauled how we direct network traffic</li><li>Replaced in-memory cache with external cache</li></ul>",
+		"<p>Not only was this a win for our organization, as it cut down on maintenance of legacy systems and lowered costs, but it was a win for our players as well, as the site loads noticeably faster, and all of our supported locales are available in all regions.</p>"
 	],
 	"buttons": [
 		{
