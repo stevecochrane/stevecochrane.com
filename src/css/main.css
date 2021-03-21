@@ -192,12 +192,10 @@ ul + p {
 
 .Intro {
 	padding: var(--space-lg) 0;
-	text-align: center;
 
 	@media (--mq-small) {
 		padding-left: calc((var(--space-sm-int) / var(--page-width-int)) * 100%);
 		padding-right: calc((var(--space-sm-int) / var(--page-width-int)) * 100%);
-		text-align: left;
 	}
 
 	@media (--mq-medium) {
