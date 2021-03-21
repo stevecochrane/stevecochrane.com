@@ -6,6 +6,7 @@ const diablo4 = require("./projects/diablo-4");
 const htmlReferenceWebApplication = require("./projects/html-reference-web-application.json");
 const pixelArtScrapbook = require("./projects/pixel-art-scrapbook.json");
 const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
+const tailwindcssLogical = require("./projects/tailwindcss-logical.json");
 const vidcasterThemeEditor = require("./projects/vidcaster-theme-editor.json");
 const vidcasterVideoPlayer = require("./projects/vidcaster-video-player.json");
 const vidcasterWebsite = require("./projects/vidcaster-website.json");
@@ -20,6 +21,7 @@ module.exports = {
 		blizzcon2018VirtualTicket,
 		diablo3Infrastructure,
 		wowRedesign,
+		tailwindcssLogical,
 		riseOfTheNecromancer,
 		diablo20thAnniversary,
 		htmlReferenceWebApplication,
