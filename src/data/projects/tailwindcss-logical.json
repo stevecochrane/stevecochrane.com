@@ -1,0 +1,51 @@
+{
+	"id": "tailwindcss-logical",
+	"title": "tailwindcss-logical",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "tailwindcss-logical-1-sm.webp",
+					"2x": "tailwindcss-logical-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "tailwindcss-logical-1-sm.jpg",
+					"2x": "tailwindcss-logical-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "tailwindcss-logical-1.webp",
+					"2x": "tailwindcss-logical-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "tailwindcss-logical-1.jpg",
+					"2x": "tailwindcss-logical-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "732",
+			"alt": "tailwindcss-logical: Demo Page"
+		}
+	],
+	"role": "Engineering, Design",
+	"client": "Myself",
+	"date": "Spring 2021",
+	"body": [
+		"<p>Diablo III originally launched back in 2012 and went on to become one of the best-selling videogames of all time, having sold over 30 million copies by 2015. It still gets regular updates to this day, making its website one of the oldest actively maintained Blizzard sites.</p>",
+		"<p>In 2020 we were told the aging cloud compute infrastructure it was running on was being decommissioned. In order to get where we wanted to be, there was a lot of tech debt to address first, so this was a pretty significant upgrade. It was also way outside of my comfort zone, and I'm grateful for the experience.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://stevecochrane.github.io/tailwindcss-logical/",
+			"label": "View Demo Page",
+			"labelWithContext": "View tailwindcss-logical Demo Page"
+		},
+		{
+			"linkUrl": "https://github.com/stevecochrane/tailwindcss-logical",
+			"label": "View Project on GitHub",
+			"labelWithContext": "View tailwindcss-logical Project on GitHub"
+		}
+	]
+}
