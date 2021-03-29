@@ -34,8 +34,8 @@
 	"date": "Spring 2021",
 	"body": [
 		"<p>tailwindcss-logical is a plugin for <a class=\"Link\" href=\"https://tailwindcss.com\">Tailwind CSS</a> that adds support for CSS Logical Properties and Values. In short, this enables you to use the same styles for both left-to-right and right-to-left languages, by abstracting away explicit directions such as left and right.</p>",
-		"<p>I wasn’t the first to think of this and there were a few other plugins for CSS Logical Properties and Values out there, but they were done by people who made it for themselves. They were incomplete and not well-documented. My version is for the community, and I followed the official spec to make sure it was comprehensive. I also made maintainability a priority by including an automated test suite for full coverage of all functionality.</p>",
-		"<p>My efforts have paid off, as the plugin is surprisingly popular and at one point it had more than 4,000 downloads in a week on NPM.</p>"
+		"<p>I wasn’t the first to think of this and there were a few other plugins for CSS Logical Properties and Values out there, but tailwindcss-logical is now the most popular. I think this is because I gave it a clear scope, followed the official spec to make sure it was comprehensive, and took the time to write extensive documentation. I also made maintainability a priority by including an automated test suite for full coverage of all functionality.</p>",
+		"<p>Those efforts have paid off, as the plugin has sustained long-term growth and at one point it had more than 4,000 downloads in a week on NPM.</p>"
 	],
 	"buttons": [
 		{
