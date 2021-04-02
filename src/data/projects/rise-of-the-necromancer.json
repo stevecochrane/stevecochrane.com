@@ -61,5 +61,12 @@
 	"body": [
 		"<p>This is the announcement site for Rise of the Necromancer, an expansion for Diablo III. I’m very proud of this one because it’s much more than just a brochure, it’s an interactive experience that really ties into the world of the game.</p>",
 		"<p>It also makes heavy use of CSS3 animation for a page-turning effect, and despite being heavily textured, it is (mostly) optimized for high-resolution screens and it scales to fit screens of any size.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://web.archive.org/web/20191215210058/https://us.diablo3.com/en/rise-of-the-necromancer/",
+			"label": "View (Slowly) on Archive.org",
+			"labelWithContext": "View Diablo III: Rise of the Necromancer (Slowly) on Archive.org"
+		}
 	]
 }
