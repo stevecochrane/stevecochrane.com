@@ -59,7 +59,7 @@
 	"client": "Blizzard Entertainment",
 	"date": "Summer 2016",
 	"body": [
-		"<p>I was one of a handful of front-end engineers who worked on a top-to-bottom redesign of the World of Warcraft website, in preparation for the launch of the Legion expansion. The site follows a lot of modern front-end best practices. It’s beautiful at any screen size, and it’s built with reusable components, designed to function as predictably and independently as possible.</p>",
+		"<p>I was one of a handful of frontend engineers who worked on a top-to-bottom redesign of the World of Warcraft website, in preparation for the launch of the Legion expansion. The site follows a lot of modern frontend best practices. It’s beautiful at any screen size, and it’s built with reusable components, designed to function as predictably and independently as possible.</p>",
 		"<p>For the previous iteration of the site, there was a lot of repetition in code throughout, and a lot of minor variations on things, resulting in a lack of consistency and maintenance issues. We also had style guides in the past, but they never lasted long. So when we started, I identified living style guides as a way to solve these issues, researched best practices, and made our living style guide, along with establishing CSS and Less coding conventions for our team. It was the first living style guide at Blizzard Web & Mobile, and now all of our sites have one.</p>"
 	],
 	"buttons": [

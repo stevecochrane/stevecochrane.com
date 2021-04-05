@@ -59,7 +59,7 @@
 	"client": "Myself",
 	"date": "Spring 2016",
 	"body": [
-		"<p>For personal development, I decided to get out of my front-end engineering comfort zone a little bit and build a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database, and it has the standard CRUD (Create, Read, Update, Delete) operations available. There’s also a Mocha test suite, and API requests are cached for better performance.</p>",
+		"<p>For personal development, I decided to get out of my frontend engineering comfort zone a little bit and build a REST API, for a theoretical HTML reference site. The API runs on Node and Express with a MongoDB database, and it has the standard CRUD (Create, Read, Update, Delete) operations available. There’s also a Mocha test suite, and API requests are cached for better performance.</p>",
 		"<p>I then made a simple companion web application for interfacing with the API, also with Node and Express. It has a central list for viewing all elements and form pages for adding, editing, and deleting elements, with error handling.</p>"
 	],
 	"buttons": [
