@@ -35,7 +35,7 @@
 	"body": [
 		"<p>tailwindcss-logical is a plugin for <a class=\"Link\" href=\"https://tailwindcss.com\">Tailwind CSS</a> that adds support for CSS Logical Properties and Values. In short, this enables you to use the same styles for both left-to-right and right-to-left languages, by abstracting away explicit directions such as left and right.</p>",
 		"<p>I wasn’t the first to think of this and there were a few other plugins for CSS Logical Properties and Values out there, but tailwindcss-logical is now the most popular. I think this is because I gave it a clear scope, followed the official spec to make sure it was comprehensive, and took the time to write extensive documentation. I also made maintainability a priority by including an automated test suite for full coverage of all functionality.</p>",
-		"<p>Those efforts have paid off, as the plugin has seen sustained long-term growth. It was featured in the newsletters <a class=\"Link\" href=\"https://frontendfoc.us/issues/485\">Frontend Focus</a> and <a class=\"Link\" href=\"https://www.getrevue.co/profile/tailwind-weekly/issues/tailwind-weekly-44-quiet-week-but-something-s-brewing-418129\">Tailwind Weekly</a>, and at one point it had more than 4,000 downloads in a week on NPM.</p>"
+		"<p>Those efforts have paid off, as the plugin has seen sustained long-term growth. It was featured in the newsletters <a class=\"Link\" href=\"https://frontendfoc.us/issues/485\">Frontend Focus</a> and <a class=\"Link\" href=\"https://www.getrevue.co/profile/tailwind-weekly/issues/tailwind-weekly-44-quiet-week-but-something-s-brewing-418129\">Tailwind Weekly</a>, and at one point it had more than 5,000 downloads in a week on NPM.</p>"
 	],
 	"buttons": [
 		{
