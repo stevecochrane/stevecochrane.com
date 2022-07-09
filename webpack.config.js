@@ -88,7 +88,7 @@ module.exports = {
 		new HtmlInlineCssWebpackPlugin()
 	],
 	output: {
-		filename: "js/[name].[contenthash].js",
+		filename: "index.html",
 		path: path.resolve(__dirname, "dist")
 	},
 	performance: {
