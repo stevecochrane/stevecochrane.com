@@ -33,19 +33,6 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: [
-					{
-						loader: "babel-loader",
-						options: {
-							cacheDirectory: true
-						}
-					},
-					"eslint-loader"
-				]
-			},
-			{
 				test: /\.(woff2|woff)$/,
 				use: [
 					{
