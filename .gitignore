@@ -3,5 +3,4 @@ node_modules/
 dist/
 src/img/
 webfonts/
-.eslintcache
 deploy-to-aws.sh

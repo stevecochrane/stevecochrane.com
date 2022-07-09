@@ -6,7 +6,6 @@ const HtmlInlineCssWebpackPlugin = require("html-inline-css-webpack-plugin").def
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 const indexData = require("./src/data/index.js");
 
@@ -34,19 +33,6 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: [
-					{
-						loader: "babel-loader",
-						options: {
-							cacheDirectory: true
-						}
-					},
-					"eslint-loader"
-				]
-			},
-			{
 				test: /\.(woff2|woff)$/,
 				use: [
 					{
@@ -65,7 +51,7 @@ module.exports = {
 		]
 	},
 	optimization: {
-		minimizer: [new TerserWebpackPlugin(), new OptimizeCssAssetsPlugin()]
+		minimizer: [new OptimizeCssAssetsPlugin()]
 	},
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
@@ -88,7 +74,7 @@ module.exports = {
 		new HtmlInlineCssWebpackPlugin()
 	],
 	output: {
-		filename: "js/[name].[contenthash].js",
+		filename: "index.html",
 		path: path.resolve(__dirname, "dist")
 	},
 	performance: {
