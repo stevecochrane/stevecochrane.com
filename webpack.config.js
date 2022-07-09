@@ -6,7 +6,6 @@ const HtmlInlineCssWebpackPlugin = require("html-inline-css-webpack-plugin").def
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const TerserWebpackPlugin = require("terser-webpack-plugin");
 
 const indexData = require("./src/data/index.js");
 
@@ -65,7 +64,7 @@ module.exports = {
 		]
 	},
 	optimization: {
-		minimizer: [new TerserWebpackPlugin(), new OptimizeCssAssetsPlugin()]
+		minimizer: [new OptimizeCssAssetsPlugin()]
 	},
 	plugins: [
 		new CleanWebpackPlugin(["dist"]),
