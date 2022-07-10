@@ -12,7 +12,6 @@ interface and do this:
 npm install       # Install Node dependencies
 npm run prepare   # Install Husky pre-commit hook
 npm start         # Run webpack-dev-server for local development
-npm run lint:css  # Lint CSS with Stylelint (also runs during start/build/pre-commit)
 npm run build     # Build for production
 npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git for security)
 ```

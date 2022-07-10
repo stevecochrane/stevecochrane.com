@@ -10,11 +10,10 @@
 		"url": "https://github.com/stevecochrane/stevecochrane.com.git"
 	},
 	"scripts": {
-		"build": "webpack",
+		"build": "npx @11ty/eleventy",
 		"deploy": "./deploy-to-aws.sh",
-		"lint:css": "stylelint ./src/css/*.css",
 		"prepare": "husky install",
-		"start": "webpack-dev-server"
+		"start": "npx @11ty/eleventy --serve"
 	},
 	"lint-staged": {
 		"*.css": "stylelint",
