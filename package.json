@@ -13,12 +13,8 @@
 		"build": "webpack",
 		"deploy": "./deploy-to-aws.sh",
 		"lint:css": "stylelint ./src/css/*.css",
+		"prepare": "husky install",
 		"start": "webpack-dev-server"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"lint-staged": {
 		"*.css": "stylelint",
