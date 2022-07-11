@@ -30,7 +30,7 @@
 							<a class="Link Link--large" href="https://www.tableau.com/">Tableau</a> in Austin, Texas. Here is some of my recent work.
 						</p>
 					</section>
-					{% for project in projects %}
+					{% for project in index.projects %}
 						<section class="Project" id="{{ project.id }}">
 							<h2 class="Project-title">{{ project.title }}</h2>
 							<div class="Project-images">
@@ -38,29 +38,29 @@
 									<picture class="Project-imageWrap Project-imageWrap--{{ image.size }}">
 										{% if image.desktop.webp.1x %}
 											<source
-												srcset="{{ imageDir }}{{ image.desktop.webp.1x }}{% if image.desktop.webp.2x %} 1x, {{ imageDir }}{{ image.desktop.webp.2x }} 2x{% endif %}"
+												srcset="{{ index.imageDir }}{{ image.desktop.webp.1x }}{% if image.desktop.webp.2x %} 1x, {{ index.imageDir }}{{ image.desktop.webp.2x }} 2x{% endif %}"
 												media="(min-width: 640px)"
 												type="image/webp"
 											/>
 										{% endif %}
 										<source
-											srcset="{{ imageDir }}{{ image.mobile.webp.1x }}{% if image.mobile.webp.2x %} 1x, {{ imageDir }}{{ image.mobile.webp.2x }} 2x{% endif %}"
+											srcset="{{ index.imageDir }}{{ image.mobile.webp.1x }}{% if image.mobile.webp.2x %} 1x, {{ index.imageDir }}{{ image.mobile.webp.2x }} 2x{% endif %}"
 											type="image/webp"
 										/>
 										{% if image.desktop.jpg.1x %}
 											<source
-												srcset="{{ imageDir }}{{ image.desktop.jpg.1x }}{% if image.desktop.jpg.2x %} 1x, {{ imageDir }}{{ image.desktop.jpg.2x }} 2x{% endif %}"
+												srcset="{{ index.imageDir }}{{ image.desktop.jpg.1x }}{% if image.desktop.jpg.2x %} 1x, {{ index.imageDir }}{{ image.desktop.jpg.2x }} 2x{% endif %}"
 												media="(min-width: 640px)"
 												type="image/jpeg"
 											/>
 										{% endif %}
 										<source
-											srcset="{{ imageDir }}{{ image.mobile.jpg.1x }}{% if image.mobile.jpg.2x %} 1x, {{ imageDir }}{{ image.mobile.jpg.2x }} 2x{% endif %}"
+											srcset="{{ index.imageDir }}{{ image.mobile.jpg.1x }}{% if image.mobile.jpg.2x %} 1x, {{ index.imageDir }}{{ image.mobile.jpg.2x }} 2x{% endif %}"
 											type="image/jpeg"
 										/>
 										<img
 											class="Project-image"
-											src="{{ imageDir }}{{ image.mobile.jpg.1x }}"
+											src="{{ index.imageDir }}{{ image.mobile.jpg.1x }}"
 											width="{{ image.width }}"
 											height="{{ image.height }}"
 											loading="{% if loop.first %}eager{% else %}lazy{% endif %}"
@@ -102,7 +102,7 @@
 					</section>
 				</main>
 				<footer class="Footer">
-					<p class="Footer-copyright">Copyright © 2005–{{ currentYear }} Steve Cochrane. All rights reserved.</p>
+					<p class="Footer-copyright">Copyright © 2005–{{ index.currentYear }} Steve Cochrane. All rights reserved.</p>
 				</footer>
 			</div>
 		</div>
