@@ -44,7 +44,7 @@
 											/>
 										{% endif %}
 										<source
-											srcset="{{ imageDir }}{{ image.mobile.webp.1x }}{% if image.mobile.webp.2x %} 1x, {{ imageDir }}{% image.mobile.webp.2x %} 2x{% endif %}"
+											srcset="{{ imageDir }}{{ image.mobile.webp.1x }}{% if image.mobile.webp.2x %} 1x, {{ imageDir }}{{ image.mobile.webp.2x }} 2x{% endif %}"
 											type="image/webp"
 										/>
 										{% if image.desktop.jpg.1x %}
