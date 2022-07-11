@@ -63,7 +63,7 @@
 											src="{{ imageDir }}{{ image.mobile.jpg.1x }}"
 											width="{{ image.width }}"
 											height="{{ image.height }}"
-											loading="{{#if @../first}}eager{{else}}lazy{{/if}}"
+											loading="{% if loop.first %}eager{% else %}lazy{% endif %}"
 											alt="{{ image.alt }}"
 										/>
 									</picture>
