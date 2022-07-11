@@ -7,7 +7,10 @@ module.exports = {
 	plugins: [
 		Stylelint(),
 		PostcssPresetEnv({
-			stage: 0,
+			stage: 2,
+			features: {
+				"nesting-rules": true,
+			},
 		}),
 		PostcssImport(PostcssNormalize()),
 	],
