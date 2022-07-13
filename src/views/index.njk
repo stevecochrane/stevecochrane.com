@@ -78,7 +78,7 @@
 									</ul>
 								</div>
 								<div class="Project-body">
-									{% for element in body %}
+									{% for element in project.body %}
 										{{ element | safe }}
 									{% endfor %}
 									{% if project.buttons %}
