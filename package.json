@@ -15,10 +15,6 @@
 		"prepare": "husky install",
 		"start": "npx @11ty/eleventy --serve"
 	},
-	"lint-staged": {
-		"*.css": "stylelint",
-		"*.{css,html,js,json}": "prettier --write"
-	},
 	"devDependencies": {
 		"@11ty/eleventy": "1.0.1",
 		"husky": "8.0.1",
