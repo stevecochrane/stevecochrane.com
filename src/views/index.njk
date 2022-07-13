@@ -11,6 +11,10 @@
 		<meta property="og:description" content="The digital portfolio of Steve Cochrane, a full-stack web software engineer in Austin, Texas." />
 		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
 		<meta name="twitter:card" content="summary" />
+		{% set css %}
+			{% include "../css/fonts.css" %}
+		{% endset %}
+		<style>{{ css | cssmin | safe }}</style>
 	</head>
 	<body>
 		<div class="Wrapper">
