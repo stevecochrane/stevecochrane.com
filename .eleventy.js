@@ -9,7 +9,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addPairedShortcode("cssPostProcess", function (code) {
-		return `${code}`;
+		return code;
 	});
 
 	return {
