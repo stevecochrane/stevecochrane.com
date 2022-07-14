@@ -8,6 +8,10 @@ module.exports = function (eleventyConfig) {
 		return new CleanCSS({}).minify(code).styles;
 	});
 
+	eleventyConfig.addPairedShortcode("cssPostProcess", function (code) {
+		return `${code}`;
+	});
+
 	return {
 		dir: {
 			data: "data",

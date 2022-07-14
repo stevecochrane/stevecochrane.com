@@ -12,7 +12,9 @@
 		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
 		<meta name="twitter:card" content="summary" />
 		{% set css %}
-			{% include "../css/fonts.css" %}
+			{% cssPostProcess %}
+				{% include "../css/fonts.css" %}
+			{% endcssPostProcess %}
 		{% endset %}
 		<style>{{ css | cssmin | safe }}</style>
 	</head>
