@@ -12,11 +12,11 @@
 		<meta property="og:image" content="https://stevecochrane.com/tumblr/images/portrait-512.png" />
 		<meta name="twitter:card" content="summary" />
 		{% set css %}
-			{% cssPostProcess %}
-				{% include "../css/fonts.css" %}
-			{% endcssPostProcess %}
+			{% include "src/css/normalize.css" %}
+			{% include "src/css/fonts.css" %}
+			{% include "src/css/main.css" %}
 		{% endset %}
-		<style>{{ css | cssmin | safe }}</style>
+		<style>{{ css | postcss | safe }}</style>
 	</head>
 	<body>
 		<div class="Wrapper">
