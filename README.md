@@ -10,9 +10,9 @@ interface and do this:
 
 ```bash
 npm install       # Install Node dependencies
-npm run start     # Run webpack-dev-server for local development
-npm run lint:css  # Lint CSS with Stylelint (also runs during start/build/pre-commit)
-npm run build     # Build for production
+npm run prepare   # Install Husky pre-commit hook
+npm start         # Run Eleventy's dev server for local development
+npm run build     # Run an Eleventy build for production
 npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git for security)
 ```
 
@@ -22,15 +22,15 @@ npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git fo
   [Lighthouse](https://developers.google.com/web/tools/lighthouse) as of July 2022. Accessibility is at 97/100
   because of insufficient contrast between background and foreground colors, which will need to wait until the next
   redesign.
-- Now that all major browsers natively support lazy loading of images, this site serves zero JavaScript!
-  I'm still using Webpack to compile the HTML, which is weird without any JavaScript, but it's still useful for
-  exporting HTML using Handlebars templates and inlining external CSS.
+- Now that all major browsers natively support lazy loading for images, this site serves zero JavaScript!
+  Most bundling tools like Webpack are JS-centric, but [Eleventy](https://www.11ty.dev) is perfect for a simple site
+  like this. I can build an HTML document from Nunjucks templates populated with data, and process, minify, and inline
+  my styles, all with
+  [a tiny config file](https://github.com/stevecochrane/stevecochrane.com/blob/master/.eleventy.js).
 - I've dropped both Less and Sass in favor of [PostCSS](https://github.com/postcss/postcss). The intent is to write
   plain, valid CSS, plus proposed CSS features, and then polyfill for older browsers using
   [postcss-preset-env](https://github.com/csstools/postcss-preset-env), just like using Babel for writing modern
   JavaScript. So this follows proposed standards and does not include things like mixins.
-- Now that I've tried using just PostCSS, there are definitely some Sass features that I miss, such as unit conversion
-  and color functions. Manually converting the units everywhere is really verbose, and I need to make color operations
-  outside of my CSS. So this approach definitely isn’t perfect.
 - I would like to have used CSS Grid, but the page’s grid, which I carried over from version 6, is weird and
-  unconventional. I’ve kept things as-is for now.
+  unconventional. I’ve kept things as-is for now. I'd also like to make use of recent CSS advancements in color
+  styles so color variations can be done in the CSS itself, rather than with outside tools.
