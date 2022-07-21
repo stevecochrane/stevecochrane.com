@@ -37,6 +37,7 @@
 						</p>
 					</section>
 					{% for project in index.projects %}
+						{% set projectLoop = loop %}
 						<section class="Project" id="{{ project.id }}">
 							<h2 class="Project-title">{{ project.title }}</h2>
 							<div class="Project-images">
@@ -69,7 +70,7 @@
 											src="{{ index.imageDir }}{{ image.mobile.jpg.1x }}"
 											width="{{ image.width }}"
 											height="{{ image.height }}"
-											{% if not loop.first %}loading="lazy"{% endif %}
+											{% if not projectLoop.first %}loading="lazy"{% endif %}
 											alt="{{ image.alt }}"
 										/>
 									</picture>
