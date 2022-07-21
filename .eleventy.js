@@ -1,6 +1,7 @@
 const path = require("path");
 
 const cssnano = require("cssnano");
+const htmlMinify = require("html-minifier");
 const postcss = require("postcss");
 const postcssPresetEnv = require("postcss-preset-env");
 const postcssNormalize = require("postcss-normalize");
@@ -23,6 +24,18 @@ module.exports = function (eleventyConfig) {
 		])
 			.process(code, { from: filepath })
 			.then((result) => callback(null, result.css));
+	});
+
+	eleventyConfig.addTransform("htmlmin", function (content) {
+		if (this.outputPath.endsWith(".html")) {
+			let minified = htmlMinify.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			});
+			return minified;
+		}
+		return content;
 	});
 
 	return {
