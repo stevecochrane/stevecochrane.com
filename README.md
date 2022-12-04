@@ -26,7 +26,7 @@ npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git fo
   Most bundling tools like Webpack are JS-centric, but [Eleventy](https://www.11ty.dev) is perfect for a simple site
   like this. I can build an HTML document from Nunjucks templates populated with data, and process, minify, and inline
   my styles, all with
-  [a tiny config file](https://github.com/stevecochrane/stevecochrane.com/blob/master/.eleventy.js).
+  [a tiny config file](https://github.com/stevecochrane/stevecochrane.com/blob/main/.eleventy.js).
 - I've dropped both Less and Sass in favor of [PostCSS](https://github.com/postcss/postcss). The intent is to write
   plain, valid CSS, plus proposed CSS features, and then polyfill for older browsers using
   [postcss-preset-env](https://github.com/csstools/postcss-preset-env), just like using Babel for writing modern
