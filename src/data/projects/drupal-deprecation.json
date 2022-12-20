@@ -27,6 +27,32 @@
 			"width": "1280",
 			"height": "512",
 			"alt": "Tableau Public Homepage"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "drupal-deprecation-1-sm.webp",
+					"2x": "drupal-deprecation-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-1-sm.jpg",
+					"2x": "drupal-deprecation-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "drupal-deprecation-2.webp",
+					"2x": "drupal-deprecation-2-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-2.jpg",
+					"2x": "drupal-deprecation-2-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "587",
+			"alt": "Tableau Public Community Resources"
 		}
 	],
 	"role": "Engineer",
