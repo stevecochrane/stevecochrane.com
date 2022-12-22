@@ -32,12 +32,12 @@
 			"size": "full",
 			"mobile": {
 				"webp": {
-					"1x": "drupal-deprecation-1-sm.webp",
-					"2x": "drupal-deprecation-1-sm-2x.webp"
+					"1x": "drupal-deprecation-2-sm.webp",
+					"2x": "drupal-deprecation-2-sm-2x.webp"
 				},
 				"jpg": {
-					"1x": "drupal-deprecation-1-sm.jpg",
-					"2x": "drupal-deprecation-1-sm-2x.jpg"
+					"1x": "drupal-deprecation-2-sm.jpg",
+					"2x": "drupal-deprecation-2-sm-2x.jpg"
 				}
 			},
 			"desktop": {
