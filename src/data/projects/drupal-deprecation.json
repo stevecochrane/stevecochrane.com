@@ -1,6 +1,6 @@
 {
 	"id": "drupal-deprecation",
-	"title": "Drupal Deprecation and Site IA Refresh",
+	"title": "Tableau Public Drupal Deprecation and Site IA Refresh",
 	"images": [
 		{
 			"size": "full",
@@ -59,10 +59,9 @@
 	"client": "Tableau",
 	"date": "Summer 2022",
 	"body": [
-		"<p>As a fan of the series since high school, building the official website for the long-awaited Diablo IV was a dream project. I was not just an engineering contributor but the architect as well, creating the system design for the site. Starting a new, greenfield project takes a lot of consideration, so I conducted initial research, diagrammed how all the various technical pieces (services, libraries, etc.) would fit together, defined some of our working processes, and circulated all of that internally for iteration and feedback before production began.</p>",
-		"<p>Our designers wanted the experience to be as immersive as possible, so the site expands to cover the entire viewport with each section, makes heavy use of video, and even has an audio player with ambient audio that plays while you browse the site. While the image and video assets are pretty heavy, going with a screen-by-screen structure rather than a long scroll made it easy to only load what was needed. I kept a close eye on overall file size and optimized images during our build process, and we were happy with the resulting Lighthouse scores. The site’s design <a class=\"Link\" href=\"https://www.awwwards.com/BOPBlizzard/\">earned Blizzard an Awwwards Honorable Mention</a>.</p>",
-		"<p>The site’s frontend is built entirely with React and the <a class=\"Link\" href=\"https://nextjs.org\">Next.js</a> framework, which we chose to easily enable server-side rendering. Our styles are primarily composed in the Atomic CSS style with <a class=\"Link\" href=\"https://tailwindcss.com\">Tailwind CSS</a>, which I think is impeccably designed, and its creator noticed and had <a class=\"Link\" href=\"https://twitter.com/adamwathan/status/1190421615068270592\">some very kind words</a> for us.</p>",
-		"<p><i><strong>Content warning:</strong> Diablo IV is unapologetically dark in tone, and the YouTube videos on the site are extremely violent. You might want to avoid those.</i></p>"
+		"<p>Tableau Public was originally a Drupal site. With an aging Drupal 7 instance that needed critical updates and a diminished number of Drupal contributors on our team, we decided to remove our dependency on Drupal and make updates to our information architecture in the process.</p>",
+		"<p>Drupal was used in a lot of places, so there was a significant amount of planning involved to determine what would need to be replaced, what to replace it with, and who would own the new features going forward. The implementation was a significant effort that required around ten different pages to be rebuilt, updates to our forms with new legal requirements, a new announcement banner, changes to how we host our videos, and more.</p>",
+		"<p>For this project I was an individual contributor, and I either built or contributed to several very visible features such as the new homepage masthead, the new header and footer, and more. While making contributions I was also very active in reviewing the work of the team. As our subject matter expert for styling and CSS, I mentored others to make sure we got all of the design details just right.</p>"
 	],
 	"buttons": [
 		{
