@@ -1,0 +1,73 @@
+{
+	"id": "drupal-deprecation",
+	"title": "Tableau Public Drupal Deprecation and Site IA Refresh",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "drupal-deprecation-1-sm.webp",
+					"2x": "drupal-deprecation-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-1-sm.jpg",
+					"2x": "drupal-deprecation-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "drupal-deprecation-1.webp",
+					"2x": "drupal-deprecation-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-1.jpg",
+					"2x": "drupal-deprecation-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "512",
+			"alt": "Tableau Public Homepage"
+		},
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "drupal-deprecation-2-sm.webp",
+					"2x": "drupal-deprecation-2-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-2-sm.jpg",
+					"2x": "drupal-deprecation-2-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "drupal-deprecation-2.webp",
+					"2x": "drupal-deprecation-2-2x.webp"
+				},
+				"jpg": {
+					"1x": "drupal-deprecation-2.jpg",
+					"2x": "drupal-deprecation-2-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "587",
+			"alt": "Tableau Public Community Resources"
+		}
+	],
+	"role": "Engineer",
+	"client": "Tableau",
+	"date": "Summer 2022",
+	"body": [
+		"<p>Tableau Public was originally a Drupal site. With an aging Drupal 7 instance that needed critical updates and a diminished number of Drupal contributors on our team, we decided to remove our dependency on Drupal and make updates to our information architecture in the process.</p>",
+		"<p>Drupal was used in a lot of places, so there was a significant amount of planning involved to determine what would need to be replaced, what to replace it with, and who would own the new features going forward. The implementation was a significant effort that required around ten different pages to be rebuilt, updates to our forms with new legal requirements, a new announcement banner, changes to how we host our videos, and more.</p>",
+		"<p>For this project I was an individual contributor, and I either built or contributed to several very visible features such as the new homepage masthead, the new header and footer, and more. While making contributions I was also very active in reviewing the work of the team. As our subject matter expert for styling and CSS, I mentored others to make sure we got all of the design details just right.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://public.tableau.com/",
+			"label": "View Site",
+			"labelWithContext": "View Tableau Public"
+		}
+	]
+}
