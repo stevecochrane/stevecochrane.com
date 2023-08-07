@@ -7,6 +7,7 @@ const drupalDeprecation = require("./projects/drupal-deprecation");
 const htmlReferenceWebApplication = require("./projects/html-reference-web-application.json");
 const pixelArtScrapbook = require("./projects/pixel-art-scrapbook.json");
 const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
+const tabIdIntegration = require("./projects/tabid-integration.json");
 const tailwindcssLogical = require("./projects/tailwindcss-logical.json");
 const vidcasterThemeEditor = require("./projects/vidcaster-theme-editor.json");
 const vidcasterVideoPlayer = require("./projects/vidcaster-video-player.json");
@@ -17,6 +18,7 @@ module.exports = {
 	currentYear: new Date().getFullYear(),
 	imageDir: "img/v7/",
 	projects: [
+		tabIdIntegration,
 		drupalDeprecation,
 		diablo4,
 		blizzconVirtualTicket,
