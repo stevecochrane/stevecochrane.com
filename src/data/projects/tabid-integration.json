@@ -29,13 +29,13 @@
 			"alt": "TableauID Sign In Page"
 		}
 	],
-	"role": "Engineer",
+	"role": "Engineer, Cross-Team Lead",
 	"client": "Tableau",
-	"date": "Summer 2022",
+	"date": "Spring 2023",
 	"body": [
-		"<p>Tableau Public was originally a Drupal site. With an aging Drupal 7 instance that needed critical updates and a diminished number of Drupal contributors on our team, we decided to remove our dependency on Drupal and make updates to our information architecture in the process.</p>",
-		"<p>Drupal was used in a lot of places, so there was a significant amount of planning involved to determine what would need to be replaced, what to replace it with, and who would own the new features going forward. The implementation was a significant effort that required around ten different pages to be rebuilt, updates to our forms with new legal requirements, a new announcement banner, changes to how we host our videos, and more.</p>",
-		"<p>For this project I was an individual contributor, and I either built or contributed to several very visible features such as the new homepage masthead, the new header and footer, and more. While making contributions I was also very active in reviewing the work of the team. As our subject matter expert for styling and CSS, I mentored others to make sure we got all of the design details just right.</p>"
+		"<p>Until this project, Tableau Public had its own user account system, separate from the TableauID account system used for the rest of our products. Unifying our systems had a few benefits, primarily that users can now stay signed in across all Tableau properties.</p>",
+		"<p>I was the Cross-Team Lead for this feature, which meant I oversaw all of the frontend concerns. I planned out all of the necessary work on the frontend, made technical decisions, wrote user stories, and worked with the overall feature lead to keep things on schedule, while also making individual contributions.</p>",
+		"<p>Once the feature went live, we had a lot of features for our old account system that are now handled for us by our new account system, such as changing your account email address, password, etc. So we were then able to delete a <i>lot</i> of code. I always look for opportunities to improve team morale and celebrate our accomplishments, so I took the time to measure and share the total lines of code deleted (five digits!) and reduction in code served to users (dozens of kilobytes!).</p>"
 	],
 	"buttons": [
 		{
