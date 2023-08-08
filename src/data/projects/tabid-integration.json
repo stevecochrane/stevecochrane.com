@@ -6,27 +6,27 @@
 			"size": "full",
 			"mobile": {
 				"webp": {
-					"1x": "drupal-deprecation-1-sm.webp",
-					"2x": "drupal-deprecation-1-sm-2x.webp"
+					"1x": "tabid-integration-1-sm.webp",
+					"2x": "tabid-integration-1-sm-2x.webp"
 				},
 				"jpg": {
-					"1x": "drupal-deprecation-1-sm.jpg",
-					"2x": "drupal-deprecation-1-sm-2x.jpg"
+					"1x": "tabid-integration-1-sm.jpg",
+					"2x": "tabid-integration-1-sm-2x.jpg"
 				}
 			},
 			"desktop": {
 				"webp": {
-					"1x": "drupal-deprecation-1.webp",
-					"2x": "drupal-deprecation-1-2x.webp"
+					"1x": "tabid-integration-1.webp",
+					"2x": "tabid-integration-1-2x.webp"
 				},
 				"jpg": {
-					"1x": "drupal-deprecation-1.jpg",
-					"2x": "drupal-deprecation-1-2x.jpg"
+					"1x": "tabid-integration-1.jpg",
+					"2x": "tabid-integration-1-2x.jpg"
 				}
 			},
 			"width": "1280",
-			"height": "512",
-			"alt": "Tableau Public Homepage"
+			"height": "813",
+			"alt": "TableauID Sign In Page"
 		}
 	],
 	"role": "Engineer",
