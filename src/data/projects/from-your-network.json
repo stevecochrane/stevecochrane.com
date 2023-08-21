@@ -33,9 +33,9 @@
 	"client": "Tableau",
 	"date": "Summer 2023",
 	"body": [
-		"<p>Until this project, Tableau Public had its own user account system, separate from the TableauID account system used for the rest of our products. Unifying our systems had a few benefits, primarily that users can now stay signed in across all Tableau properties.</p>",
-		"<p>I was the Cross-Team Lead for this feature, which meant I oversaw all of the frontend concerns. I planned out all of the necessary work on the frontend, made technical decisions, wrote user stories, and worked with the overall feature lead to keep things on schedule, while also making individual contributions.</p>",
-		"<p>Once the feature went live, we had a lot of features for our old account system that are now handled for us by our new account system, such as changing your account email address, password, etc. So we were then able to delete a <i>lot</i> of code. I always look for opportunities to improve team morale and celebrate our accomplishments, so I took the time to measure and share the total lines of code deleted (five digits!) and reduction in code served to users (dozens of kilobytes!).</p>"
+		"<p>From Your Network is a section on the Tableau Public homepage that only logged in users can see, showing vizzes recently published or favorited by authors you follow. When the Tableau Public homepage was redesigned in 2021, From Your Network lost a lot of its previous functionality, and we heard from many users that they missed the way it was and wanted that functionality back.</p>",
+		"<p>Before this update, From Your Network displayed a list of vizzes, but there wasn’t any context provided about why those vizzes were there. So for this update we added that context in a new area above each viz card, explaining whether the viz was published or favorited, by whom, and when.</p>",
+		"<p>For this feature I was the overall feature lead, which meant I was responsible for the frontend and backend changes, in addition to planning the work, scheduling milestones, and internal communication. For this I worked on a full-stack team with experienced backend engineers, which required me to go beyond my usual frontend focus and make choices that were best for the system as a whole.</p>"
 	],
 	"buttons": [
 		{
