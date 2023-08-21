@@ -1,0 +1,47 @@
+{
+	"id": "from-your-network",
+	"title": "Tableau Public: From Your Network",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "from-your-network-1-sm.webp",
+					"2x": "from-your-network-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "from-your-network-1-sm.jpg",
+					"2x": "from-your-network-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "from-your-network-1.webp",
+					"2x": "from-your-network-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "from-your-network-1.jpg",
+					"2x": "from-your-network-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "813",
+			"alt": "From Your Network section from Tableau Public homepage"
+		}
+	],
+	"role": "Engineer, Feature Lead",
+	"client": "Tableau",
+	"date": "Summer 2023",
+	"body": [
+		"<p>Until this project, Tableau Public had its own user account system, separate from the TableauID account system used for the rest of our products. Unifying our systems had a few benefits, primarily that users can now stay signed in across all Tableau properties.</p>",
+		"<p>I was the Cross-Team Lead for this feature, which meant I oversaw all of the frontend concerns. I planned out all of the necessary work on the frontend, made technical decisions, wrote user stories, and worked with the overall feature lead to keep things on schedule, while also making individual contributions.</p>",
+		"<p>Once the feature went live, we had a lot of features for our old account system that are now handled for us by our new account system, such as changing your account email address, password, etc. So we were then able to delete a <i>lot</i> of code. I always look for opportunities to improve team morale and celebrate our accomplishments, so I took the time to measure and share the total lines of code deleted (five digits!) and reduction in code served to users (dozens of kilobytes!).</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://public.tableau.com/",
+			"label": "View Site",
+			"labelWithContext": "View Tableau Public"
+		}
+	]
+}
