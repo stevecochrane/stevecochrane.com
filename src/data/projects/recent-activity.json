@@ -1,0 +1,47 @@
+{
+	"id": "recent-activity",
+	"title": "Tableau Public: Recent Activity",
+	"images": [
+		{
+			"size": "full",
+			"mobile": {
+				"webp": {
+					"1x": "recent-activity-1-sm.webp",
+					"2x": "recent-activity-1-sm-2x.webp"
+				},
+				"jpg": {
+					"1x": "recent-activity-1-sm.jpg",
+					"2x": "recent-activity-1-sm-2x.jpg"
+				}
+			},
+			"desktop": {
+				"webp": {
+					"1x": "recent-activity-1.webp",
+					"2x": "recent-activity-1-2x.webp"
+				},
+				"jpg": {
+					"1x": "recent-activity-1.jpg",
+					"2x": "recent-activity-1-2x.jpg"
+				}
+			},
+			"width": "1280",
+			"height": "813",
+			"alt": "Recent Activity section from Tableau Public homepage"
+		}
+	],
+	"role": "Engineer, Feature Lead",
+	"client": "Tableau",
+	"date": "Summer 2023",
+	"body": [
+		"<p>Recent Activity is a section on the Tableau Public homepage that only logged in users can see, showing vizzes recently published or favorited by authors you follow. When the Tableau Public homepage was redesigned in 2021, Recent Activity lost a lot of its previous functionality, and we heard from many users that they missed the way it was and wanted that functionality back.</p>",
+		"<p>Previously, Recent Activity displayed a list of vizzes but there wasn’t any context provided about why they were there. So for this update we added that context in a new area above each viz card, showing whether the viz was published or favorited, by whom, and when.</p>",
+		"<p>For this feature I was the overall feature lead, responsible for the frontend and backend changes in addition to planning the work, scheduling milestones, and internal communication. For this I worked on a full-stack team with experienced backend engineers, which required me to go beyond my usual frontend focus and make choices that were best for the system as a whole.</p>"
+	],
+	"buttons": [
+		{
+			"linkUrl": "https://public.tableau.com/",
+			"label": "View Site",
+			"labelWithContext": "View Tableau Public"
+		}
+	]
+}

@@ -4,6 +4,7 @@ const diablo20thAnniversary = require("./projects/diablo-20th-anniversary");
 const diablo3Infrastructure = require("./projects/diablo-3-infrastructure");
 const diablo4 = require("./projects/diablo-4");
 const drupalDeprecation = require("./projects/drupal-deprecation");
+const recentActivity = require("./projects/recent-activity");
 const htmlReferenceWebApplication = require("./projects/html-reference-web-application.json");
 const pixelArtScrapbook = require("./projects/pixel-art-scrapbook.json");
 const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
@@ -18,6 +19,7 @@ module.exports = {
 	currentYear: new Date().getFullYear(),
 	imageDir: "img/v7/",
 	projects: [
+		recentActivity,
 		tabIdIntegration,
 		drupalDeprecation,
 		diablo4,
