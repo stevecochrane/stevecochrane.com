@@ -16,7 +16,7 @@
 		"start": "npx @11ty/eleventy --serve"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "1.0.1",
+		"@11ty/eleventy": "2.0.1",
 		"cssnano": "5.1.12",
 		"html-minifier": "4.0.0",
 		"husky": "8.0.1",
