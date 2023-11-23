@@ -28,9 +28,8 @@ npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git fo
   my styles, all with
   [a tiny config file](https://github.com/stevecochrane/stevecochrane.com/blob/main/.eleventy.js).
 - I've dropped both Less and Sass in favor of [PostCSS](https://github.com/postcss/postcss). The intent is to write
-  plain, valid CSS, plus proposed CSS features, and then polyfill for older browsers using
-  [postcss-preset-env](https://github.com/csstools/postcss-preset-env), just like using Babel for writing modern
-  JavaScript. So this follows proposed standards and does not include things like mixins.
+  plain, valid CSS, plus proposed CSS features with PostCSS polyfills if needed. So this follows proposed standards and
+  does not include things like mixins.
 - I would like to have used CSS Grid, but the page’s grid, which I carried over from version 6, is weird and
   unconventional. I’ve kept things as-is for now. I'd also like to make use of recent CSS advancements in color
   styles so color variations can be done in the CSS itself, rather than with outside tools.
