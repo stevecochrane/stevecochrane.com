@@ -12,16 +12,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addNunjucksAsyncFilter("postcss", function (code, callback) {
 		const filepath = path.join(__dirname, "./src/css/main.css");
-		postcss([
-			postcssPresetEnv({
-				stage: 2,
-				features: {
-					"nesting-rules": true,
-				},
-			}),
-			postcssNormalize(),
-			cssnano(),
-		])
+		postcss([postcssPresetEnv(), postcssNormalize(), cssnano()])
 			.process(code, { from: filepath })
 			.then((result) => callback(null, result.css));
 	});
