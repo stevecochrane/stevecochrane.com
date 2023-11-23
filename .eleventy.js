@@ -3,7 +3,7 @@ const path = require("path");
 const cssnano = require("cssnano");
 const htmlMinify = require("html-minifier");
 const postcss = require("postcss");
-const postcssPresetEnv = require("postcss-preset-env");
+const postcssCustomMedia = require("postcss-custom-media");
 const postcssNormalize = require("postcss-normalize");
 
 module.exports = function (eleventyConfig) {
@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addNunjucksAsyncFilter("postcss", function (code, callback) {
 		const filepath = path.join(__dirname, "./src/css/main.css");
-		postcss([postcssPresetEnv(), postcssNormalize(), cssnano()])
+		postcss([postcssCustomMedia(), postcssNormalize(), cssnano()])
 			.process(code, { from: filepath })
 			.then((result) => callback(null, result.css));
 	});
