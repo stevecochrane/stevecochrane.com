@@ -6,7 +6,7 @@
 	--color-background-content: #faf9f9; /* http://www.0to255.com/998B7d +13 */
 	--color-border: #e4e0dc; /* http://www.0to255.com/998B7d +10 */
 	--color-link: var(--color-palette-primary);
-	--color-link-border: rgba(255, 91, 89, 0.75); /* RGB values same as color-palette-primary */
+	--color-link-border: rgb(from var(--color-palette-primary) r g b / 75%);
 	--color-link-hover-text: #d00300; /* http://www.0to255.com/ff6c6a -9 */
 	--color-link-hover-background: #ff1815; /* http://www.0to255.com/ff6c6a -5 */
 	--color-text-body: #595046; /* http://www.0to255.com/998B7d -7 */
