@@ -3,15 +3,15 @@
 	--color-palette-secondary: #ffbb72;
 	--color-palette-tertiary: #99857d;
 
-	--color-background-content: #faf9f9; /* http://www.0to255.com/998B7d +13 */
-	--color-border: #e4e0dc; /* http://www.0to255.com/998B7d +10 */
+	--color-background-content: color-mix(in srgb, var(--color-palette-tertiary), white 95%);
+	--color-border: color-mix(in srgb, var(--color-palette-tertiary), white 65%);
 	--color-link: var(--color-palette-primary);
 	--color-link-border: rgb(from var(--color-palette-primary) r g b / 75%);
-	--color-link-hover-text: #d00300; /* http://www.0to255.com/ff6c6a -9 */
-	--color-link-hover-background: #ff1815; /* http://www.0to255.com/ff6c6a -5 */
-	--color-text-body: #595046; /* http://www.0to255.com/998B7d -7 */
-	--color-text-header: #50473e; /* http://www.0to255.com/998B7d -8 */
-	--color-text-subtle: #a09387; /* http://www.0to255.com/998B7d +1 */
+	--color-link-hover-text: color-mix(in srgb, var(--color-palette-primary), black 25%);
+	--color-link-hover-background: color-mix(in srgb, var(--color-palette-primary), black 15%);
+	--color-text-body: color-mix(in srgb, var(--color-palette-tertiary), black 40%);
+	--color-text-header: color-mix(in srgb, var(--color-palette-tertiary), black 50%);
+	--color-text-subtle: color-mix(in srgb, var(--color-palette-tertiary), white 10%);
 
 	--font-size-xs: 0.875rem; /* 14px */
 	--font-size-sm: 1rem; /* 16px */
@@ -124,7 +124,7 @@ ul + p {
 }
 
 .Wrapper {
-	background: var(--color-background-content);
+	background-color: var(--color-background-content);
 	margin: var(--space-sm) auto 0;
 
 	@media (--mq-xlarge) {
