@@ -1,9 +1,9 @@
 :root {
 	--color-palette-primary: #ff6c6a;
 	--color-palette-secondary: #ffbb72;
-	--color-palette-tertiary: #99857d;
+	--color-palette-tertiary: #999796;
 
-	--color-background-content: oklch(from var(--color-palette-tertiary) calc(l + 0.4) c h);
+	--color-background-content: oklch(from var(--color-palette-tertiary) calc(l + 0.3125) c h);
 	--color-border: oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
 	--color-link: var(--color-palette-primary);
 	--color-link-border: oklch(from var(--color-palette-primary) l c h / 75%);
