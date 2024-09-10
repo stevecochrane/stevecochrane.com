@@ -3,15 +3,15 @@
 	--color-palette-secondary: #ffbb72;
 	--color-palette-tertiary: #99857d;
 
-	--color-background-content: hsl(from var(--color-palette-tertiary) h s calc(l + 42.5%));
-	--color-border: hsl(from var(--color-palette-tertiary) h s calc(l + 30%));
+	--color-background-content: oklch(from var(--color-palette-tertiary) calc(l + 0.4) c h);
+	--color-border: oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
 	--color-link: var(--color-palette-primary);
-	--color-link-border: rgb(from var(--color-palette-primary) r g b / 75%);
-	--color-link-hover-text: hsl(from var(--color-palette-primary) h s calc(l - 25%));
-	--color-link-hover-background: hsl(from var(--color-palette-primary) h s calc(l - 15%));
-	--color-text-body: hsl(from var(--color-palette-tertiary) h s calc(l - 22.5%));
-	--color-text-header: hsl(from var(--color-palette-tertiary) h s calc(l - 25%));
-	--color-text-subtle: hsl(from var(--color-palette-tertiary) h s calc(l + 10%));
+	--color-link-border: oklch(from var(--color-palette-primary) l c h / 75%);
+	--color-link-hover-text: oklch(from var(--color-palette-primary) calc(l - 0.2) c h);
+	--color-link-hover-background: oklch(from var(--color-palette-primary) calc(l - 0.1) c h);
+	--color-text-body: oklch(from var(--color-palette-tertiary) calc(l - 0.225) c h);
+	--color-text-header: oklch(from var(--color-palette-tertiary) calc(l - 0.25) c h);
+	--color-text-subtle: oklch(from var(--color-palette-tertiary) calc(l + 0.1) c h);
 
 	--font-size-xs: 0.875rem; /* 14px */
 	--font-size-sm: 1rem; /* 16px */
