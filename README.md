@@ -10,7 +10,6 @@ interface and do this:
 
 ```bash
 npm install       # Install Node dependencies
-npm run prepare   # Install Husky pre-commit hook
 npm start         # Run Eleventy's dev server for local development
 npm run build     # Run an Eleventy build for production
 npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git for security)

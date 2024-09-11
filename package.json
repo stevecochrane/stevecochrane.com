@@ -12,18 +12,13 @@
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"deploy": "./deploy-to-aws.sh",
-		"prepare": "husky install",
 		"start": "npx @11ty/eleventy --serve"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "2.0.1",
 		"cssnano": "5.1.12",
 		"html-minifier": "4.0.0",
-		"husky": "8.0.1",
-		"lint-staged": "13.0.3",
 		"postcss": "8.4.31",
-		"postcss-custom-media": "10.0.2",
-		"stylelint": "14.9.1",
-		"stylelint-config-recommended": "8.0.0"
+		"postcss-custom-media": "10.0.2"
 	}
 }
