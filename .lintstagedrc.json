@@ -1,4 +1,0 @@
-{
-	"*.css": "stylelint",
-	"*.{css,html,js,json}": "prettier --write"
-}

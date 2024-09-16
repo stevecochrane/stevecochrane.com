@@ -10,7 +10,6 @@ interface and do this:
 
 ```bash
 npm install       # Install Node dependencies
-npm run prepare   # Install Husky pre-commit hook
 npm start         # Run Eleventy's dev server for local development
 npm run build     # Run an Eleventy build for production
 npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git for security)
@@ -31,5 +30,4 @@ npm run deploy    # Deploy to AWS (requires AWS CLI, script file isn't in Git fo
   plain, valid CSS, plus proposed CSS features with PostCSS polyfills if needed. So this follows proposed standards and
   does not include things like mixins.
 - I would like to have used CSS Grid, but the page’s grid, which I carried over from version 6, is weird and
-  unconventional. I’ve kept things as-is for now. I'd also like to make use of recent CSS advancements in color
-  styles so color variations can be done in the CSS itself, rather than with outside tools.
+  unconventional. I’ve kept things as-is for now.
