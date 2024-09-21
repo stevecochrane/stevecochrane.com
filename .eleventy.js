@@ -6,6 +6,8 @@ const postcss = require("postcss");
 const postcssCustomMedia = require("postcss-custom-media");
 
 module.exports = function (eleventyConfig) {
+	eleventyConfig.addWatchTarget("src/css");
+
 	eleventyConfig.addPassthroughCopy("src/img");
 	eleventyConfig.addPassthroughCopy("src/webfonts");
 
