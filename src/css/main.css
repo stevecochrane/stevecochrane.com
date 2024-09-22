@@ -3,43 +3,26 @@
 	--color-palette-secondary: #ffbb72;
 	--color-palette-tertiary:  #999796;
 
-	--color-background-content-light: oklch(from var(--color-palette-tertiary) calc(l + 0.3125) c h);
-	--color-background-content-dark:  oklch(from var(--color-palette-tertiary) calc(l - 0.45) c h);
-	--color-background-content:       light-dark(var(--color-background-content-light), var(--color-background-content-dark));
-
-	--color-border-light: oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
-	--color-border-dark:  oklch(from var(--color-palette-tertiary) calc(l - 0.325) c h);
-	--color-border:       light-dark(var(--color-border-light), var(--color-border-dark));
-
-	--color-link-light: var(--color-palette-primary);
-	--color-link-dark:  oklch(from var(--color-palette-primary) calc(l + 0.075) c h);
-	--color-link:       light-dark(var(--color-link-light), var(--color-link-dark));
-
-	--color-link-border-light: oklch(from var(--color-palette-primary)  l c h / 75%);
-	--color-link-border-dark:  var(--color-palette-primary);
-	--color-link-border:       light-dark(var(--color-link-border-light), var(--color-link-border-dark));
-
-	--color-link-hover-text-light: oklch(from var(--color-palette-primary)  calc(l - 0.2) c h);
-	--color-link-hover-text-dark:  oklch(from var(--color-palette-primary)  calc(l + 0.25) c h);
-	--color-link-hover-text:       light-dark(var(--color-link-hover-text-light), var(--color-link-hover-text-dark));
-
-	--color-link-hover-background-light: oklch(from var(--color-palette-primary)  calc(l - 0.1) c h);
-	--color-link-hover-background-dark:  oklch(from var(--color-palette-primary)  calc(l + 0.2) c h);
-	--color-link-hover-background:       light-dark(var(--color-link-hover-background-light), var(--color-link-hover-background-dark));
-
-	--color-text-body-light: oklch(from var(--color-palette-tertiary) calc(l - 0.225) c h);
-	--color-text-body-dark:  oklch(from var(--color-palette-tertiary) calc(l + 0.225) c h);
-	--color-text-body:       light-dark(var(--color-text-body-light), var(--color-text-body-dark));
-
-	--color-text-button: light-dark(var(--color-background-content-light), var(--color-background-content-light));
-
-	--color-text-header-light: oklch(from var(--color-palette-tertiary) calc(l - 0.25) c h);
-	--color-text-header-dark:  oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
-	--color-text-header:       light-dark(var(--color-text-header-light), var(--color-text-header-dark));
-
-	--color-text-subtle-light: oklch(from var(--color-palette-tertiary) calc(l + 0.1) c h);
-	--color-text-subtle-dark:  oklch(from var(--color-palette-tertiary) calc(l - 0.1) c h);
-	--color-text-subtle:       light-dark(var(--color-text-subtle-light), var(--color-text-subtle-dark));
+	--color-background-content:         oklch(from var(--color-palette-tertiary) calc(l + 0.3125) c h);
+	--color-background-content-dark:    oklch(from var(--color-palette-tertiary) calc(l - 0.45) c h);
+	--color-border:                     oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
+	--color-border-dark:                oklch(from var(--color-palette-tertiary) calc(l - 0.325) c h);
+	--color-link:                       var(--color-palette-primary);
+	--color-link-dark:                  oklch(from var(--color-palette-primary) calc(l + 0.075) c h);
+	--color-link-border:                oklch(from var(--color-palette-primary)  l c h / 75%);
+	--color-link-border-dark:           var(--color-palette-primary);
+	--color-link-hover-text:            oklch(from var(--color-palette-primary)  calc(l - 0.2) c h);
+	--color-link-hover-text-dark:       oklch(from var(--color-palette-primary)  calc(l + 0.25) c h);
+	--color-link-hover-background:      oklch(from var(--color-palette-primary)  calc(l - 0.1) c h);
+	--color-link-hover-background-dark: oklch(from var(--color-palette-primary)  calc(l + 0.2) c h);
+	--color-text-body:                  oklch(from var(--color-palette-tertiary) calc(l - 0.225) c h);
+	--color-text-body-dark:             oklch(from var(--color-palette-tertiary) calc(l + 0.225) c h);
+	--color-text-button:                var(--color-background-content-light);
+	--color-text-button-dark:           var(--color-background-content-light);
+	--color-text-header:                oklch(from var(--color-palette-tertiary) calc(l - 0.25) c h);
+	--color-text-header-dark:           oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
+	--color-text-subtle:                oklch(from var(--color-palette-tertiary) calc(l + 0.1) c h);
+	--color-text-subtle-dark:           oklch(from var(--color-palette-tertiary) calc(l - 0.1) c h);
 
 	--font-size-xs:  0.875rem; /* 14px */
 	--font-size-sm:      1rem; /* 16px */
@@ -70,7 +53,18 @@
 	--space-xl-int:  calc(var(--space-base-unit-int) * 2);
 	--space-xxl-int: calc(var(--space-base-unit-int) * 3);
 
-	color-scheme: light dark;
+	@media (prefers-color-scheme: dark) {
+		--color-background-content:    var(--color-background-content-dark);
+		--color-border:                var(--color-border-dark);
+		--color-link:                  var(--color-link-dark);
+		--color-link-border:           var(--color-link-border-dark);
+		--color-link-hover-text:       var(--color-link-hover-text-dark);
+		--color-link-hover-background: var(--color-link-hover-background-dark);
+		--color-text-body:             var(--color-text-body-dark);
+		--color-text-button:           var(--color-text-button-dark);
+		--color-text-header:           var(--color-text-header-dark);
+		--color-text-subtle:           var(--color-text-subtle-dark);
+	}
 }
 
 @custom-media --mq-small  (min-width: 50em); /*  800px */
