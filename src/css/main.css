@@ -1,28 +1,32 @@
 :root {
 	--color-palette-primary:   #ff6c6a;
 	--color-palette-secondary: #ffbb72;
-	--color-palette-tertiary:  #999490;
+	--color-palette-tertiary:  #989490;
 
-	--color-background-content:         oklch(from var(--color-palette-tertiary) calc(l + 0.325) c h);
-	--color-background-content-dark:    oklch(from var(--color-palette-tertiary) calc(l - 0.4125) calc(c + 0.005) h);
-	--color-border:                     oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
-	--color-border-dark:                oklch(from var(--color-palette-tertiary) calc(l - 0.3) c h);
+	--color-palette-primary-dark:   #129596;
+	--color-palette-secondary-dark: #0b458e;
+	--color-palette-tertiary-dark:  #9898ab;
+
+	--color-background-content:         oklch(from var(--color-palette-tertiary)  calc(l + 0.325) c h);
+	--color-background-content-dark:    oklch(from var(--color-palette-tertiary)  calc(l - 0.425) c h);
+	--color-border:                     oklch(from var(--color-palette-tertiary)  calc(l + 0.25) c h);
+	--color-border-dark:                oklch(from var(--color-palette-tertiary)  calc(l - 0.3) c h);
 	--color-link:                       var(--color-palette-primary);
-	--color-link-dark:                  oklch(from var(--color-palette-primary)  calc(l + 0.075) c h);
-	--color-link-border:                oklch(from var(--color-palette-primary)  l c h / 75%);
+	--color-link-dark:                  oklch(from var(--color-palette-primary)   calc(l + 0.1) c h);
+	--color-link-border:                oklch(from var(--color-palette-primary)   l c h / 75%);
 	--color-link-border-dark:           var(--color-palette-primary);
-	--color-link-hover-text:            oklch(from var(--color-palette-primary)  calc(l - 0.2) c h);
-	--color-link-hover-text-dark:       oklch(from var(--color-palette-primary)  calc(l + 0.25) c h);
-	--color-link-hover-background:      oklch(from var(--color-palette-primary)  calc(l - 0.1) c h);
-	--color-link-hover-background-dark: oklch(from var(--color-palette-primary)  calc(l + 0.2) c h);
-	--color-text-body:                  oklch(from var(--color-palette-tertiary) calc(l - 0.225) c h);
-	--color-text-body-dark:             oklch(from var(--color-palette-tertiary) calc(l + 0.2) c h);
-	--color-text-button:                var(--color-background-content-light);
-	--color-text-button-dark:           var(--color-background-content-light);
-	--color-text-header:                oklch(from var(--color-palette-tertiary) calc(l - 0.25) c h);
-	--color-text-header-dark:           oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
-	--color-text-subtle:                oklch(from var(--color-palette-tertiary) calc(l + 0.1) c h);
-	--color-text-subtle-dark:           oklch(from var(--color-palette-tertiary) calc(l - 0.1) c h);
+	--color-link-hover-text:            oklch(from var(--color-palette-primary)   calc(l - 0.2) c h);
+	--color-link-hover-text-dark:       oklch(from var(--color-palette-primary)   calc(l + 0.25) c h);
+	--color-link-hover-background:      oklch(from var(--color-palette-primary)   calc(l - 0.1) c h);
+	--color-link-hover-background-dark: oklch(from var(--color-palette-primary)   calc(l + 0.2) c h);
+	--color-text-body:                  oklch(from var(--color-palette-tertiary)  calc(l - 0.225) c h);
+	--color-text-body-dark:             oklch(from var(--color-palette-tertiary)  calc(l + 0.15) c h);
+	--color-text-button:                var(--color-background-content);
+	--color-text-button-dark:           oklch(from var(--color-text-body)         calc(l + 0.25) c h);
+	--color-text-header:                oklch(from var(--color-palette-tertiary)  calc(l - 0.25) c h);
+	--color-text-header-dark:           oklch(from var(--color-palette-tertiary)  calc(l + 0.2) c h);
+	--color-text-subtle:                oklch(from var(--color-palette-tertiary)  calc(l + 0.1) c h);
+	--color-text-subtle-dark:           oklch(from var(--color-palette-tertiary)  calc(l - 0.1) c h);
 
 	--font-size-xs:  0.875rem; /* 14px */
 	--font-size-sm:      1rem; /* 16px */
@@ -54,6 +58,9 @@
 	--space-xxl-int: calc(var(--space-base-unit-int) * 3);
 
 	@media (prefers-color-scheme: dark) {
+		--color-palette-primary:       var(--color-palette-primary-dark);
+		--color-palette-secondary:     var(--color-palette-secondary-dark);
+		--color-palette-tertiary:      var(--color-palette-tertiary-dark);
 		--color-background-content:    var(--color-background-content-dark);
 		--color-border:                var(--color-border-dark);
 		--color-link:                  var(--color-link-dark);
