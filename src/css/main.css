@@ -1,14 +1,14 @@
 :root {
 	--color-palette-primary:   #ff6c6a;
 	--color-palette-secondary: #ffbb72;
-	--color-palette-tertiary:  #999796;
+	--color-palette-tertiary:  #999490;
 
-	--color-background-content:         oklch(from var(--color-palette-tertiary) calc(l + 0.3125) c h);
-	--color-background-content-dark:    oklch(from var(--color-palette-tertiary) calc(l - 0.45) c h);
+	--color-background-content:         oklch(from var(--color-palette-tertiary) calc(l + 0.325) c h);
+	--color-background-content-dark:    oklch(from var(--color-palette-tertiary) calc(l - 0.4125) calc(c + 0.005) h);
 	--color-border:                     oklch(from var(--color-palette-tertiary) calc(l + 0.25) c h);
-	--color-border-dark:                oklch(from var(--color-palette-tertiary) calc(l - 0.325) c h);
+	--color-border-dark:                oklch(from var(--color-palette-tertiary) calc(l - 0.3) c h);
 	--color-link:                       var(--color-palette-primary);
-	--color-link-dark:                  oklch(from var(--color-palette-primary) calc(l + 0.075) c h);
+	--color-link-dark:                  oklch(from var(--color-palette-primary)  calc(l + 0.075) c h);
 	--color-link-border:                oklch(from var(--color-palette-primary)  l c h / 75%);
 	--color-link-border-dark:           var(--color-palette-primary);
 	--color-link-hover-text:            oklch(from var(--color-palette-primary)  calc(l - 0.2) c h);
@@ -16,7 +16,7 @@
 	--color-link-hover-background:      oklch(from var(--color-palette-primary)  calc(l - 0.1) c h);
 	--color-link-hover-background-dark: oklch(from var(--color-palette-primary)  calc(l + 0.2) c h);
 	--color-text-body:                  oklch(from var(--color-palette-tertiary) calc(l - 0.225) c h);
-	--color-text-body-dark:             oklch(from var(--color-palette-tertiary) calc(l + 0.225) c h);
+	--color-text-body-dark:             oklch(from var(--color-palette-tertiary) calc(l + 0.2) c h);
 	--color-text-button:                var(--color-background-content-light);
 	--color-text-button-dark:           var(--color-background-content-light);
 	--color-text-header:                oklch(from var(--color-palette-tertiary) calc(l - 0.25) c h);
