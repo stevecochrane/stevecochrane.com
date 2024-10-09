@@ -7,46 +7,26 @@
 	--color-palette-secondary-dark: #0b458e;
 	--color-palette-tertiary-dark:  #9898ab;
 
-	--color-background-content: light-dark(
-		oklch(from var(--color-palette-tertiary)      calc(l + 0.325) c h),
-		oklch(from var(--color-palette-tertiary-dark) calc(l - 0.425) c h)
-	);
-	--color-border: light-dark(
-		oklch(from var(--color-palette-tertiary)      calc(l + 0.25) c h),
-		oklch(from var(--color-palette-tertiary-dark) calc(l - 0.3) c h)
-	);
-	--color-link: light-dark(
-		var(--color-palette-primary),
-		oklch(from var(--color-palette-primary-dark) calc(l + 0.1) c h)
-	);
-	--color-link-border: light-dark(
-		oklch(from var(--color-palette-primary) l c h / 75%),
-		var(--color-palette-primary-dark)
-	);
-	--color-link-hover-text: light-dark(
-		oklch(from var(--color-palette-primary)      calc(l - 0.2) c h),
-		oklch(from var(--color-palette-primary-dark) calc(l + 0.25) c h)
-	);
-	--color-link-hover-background: light-dark(
-		oklch(from var(--color-palette-primary)      calc(l - 0.1) c h),
-		oklch(from var(--color-palette-primary-dark) calc(l + 0.2) c h)
-	);
-	--color-text-body: light-dark(
-		oklch(from var(--color-palette-tertiary)      calc(l - 0.225) c h),
-		oklch(from var(--color-palette-tertiary-dark) calc(l + 0.15) c h)
-	);
-	--color-text-button: light-dark(
-		var(--color-background-content),
-		oklch(from var(--color-palette-tertiary-dark) calc(l + 0.4) c h)
-	);
-	--color-text-header: light-dark(
-		oklch(from var(--color-palette-tertiary)      calc(l - 0.25) c h),
-		oklch(from var(--color-palette-tertiary-dark) calc(l + 0.2) c h)
-	);
-	--color-text-subtle: light-dark(
-		oklch(from var(--color-palette-tertiary)      calc(l + 0.1) c h),
-		oklch(from var(--color-palette-tertiary-dark) calc(l - 0.1) c h)
-	);
+	--color-background-content:         oklch(from var(--color-palette-tertiary)  calc(l + 0.325) c h);
+	--color-background-content-dark:    oklch(from var(--color-palette-tertiary)  calc(l - 0.425) c h);
+	--color-border:                     oklch(from var(--color-palette-tertiary)  calc(l + 0.25) c h);
+	--color-border-dark:                oklch(from var(--color-palette-tertiary)  calc(l - 0.3) c h);
+	--color-link:                       var(--color-palette-primary);
+	--color-link-dark:                  oklch(from var(--color-palette-primary)   calc(l + 0.1) c h);
+	--color-link-border:                oklch(from var(--color-palette-primary)   l c h / 75%);
+	--color-link-border-dark:           var(--color-palette-primary);
+	--color-link-hover-text:            oklch(from var(--color-palette-primary)   calc(l - 0.2) c h);
+	--color-link-hover-text-dark:       oklch(from var(--color-palette-primary)   calc(l + 0.25) c h);
+	--color-link-hover-background:      oklch(from var(--color-palette-primary)   calc(l - 0.1) c h);
+	--color-link-hover-background-dark: oklch(from var(--color-palette-primary)   calc(l + 0.2) c h);
+	--color-text-body:                  oklch(from var(--color-palette-tertiary)  calc(l - 0.225) c h);
+	--color-text-body-dark:             oklch(from var(--color-palette-tertiary)  calc(l + 0.15) c h);
+	--color-text-button:                var(--color-background-content);
+	--color-text-button-dark:           oklch(from var(--color-text-body)         calc(l + 0.25) c h);
+	--color-text-header:                oklch(from var(--color-palette-tertiary)  calc(l - 0.25) c h);
+	--color-text-header-dark:           oklch(from var(--color-palette-tertiary)  calc(l + 0.2) c h);
+	--color-text-subtle:                oklch(from var(--color-palette-tertiary)  calc(l + 0.1) c h);
+	--color-text-subtle-dark:           oklch(from var(--color-palette-tertiary)  calc(l - 0.1) c h);
 
 	--font-size-xs:  0.875rem; /* 14px */
 	--font-size-sm:      1rem; /* 16px */
@@ -77,7 +57,21 @@
 	--space-xl-int:  calc(var(--space-base-unit-int) * 2);
 	--space-xxl-int: calc(var(--space-base-unit-int) * 3);
 
-	color-scheme: light dark;
+	@media (prefers-color-scheme: dark) {
+		--color-palette-primary:       var(--color-palette-primary-dark);
+		--color-palette-secondary:     var(--color-palette-secondary-dark);
+		--color-palette-tertiary:      var(--color-palette-tertiary-dark);
+		--color-background-content:    var(--color-background-content-dark);
+		--color-border:                var(--color-border-dark);
+		--color-link:                  var(--color-link-dark);
+		--color-link-border:           var(--color-link-border-dark);
+		--color-link-hover-text:       var(--color-link-hover-text-dark);
+		--color-link-hover-background: var(--color-link-hover-background-dark);
+		--color-text-body:             var(--color-text-body-dark);
+		--color-text-button:           var(--color-text-button-dark);
+		--color-text-header:           var(--color-text-header-dark);
+		--color-text-subtle:           var(--color-text-subtle-dark);
+	}
 }
 
 @custom-media --mq-small  (min-width: 50em); /*  800px */
@@ -103,11 +97,7 @@ html {
 body {
 	background-attachment: fixed;
 	background-color: var(--color-background-content);
-	background-image: linear-gradient(
-		to right,
-		light-dark(var(--color-palette-primary),   var(--color-palette-primary-dark)),
-		light-dark(var(--color-palette-secondary), var(--color-palette-secondary-dark))
-	);
+	background-image: linear-gradient(to right, var(--color-palette-primary), var(--color-palette-secondary));
 	background-size: 100vw 100vh;
 	color: var(--color-text-body);
 	font-family: "Tofino", sans-serif;
@@ -118,11 +108,7 @@ body {
 	margin: 0;
 
 	@media (--mq-xlarge) {
-		background-image: linear-gradient(
-			to top right,
-			light-dark(var(--color-palette-primary),   var(--color-palette-primary-dark)),
-			light-dark(var(--color-palette-secondary), var(--color-palette-secondary-dark))
-		);
+		background-image: linear-gradient(to top right, var(--color-palette-primary), var(--color-palette-secondary));
 	}
 }
 
