@@ -11,7 +11,6 @@ const riseOfTheNecromancer = require("./projects/rise-of-the-necromancer.json");
 const tabIdIntegration = require("./projects/tabid-integration.json");
 const tailwindcssLogical = require("./projects/tailwindcss-logical.json");
 const vidcasterThemeEditor = require("./projects/vidcaster-theme-editor.json");
-const vidcasterVideoPlayer = require("./projects/vidcaster-video-player.json");
 const wowLegion = require("./projects/wow-legion.json");
 const wowRedesign = require("./projects/wow-redesign.json");
 
@@ -34,6 +33,5 @@ module.exports = {
 		andyWowhol,
 		pixelArtScrapbook,
 		vidcasterThemeEditor,
-		vidcasterVideoPlayer,
 	],
 };
