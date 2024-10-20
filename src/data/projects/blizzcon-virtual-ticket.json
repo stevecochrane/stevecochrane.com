@@ -3,7 +3,6 @@
 	"title": "BlizzCon Virtual Ticket Web Application",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "blizzcon-2018-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "BlizzCon Virtual Ticket: Video Player"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "blizzcon-2018-2-sm.webp",

@@ -3,7 +3,6 @@
 	"title": "Pixel Art Scrapbook Web Application",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "pixel-art-scrapbook-1-sm.webp",

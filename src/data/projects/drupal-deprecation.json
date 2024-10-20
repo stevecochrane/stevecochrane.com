@@ -3,7 +3,6 @@
 	"title": "Tableau Public: Drupal Deprecation and Site IA Refresh",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "drupal-deprecation-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Tableau Public Homepage"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "drupal-deprecation-2-sm.webp",

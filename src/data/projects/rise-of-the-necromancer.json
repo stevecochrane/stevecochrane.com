@@ -3,7 +3,6 @@
 	"title": "Diablo III: Rise of the Necromancer Website",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "rise-of-the-necromancer-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Rise of the Necromancer: Book Cover"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "rise-of-the-necromancer-2-sm.webp",

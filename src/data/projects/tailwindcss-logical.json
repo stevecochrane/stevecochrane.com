@@ -3,7 +3,6 @@
 	"title": "tailwindcss-logical Plugin for Tailwind CSS",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "tailwindcss-logical-1-sm.webp",

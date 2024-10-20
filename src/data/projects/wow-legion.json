@@ -3,7 +3,6 @@
 	"title": "World of Warcraft: Legion Website",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "wow-legion-1-sm.webp",

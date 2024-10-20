@@ -40,7 +40,7 @@
 							<h2 class="Project-title">{{ project.title }}</h2>
 							<div class="Project-images">
 								{% for image in project.images %}
-									<picture class="Project-imageWrap Project-imageWrap--{{ image.size }}">
+									<picture class="Project-imageWrap">
 										{% if image.desktop.webp.1x %}
 											<source
 												srcset="{{ index.imageDir }}{{ image.desktop.webp.1x }}{% if image.desktop.webp.2x %} 1x, {{ index.imageDir }}{{ image.desktop.webp.2x }} 2x{% endif %}"
