@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<div class="Wrapper">
-			<div class="Wrapper-inner">
+			{# <div class="Wrapper-inner"> #}
 				<header class="Header">
 					<h1 class="Header-title">Steve Cochrane</h1>
 					<ul class="Header-items">
@@ -77,9 +77,9 @@
 							<div class="Project-description">
 								<div class="Project-summary">
 									<ul class="Project-summaryItems">
-										<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Role</strong> {{ project.role }}</li>
-										<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Client</strong> {{ project.client }}</li>
-										<li class="Project-summaryItem"><strong class="Project-summaryItemTitle">Date</strong> {{ project.date }}</li>
+										<li class="Project-summaryItem"><span class="Project-summaryItemWrap"><strong class="Project-summaryItemTitle">Role</strong> {{ project.role }}</span></li>
+										<li class="Project-summaryItem"><span class="Project-summaryItemWrap"><strong class="Project-summaryItemTitle">Client</strong> {{ project.client }}</span></li>
+										<li class="Project-summaryItem"><span class="Project-summaryItemWrap"><strong class="Project-summaryItemTitle">Date</strong> {{ project.date }}</span></li>
 									</ul>
 								</div>
 								<div class="Project-body">
@@ -109,7 +109,7 @@
 				<footer class="Footer">
 					<p class="Footer-copyright">Copyright © 2005–{{ index.currentYear }} Steve Cochrane. All rights reserved.</p>
 				</footer>
-			</div>
+			{# </div> #}
 		</div>
 	</body>
 </html>
