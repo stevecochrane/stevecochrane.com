@@ -294,6 +294,7 @@ main {
 	margin-block-start: 0;
 	/* margin-inline: calc((var(--space-xl-int) / var(--page-width-int)) * 100%); */
 	text-align: center;
+	text-wrap: balance;
 
 	grid-column: 1 / 21;
 	margin-inline: var(--space-md);
