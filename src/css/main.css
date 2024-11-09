@@ -169,10 +169,6 @@ ul + p {
 	}
 }
 
-/* .Wrapper-inner {
-	padding-inline: calc((var(--space-xl-int) / var(--page-width-outer-int)) * 100%);
-} */
-
 .Header {
 	border-block-end: 1px solid var(--color-border);
 	/* display: flex;
