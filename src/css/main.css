@@ -307,6 +307,7 @@ main {
 
 	@media (--mq-small) {
 		grid-column: main-start / main-end;
+		order: 1;
 	}
 }
 
@@ -318,6 +319,7 @@ main {
 
 	@media (--mq-small) {
 		grid-column: sub-start / sub-end;
+		order: 2;
 	}
 }
 
