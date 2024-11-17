@@ -159,7 +159,7 @@ ul + p {
 .Wrapper {
 	background-color: var(--color-background-content);
 	display: grid;
-	grid-template-columns: 1fr [pad-out-start] 1fr [pad-in-start] repeat(9, 1fr) [middle] repeat(9, 1fr) [pad-in-end] 1fr [pad-out-end] 1fr;
+	grid-template-columns: 1fr [pad-out-start] 1fr [pad-in-start] repeat(18, 1fr) [pad-in-end] 1fr [pad-out-end] 1fr;
 	margin: var(--space-sm) auto 0;
 	max-inline-size: var(--page-width-outer);
 
@@ -172,7 +172,7 @@ ul + p {
 	border-block-end: 1px solid var(--color-border);
 	display: grid;
 	grid-column: pad-out-start / pad-out-end;
-	grid-template-columns: subgrid;
+	grid-template-columns: [start] repeat(10, 1fr) [middle] repeat(10, 1fr) [end];
 	padding-block: var(--space-lg) var(--space-sm);
 	position: relative;
 
@@ -183,13 +183,13 @@ ul + p {
 
 .Header-title {
 	font-size: var(--font-size-sm);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	line-height: var(--space-md);
 	margin: 0;
 	text-align: center;
 
 	@media (--mq-small) {
-		grid-column: pad-out-start / middle;
+		grid-column: start / middle;
 		padding-inline-start: var(--space-sm);
 		text-align: start;
 	}
@@ -197,12 +197,12 @@ ul + p {
 
 .Header-items {
 	display: flex;
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	justify-content: center;
 	list-style: none;
 
 	@media (--mq-small) {
-		grid-column: middle / pad-out-end;
+		grid-column: middle / end;
 		justify-content: end;
 	}
 }
