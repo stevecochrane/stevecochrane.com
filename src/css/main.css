@@ -251,7 +251,7 @@ main {
 	border-block-start: 1px solid var(--color-border);
 	display: grid;
 	grid-column: pad-out-start / pad-out-end;
-	grid-template-columns: subgrid;
+	grid-template-columns: [start] 1fr [pad-start] 1fr [main-start] repeat(9, 1fr) [main-end] 1fr 1fr [sub-start] repeat(5, 1fr) [sub-end] 1fr [pad-end] 1fr [end];
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
@@ -262,7 +262,7 @@ main {
 .Project-title {
 	color: var(--color-text-header);
 	font-size: var(--font-size-xl);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	line-height: var(--space-lg);
 	margin-block: 0 var(--space-md);
 	margin-inline: var(--space-sm);
@@ -276,7 +276,7 @@ main {
 
 .Project-images {
 	display: flex;
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	flex-flow: row wrap;
 	justify-content: center;
 }
@@ -297,27 +297,27 @@ main {
 
 .Project-description {
 	display: grid;
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	grid-template-columns: subgrid;
 }
 
 .Project-body {
-	grid-column: pad-in-start / pad-in-end;
+	grid-column: pad-start / pad-end;
 	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
-		grid-column: 3 / 12;
+		grid-column: main-start / main-end;
 	}
 }
 
 .Project-summary {
 	display: grid;
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	grid-template-columns: subgrid;
 	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
-		grid-column: 14 / 19;
+		grid-column: sub-start / sub-end;
 	}
 }
 
@@ -329,7 +329,7 @@ main {
 	block-size: var(--space-md);
 	display: grid;
 	font-size: var(--font-size-xs);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	grid-template-columns: subgrid;
 	list-style: none;
 	position: relative;
@@ -349,10 +349,18 @@ main {
 		inset-inline: 0;
 		position: absolute;
 	}
+
+	@media (--mq-small) {
+		grid-column: sub-start / sub-end;
+	}
 }
 
 .Project-summaryItemWrap {
-	grid-column: pad-in-start / pad-in-end;
+	grid-column: pad-start / pad-end;
+
+	@media (--mq-small) {
+		grid-column: sub-start / sub-end;
+	}
 }
 
 .Project-summaryItemTitle {
