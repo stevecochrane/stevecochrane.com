@@ -318,6 +318,7 @@ main {
 	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
+		display: unset;
 		grid-column: sub-start / sub-end;
 		order: 2;
 	}
@@ -353,7 +354,9 @@ main {
 	}
 
 	@media (--mq-small) {
+		display: block;
 		grid-column: sub-start / sub-end;
+		padding-inline: var(--space-sm);
 	}
 }
 
