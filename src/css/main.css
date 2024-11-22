@@ -159,7 +159,7 @@ ul + p {
 .Wrapper {
 	background-color: var(--color-background-content);
 	display: grid;
-	grid-template-columns: 1fr [pad-out-start] 1fr [pad-in-start] repeat(18, 1fr) [pad-in-end] 1fr [pad-out-end] 1fr;
+	grid-template-columns: 1fr [pad-1-start] 1fr [pad-2-start] repeat(18, 1fr) [pad-2-end] 1fr [pad-1-end] 1fr;
 	margin: var(--space-sm) auto 0;
 	max-inline-size: var(--page-width-outer);
 
@@ -171,7 +171,7 @@ ul + p {
 .Header {
 	border-block-end: 1px solid var(--color-border);
 	display: grid;
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: pad-1-start / pad-1-end;
 	grid-template-columns: [start] repeat(10, 1fr) [middle] repeat(10, 1fr) [end];
 	padding-block: var(--space-lg) var(--space-sm);
 	position: relative;
@@ -222,8 +222,8 @@ main {
 
 .Intro {
 	display: grid;
-	grid-column: pad-out-start / pad-out-end;
-	grid-template-columns: [pad-out-start] 1fr [pad-in-start] 2fr [pad-4-start] repeat(14, 1fr) [pad-4-end] 2fr [pad-in-end] 1fr [end];
+	grid-column: pad-1-start / pad-1-end;
+	grid-template-columns: [start] 1fr [pad-2-start] 2fr [pad-4-start] repeat(14, 1fr) [pad-4-end] 2fr [pad-2-end] 1fr [end];
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
@@ -234,12 +234,12 @@ main {
 .Intro-message {
 	font-size: var(--font-size-lg);
 	font-weight: var(--font-weight-normal);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: start / end;
 	line-height: var(--space-lg);
 	margin: 0;
 
 	@media (--mq-small) {
-		grid-column: pad-in-start / pad-in-end;
+		grid-column: pad-2-start / pad-2-end;
 	}
 
 	@media (--mq-medium) {
@@ -250,8 +250,8 @@ main {
 .Project {
 	border-block-start: 1px solid var(--color-border);
 	display: grid;
-	grid-column: pad-out-start / pad-out-end;
-	grid-template-columns: [start] 1fr [pad-start] 1fr [main-start] repeat(9, 1fr) [main-end] 1fr 1fr [sub-start] repeat(5, 1fr) [sub-end] 1fr [pad-end] 1fr [end];
+	grid-column: pad-1-start / pad-1-end;
+	grid-template-columns: [start] 1fr [pad-2-start] 1fr [main-start] repeat(9, 1fr) [main-end] 1fr 1fr [sub-start] repeat(5, 1fr) [sub-end] 1fr [pad-2-end] 1fr [end];
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
@@ -302,7 +302,7 @@ main {
 }
 
 .Project-body {
-	grid-column: pad-start / pad-end;
+	grid-column: pad-2-start / pad-2-end;
 	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
@@ -358,7 +358,7 @@ main {
 }
 
 .Project-summaryItemWrap {
-	grid-column: pad-start / pad-end;
+	grid-column: pad-2-start / pad-2-end;
 
 	@media (--mq-small) {
 		grid-column: sub-start / sub-end;
@@ -420,7 +420,7 @@ main {
 
 .Closing {
 	border-block-start: 1px solid var(--color-border);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: pad-1-start / pad-1-end;
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
@@ -453,7 +453,7 @@ main {
 
 .Footer {
 	border-block-start: 1px solid var(--color-border);
-	grid-column: pad-out-start / pad-out-end;
+	grid-column: pad-1-start / pad-1-end;
 	padding-block-end: var(--space-lg);
 	padding-block-start: var(--space-sm);
 }
