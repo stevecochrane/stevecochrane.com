@@ -223,7 +223,7 @@ main {
 .Intro {
 	display: grid;
 	grid-column: pad-out-start / pad-out-end;
-	grid-template-columns: subgrid;
+	grid-template-columns: [pad-out-start] 1fr [pad-in-start] 2fr [pad-4-start] repeat(14, 1fr) [pad-4-end] 2fr [pad-in-end] 1fr [end];
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
@@ -243,7 +243,7 @@ main {
 	}
 
 	@media (--mq-medium) {
-		grid-column: 4 / 19;
+		grid-column: pad-4-start / pad-4-end;
 	}
 }
 
