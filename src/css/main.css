@@ -303,7 +303,7 @@ main {
 
 .Project-body {
 	grid-column: pad-2-start / pad-2-end;
-	padding-block-start: var(--space-lg);
+	padding-block-start: var(--space-xl);
 
 	@media (--mq-small) {
 		grid-column: main-start / main-end;
@@ -315,7 +315,7 @@ main {
 	display: grid;
 	grid-column: start / end;
 	grid-template-columns: subgrid;
-	padding-block-start: var(--space-lg);
+	padding-block-start: var(--space-xl);
 
 	@media (--mq-small) {
 		display: unset;
