@@ -303,11 +303,12 @@ main {
 
 .Project-body {
 	grid-column: pad-2-start / pad-2-end;
-	padding-block-start: var(--space-xl);
+	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
 		grid-column: main-start / main-end;
 		order: 1;
+		padding-block-start: var(--space-xl);
 	}
 }
 
@@ -315,12 +316,13 @@ main {
 	display: grid;
 	grid-column: start / end;
 	grid-template-columns: subgrid;
-	padding-block-start: var(--space-xl);
+	padding-block-start: var(--space-lg);
 
 	@media (--mq-small) {
 		display: unset;
 		grid-column: sub-start / sub-end;
 		order: 2;
+		padding-block-start: var(--space-xl);
 	}
 }
 
