@@ -3,7 +3,6 @@
 	"title": "HTML Reference API & Web Application",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "html-reference-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "HTML Reference Web Application index view"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "html-reference-2-sm.webp",

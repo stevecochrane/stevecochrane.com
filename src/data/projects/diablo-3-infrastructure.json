@@ -3,7 +3,6 @@
 	"title": "Diablo III Website Infrastructure",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo3-infrastructure-1-sm.webp",

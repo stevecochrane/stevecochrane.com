@@ -3,7 +3,6 @@
 	"title": "Vidcaster Theme Editor",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "vidcaster-theme-editor-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Vidcaster Theme Editor: Themes View"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "vidcaster-theme-editor-2-sm.webp",
@@ -55,7 +53,6 @@
 			"alt": "Vidcaster Theme Editor: Basic Editor View"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "vidcaster-theme-editor-3-sm.webp",

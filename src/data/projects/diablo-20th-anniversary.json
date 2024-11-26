@@ -3,7 +3,6 @@
 	"title": "Diablo 20th Anniversary Website",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo-20th-anniversary-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Diablo 20th Anniversary Page: Masthead"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo-20th-anniversary-2-sm.webp",

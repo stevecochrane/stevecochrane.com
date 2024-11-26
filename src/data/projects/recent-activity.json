@@ -3,7 +3,6 @@
 	"title": "Tableau Public: Recent Activity",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "recent-activity-1-sm.webp",

@@ -3,7 +3,6 @@
 	"title": "Andy Wowhol Website",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "andy-wowhol-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Andy WoWhol form"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "andy-wowhol-2-sm.webp",

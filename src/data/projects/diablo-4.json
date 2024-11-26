@@ -3,7 +3,6 @@
 	"title": "Diablo IV Website",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo4-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "Diablo IV: Introduction"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo4-2-sm.webp",
@@ -55,7 +53,6 @@
 			"alt": "Diablo IV: Classes"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "diablo4-3-sm.webp",

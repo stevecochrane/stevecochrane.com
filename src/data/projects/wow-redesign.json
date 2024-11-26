@@ -3,7 +3,6 @@
 	"title": "World of Warcraft Website Redesign",
 	"images": [
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "wow-redesign-1-sm.webp",
@@ -29,7 +28,6 @@
 			"alt": "World of Warcraft Website Redesign: Homepage"
 		},
 		{
-			"size": "full",
 			"mobile": {
 				"webp": {
 					"1x": "wow-redesign-2-sm.webp",
