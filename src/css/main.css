@@ -251,11 +251,15 @@ main {
 	border-block-start: 1px solid var(--color-border);
 	display: grid;
 	grid-column: pad-1-start / pad-1-end;
-	grid-template-columns: [start] 1fr [pad-2-start] 1fr [main-start] repeat(9, 1fr) [main-end] 1fr 1fr [sub-start] repeat(5, 1fr) [sub-end] 1fr [pad-2-end] 1fr [end];
+	grid-template-columns: [start] 1fr [pad-2-start main-start] repeat(10, 1fr) [main-end] 1fr 1fr [sub-start] repeat(6, 1fr) [sub-end pad-2-end] 1fr [end];
 	padding-block: var(--space-lg);
 
 	@media (--mq-medium) {
 		padding-block: var(--space-xxl);
+	}
+
+	@media (--mq-large) {
+		grid-template-columns: [start] 1fr [pad-2-start] 1fr [main-start] repeat(9, 1fr) [main-end] 1fr 1fr [sub-start] repeat(5, 1fr) [sub-end] 1fr [pad-2-end] 1fr [end];
 	}
 }
 
