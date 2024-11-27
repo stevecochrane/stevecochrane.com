@@ -1,6 +1,6 @@
 .DS_Store
 .nova/
-node_modules/
 dist/
+node_modules/
 src/img/
-webfonts/
+src/webfonts/
