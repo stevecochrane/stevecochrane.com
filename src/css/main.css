@@ -308,6 +308,7 @@ main {
 .Project-body {
 	grid-column: pad-2-start / pad-2-end;
 	padding-block-start: var(--space-lg);
+	text-wrap: pretty;
 
 	@media (--mq-small) {
 		grid-column: main-start / main-end;
