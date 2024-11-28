@@ -3,7 +3,7 @@
 [stevecochrane.com](https://stevecochrane.com/) has been my little corner of the World Wide Web since I was a college
 student back in 2005, and the site is now in its seventh design iteration.
 
-### Setup
+## Setup
 
 Assuming you already have [Node](https://nodejs.org/) installed, navigate to the base directory with a command line
 interface and do this:
@@ -14,7 +14,7 @@ npm start         # Run Eleventy's dev server for local development
 npm run build     # Run an Eleventy build for production
 ```
 
-### Notes
+## Notes
 
 - The site has a perfect score of 100 for Performance, Best Practices, and SEO in
   [Lighthouse](https://developers.google.com/web/tools/lighthouse) as of July 2022. Accessibility is at 97/100
