@@ -19,12 +19,12 @@ npm run build     # Run an Eleventy build for production
 - When I was younger and less experienced, I made this site a showcase for my technical skills, and it had a rather
   complex toolchain. Now that I’m older and my priorities have changed, I’m doing what is best for long-term
   maintenance. (In other words, I have little patience for updating Node dependencies.)
-- This has a perfect score of 100 for Performance, Best Practices, and SEO in
+- The site has a perfect score of 100 for Performance, Best Practices, and SEO in
   [Lighthouse](https://developers.google.com/web/tools/lighthouse) as of July 2022. Accessibility is at 97/100
   because of insufficient contrast between background and foreground colors, which will need to wait until the next
   redesign.
 - The site has light and dark color themes, and your operating system preference determines which theme you see.
-- Now that all major browsers natively support lazy loading for images, this site serves zero JavaScript!
+- Now that all major browsers natively support lazy loading for images, the site serves zero JavaScript!
   Most bundling tools are JS-centric, but [Eleventy](https://www.11ty.dev) is perfect for a simple site like this.
   I can build an HTML document from Nunjucks templates populated with data, and process, minify, and inline
   my styles, all with
